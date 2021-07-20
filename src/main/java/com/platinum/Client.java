@@ -13581,7 +13581,7 @@ public class Client extends RSApplet {
 					String url = "";
 					switch (i) {
 					case 1:
-						url = "https://i.gyazo.com/9be3799ccd7c1f4a9ff242dc1ac246c3.gif";
+						url = "https://i.gyazo.com/6150e8f32fe95d07b79384d126353797.gif";
 						break;
 					}
 					HttpDownloadUtility.downloadFile(url, signlink.findcachedir());

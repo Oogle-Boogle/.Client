@@ -11341,7 +11341,7 @@ public class RSInterface {
 		}
 		rsi.type = 2;
 		rsi.sprites[0] =Client.cacheSprite[1247];
-		rsi.sprites[1] = Client.cacheSprite[1248];
+		rsi.sprites[1] = Client.cacheSprite[1247];
 		rsi.sprites[0].drawOffsetX -=2.5;
 		rsi.sprites[0].drawOffsetY -=2;
 		rsi.sprites[1].drawOffsetX -=2.5;
@@ -11357,7 +11357,7 @@ public class RSInterface {
 		addHoveredButton(15205, 576, 576, 40, 40, 15206);
 		addSpriteLoader(49375, 1247);
 
-		addSpriteLoader(49376, 1248);
+		addSpriteLoader(49376, 1247);
 		
 		tab.child(23, 15201, 21, 210);
 		// tab.child(1, 15226, 95, 250);
