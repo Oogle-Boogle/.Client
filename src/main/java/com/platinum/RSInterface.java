@@ -11315,7 +11315,7 @@ public class RSInterface {
 		}
 		rsi.type = 2;
 		rsi.sprites[0] =Client.cacheSprite[1247];
-		rsi.sprites[1] = Client.cacheSprite[1248];
+		rsi.sprites[1] = Client.cacheSprite[1247];
 
 	}*/
 
@@ -11340,24 +11340,24 @@ public class RSInterface {
 			rsi.actions[2] = action3;
 		}
 		rsi.type = 2;
-		rsi.sprites[0] =Client.cacheSprite[1247];
-		rsi.sprites[1] = Client.cacheSprite[1247];
-		rsi.sprites[0].drawOffsetX -=2.5;
-		rsi.sprites[0].drawOffsetY -=2;
-		rsi.sprites[1].drawOffsetX -=2.5;
-		rsi.sprites[1].drawOffsetY -=2;
+		rsi.sprites[0] =Client.cacheSprite[1175];
+		rsi.sprites[1] = Client.cacheSprite[1175];
+		//rsi.sprites[0].drawOffsetX -=2.5;
+		//rsi.sprites[1].drawOffsetX -=2.5;
+		//rsi.sprites[1].drawOffsetY -=2;
 
 	}
 	public static void EquipmentTab(TextDrawingArea[] tda) {
 		RSInterface tab = interfaceCache[1644];
-		addToItemGroup(49374, 2, 1, 49, 10, true, "Operate", "Remove", null,true);
+		addToItemGroup(49374, 2, 1, 49, 10, true, "Remove", null, null,true);
 		addHoverButton(15201, 574, 574, 40, 40, "Show Equipment Screen", 0, 15202, 1);
 		addHoveredButton(15202, 577, 577, 40, 40, 15203);
 		addHoverButton(15204, 575, 575, 40, 40, "Items Kept on Death", 0, 15205, 1);
 		addHoveredButton(15205, 576, 576, 40, 40, 15206);
+
 		addSpriteLoader(49375, 1247);
 
-		addSpriteLoader(49376, 1247);
+		addSpriteLoader(49376, 1247); //What was it before do you remmeber?
 		
 		tab.child(23, 15201, 21, 210);
 		// tab.child(1, 15226, 95, 250);

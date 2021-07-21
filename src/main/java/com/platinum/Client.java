@@ -5065,7 +5065,7 @@ public class Client extends RSApplet {
 														 */
 													}
 
-													System.out.println("S is: " + s);
+													//System.out.println("S is: " + s);
 
 													menuActionName[menuActionRow] = s;
 													if (j4 == 0) {
@@ -5096,7 +5096,7 @@ public class Client extends RSApplet {
 										}
 
 										if (!ignoreExamine) {
-											System.out.println("trigger");
+											//System.out.println("trigger");
 											menuActionName[menuActionRow] = "Examine @lre@" + itemDef.name;
 											menuActionID[menuActionRow] = 1125;
 											menuActionCmd1[menuActionRow] = itemDef.id;
