@@ -6,9 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="few tings ;)">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="added runecrafting altar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CustomObjects.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CustomObjects.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CustomObjects.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CustomObjects.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626872416321</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added runecrafting altar">
+      <created>1626889118595</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626889118595</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,6 +92,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fix Client Run" />
     <MESSAGE value="few tings ;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="few tings ;)" />
+    <MESSAGE value="added runecrafting altar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added runecrafting altar" />
   </component>
 </project>
