@@ -34,7 +34,7 @@ public class CacheDownloader implements Runnable {
 	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".Plat" + File.separator; //https://www.dropbox.com/s/5feuet6jt35nqhq/EA.zip?dl=0
 	private static final String ZIP_URL = "https://www.dropbox.com/s/y18e6ut1hafjii5/.plat.zip?dl=1"; //https://www.dropbox.com/s/jp1pydd46cqj3ch/.empv11.zip?dl=0
 	private static final String VERSION_FILE = CACHE_PATH + "cache_version.txt";
-	private static final int CACHE_VERSION = 87;
+	private static final int CACHE_VERSION = 88;
 
 	private CacheDownloader.GUI g;
 

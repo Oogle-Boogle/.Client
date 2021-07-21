@@ -6,23 +6,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/Run_Client.xml" beforeDir="false" />
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Fix Client Run">
+      <change afterPath="$PROJECT_DIR$/platv1.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/3366503.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/FrimbLogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/House_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Small-checkmark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/cart_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/clientlogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/discord.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/forums.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/hiscores.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/teamspeak.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/3366503.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/FrimbLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/House_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/Small-checkmark.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/cart_icon.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/clientlogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/discord.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/forums.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/hiscores.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/images/teamspeak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/Jframe$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/Jframe$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/Jframe.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/Jframe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +40,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1vcgOSYj1x1crakY7HDhYbHoCzq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -53,9 +65,31 @@
       <option name="presentableId" value="Default" />
       <updated>1626866759261</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fix Client Run">
+      <created>1626866937760</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626866937760</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Fix Client Run" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Client Run" />
   </component>
 </project>
