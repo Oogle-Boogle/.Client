@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Run Client" type="Application" factoryName="Application">
+  <configuration default="false" name="Try this shit" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="com.platinum.Client" />
     <module name="Client" />
     <method v="2">
