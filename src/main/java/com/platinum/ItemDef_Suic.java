@@ -70,6 +70,11 @@ public class ItemDef_Suic {
 			itemDef.name = "DropRate Infusion Stone";
 			itemDef.actions = new String[] {"@red@Crack", null, null, null, null};
 			break;
+			case 6639:
+				itemDef.name = "Summon Mini-Me";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Summon";
+				break;
 		case 20260:
 			ItemDef.copyModel(itemDef, 15243);
 			itemDef.name = "BFG Shots";
