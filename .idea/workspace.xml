@@ -6,9 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="added runecrafting altar">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="mini me">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626889118595</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mini me">
+      <created>1626992600952</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626992600952</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +101,7 @@
     <MESSAGE value="Fix Client Run" />
     <MESSAGE value="few tings ;)" />
     <MESSAGE value="added runecrafting altar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added runecrafting altar" />
+    <MESSAGE value="mini me" />
+    <option name="LAST_COMMIT_MESSAGE" value="mini me" />
   </component>
 </project>

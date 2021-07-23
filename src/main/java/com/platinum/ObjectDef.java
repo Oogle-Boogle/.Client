@@ -256,6 +256,11 @@ public final class ObjectDef {
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "@yel@Teleport";
 		}
+		if(i == 3479) {
+			objectDef.name = "@red@AOE Instance Statue";
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "@yel@Instance";
+		}
 		if (i == 10091) {
 			objectDef.actions = new String[] { "Bait", null, null, null, null };
 			objectDef.name = "@yel@Rocktail spot";
