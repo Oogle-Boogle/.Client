@@ -259,7 +259,12 @@ public final class ObjectDef {
 		if(i == 3479) {
 			objectDef.name = "@red@AOE Instance Statue";
 			objectDef.actions = new String[5];
-			objectDef.actions[0] = "@yel@Instance";
+			objectDef.actions[1] = "@yel@Instance";
+		}
+		if (i == 6420) {
+			objectDef.name = "@yel@Medium chest";
+			objectDef.objectModelIDs = new int[] { 40288};
+			objectDef.actions[1] = "@whi@Check Rewards";
 		}
 		if (i == 10091) {
 			objectDef.actions = new String[] { "Bait", null, null, null, null };

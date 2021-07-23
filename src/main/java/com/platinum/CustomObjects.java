@@ -118,13 +118,15 @@ public class CustomObjects {
 			{-1, 2897, 4067, 0, 2}, //Starter key chest
 			{-1, 2899, 4067, 0, 2}, //Starter key chest
 			{172, 2897, 4067, 0, 0}, //Starter key chest
-			{6420, 2899, 4067, 0, 0}, //Starter key chest
+			{6420, 2899, 4067, 0, 0},
+			{3479, 3038, 2844, 0, 2},//Starter key chest
+			{3479, 3038, 2840, 0, 0},//Start
 			{54587, 2916, 4041, 0, 3}, //chest for raids new
 			{-1, 3188, 3211, 0, 2}, //delete
 			{-1, 3188, 3197, 0, 0},
 			{409, 2930, 4078, 0, 2}, //delete
 			{411, 2934, 4074, 0, 3},
-			
+			{-1, 3038, 2843, 0, 0},
 			
 			/**
 			 * Last man standing clientsided custom objects
