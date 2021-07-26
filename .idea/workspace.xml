@@ -6,10 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="mini me">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="nothing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface$CoinTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface$CoinTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface$SummonData.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface$SummonData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
