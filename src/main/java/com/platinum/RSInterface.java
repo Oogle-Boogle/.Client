@@ -228,7 +228,7 @@ public class RSInterface {
 	}
 	public static void itemCombiner(TextDrawingArea[] tda) {
 	      RSInterface tab = addInterface(43500);
-	      addSpriteLoader(43501, 1246);
+	      addSpriteLoader(43501, 1249);
 	      int interfaceId = 43502;
 
 	      int x;

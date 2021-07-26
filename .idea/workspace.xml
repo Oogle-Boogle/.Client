@@ -6,15 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="nothing">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="fuser interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader$GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/CacheDownloader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface$CoinTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface$CoinTab.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface$SummonData.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface$SummonData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/RSInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626992600952</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fuser interface">
+      <created>1627337710574</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1627337710574</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fuser interface">
+      <created>1627337743222</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1627337743222</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +115,7 @@
     <MESSAGE value="few tings ;)" />
     <MESSAGE value="added runecrafting altar" />
     <MESSAGE value="mini me" />
-    <option name="LAST_COMMIT_MESSAGE" value="mini me" />
+    <MESSAGE value="fuser interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="fuser interface" />
   </component>
 </project>
