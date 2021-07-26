@@ -32,10 +32,10 @@ public class CacheDownloader implements Runnable {
 	*/ // https://www.dropbox.com/s/kbtpb7pny1c1rlt/Cache.zip?dl=0 //https://www.dropbox.com/s/f20dqng4t68uqjd/Cache.zip?dl=0
 	//https://www.dropbox.com/s/whoxq7vbzshi5qr/BrutalPs.zip?dl=0 https://www.dropbox.com/s/38ye5sn88us4haq/Cache.zip?dl=0
 	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".Plat" + File.separator; //https://www.dropbox.com/s/5feuet6jt35nqhq/EA.zip?dl=0
-	private static final String ZIP_URL = "https://www.dropbox.com/s/q0o2e573uw4vlh1/plat.zip?dl=1"; //https://www.dropbox.com/s/jp1pydd46cqj3ch/.empv11.zip?dl=0
+	private static final String ZIP_URL = "https://www.dropbox.com/s/ssdy86hdke4bavu/.plat.zip?dl=1"; //https://www.dropbox.com/s/jp1pydd46cqj3ch/.empv11.zip?dl=0
 	
 	private static final String VERSION_FILE = CACHE_PATH + "cache_version.txt";
-	private static final int CACHE_VERSION = 89;
+	private static final int CACHE_VERSION = 90;
 
 	private CacheDownloader.GUI g;
 
