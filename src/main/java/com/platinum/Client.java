@@ -72,6 +72,7 @@ import javax.swing.event.ChangeListener;
 
 
 
+
 @SuppressWarnings("all")
 public class Client extends RSApplet {
 
@@ -16139,6 +16140,9 @@ public class Client extends RSApplet {
 		if (openInterfaceID == 5292) {
 			drawOnBankInterface();
 		}
+	     if(openInterfaceID == -1) {
+	            newRegularFont.drawBasicString(""+RSInterface.interfaceCache[53322].message, 380, 330, 0xFFFFFF, 0);
+	        }
 		// checkTutorialIsland();
 		if (coinToggle) {
 			int x = getCoinOrbX();
