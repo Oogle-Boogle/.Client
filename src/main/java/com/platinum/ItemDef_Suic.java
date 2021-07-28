@@ -4805,6 +4805,11 @@ public class ItemDef_Suic {
             itemDef.name = "@red@Defenders amulet";
             itemDef.actions[1] = "Wield";
             break;
+
+            case 11179:
+            	itemDef.name = "Aoe Instance Token";
+				itemDef.stackable = true;
+				break;
             
         case 15012:
             itemDef.name = "@red@Defenders ring (i)";

@@ -8,7 +8,12 @@
   <component name="ChangeListManager">
     <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="fuser interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef$CustomItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef$CustomItems.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/com/platinum/ItemDef_Suic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
