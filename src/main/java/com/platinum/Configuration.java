@@ -6,7 +6,7 @@ public class Configuration {
 	// ClientUpdater.getClientUpdater().getVersion();
 	public static final int CLIENT_VER = 15; // Client Version
 
-	public static final boolean LOCAL = false;
+	public static final boolean LOCAL = true;
 
 	public final static String HOST = LOCAL ? "127.0.0.1" : "127.0.0.1";
 	public final static String JAGGRAB_HOST = "104.161.43.45";

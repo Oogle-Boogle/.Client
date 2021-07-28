@@ -7116,7 +7116,7 @@ public class Client extends RSApplet {
 		if (anInt1011 > 0) {
 			anInt1011--;
 		}
-		for (int j = 0; j < 5; j++) {
+		for (int j = 0; j < 35; j++) { //Flub making client load 7x quicker.. < 35 used to be <5
 			if (!parsePacket()) {
 				break;
 			}
@@ -8837,14 +8837,9 @@ public class Client extends RSApplet {
 		 */
 
 		if (l == 516) {
-			// int x, y;
-			if (!menuOpen) {
-				x = super.saveClickX - 4;
-				y = super.saveClickY - 4;
-			} else {
-				x = interfaceId - 4;
-				y = slot - 4;
-			}
+			worldController.request2DTrace((!menuOpen ? super.saveClickY - 4 : y),
+					(!menuOpen ? super.saveClickX - 4 : x));
+
 			worldController.request2DTrace(y, x);
 		}
 
@@ -16886,7 +16881,7 @@ public class Client extends RSApplet {
 		}
 		if (!s.contains("Walk here") && getOption("tooltip_hover")) {
 			boolean add = getOption("cursors") && cursor > 0;
-			drawHoverBox(super.mouseX + (add ? 20 : 10), super.mouseY - (add ? 20 : 10), 0x101010, 0xFFFFFF, s);
+			//drawHoverBox(super.mouseX + (add ? 20 : 10), super.mouseY - (add ? 20 : 10), 0x101010, 0xFFFFFF, s);
 		}
 		if (menuActionRow > 2) {
 			s = s + "@whi@ / " + (menuActionRow - 2) + " more options";
