@@ -270,14 +270,14 @@ public class RSInterface {
 	         }
 	      }
 
-	      tab.child(22, 43534, 120, 77);
-	      tab.child(23, 43535, 345, 57);
-	      tab.child(24, 43536, 270, 28);
-	      tab.child(25, 43537, 257, 252);
-	      tab.child(26, 52704, 310, 249);
-	      tab.child(27, 52705, 310, 249);
-	      tab.child(28, 43541, 370, 258);
-	      tab.child(29, 51044, 375, 28);
+		tab.child(22, 43534, 120, 77);
+		tab.child(23, 43535, 345, 57);
+		tab.child(24, 43536, 270, 28);
+		tab.child(25, 43537, 265, 268);
+		tab.child(26, 52704, 313, 265);
+		tab.child(27, 52705, 313, 265);
+		tab.child(28, 43541, 370, 274);
+		tab.child(29, 51044, 375, 28);
 	      RSInterface scroll = addInterface(43600);
 	      scroll.scrollMax = 1200;
 	      scroll.height = 187;
