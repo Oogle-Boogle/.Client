@@ -72,7 +72,7 @@ public class Configuration {
 
 	public static final int statMenuColor = 0x0E8B8B;
 
-	public static String NAME = "Platinum - A True Unique Experience";
+	public static String NAME = "Platinum - A Truly Unique Experience";
 
 	public static boolean ctrlHoverHint = true;
 }
