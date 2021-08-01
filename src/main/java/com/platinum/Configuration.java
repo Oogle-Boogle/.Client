@@ -2,9 +2,9 @@ package com.platinum;
 
 public class Configuration {
 
-	// public static final double ACTUAL_CLIENT_VERSION =
-	// ClientUpdater.getClientUpdater().getVersion();
-	public static final int CLIENT_VER = 16; // Client Version
+	 //public static final double ACTUAL_CLIENT_VERSION =
+	 //ClientUpdater.getClientUpdater().getVersion();
+	public static final int CLIENT_VER = 15; // Client Version
 
 	public static final boolean LOCAL = true;
 
