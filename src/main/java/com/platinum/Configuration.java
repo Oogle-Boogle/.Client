@@ -4,15 +4,15 @@ public class Configuration {
 
 	// public static final double ACTUAL_CLIENT_VERSION =
 	// ClientUpdater.getClientUpdater().getVersion();
-	public static final int CLIENT_VER = 15; // Client Version
+	public static final int CLIENT_VER = 16; // Client Version
 
 	public static final boolean LOCAL = true;
 
-	public final static String HOST = LOCAL ? "127.0.0.1" : "127.0.0.1";
+	public final static String HOST = LOCAL ? "104.161.43.45" : "104.161.43.45";
 	public final static String JAGGRAB_HOST = "104.161.43.45";
     public static String SERVER_NAME = "Platinum";
 	public final static int PORT = 43594;
-	public final static String CLIENT_NAME = "Platinum v1.6";
+	public final static String CLIENT_NAME = "Platinum v1.8";
 
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
