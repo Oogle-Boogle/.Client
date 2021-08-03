@@ -322,7 +322,7 @@ public final class Player extends Entity {
 				}
 			}
 			
-			System.out.println("Rendering for: " + Arrays.toString(equipment));
+			//System.out.println("Rendering for: " + Arrays.toString(equipment));
 
 			if (fetchModels) {
 				if (aLong1697 != -1L)
