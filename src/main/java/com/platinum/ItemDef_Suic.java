@@ -39,8 +39,8 @@ public class ItemDef_Suic {
 
 		switch (id) {
 		case 6950:
-			itemDef.name = "@yel@Raids Orb";
-			itemDef.actions = new String[] {"@red@Check Invites", null, null, "@red@Create Party", null};
+			itemDef.name = "Raids Orb";
+			itemDef.actions = new String[] {"Check Invites", null, null, "Create Party", null};
 			break;
 		case 14559:
 			itemDef.name = "Rex Whip";
@@ -68,7 +68,7 @@ public class ItemDef_Suic {
 			break;
 		case 12848:
 			itemDef.name = "DropRate Infusion Stone";
-			itemDef.actions = new String[] {"@red@Crack", null, null, null, null};
+			itemDef.actions = new String[] {"Crack", null, null, null, null};
 			break;
 			case 6639:
 				itemDef.name = "Summon Mini-Me";
@@ -220,27 +220,27 @@ public class ItemDef_Suic {
             break;
 		
 		case 18955:
-			itemDef.name = "@blu@Hurricane Boots";
+			itemDef.name = "Hurricane Boots";
 			break;
 			
 		case 4001:
-			itemDef.name = "@blu@Hurricane Helmet";
+			itemDef.name = "Hurricane Helmet";
 			break;
 			
 		case 3999:
-			itemDef.name = "@blu@Hurricane Platebody";
+			itemDef.name = "Hurricane Platebody";
 			break;
 			
 		case 4000:
-			itemDef.name = "@blu@Hurricane Platelegs";
+			itemDef.name = "Hurricane Platelegs";
 			break;
 			
 		case 18956:
-			itemDef.name = "@blu@Hurricane Gloves";
+			itemDef.name = "Hurricane Gloves";
 			break;
 			
 		case 18957:
-			itemDef.name = "@blu@Hurricane Whip";
+			itemDef.name = "Hurricane Whip";
 			break;
 			
 			
@@ -248,7 +248,7 @@ public class ItemDef_Suic {
         case 13094:
             itemDef.modelID = 40226;
             itemDef.stackable = false;
-            itemDef.name = "@bla@H'ween Scythe";
+            itemDef.name = "H'ween Scythe";
             itemDef.description = "Trick or Treat";
             itemDef.maleEquip1 = 40226;
             itemDef.femaleEquip1 = 40226;
@@ -261,7 +261,7 @@ public class ItemDef_Suic {
         case 13095:
             itemDef.modelID = 40225;
             itemDef.stackable = false;
-            itemDef.name = "@bla@H'ween Aura";
+            itemDef.name = "H'ween Aura";
             itemDef.description = "Trick or Treat";
             itemDef.maleEquip1 = 40225;
             itemDef.femaleEquip1 = 40225;
@@ -296,7 +296,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23991;
 			itemDef.femaleEquip1 = 23991;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@yel@Yellow Super Saiyan Aura";
+			itemDef.name = "Yellow Super Saiyan Aura";
 			break;
 			
 			
@@ -305,7 +305,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40160;
 			itemDef.femaleEquip1 = 40160;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Skiller Flex";
+			itemDef.name = "Skiller Flex";
 			break;
 			
 		case 5049:
@@ -313,7 +313,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40161;
 			itemDef.femaleEquip1 = 40161;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Elegant black hat";
+			itemDef.name = "Elegant black hat";
 			break;
 			
 		case 5050:
@@ -321,7 +321,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40163;
 			itemDef.femaleEquip1 = 40163;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Elegant black shirt";
+			itemDef.name = "Elegant black shirt";
 			break;
 			
 		case 5051:
@@ -329,7 +329,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40165;
 			itemDef.femaleEquip1 = 40165;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@elegant black trousers";
+			itemDef.name = "elegant black trousers";
 			break;
 			
 		case 4804:
@@ -337,7 +337,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40150;
 			itemDef.femaleEquip1 = 40150;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@M118i's Mask";
+			itemDef.name = "M118i's Mask";
 			break;
 			
 		case 4805:
@@ -345,7 +345,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40152;
 			itemDef.femaleEquip1 = 40152;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@M118i's Top";
+			itemDef.name = "M118i's Top";
 			break;
 			
 		case 4806:
@@ -353,7 +353,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40154;
 			itemDef.femaleEquip1 = 40154;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@M118i's Leggings";
+			itemDef.name = "M118i's Leggings";
 			break;
 			
 		case 4807:
@@ -361,7 +361,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40156;
 			itemDef.femaleEquip1 = 40156;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@M118i's Gloves";
+			itemDef.name = "M118i's Gloves";
 			break;
 			
 		case 4808:
@@ -369,7 +369,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40158;
 			itemDef.femaleEquip1 = 40158;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@M118i's Boots";
+			itemDef.name = "M118i's Boots";
 			break;
 			
 			
@@ -379,7 +379,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23992;
 			itemDef.femaleEquip1 = 23992;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Black Super Saiyan Aura";
+			itemDef.name = "Black Super Saiyan Aura";
 			break;
 			
 		case 3309:
@@ -387,13 +387,13 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23993;
 			itemDef.femaleEquip1 = 23993;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@red@Red Super Saiyan Aura";
+			itemDef.name = "Red Super Saiyan Aura";
 			break;
 			
 		case 6828:
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@gre@Claim";
-			itemDef.name = "@or2@Imbued Package";
+            itemDef.actions[2] = "Claim";
+			itemDef.name = "Imbued Package";
 			break;
 			
 			
@@ -403,7 +403,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23996;
 			itemDef.femaleEquip1 = 23996;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@mag@Skotizos @bla@Mace";
+			itemDef.name = "Skotizos Mace";
 			break;
 			
 		case 3312:
@@ -411,7 +411,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23998;
 			itemDef.femaleEquip1 = 23998;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Slayer Cape@whi@(2% DR)";
+			itemDef.name = "Slayer Cape(2% DR)";
 			break;
 		case 3317:
 			itemDef.name = "2% DR Increasing Ring";
@@ -422,7 +422,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23999;
 			itemDef.femaleEquip1 = 23999;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Corrupt Platebody";
+			itemDef.name = "Corrupt Platebody";
 			break;
 			
 		case 3314:
@@ -430,7 +430,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24001;
 			itemDef.femaleEquip1 = 24001;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Corrupt Platelegs";
+			itemDef.name = "Corrupt Platelegs";
 			break;
 			
 		
@@ -439,7 +439,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24003;
 			itemDef.femaleEquip1 = 24003;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Corrupt Boots";
+			itemDef.name = "Corrupt Boots";
 			break;
 			
 			
@@ -448,7 +448,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24005;
 			itemDef.femaleEquip1 = 24005;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Corrupt Gloves";
+			itemDef.name = "Corrupt Gloves";
 			break;
 			
 			
@@ -475,15 +475,15 @@ public class ItemDef_Suic {
 			
 		case 605:
 			ItemDef.copyModel(itemDef, 4078);
-			itemDef.name = "@bla@Halloween @or2@Event @bla@Key@0r2@(1)";
+			itemDef.name = "Halloween Event Key(1)";
 			break;
 			
 		case 1590:
-			itemDef.name = "@bla@Halloween @or2@Event @bla@Key@0r2@(2)";
+			itemDef.name = "Halloween Event Key(2)";
 			break;
 			
 		case 993:
-			itemDef.name = "@bla@Halloween @or2@Event @bla@Key@0r2@(3)";
+			itemDef.name = "Halloween Event Key(3)";
 			break;
 			
 		case 3640:
@@ -496,7 +496,7 @@ public class ItemDef_Suic {
 			itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
 			break;
 		case 5042:
-			itemDef.name = "@red@Conqueror Helmet";
+			itemDef.name = "Conqueror Helmet";
 			itemDef.modelID = 40190;
 			itemDef.maleEquip1 = 40191;
 			itemDef.femaleEquip1 = 40191;
@@ -506,7 +506,7 @@ public class ItemDef_Suic {
 			
 			
 		case 5043:
-			itemDef.name = "@red@Conqueror Chestplate";
+			itemDef.name = "Conqueror Chestplate";
 			itemDef.modelID = 40192;
 			itemDef.maleEquip1 = 40193;
 			itemDef.femaleEquip1 = 40193;
@@ -515,7 +515,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5044:
-			itemDef.name = "@red@Conqueror Platelegs";
+			itemDef.name = "Conqueror Platelegs";
 			itemDef.modelID = 40194;
 			itemDef.maleEquip1 = 40195;
 			itemDef.femaleEquip1 = 40195;
@@ -524,7 +524,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5045:
-			itemDef.name = "@red@Conqueror Gloves";
+			itemDef.name = "Conqueror Gloves";
 			itemDef.modelID = 40196;
 			itemDef.maleEquip1 = 40197;
 			itemDef.femaleEquip1 = 40197;
@@ -533,7 +533,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5046:
-			itemDef.name = "@red@Conqueror Boots";
+			itemDef.name = "Conqueror Boots";
 			itemDef.modelID = 40198;
 			itemDef.maleEquip1 = 40198;
 			itemDef.femaleEquip1 = 40198;
@@ -547,7 +547,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24015;
             itemDef.femaleEquip1 = 24015;
-            itemDef.name = "@or2@Omega Helmet";
+            itemDef.name = "Omega Helmet";
             break;
             
         case 3811:
@@ -556,7 +556,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24016;
             itemDef.femaleEquip1 = 24016;
-            itemDef.name = "@or2@Omega Platebody";
+            itemDef.name = "Omega Platebody";
             break;
             
         case 3812:
@@ -565,7 +565,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24017;
             itemDef.femaleEquip1 = 24017;
-            itemDef.name = "@or2@Omega Platelegs";
+            itemDef.name = "Omega Platelegs";
             break;
             
         case 3813:
@@ -574,7 +574,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24018;
             itemDef.femaleEquip1 = 24018;
-            itemDef.name = "@or2@Omega Gloves";
+            itemDef.name = "Omega Gloves";
             break;
             
         case 3814:
@@ -583,7 +583,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24019;
             itemDef.femaleEquip1 = 24019;
-            itemDef.name = "@or2@Omega Boots";
+            itemDef.name = "Omega Boots";
             break;
             
         case 3815:
@@ -592,11 +592,11 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 24020;
             itemDef.femaleEquip1 = 24020;
-            itemDef.name = "@or2@Omega Wings";
+            itemDef.name = "Omega Wings";
             break;
 			
 		case 15375:
-			itemDef.name = "@yel@Chance @bla@Box";
+			itemDef.name = "Chance Box";
 			ItemDef.copyModel(itemDef, 3912);
 			changeTexture(id, 63, 55);
 			break;
@@ -607,7 +607,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24007;
 			itemDef.femaleEquip1 = 24007;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@Corrupt Helmet";
+			itemDef.name = "Corrupt Helmet";
 			break;
 			
 		case 3310:
@@ -615,7 +615,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23994;
 			itemDef.femaleEquip1 = 23994;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@cya@Blue Super Saiyan Aura";
+			itemDef.name = "Blue Super Saiyan Aura";
 			break;
 			
 			
@@ -759,7 +759,7 @@ public class ItemDef_Suic {
 		
 		
 		case 3820:
-            itemDef.name = "@red@Lucid Full Helm";
+            itemDef.name = "Lucid Full Helm";
 			itemDef.modelZoom = 948;
 			itemDef.rotationX = 145;
 			itemDef.rotationY = 100;
@@ -927,14 +927,14 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 1000;
 			itemDef.rotationX = 235;
 			itemDef.rotationY = 100;
-			itemDef.name = "@red@Kings boots";
+			itemDef.name = "Kings boots";
 			break;
 		
 		case 4764:
 			itemDef.modelZoom = 827;
 			itemDef.rotationX = 1864;
 			itemDef.rotationY = 206;
-			itemDef.name = "@red@Kings gloves";
+			itemDef.name = "Kings gloves";
 			break;
 
 		case 3069:
@@ -956,7 +956,7 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 1812;
 			itemDef.rotationX = 1483;
 			itemDef.rotationY = 438;
-			itemDef.name = "@Cya@Demonic Frost blade";
+			itemDef.name = "Demonic Frost blade";
 			break;
 			
         case 2760:
@@ -971,7 +971,7 @@ public class ItemDef_Suic {
 			changeTexture(id, 57, 73);
             itemDef.femaleEquip1 = 28389;
 			itemDef.animateInventory = true;
-            itemDef.name = "@bla@Exodens Blade";
+            itemDef.name = "Exodens Blade";
             break;
 		
 		case 5079:
@@ -1046,7 +1046,7 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 1890; // the zoom u chose in editor
 			itemDef.rotationX = 478; // the rotation x u chose in editor
 			itemDef.rotationY = 324; 
-			itemDef.name = "@red@Kings Sword";
+			itemDef.name = "Kings Sword";
 			break;
 		
 		case 5133:
@@ -1095,7 +1095,7 @@ public class ItemDef_Suic {
 			break;
 		
 		case 5132:
-            itemDef.name = "@mag@Platinum @bla@Minigun)";
+            itemDef.name = "Platinum Minigun)";
 			itemDef.modelZoom = 2116; // the zoom u chose in editor
 			itemDef.rotationX = 1760; // the rotation x u chose in editor
 			itemDef.rotationY = 533; 
@@ -1124,40 +1124,40 @@ public class ItemDef_Suic {
 			break; // at every case end, just add break;
 		
 		case 17911: //vip helm
-			itemDef.name = "@red@Hellfire Helm";
+			itemDef.name = "Hellfire Helm";
 			break;
 			
 		case 17908: //vip platebody
-			itemDef.name = "@red@Hellfire Platebody";
+			itemDef.name = "Hellfire Platebody";
 			break;
 			
 			
 		case 14705: //enchanted dust
-			itemDef.name = "@cya@Enchanted Dust";
+			itemDef.name = "Enchanted Dust";
 			break;
 			
 		case 17909: //vip platelegs
-			itemDef.name = "@red@Hellfire Platelegs";
+			itemDef.name = "Hellfire Platelegs";
 			break;
 			
 		case 911: //vip spirit shield
-			itemDef.name = "@red@Vip spirit shield";
+			itemDef.name = "Vip spirit shield";
 			break;
 			
 		case 3986: //vip fire cape
-			itemDef.name = "@red@Vip Fire Cape";
+			itemDef.name = "Vip Fire Cape";
 			break;
 			
 		case 17151: //sparta gloves
-			itemDef.name = "@blu@DarkBlue Gloves";
+			itemDef.name = "DarkBlue Gloves";
 			break;
 			
 		case 15026: //primordial gloves
-			itemDef.name = "@blu@Primordial gloves";
+			itemDef.name = "Primordial gloves";
 			break;
 			
 		case 15032: //primordial gloves elite
-			itemDef.name = "@gre@Hulk's Gloves";
+			itemDef.name = "Hulk's Gloves";
 			break;
 			
 		case 5054:
@@ -1167,23 +1167,23 @@ public class ItemDef_Suic {
 			break;
 			
 		case 12629: //Beast Range Gloves
-			itemDef.name = "@gre@Beast Range Gloves";
+			itemDef.name = "Beast Range Gloves";
 			break;
 			
 		case 18347: //ranger gloves
-			itemDef.name = "@gre@Ranger gloves";
+			itemDef.name = "Ranger gloves";
 			break;
 			
 		case 19033: //glaiven gloves
-			itemDef.name = "@gre@Glaiven gloves!";
+			itemDef.name = "Glaiven gloves!";
 			break;
 			
 		case 11292: //gold Range boxing gloves
-			itemDef.name = "@gre@Gold Range boxing gloves";
+			itemDef.name = "Gold Range boxing gloves";
 			break;
 		
 		case 5209:
-			itemDef.name = "@red@Infartico cape";
+			itemDef.name = "Infartico cape";
 			itemDef.modelID = 99205;
 			itemDef.maleEquip1 = 99205;
 			itemDef.femaleEquip1 = 99205;
@@ -1202,7 +1202,7 @@ public class ItemDef_Suic {
              itemDef.femaleEquip1 = 44257;
  			itemDef.originalModelColors = new int[] { 40 };
  			itemDef.newModelColor = new int[] { 61 };
-             itemDef.name = "@or2@Noxious Platebody";
+             itemDef.name = "Noxious Platebody";
              break;
              
              
@@ -1214,7 +1214,7 @@ public class ItemDef_Suic {
              itemDef.femaleEquip1 = 44259;
  			itemDef.originalModelColors = new int[] { 40 };
  			itemDef.newModelColor = new int[] { 61 };
-             itemDef.name = "@or2@Noxious PlateLegs";
+             itemDef.name = "Noxious PlateLegs";
              break;
              
              
@@ -1226,7 +1226,7 @@ public class ItemDef_Suic {
              itemDef.femaleEquip1 = 44261;
  			itemDef.originalModelColors = new int[] { 40 };
  			itemDef.newModelColor = new int[] { 61 };
-             itemDef.name = "@or2@Noxious Blade";
+             itemDef.name = "Noxious Blade";
              break;
              
          case 4797:
@@ -1237,7 +1237,7 @@ public class ItemDef_Suic {
              itemDef.femaleEquip1 = 44255;
  			itemDef.originalModelColors = new int[] { 40 };
  			itemDef.newModelColor = new int[] { 61 };
-             itemDef.name = "@or2@Noxious Facemask";
+             itemDef.name = "Noxious Facemask";
              break;
 
              
@@ -1248,7 +1248,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 24023;
              itemDef.femaleEquip1 = 24023;
-             itemDef.name = "@or2@Galvek Boots";
+             itemDef.name = "Galvek Boots";
              break;
              
              
@@ -1258,7 +1258,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 24025;
              itemDef.femaleEquip1 = 24025;
-             itemDef.name = "@or2@Galvek Gloves";
+             itemDef.name = "Galvek Gloves";
              break;
              
              
@@ -1268,7 +1268,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 24027;
              itemDef.femaleEquip1 = 24027;
-             itemDef.name = "@or2@Galvek Helmet";
+             itemDef.name = "Galvek Helmet";
              break;
              
          case 6446:
@@ -1277,7 +1277,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 24029;
              itemDef.femaleEquip1 = 24029;
-             itemDef.name = "@or2@Galvek Platelegs";
+             itemDef.name = "Galvek Platelegs";
              break;
              
          case 6447:
@@ -1286,7 +1286,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 24031;
              itemDef.femaleEquip1 = 24031;
-             itemDef.name = "@or2@Galvek platebody";
+             itemDef.name = "Galvek platebody";
              break;
              
          case 6449:
@@ -1295,7 +1295,7 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 40011;
              itemDef.femaleEquip1 = 40011;
-             itemDef.name = "@cya@SSGJ hair";
+             itemDef.name = "SSGJ hair";
              break;
              
          case 6450:
@@ -1348,11 +1348,11 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wield";
              itemDef.maleEquip1 = 40022;
              itemDef.femaleEquip1 = 40022;
-             itemDef.name = "@or2@OP Investor Cape";
+             itemDef.name = "OP Investor Cape";
              break;
              
    		case 3949:
- 			itemDef.name = "Slayer helmet(@cya@Cyan)";
+ 			itemDef.name = "Slayer helmet(Cyan)";
  			itemDef.modelID = 44288;
  			itemDef.maleEquip1 = 44289;
  			itemDef.femaleEquip1 = 44289;
@@ -1361,7 +1361,7 @@ public class ItemDef_Suic {
  			itemDef.stackable = false;
  			break;
    		case 3950:
- 			itemDef.name = "Slayer helmet(@gre@Green)";
+ 			itemDef.name = "Slayer helmet(Green)";
  			itemDef.modelID = 44290;
  			itemDef.maleEquip1 = 44291;
  			itemDef.femaleEquip1 = 44291;
@@ -1370,7 +1370,7 @@ public class ItemDef_Suic {
  			itemDef.stackable = false;
  			break;
    		case 3952:
- 			itemDef.name = "Slayer helmet(@blu@Blue)";
+ 			itemDef.name = "Slayer helmet(Blue)";
  			itemDef.modelID = 44292;
  			itemDef.maleEquip1 = 44293;
  			itemDef.femaleEquip1 = 44293;
@@ -1509,7 +1509,7 @@ public class ItemDef_Suic {
              break;
          
 		case 6320:
-			itemDef.name = "@or2@Blade of Mercy";
+			itemDef.name = "Blade of Mercy";
 			itemDef.modelID = 24021;
 			itemDef.maleEquip1 = 24022;
 			itemDef.femaleEquip1 = 24022;
@@ -1534,7 +1534,7 @@ public class ItemDef_Suic {
 
 		case 4779:
 			recolorItem(itemDef, 4777, new int[] { 36799 }, new int[] { 729 });
-			itemDef.name = "@red@Red Darklord Cape";
+			itemDef.name = "Red Darklord Cape";
 			break;
 		case 15566:
 			itemDef.modelID = 94073;
@@ -1542,14 +1542,14 @@ public class ItemDef_Suic {
 			itemDef.femaleEquip1 = 94073;
 			itemDef.originalModelColors = new int[] { 57 };
 			itemDef.newModelColor = new int[] { 74 };
-			itemDef.name = "@red@Owner Cape";
+			itemDef.name = "Owner Cape";
 			break;
 			
 		case 3267:
 			itemDef.modelID = 23478;
 			itemDef.maleEquip1 = 23478;
 			itemDef.femaleEquip1 = 23478;
-			itemDef.name = "@gre@Opulant Cape";
+			itemDef.name = "Opulant Cape";
 			itemDef.modelZoom = 877;
 			itemDef.rotationX = 200;
 			itemDef.rotationY = 200;
@@ -1560,7 +1560,7 @@ public class ItemDef_Suic {
 			itemDef.modelID = 68825;
 			itemDef.maleEquip1 = 68825;
 			itemDef.femaleEquip1 = 68825;
-			itemDef.name = "@red@Ring of Torture";
+			itemDef.name = "Ring of Torture";
             itemDef.actions[1] = "Wield";
             itemDef.modelZoom = 500;
 			itemDef.rotationY = 100;
@@ -1570,7 +1570,7 @@ public class ItemDef_Suic {
 			itemDef.modelID = 75084;
 			itemDef.maleEquip1 = 75084;
 			itemDef.femaleEquip1 = 75084;
-			itemDef.name = "@red@Leafy Wings";
+			itemDef.name = "Leafy Wings";
             itemDef.actions[1] = "Wield";
             itemDef.modelZoom = 2000;
 			break;
@@ -1581,7 +1581,7 @@ public class ItemDef_Suic {
 			itemDef.femaleEquip1 = 83233;
             itemDef.actions[1] = "Wield";
             itemDef.modelZoom = 2000;
-			itemDef.name = "@red@Immortal Blade";
+			itemDef.name = "Immortal Blade";
 			break;
 			
 		case 2543:
@@ -1589,7 +1589,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23480;
 			itemDef.femaleEquip1 = 23480;
             itemDef.actions[1] = "Wield";
-			itemDef.name = "@red@Deziqn's Tri-blade";
+			itemDef.name = "Deziqn's Tri-blade";
 			itemDef.rotationY = 200;
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
@@ -1600,7 +1600,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23482;
 			itemDef.femaleEquip1 = 23482;
             itemDef.actions[1] = "Wield";
-			itemDef.name = "@red@green new blade";
+			itemDef.name = "green new blade";
 			break;
 			
 		case 1666:
@@ -1608,28 +1608,28 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23484;
 			itemDef.femaleEquip1 = 23484;
             itemDef.actions[1] = "Wield";
-			itemDef.name = "@meg@Lollipop";
+			itemDef.name = "Lollipop";
 			break;
 			
 			
 		case 4781:
 			recolorItem(itemDef, 3821, new int[] {63015, 64166, 682, 801}, new int[] {22054, 22054, 22054, 22054});
-			itemDef.name = "@gre@Fate's Justiciar Body";
+			itemDef.name = "Fate's Justiciar Body";
 			break;
 			
 		case 4782:
 			recolorItem(itemDef, 3822, new int[] {64172, 64020, 534, 64038}, new int[] {22054, 22054, 22054, 22054});
-			itemDef.name = "@gre@Fate's Justiciar Legs";
+			itemDef.name = "Fate's Justiciar Legs";
 			break;
 			
 		case 4783:
 			recolorItem(itemDef, 3820, new int[] {64160, 64046, 64169}, new int[] {22054, 22054, 22054});
-			itemDef.name = "@gre@Fate's Justiciar Helm";
+			itemDef.name = "Fate's Justiciar Helm";
 			break;
 			
 		case 18387:
 			recolorItem(itemDef, 3820, new int[] {64160, 64046, 64169}, new int[] {66034, 66034, 66034});
-			itemDef.name = "@gre@Vapor Helm";
+			itemDef.name = "Vapor Helm";
 			break;
 			
         case 899:
@@ -1645,7 +1645,7 @@ public class ItemDef_Suic {
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
 	         itemDef.actions[1] = "Wear";
-			 itemDef.actions[2] = "<col=C3C0B2>@whi@Dissolve Into Orbs Into Orbs";
+			 itemDef.actions[2] = "<col=C3C0B2>Dissolve Into Orbs Into Orbs";
 	         itemDef.actions[4] = "Drop";
 	         
 	         break;
@@ -1796,28 +1796,28 @@ public class ItemDef_Suic {
 	         
 		case 18390:
 			recolorItem(itemDef, 3657, new int[] {70830, 70830, 70830}, new int[] {22114, 22114, 22114});
-			itemDef.name = "@gre@WTF Boots";
+			itemDef.name = "WTF Boots";
 			break;
 			
 		case 18388:
 			recolorItem(itemDef, 3822, new int[] {64172, 64020, 534, 64038}, new int[] {66034, 66034, 66034, 66034});
-			itemDef.name = "@gre@Vapor Legs";
+			itemDef.name = "Vapor Legs";
 			break;
 			
 		case 18389:
 			recolorItem(itemDef, 3821, new int[] {64172, 64020, 534, 64038}, new int[] {66034, 66034, 66034, 66034});
-			itemDef.name = "@gre@Vapor Body";
+			itemDef.name = "Vapor Body";
 			break;
 			
 		case 4784:
 			recolorItem(itemDef, 4777, new int[] {36799}, new int[] {22054});
-			itemDef.name = "@gre@Fate's Darklord Cape";
+			itemDef.name = "Fate's Darklord Cape";
 			break;
 
 		case 4780:
 			recolorItem(itemDef, 19886, new int[] { 7254, 7278, 7258, 7250, 7233, 7454, 7248, 7218, 7243, 7223 },
 					new int[] { 22054, 22054, 22054, 22054, 22054, 22054, 22054, 22054, 22054, 22054 });
-			itemDef.name = "@gre@Fate's Collector Necklace";
+			itemDef.name = "Fate's Collector Necklace";
 			break;
 
 		case 5174:
@@ -1835,13 +1835,13 @@ public class ItemDef_Suic {
 
 		case 5176:
 			ItemDef.copyModel(itemDef, 13887);
-			itemDef.name = "@bla@Onyx Vesta Chainbody";
+			itemDef.name = "Onyx Vesta Chainbody";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5177:
 			ItemDef.copyModel(itemDef, 13893);
-			itemDef.name = "@bla@Onyx Vesta Plateskirt";
+			itemDef.name = "Onyx Vesta Plateskirt";
 			itemDef.animateInventory = true;
 			break;
 
@@ -1907,40 +1907,40 @@ public class ItemDef_Suic {
 
 		case 19119:
 			ItemDef.copyModel(itemDef, 3941);
-			itemDef.name = "@or2@Justin's Scythe";
+			itemDef.name = "Justin's Scythe";
 			changeTexture(id, 40, 68);
 			break;
 
 		case 18683:
 			ItemDef.copyModel(itemDef, 3941);
-			itemDef.name = "@or2@Demonic Olm Scythe";
+			itemDef.name = "Demonic Olm Scythe";
 			changeTexture(id, 40, 70);
 			break;
 			
 		case 18748:
 			ItemDef.copyModel(itemDef, 3092);
-			itemDef.name = "@or2@Demonic Olm Cape(2%Dr)";
+			itemDef.name = "Demonic Olm Cape(2%Dr)";
 			changeTexture(id, 40, 70);
 			itemDef.animateInventory = true;
 			break;
 			
 		case 10902:
 			ItemDef.copyModel(itemDef, 3092);
-			itemDef.name = "@cya@Dreamers Cape@whi@(50%DR)";
+			itemDef.name = "Dreamers Cape";
 			changeTexture(id, 57, 62);
 			itemDef.animateInventory = true;
 			break;
 			
 		case 3988:
 			ItemDef.copyModel(itemDef, 3912);
-			itemDef.name = "@bla@Store Box";
+			itemDef.name = "Store Box";
 			changeTexture(id, 63, 52);
 			itemDef.animateInventory = true;
 			break;
 
 		case 3989:
 			ItemDef.copyModel(itemDef, 3912);
-			itemDef.name = "@bla@Random DR Item Box";
+			itemDef.name = "Random DR Item Box";
 			changeTexture(id, 63, 73);
 			itemDef.animateInventory = true;
 			break;
@@ -1990,7 +1990,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 44282;
             itemDef.femaleEquip1 = 44282;
-            itemDef.name = "@or2@Detrimental Minigun";
+            itemDef.name = "Detrimental Minigun";
             break;
 			
 		case 15654:
@@ -2007,7 +2007,7 @@ public class ItemDef_Suic {
 			
 		case 6199:
 			ItemDef.copyModel(itemDef, 3912);
-			itemDef.name = "@whi@Advanced Box";
+			itemDef.name = "Advanced Box";
 			changeTexture(id, 63, 66);
 			itemDef.animateInventory = true;
 			break;
@@ -2028,7 +2028,7 @@ public class ItemDef_Suic {
             break;
 		case 5173:
 			ItemDef.copyModel(itemDef, 18865);
-			itemDef.name = "@or2@Hellfire Shadow Sword";
+			itemDef.name = "Hellfire Shadow Sword";
 			itemDef.animateInventory = true;
 			itemDef.modelZoom = 1812;
 			itemDef.rotationX = 1483;
@@ -2038,7 +2038,7 @@ public class ItemDef_Suic {
 
 		case 5167:
 			ItemDef.copyModel(itemDef, 20054);
-			itemDef.name = "@or2@Dzanth's Lucky Ring";
+			itemDef.name = "Dzanth's Lucky Ring";
 			itemDef.animateInventory = true;
 			break;
 			
@@ -2071,11 +2071,11 @@ public class ItemDef_Suic {
 			
 			
 		case 6830:
-			itemDef.name = "@red@Supreme Package";
+			itemDef.name = "Supreme Package";
 			itemDef.actions = new String[] { null, "Open", null, null, "Drop" };
 			break;
         case 9503:
-            itemDef.name = "@cya@Blessed Amulet(5%DR)";
+            itemDef.name = "Blessed Amulet(5%DR)";
 			ItemDef.copyModel(itemDef, 15418);
             break;
             
@@ -2083,13 +2083,13 @@ public class ItemDef_Suic {
 
 		case 5169:
 			ItemDef.copyModel(itemDef, 13899);
-			itemDef.name = "@bla@Onyx Longsword";
+			itemDef.name = "Onyx Longsword";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5171:
 			ItemDef.copyModel(itemDef, 18971);
-			itemDef.name = "@bla@Onyx Supreme Bow";
+			itemDef.name = "Onyx Supreme Bow";
 			itemDef.animateInventory = true;
 			break;
 			
@@ -2127,37 +2127,37 @@ public class ItemDef_Suic {
 			
 		case 5186:
 			ItemDef.copyModel(itemDef, 6619);
-			itemDef.name = "@bla@Rex Boots";
+			itemDef.name = "Rex Boots";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5187:
 			ItemDef.copyModel(itemDef, 20022);
-			itemDef.name = "@bla@Rex Gloves";
+			itemDef.name = "Rex Gloves";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5188:
 			ItemDef.copyModel(itemDef, 6619);
-			itemDef.name = "@bla@Onyx Boots";
+			itemDef.name = "Onyx Boots";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5189:
 			ItemDef.copyModel(itemDef, 20022);
-			itemDef.name = "@bla@Onyx Range Gloves";
+			itemDef.name = "Onyx Range Gloves";
 			itemDef.animateInventory = true;
 			break;
 			
 		case 19468:
 			ItemDef.copyModel(itemDef, 17293);
-			itemDef.name = "@bla@Staff of Envy";
+			itemDef.name = "Staff of Envy";
 			itemDef.animateInventory = true;
 			break;
 
 		case 5172:
 			ItemDef.copyModel(itemDef, 18931);
-			itemDef.name = "@bla@Onyx Supreme Crossbow";
+			itemDef.name = "Onyx Supreme Crossbow";
 			itemDef.animateInventory = true;
 			itemDef.modelZoom = 1966;
 			itemDef.rotationX = 341;
@@ -2510,7 +2510,7 @@ public class ItemDef_Suic {
 			
 			
   		case 5112:
-			itemDef.name = "@whi@Angelic Helmet";
+			itemDef.name = "Angelic Helmet";
 			itemDef.modelID = 40070;
 			itemDef.maleEquip1 = 40070;
 			itemDef.femaleEquip1 = 40070;
@@ -2521,11 +2521,11 @@ public class ItemDef_Suic {
 		case 4691:
 			ItemDef.copyModel(itemDef, 10874);
 			itemDef.rotationY = 232;
-			itemDef.name = "@gre@Colorful @blu@Tokens";
+			itemDef.name = "Colorful Tokens";
 			break;
 			
 		case 5113:
-			itemDef.name = "@whi@Angelic Legs";
+			itemDef.name = "Angelic Legs";
 			itemDef.modelID = 40071;
 			itemDef.maleEquip1 = 40072;
 			itemDef.femaleEquip1 = 40072;
@@ -2537,28 +2537,28 @@ public class ItemDef_Suic {
 			itemDef.modelID = 40088;
 			itemDef.maleEquip1 = 40089;
 			itemDef.femaleEquip1 = 40089;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Sword";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Sword";
 			break;
 			
 		case 8655:
 			itemDef.modelID = 40090;
 			itemDef.maleEquip1 = 40091;
 			itemDef.femaleEquip1 = 40091;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Bow";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Bow";
 			break;
 			
 		case 8656:
 			itemDef.modelID = 40092;
 			itemDef.maleEquip1 = 40093;
 			itemDef.femaleEquip1 = 40093;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Staff";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Staff";
 			break;
 			
 		case 5114:
-			itemDef.name = "@whi@Angelic Platebody";
+			itemDef.name = "Angelic Platebody";
 			itemDef.modelID = 40073;
 			itemDef.maleEquip1 = 40074;
 			itemDef.femaleEquip1 = 40074;
@@ -2567,7 +2567,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5115:
-			itemDef.name = "@whi@Angelic Bow";
+			itemDef.name = "Angelic Bow";
 			itemDef.modelID = 40077;
 			itemDef.maleEquip1 = 40076;
 			itemDef.femaleEquip1 = 40076;
@@ -2583,7 +2583,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40108;
 			itemDef.femaleEquip1 = 40108;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Misery @red@Helmet";
+			itemDef.name = "Misery Helmet";
 			break;
 			
 		case 4057:
@@ -2591,7 +2591,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40110;
 			itemDef.femaleEquip1 = 40110;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Misery @red@Platebody";
+			itemDef.name = "Misery Platebody";
 			break;
 			
 			
@@ -2600,7 +2600,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40112;
 			itemDef.femaleEquip1 = 40112;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Misery @red@Platelegs";
+			itemDef.name = "Misery Platelegs";
 			break;
 			
 			
@@ -2609,7 +2609,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40114;
 			itemDef.femaleEquip1 = 40114;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Blade of @red@Misery";
+			itemDef.name = "Blade of Misery";
 			break;
 			
 			
@@ -2617,16 +2617,16 @@ public class ItemDef_Suic {
 			itemDef.modelID = 40115;
 			itemDef.maleEquip1 = 40116;
 			itemDef.femaleEquip1 = 40116;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Platelegs(Melee)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Platelegs(Melee)";
 			break;
 			
 		case 4061:
 			itemDef.modelID = 40117;
 			itemDef.maleEquip1 = 40118;
 			itemDef.femaleEquip1 = 40118;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Platebody(Melee)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Platebody(Melee)";
 			break;
 			
 			
@@ -2634,8 +2634,8 @@ public class ItemDef_Suic {
 			itemDef.modelID = 40119;
 			itemDef.maleEquip1 = 40119;
 			itemDef.femaleEquip1 = 40119;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Boots(Melee)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Boots(Melee)";
 			break;
 			
 			
@@ -2643,24 +2643,24 @@ public class ItemDef_Suic {
 			itemDef.modelID = 40121;
 			itemDef.maleEquip1 = 40122;
 			itemDef.femaleEquip1 = 40122;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Platelegs(Range)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Platelegs(Range)";
 			break;
 			
 		case 4064:
 			itemDef.modelID = 40123;
 			itemDef.maleEquip1 = 40124;
 			itemDef.femaleEquip1 = 40124;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Platebody(Range)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Platebody(Range)";
 			break;
 			
 		case 4065:
 			itemDef.modelID = 40125;
 			itemDef.maleEquip1 = 40126;
 			itemDef.femaleEquip1 = 40126;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Boots(Range)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Boots(Range)";
 			break;
 			
 			
@@ -2669,24 +2669,24 @@ public class ItemDef_Suic {
 			itemDef.modelID = 40127;
 			itemDef.maleEquip1 = 40128;
 			itemDef.femaleEquip1 = 40128;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Robe bottoms(Magic)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Robe bottoms(Magic)";
 			break;
 			
 		case 4085:
 			itemDef.modelID = 40129;
 			itemDef.maleEquip1 = 40130;
 			itemDef.femaleEquip1 = 40130;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued Robe top(Magic)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued Robe top(Magic)";
 			break;
 			
 		case 4555:
 			itemDef.modelID = 40131;
 			itemDef.maleEquip1 = 40132;
 			itemDef.femaleEquip1 = 40132;
-			itemDef.actions = new String[] {null, "Wear", "@whi@Operate", null, null};
-			itemDef.name = "@or2@Imbued boots(Magic)";
+			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
+			itemDef.name = "Imbued boots(Magic)";
 			break;
 			
 			
@@ -2701,7 +2701,7 @@ public class ItemDef_Suic {
 			
         case 18752:
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@whi@Open";
+            itemDef.actions[2] = "Open";
             itemDef.modelID = 23375;
 			itemDef.modelZoom = 1416; 
             itemDef.name = "Sephiroths Chest Key(2)";
@@ -2709,7 +2709,7 @@ public class ItemDef_Suic {
             
         case 18753:
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@whi@Open";
+            itemDef.actions[2] = "Open";
             itemDef.modelID = 23375;
 			itemDef.modelZoom = 1416; 
             itemDef.name = "Sephiroths Chest Key(3)";
@@ -2738,7 +2738,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40140;
 			itemDef.femaleEquip1 = 40140;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer legs";
+			itemDef.name = "Royal Slayer legs";
 			break;
 			
 		case 16550:
@@ -2746,7 +2746,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40142;
 			itemDef.femaleEquip1 = 40142;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer Sword";
+			itemDef.name = "Royal Slayer Sword";
 			break;
 			
 		case 16551:
@@ -2754,7 +2754,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40144;
 			itemDef.femaleEquip1 = 40144;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer Platebody";
+			itemDef.name = "Royal Slayer Platebody";
 			break;
 			
 		case 16553:
@@ -2762,7 +2762,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40145;
 			itemDef.femaleEquip1 = 40145;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer Boots";
+			itemDef.name = "Royal Slayer Boots";
 			break;
 			
 		case 16556:
@@ -2770,7 +2770,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40147;
 			itemDef.femaleEquip1 = 40147;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer Gloves";
+			itemDef.name = "Royal Slayer Gloves";
 			break;
 			
 		case 16558:
@@ -2778,12 +2778,12 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40149;
 			itemDef.femaleEquip1 = 40149;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "@bla@Royal Slayer Helmet";
+			itemDef.name = "Royal Slayer Helmet";
 			break;
 			
 			
   		case 5107:
-			itemDef.name = "@red@Youtubers Hood";
+			itemDef.name = "Youtubers Hood";
 			itemDef.modelID = 40059;
 			itemDef.maleEquip1 = 40060;
 			itemDef.femaleEquip1 = 40060;
@@ -2792,7 +2792,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3945:
-			itemDef.name = "@red@Resilience Boots";
+			itemDef.name = "Resilience Boots";
 			itemDef.modelID = 40102;
 			itemDef.maleEquip1 = 40102;
 			itemDef.femaleEquip1 = 40102;
@@ -2801,7 +2801,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3946:
-			itemDef.name = "@red@Resilience Blade@whi@(MH)";
+			itemDef.name = "Resilience Blade(MH)";
 			itemDef.modelID = 40103;
 			itemDef.maleEquip1 = 40104;
 			itemDef.femaleEquip1 = 40104;
@@ -2810,7 +2810,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3947:
-			itemDef.name = "@red@Resilience Blade@whi@(OH)";
+			itemDef.name = "Resilience Blade(OH)";
 			itemDef.modelID = 40103;
 			itemDef.maleEquip1 = 40105;
 			itemDef.femaleEquip1 = 40105;
@@ -2819,7 +2819,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3948:
-			itemDef.name = "@red@Resilience Backblade";
+			itemDef.name = "Resilience Backblade";
 			itemDef.modelID = 40106;
 			itemDef.maleEquip1 = 40106;
 			itemDef.femaleEquip1 = 40106;
@@ -2829,7 +2829,7 @@ public class ItemDef_Suic {
 			
 			
   		case 3944:
-			itemDef.name = "@red@Resilience Gloves";
+			itemDef.name = "Resilience Gloves";
 			itemDef.modelID = 40100;
 			itemDef.maleEquip1 = 40101;
 			itemDef.femaleEquip1 = 40101;
@@ -2838,7 +2838,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3939:
-			itemDef.name = "@red@Resilience Legs";
+			itemDef.name = "Resilience Legs";
 			itemDef.modelID = 40098;
 			itemDef.maleEquip1 = 40099;
 			itemDef.femaleEquip1 = 40099;
@@ -2847,7 +2847,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3938:
-			itemDef.name = "@red@Resilience Body";
+			itemDef.name = "Resilience Body";
 			itemDef.modelID = 40096;
 			itemDef.maleEquip1 = 40097;
 			itemDef.femaleEquip1 = 40097;
@@ -2856,7 +2856,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 3937:
-			itemDef.name = "@red@Resilience Hood";
+			itemDef.name = "Resilience Hood";
 			itemDef.modelID = 40094;
 			itemDef.maleEquip1 = 40095;
 			itemDef.femaleEquip1 = 40095;
@@ -2865,7 +2865,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5108:
-			itemDef.name = "@red@Youtubers bell";
+			itemDef.name = "Youtubers bell";
 			itemDef.modelID = 40061;
 			itemDef.maleEquip1 = 40062;
 			itemDef.femaleEquip1 = 40062;
@@ -2874,7 +2874,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5109:
-			itemDef.name = "@red@Youtubers Robe bottoms";
+			itemDef.name = "Youtubers Robe bottoms";
 			itemDef.modelID = 40063;
 			itemDef.maleEquip1 = 40064;
 			itemDef.femaleEquip1 = 40064;
@@ -2883,7 +2883,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5110:
-			itemDef.name = "@red@Youtubers Robe top";
+			itemDef.name = "Youtubers Robe top";
 			itemDef.modelID = 40065;
 			itemDef.maleEquip1 = 40066;
 			itemDef.femaleEquip1 = 40066;
@@ -2892,7 +2892,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 5111:
-			itemDef.name = "@red@Youtubers backsack";
+			itemDef.name = "Youtubers backsack";
 			itemDef.modelID = 40067;
 			itemDef.maleEquip1 = 40068;
 			itemDef.femaleEquip1 = 40058;
@@ -2934,7 +2934,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 3918:
-			itemDef.name = "Fantasy Gloves(50%Dr)";
+			itemDef.name = "Fantasy Gloves";
 			itemDef.modelID = 40052;
 			itemDef.maleEquip1 = 40053;
 			itemDef.femaleEquip1 = 40053;
@@ -3102,7 +3102,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 3642:
-			itemDef.name = "@bla@Demonic Glaive";
+			itemDef.name = "Demonic Glaive";
             itemDef.modelID = 40030;
             itemDef.maleEquip1 = 40029;
             itemDef.femaleEquip1 = 40029;
@@ -3112,7 +3112,7 @@ public class ItemDef_Suic {
             break;
 			
 		case 3641:
-			itemDef.name = "@yel@Solace Glaive";
+			itemDef.name = "Solace Glaive";
             itemDef.modelID = 23964;
             itemDef.maleEquip1 = 23965;
             itemDef.femaleEquip1 = 23965;
@@ -3125,7 +3125,7 @@ public class ItemDef_Suic {
             break;
 			
 		case 19123:
-			itemDef.name = "@bla@Thermo Sword";
+			itemDef.name = "Thermo Sword";
 			ItemDef Reaper = ItemDef.forID(1305);
 			itemDef.modelID = 23153;
 			itemDef.femaleEquip1 = 23154; //65342
@@ -3145,7 +3145,7 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 932:
-			itemDef.name = "@blu@Bluefire UBER Sword";
+			itemDef.name = "Bluefire UBER Sword";
 			ItemDef Reaper1 = ItemDef.forID(1305);
 			itemDef.modelID = 23153;
 			itemDef.femaleEquip1 = 23154; //65342
@@ -3165,7 +3165,7 @@ public class ItemDef_Suic {
 			
 		case 17890:
 			itemDef.modelID = 23443;
-			itemDef.name = "@gre@Deluxe Stoner Pants";
+			itemDef.name = "Deluxe Stoner Pants";
 			itemDef.femaleEquip1 = 23444;
 			itemDef.maleEquip1 = 23444;
 			itemDef.description = "check the pockets!";
@@ -3179,7 +3179,7 @@ public class ItemDef_Suic {
 			
 		case 11142:
 			itemDef.modelID = 40266;
-			itemDef.name = "@or2@Phoenix DDoS Protector";
+			itemDef.name = "Phoenix DDoS Protector";
 			itemDef.femaleEquip1 = 40267;
 			itemDef.maleEquip1 = 40267;
 			itemDef.description = "Hopefully he protects us against future Ddos attacks!";
@@ -3192,7 +3192,7 @@ public class ItemDef_Suic {
 			
 		case 17891:
 			itemDef.modelID = 23445;
-			itemDef.name = "@gre@Deluxe Stoner Hat";
+			itemDef.name = "Deluxe Stoner Hat";
 			itemDef.femaleEquip1 = 23446;
 			itemDef.maleEquip1 = 23446;
 			itemDef.description = "cool beanie!";
@@ -3205,7 +3205,7 @@ public class ItemDef_Suic {
 			break;
 		case 17892:
 			itemDef.modelID = 23447;
-			itemDef.name = "@gre@Deluxe Stoner Shirt";
+			itemDef.name = "Deluxe Stoner Shirt";
 			itemDef.femaleEquip1 = 23448;
 			itemDef.maleEquip1 = 23448;
 			itemDef.description = "Kingdoms favorite shirt";
@@ -3226,14 +3226,14 @@ public class ItemDef_Suic {
 			itemDef.actions[1] = "Wield";
 			itemDef.actions[4] = "Drop";
 			itemDef.stackable = false;
-		//	itemDef.actions[3] = "<col=C3C0B2>@whi@Dissolve Into Orbs into Orbs";
+		//	itemDef.actions[3] = "<col=C3C0B2>Dissolve Into Orbs into Orbs";
 			//itemDef.rdc2 = 654332;
 			break;
 		
 			
 		case 17893:
 			itemDef.modelID = 23449;
-			itemDef.name = "@gre@Deluxe Stoner Gloves";
+			itemDef.name = "Deluxe Stoner Gloves";
 			itemDef.femaleEquip1 = 23450;
 			itemDef.maleEquip1 = 23450;
 			itemDef.description = "I should try rolling a blunt with these on";
@@ -3246,7 +3246,7 @@ public class ItemDef_Suic {
 			break;
 		case 17894:
 			itemDef.modelID = 23451;
-			itemDef.name = "@gre@Deluxe Stoner Boots";
+			itemDef.name = "Deluxe Stoner Boots";
 			itemDef.femaleEquip1 = 23452;
 			itemDef.maleEquip1 = 23452;
 			itemDef.description = "pair of stoner boots";
@@ -3260,7 +3260,7 @@ public class ItemDef_Suic {
 			
 		case 6191:
 			itemDef.modelID = 23441;
-			itemDef.name = "@gre@Deluxe @yel@Stoner @red@Bong";
+			itemDef.name = "Deluxe Stoner Bong";
 			itemDef.femaleEquip1 = 23442;
 			itemDef.maleEquip1 = 23442;
             itemDef.rotationY = 165;
@@ -3274,7 +3274,7 @@ public class ItemDef_Suic {
 			
 		case 6192:
 			itemDef.modelID = 23441;
-			itemDef.name = "@whi@2% Drop Rate Bong";
+			itemDef.name = "2% Drop Rate Bong";
 			itemDef.femaleEquip1 = 23442;
 			itemDef.maleEquip1 = 23442;
             itemDef.rotationY = 165;
@@ -3293,7 +3293,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23893;
             itemDef.femaleEquip1 = 23893;
-            itemDef.name = "@whi@Ray gun";
+            itemDef.name = "Ray gun";
             break;
 			
 			
@@ -3303,7 +3303,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23895;
             itemDef.femaleEquip1 = 23895;
-            itemDef.name = "@red@Saber";
+            itemDef.name = "Saber";
             break;
             
         case 10835:
@@ -3320,7 +3320,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23897;
             itemDef.femaleEquip1 = 23897;
-            itemDef.name = "@red@dual-sided Saber";
+            itemDef.name = "dual-sided Saber";
             break;
 			
 			
@@ -3328,7 +3328,7 @@ public class ItemDef_Suic {
 			
 		case 17903:
 			itemDef.modelID = 23453;
-			itemDef.name = "@gre@Weed leaf";
+			itemDef.name = "Weed leaf";
 			itemDef.femaleEquip1 = 23454;
 			itemDef.maleEquip1 = 23454;
 			itemDef.description = "a lovely cape";
@@ -3341,7 +3341,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 9943:
-			itemDef.name = "@gre@Oz of Jane";
+			itemDef.name = "Oz of Jane";
 			itemDef.description = "a lovely smell drifts in the air";
 			itemDef.groundActions = new String[5];
 			itemDef.groundActions[2] = "Take";
@@ -3350,7 +3350,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 17413:
-			itemDef.name = "@whi@Bong Water";
+			itemDef.name = "Bong Water";
 			itemDef.groundActions = new String[5];
 			itemDef.groundActions[2] = "Take";
 			itemDef.actions = new String[5];
@@ -3367,7 +3367,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23877;
             itemDef.femaleEquip1 = 23877;
-            itemDef.name = "@whi@Zeus flagcape";
+            itemDef.name = "Zeus flagcape";
             break;
             
         case 6194:
@@ -3376,7 +3376,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23879;
             itemDef.femaleEquip1 = 23879;
-            itemDef.name = "@whi@Zeus full helm";
+            itemDef.name = "Zeus full helm";
             break;
             
         case 6195:
@@ -3385,7 +3385,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23881;
             itemDef.femaleEquip1 = 23881;
-            itemDef.name = "@whi@Zeus Platebody";
+            itemDef.name = "Zeus Platebody";
             break;
         case 6196:
             itemDef.modelID = 23882;
@@ -3393,7 +3393,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23883;
             itemDef.femaleEquip1 = 23883;
-            itemDef.name = "@whi@Zeus Platelegs";
+            itemDef.name = "Zeus Platelegs";
             break;
         case 6197:
             itemDef.modelID = 23884;
@@ -3401,7 +3401,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23885;
             itemDef.femaleEquip1 = 23885;
-            itemDef.name = "@whi@Zeus Hammer";
+            itemDef.name = "Zeus Hammer";
             break;
             
         case 6198:
@@ -3410,7 +3410,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23887;
             itemDef.femaleEquip1 = 23887;
-            itemDef.name = "@whi@Zeus Shield";
+            itemDef.name = "Zeus Shield";
             break;
             
             
@@ -3420,7 +3420,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23899;
             itemDef.femaleEquip1 = 23899;
-            itemDef.name = "@whi@Hercules helm";
+            itemDef.name = "Hercules helm";
             break;
             
         case 2750:
@@ -3429,7 +3429,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23901;
             itemDef.femaleEquip1 = 23901;
-            itemDef.name = "@whi@Hercules fighterbody";
+            itemDef.name = "Hercules fighterbody";
             break;
             
         case 2751:
@@ -3438,7 +3438,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23903;
             itemDef.femaleEquip1 = 23903;
-            itemDef.name = "@whi@Hercules fighterlegs";
+            itemDef.name = "Hercules fighterlegs";
             break;
             
             
@@ -3448,7 +3448,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23905;
             itemDef.femaleEquip1 = 23905;
-            itemDef.name = "@whi@Hercules Kiteshield";
+            itemDef.name = "Hercules Kiteshield";
             break;
             
         case 2752:
@@ -3457,7 +3457,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23907;
             itemDef.femaleEquip1 = 23907;
-            itemDef.name = "@whi@Hercules fightercape";
+            itemDef.name = "Hercules fightercape";
             break;
             
         case 2754:
@@ -3466,7 +3466,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23909;
             itemDef.femaleEquip1 = 23909;
-            itemDef.name = "@whi@Hercules gloves";
+            itemDef.name = "Hercules gloves";
             break;
             
         case 2755:
@@ -3475,7 +3475,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23910;
             itemDef.femaleEquip1 = 23910;
-            itemDef.name = "@whi@Hercules boots";
+            itemDef.name = "Hercules boots";
             break;
             
 		case 1018:
@@ -3504,7 +3504,7 @@ public class ItemDef_Suic {
             
             
         case 12426:
-            itemDef.name = "@cya@Icy @whi@Glaive";
+            itemDef.name = "Icy Glaive";
             itemDef.modelID = 23964;
             itemDef.maleEquip1 = 23965;
             itemDef.femaleEquip1 = 23965;
@@ -3517,7 +3517,7 @@ public class ItemDef_Suic {
             break;
             
         case 5150:
-            itemDef.name = "@bla@Gluttony glaive";
+            itemDef.name = "Gluttony glaive";
             itemDef.modelID = 23964;
             itemDef.maleEquip1 = 23965;
             itemDef.femaleEquip1 = 23965;
@@ -3531,24 +3531,24 @@ public class ItemDef_Suic {
             
             
         case 15105:
-            itemDef.name = "@bla@Mysterious Emblem(1)";
+            itemDef.name = "Mysterious Emblem(1)";
             break;
         case 15106:
-            itemDef.name = "@bla@Mysterious Emblem(2)";
+            itemDef.name = "Mysterious Emblem(2)";
             break;
         case 15104:
-            itemDef.name = "@bla@Mysterious Emblem(3)";
+            itemDef.name = "Mysterious Emblem(3)";
             break;
         case 15103:
-            itemDef.name = "@bla@Mysterious Emblem(4)";
+            itemDef.name = "Mysterious Emblem(4)";
             break;
             
         case 14639:
-            itemDef.name = "@gre@Soul Fragments";
+            itemDef.name = "Soul Fragments";
             break;
             
         case 18811:
-            itemDef.name = "@bla@Vader TP";
+            itemDef.name = "Vader TP";
             break;
             
             
@@ -3562,7 +3562,7 @@ public class ItemDef_Suic {
             itemDef.rotationX = 0;
             itemDef.modelOffsetY = -6;
             itemDef.modelOffsetX = 1;
-            itemDef.name = "@bla@Vader Helmet";
+            itemDef.name = "Vader Helmet";
             break;
             
         case 3272:
@@ -3571,7 +3571,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23918;
             itemDef.femaleEquip1 = 23918;
-            itemDef.name = "@bla@Vader Platebody";
+            itemDef.name = "Vader Platebody";
             break;
             
         case 3273:
@@ -3582,12 +3582,12 @@ public class ItemDef_Suic {
             itemDef.femaleEquip1 = 23919;
             itemDef.modelZoom = 1200;
             itemDef.rotationY = 50;
-            itemDef.name = "@bla@Vader Platelegs";
+            itemDef.name = "Vader Platelegs";
             break;
             
 		case 3283:
 			itemDef.modelID = 23920;
-			itemDef.name = "@bla@Vader Gloves";
+			itemDef.name = "Vader Gloves";
 			itemDef.description = "Death Is Upon Us!";
 			itemDef.maleEquip1 = 23921;
 			itemDef.femaleEquip1 = 23921;
@@ -3602,7 +3602,7 @@ public class ItemDef_Suic {
 			
 		case 3284:
 			itemDef.modelID = 23922;
-			itemDef.name = "@bla@Vader Boots";
+			itemDef.name = "Vader Boots";
 			itemDef.description = "Death Is Upon Us!";
 			itemDef.maleEquip1 = 23922;
 			itemDef.femaleEquip1 = 23922;
@@ -3617,7 +3617,7 @@ public class ItemDef_Suic {
 			
 		case 3285:
 			itemDef.modelID = 23923;
-			itemDef.name = "@bla@Vader Cape";
+			itemDef.name = "Vader Cape";
 			itemDef.description = "Death Is Upon Us!";
 			itemDef.maleEquip1 = 23924;
 			itemDef.femaleEquip1 = 23924;
@@ -3633,7 +3633,7 @@ public class ItemDef_Suic {
             
             
 		case 17904:
-			itemDef.name = "@bla@Ragnorak helmet";
+			itemDef.name = "Ragnorak helmet";
 			itemDef.modelID = 23460;
 			itemDef.femaleEquip1 = 23459; //65343
 			itemDef.maleEquip1 = 23459; //65343
@@ -3644,7 +3644,7 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 17906:
-			itemDef.name = "@bla@Ragnorak platebody";
+			itemDef.name = "Ragnorak platebody";
 			itemDef.modelID = 23456;
 			itemDef.femaleEquip1 = 23455;
 			itemDef.maleEquip1 = 23455;
@@ -3655,7 +3655,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 17907:
-			itemDef.name = "@bla@Ragnorak platelegs";
+			itemDef.name = "Ragnorak platelegs";
 			itemDef.modelID = 23458;
 			itemDef.femaleEquip1 = 23457;
 			itemDef.maleEquip1 = 23457;
@@ -3666,7 +3666,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 17919:
-			itemDef.name = "@bla@Ragnorak cape";
+			itemDef.name = "Ragnorak cape";
 			itemDef.modelID = 23461;
 			itemDef.femaleEquip1 = 23461;
 			itemDef.maleEquip1 = 23461;
@@ -3677,7 +3677,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 936:
-			itemDef.name = "@bla@Dragonslayer helmet";
+			itemDef.name = "Dragonslayer helmet";
 			itemDef.modelID = 23433;
 			itemDef.femaleEquip1 = 23434; //65343
 			itemDef.maleEquip1 = 23434; //65343
@@ -3688,7 +3688,7 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 937:
-			itemDef.name = "@bla@Dragonslayer platebody";
+			itemDef.name = "Dragonslayer platebody";
 			itemDef.modelID = 23435;
 			itemDef.femaleEquip1 = 23436;
 			itemDef.maleEquip1 = 23436;
@@ -3701,7 +3701,7 @@ public class ItemDef_Suic {
 			
 			
 		case 938:
-			itemDef.name = "@bla@Dragonslayer platelegs";
+			itemDef.name = "Dragonslayer platelegs";
 			itemDef.modelID = 23437;
 			itemDef.femaleEquip1 = 23438;
 			itemDef.maleEquip1 = 23438;
@@ -3712,7 +3712,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 939:
-			itemDef.name = "@bla@Dragonslayer cape";
+			itemDef.name = "Dragonslayer cape";
 			itemDef.modelID = 23439;
 			itemDef.femaleEquip1 = 23439;
 			itemDef.maleEquip1 = 23439;
@@ -3790,7 +3790,7 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 935:
-			itemDef.name = "@red@Youtubers Cape";
+			itemDef.name = "Youtubers Cape";
 			itemDef.modelID = 23439;
 			itemDef.femaleEquip1 = 23439;
 			itemDef.maleEquip1 = 23439;
@@ -3801,7 +3801,7 @@ public class ItemDef_Suic {
 			break;	
 
 		case 925:
-			itemDef.name = "@red@ Lucid blade";
+			itemDef.name = "Lucid blade";
 			itemDef.modelID = 23425;
 			itemDef.femaleEquip1 = 23424;
 			itemDef.maleEquip1 = 23424;
@@ -3813,7 +3813,7 @@ public class ItemDef_Suic {
 			
 			
 		case 3278:
-			itemDef.name = "@red@R@whi@W@blu@B Glaive";
+			itemDef.name = "RWB Glaive";
 			itemDef.modelID = 23531;
 			itemDef.femaleEquip1 = 23532;
 			itemDef.maleEquip1 = 23532;
@@ -3851,7 +3851,7 @@ public class ItemDef_Suic {
 			
 		case 3280:
 			itemDef.modelID = 23535;
-			itemDef.name = "@red@Youtuber Aura";
+			itemDef.name = "Youtuber Aura";
 			itemDef.femaleEquip1 = 23536;
 			itemDef.maleEquip1 = 23536;
 			itemDef.description = "Flex the yters";
@@ -3864,7 +3864,7 @@ public class ItemDef_Suic {
 			
 		case 3281:
 			itemDef.modelID = 23537;
-			itemDef.name = "@red@Youtubers Amulet";
+			itemDef.name = "Youtubers Amulet";
 			itemDef.femaleEquip1 = 23538;
 			itemDef.maleEquip1 = 23538;
 			itemDef.description = "Flex the yters";
@@ -3876,7 +3876,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 933:
-			itemDef.name = " @mag@Legends @whi@Glaive";
+			itemDef.name = " Legends Glaive";
             itemDef.modelID = 23964;
             itemDef.maleEquip1 = 23965;
             itemDef.femaleEquip1 = 23965;
@@ -3890,7 +3890,7 @@ public class ItemDef_Suic {
 			
 			
 		case 17931:
-			itemDef.name = "@bla@Sire's Glaive";
+			itemDef.name = "Sire's Glaive";
 			itemDef.modelID = 23470;
 			itemDef.femaleEquip1 = 23471;
 			itemDef.maleEquip1 = 23471;
@@ -3900,12 +3900,12 @@ public class ItemDef_Suic {
             itemDef.actions[4] = "Drop";
 			break;	
 		case 3905:
-			itemDef.name = "@red@Kings cape";
+			itemDef.name = "Kings cape";
 			break;
 			
 		case 17932:
 			itemDef.modelID = 23472;
-			itemDef.name = "@gre@Luigi's Head";
+			itemDef.name = "Luigi's Head";
 			itemDef.femaleEquip1 = 23473;
 			itemDef.maleEquip1 = 23473;
 			itemDef.description = "Luigi's head";
@@ -3918,7 +3918,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 5118:
-			itemDef.name = "@red@Satanic Helmet";
+			itemDef.name = "Satanic Helmet";
 			itemDef.modelID = 40080;
 			itemDef.maleEquip1 = 40081;
 			itemDef.femaleEquip1 = 40081;
@@ -3927,7 +3927,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 5119:
-			itemDef.name = "@red@Satanic Body";
+			itemDef.name = "Satanic Body";
 			itemDef.modelID = 40082;
 			itemDef.maleEquip1 = 40083;
 			itemDef.femaleEquip1 = 40083;
@@ -3936,7 +3936,7 @@ public class ItemDef_Suic {
 			break;
 			
   		case 5120:
-			itemDef.name = "@red@Satanic Legs";
+			itemDef.name = "Satanic Legs";
 			itemDef.modelID = 40084;
 			itemDef.maleEquip1 = 40085;
 			itemDef.femaleEquip1 = 40085;
@@ -4029,7 +4029,7 @@ public class ItemDef_Suic {
 			
 		case 17933:
 			itemDef.modelID = 23475;
-			itemDef.name = "@red@Mario's Head";
+			itemDef.name = "Mario's Head";
 			itemDef.femaleEquip1 = 23476;
 			itemDef.maleEquip1 = 23476;
 			itemDef.description = "Mario's head";
@@ -4042,7 +4042,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 934:
-			itemDef.name = "@bla@ Mask of the Dead";
+			itemDef.name = "Mask of the Dead";
 			itemDef.modelID = 23430;
 			itemDef.femaleEquip1 = 23431;
 			itemDef.maleEquip1 = 23431;
@@ -4121,18 +4121,18 @@ public class ItemDef_Suic {
 			break;
 			
 		case 19475:
-			itemDef.name = "@bla@Dungeon Floor 2 teleport";
+			itemDef.name = "Dungeon Floor 2 teleport";
 					break;
 					
 		case 17922:
 			ItemDef.copyModel(itemDef, 19475);
-			itemDef.name = "@bla@Dungeon Floor 2 teleport";
+			itemDef.name = "Dungeon Floor 2 teleport";
 					break;
 					
 					
 		case 17926:
 			itemDef.modelID = 23466;
-			itemDef.name = "@cya@Ice Breaker MainHand";
+			itemDef.name = "Ice Breaker MainHand";
 			itemDef.modelZoom = 2000;
 			itemDef.rotationY = 0;
 			itemDef.rotationX = 0;
@@ -4150,7 +4150,7 @@ public class ItemDef_Suic {
 			break;
 		case 17927:
 			itemDef.modelID = 23467;
-			itemDef.name = "@cya@Ice Breaker OffHand";
+			itemDef.name = "Ice Breaker OffHand";
 			itemDef.modelZoom = 2000;
 			itemDef.rotationY = 0;
 			itemDef.rotationX = 0;
@@ -4168,7 +4168,7 @@ public class ItemDef_Suic {
 			break;
 		case 17929:
 			itemDef.modelID = 23468;
-			itemDef.name = "@red@Fire Breaker (MH)";
+			itemDef.name = "Fire Breaker (MH)";
 			itemDef.modelZoom = 2000;
 			itemDef.rotationY = 0;
 			itemDef.rotationX = 0;
@@ -4186,7 +4186,7 @@ public class ItemDef_Suic {
 			break;
 		case 17928:
 			itemDef.modelID = 23469;
-			itemDef.name = "@red@Fire Breaker (OH)";
+			itemDef.name = "Fire Breaker (OH)";
 			itemDef.modelZoom = 2000;
 			itemDef.rotationY = 0;
 			itemDef.rotationX = 0;
@@ -4206,12 +4206,12 @@ public class ItemDef_Suic {
 					
 		case 17923:
 			ItemDef.copyModel(itemDef, 1481);
-			itemDef.name = "@red@Hellfire orbs";
+			itemDef.name = "Hellfire orbs";
 					break;
 					
 		case 17924:
 			ItemDef.copyModel(itemDef, 13149);
-			itemDef.name = "@red@Nomads Tickets";
+			itemDef.name = "Nomads Tickets";
 					break;
 					
 		case 18750:
@@ -4247,7 +4247,7 @@ public class ItemDef_Suic {
 			
 		case 5170:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "@or2@Unlimited Prayer Scroll";
+			itemDef.name = "Unlimited Prayer Scroll";
 			itemDef.animateInventory = true;
 			break;
 			
@@ -4272,7 +4272,7 @@ public class ItemDef_Suic {
         case 5184:
             itemDef.modelID = 23409;
             itemDef.stackable = false;
-            itemDef.name = "@red@TeddyBear";
+            itemDef.name = "TeddyBear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23410;
             itemDef.femaleEquip1 = 23410;
@@ -4287,7 +4287,7 @@ public class ItemDef_Suic {
         case 13087:
             itemDef.modelID = 23409;
             itemDef.stackable = false;
-            itemDef.name = "@red@TeddyBear";
+            itemDef.name = "TeddyBear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23410;
             itemDef.femaleEquip1 = 23410;
@@ -4302,7 +4302,7 @@ public class ItemDef_Suic {
         case 2547:
             itemDef.modelID = 23499;
             itemDef.stackable = false;
-            itemDef.name = "@blu@Ocean TeddyBear";
+            itemDef.name = "Ocean TeddyBear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23498;
             itemDef.femaleEquip1 = 23498;
@@ -4316,7 +4316,7 @@ public class ItemDef_Suic {
         case 2548:
             itemDef.modelID = 23501;
             itemDef.stackable = false;
-            itemDef.name = "@red@Abyssal TeddyBear";
+            itemDef.name = "Abyssal TeddyBear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23500;
             itemDef.femaleEquip1 = 23500;
@@ -4330,7 +4330,7 @@ public class ItemDef_Suic {
         case 2549:
             itemDef.modelID = 23502;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Boots";
+            itemDef.name = "Tainted Boots";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23502;
             itemDef.femaleEquip1 = 23502;
@@ -4344,7 +4344,7 @@ public class ItemDef_Suic {
         case 3075:
             itemDef.modelID = 23515;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Boots";
+            itemDef.name = "Sires Boots";
             itemDef.description = "if you got these your in for a upgrade soon!";
             itemDef.maleEquip1 = 23515;
             itemDef.femaleEquip1 = 23515;
@@ -4358,7 +4358,7 @@ public class ItemDef_Suic {
         case 3076:
             itemDef.modelID = 23517;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Helmet";
+            itemDef.name = "Sires Helmet";
             itemDef.description = "if you got these your in for a upgrade soon!";
             itemDef.maleEquip1 = 23516;
             itemDef.femaleEquip1 = 23516;
@@ -4372,7 +4372,7 @@ public class ItemDef_Suic {
         case 3078:
             itemDef.modelID = 23519;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Gloves";
+            itemDef.name = "Sires Gloves";
             itemDef.description = "if you got these your in for a upgrade soon!";
             itemDef.maleEquip1 = 23518;
             itemDef.femaleEquip1 = 23518;
@@ -4386,7 +4386,7 @@ public class ItemDef_Suic {
         case 3242:
             itemDef.modelID = 23521;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Platebody";
+            itemDef.name = "Sires Platebody";
             itemDef.description = "if you got these your in for a upgrade soon!";
             itemDef.maleEquip1 = 23520;
             itemDef.femaleEquip1 = 23520;
@@ -4400,7 +4400,7 @@ public class ItemDef_Suic {
         case 3244:
             itemDef.modelID = 23523;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Platelegs";
+            itemDef.name = "Sires Platelegs";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23522;
             itemDef.femaleEquip1 = 23522;
@@ -4415,7 +4415,7 @@ public class ItemDef_Suic {
         case 3250:
             itemDef.modelID = 23525;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Sires Staff";
+            itemDef.name = "Sires Staff";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23524;
             itemDef.femaleEquip1 = 23524;
@@ -4430,7 +4430,7 @@ public class ItemDef_Suic {
         case 3254:
             itemDef.modelID = 23526;
             itemDef.stackable = false;
-            itemDef.name = "@meg@Elemental Off-hand";
+            itemDef.name = "Elemental Off-hand";
             itemDef.description = "what a masterpiece";
             itemDef.maleEquip1 = 23527;
             itemDef.femaleEquip1 = 23527;
@@ -4443,7 +4443,7 @@ public class ItemDef_Suic {
         case 2771:
             itemDef.modelID = 23504;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Helmet";
+            itemDef.name = "Tainted Helmet";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23503;
             itemDef.femaleEquip1 = 23503;
@@ -4457,7 +4457,7 @@ public class ItemDef_Suic {
         case 2772:
             itemDef.modelID = 23506;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Gloves";
+            itemDef.name = "Tainted Gloves";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23505;
             itemDef.femaleEquip1 = 23505;
@@ -4471,7 +4471,7 @@ public class ItemDef_Suic {
         case 2867:
             itemDef.modelID = 23508;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Platebody";
+            itemDef.name = "Tainted Platebody";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23507;
             itemDef.femaleEquip1 = 23507;
@@ -4485,7 +4485,7 @@ public class ItemDef_Suic {
         case 2868:
             itemDef.modelID = 23510;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Platelegs";
+            itemDef.name = "Tainted Platelegs";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23509;
             itemDef.femaleEquip1 = 23509;
@@ -4500,7 +4500,7 @@ public class ItemDef_Suic {
         case 2869:
             itemDef.modelID = 23512;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Cape";
+            itemDef.name = "Tainted Cape";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23511;
             itemDef.femaleEquip1 = 23511;
@@ -4514,7 +4514,7 @@ public class ItemDef_Suic {
         case 2870:
             itemDef.modelID = 23514;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Tainted Shield";
+            itemDef.name = "Tainted Shield";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23513;
             itemDef.femaleEquip1 = 23513;
@@ -4529,7 +4529,7 @@ public class ItemDef_Suic {
         case 2545:
             itemDef.modelID = 23497;
             itemDef.stackable = false;
-            itemDef.name = "@bla@Panda @whi@Teddybear";
+            itemDef.name = "Panda Teddybear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23496;
             itemDef.femaleEquip1 = 23496;
@@ -4543,7 +4543,7 @@ public class ItemDef_Suic {
         case 2546:
             itemDef.modelID = 23495;
             itemDef.stackable = false;
-            itemDef.name = "@gre@R@red@A@yel@S@gre@T@red@A @yel@T@gre@e@red@d@yel@d@gre@y";
+            itemDef.name = "Rasta Teddy";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23492;
             itemDef.femaleEquip1 = 23492;
@@ -4557,7 +4557,7 @@ public class ItemDef_Suic {
         case 7617:
             itemDef.modelID = 23413;
             itemDef.stackable = false;
-            itemDef.name = "@gre@Donators TeddyBear";
+            itemDef.name = "Donators TeddyBear";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23414;
             itemDef.femaleEquip1 = 23414;
@@ -4570,31 +4570,31 @@ public class ItemDef_Suic {
 
 		case 5197:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "@or2@10% Permanent Dr Scroll";
+			itemDef.name = "10% Permanent Dr Scroll";
 			itemDef.animateInventory = true;
 			break;
 			
 		case 12162:
-			itemDef.name = "@whi@1k Lazy Charm";
+			itemDef.name = "1k Lazy Charm";
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@gre@Claim";
+            itemDef.actions[2] = "Claim";
 			break;
 			
 		case 12164:
-			itemDef.name = "@whi@5k Lazy Charm";
+			itemDef.name = "5k Lazy Charm";
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@gre@Claim";
+            itemDef.actions[2] = "Claim";
 			break;
 			
 		case 18392:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "@or2@2% Permanent Dr Scroll";
+			itemDef.name = "2% Permanent Dr Scroll";
 			itemDef.animateInventory = true;
 			break;
 			
 		case 18401:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "@or2@5% Permanent Dr Scroll";
+			itemDef.name = "5% Permanent Dr Scroll";
 			itemDef.originalModelColors = new int[] { 58 };
 			itemDef.newModelColor = new int[] { 64 };
 			itemDef.animateInventory = true;
@@ -4602,7 +4602,7 @@ public class ItemDef_Suic {
 
 		case 5168:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "@or2@Hellfire Scroll";
+			itemDef.name = "Hellfire Scroll";
 			itemDef.animateInventory = true;
 			break;
 
@@ -4615,7 +4615,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 4803:
-			itemDef.name = "@cya@2% DR Boots";
+			itemDef.name = "2% DR Boots";
 			itemDef.stackable = false;
 			break;
 			
@@ -4623,20 +4623,20 @@ public class ItemDef_Suic {
 			ItemDef.copyModel(itemDef, 4803);
 			itemDef.originalModelColors = new int[] { 40 };
 			itemDef.newModelColor = new int[] { 62 };
-			itemDef.name = "@cya@OP Primordial Boots";
+			itemDef.name = "OP Primordial Boots";
 			itemDef.stackable = false;
 			break;
 
 		case 5195:
 			ItemDef.copyModel(itemDef, 3990);
-			itemDef.name = "@gre@Hulk Minigun";
+			itemDef.name = "Hulk Minigun";
 			itemDef.originalModelColors = new int[] { 40, 24 };
 			itemDef.newModelColor = new int[] { 58, 58 };
 			break;
 
 		case 5158:
 			ItemDef.copyModel(itemDef, 3990);
-			itemDef.name = "@or2@Vprs Lavagun";
+			itemDef.name = "Vprs Lavagun";
 			itemDef.originalModelColors = new int[] { 24 };
 			itemDef.newModelColor = new int[] { 57 };
 			break;
@@ -4649,21 +4649,21 @@ public class ItemDef_Suic {
 		 * 94700; itemDef.modelZoom = 1000; itemDef.modelOffset1 = 0;
 		 * itemDef.modelOffsetX = 0; itemDef.rotationX = 2020; itemDef.rotationY = 333;
 		 * itemDef.actions = new String[5]; itemDef.actions[1] = "Wear"; itemDef.name =
-		 * "@or2@50% DR Increasing Boots"; break;
+		 * "50% DR Increasing Boots"; break;
 		 */
 
 		case 5159:
 			ItemDef.copyModel(itemDef, 20054);
-			itemDef.name = "@or2@Vpr's God Ring";
+			itemDef.name = "Vpr's God Ring";
 			break;
 			
 		case 8851:
-			itemDef.name = "@gre@Frankenstein Tokens";
+			itemDef.name = "Frankenstein Tokens";
 			break;
 
 		case 5179:
 			ItemDef.copyModel(itemDef, 3951);
-			itemDef.name = "@or2@Hellfire Battlestaff";
+			itemDef.name = "Hellfire Battlestaff";
 			itemDef.originalModelColors = new int[] { 40 };
 			itemDef.newModelColor = new int[] { 59 };
 			break;
@@ -4681,12 +4681,12 @@ public class ItemDef_Suic {
 		case 19996:
 			ItemDef.copyModel(itemDef, 5153);
 			itemDef.name = "Dragon Pet Scroll";
-			itemDef.actions = new String[] { "@or2@Open Interface", null, null, null, null };
+			itemDef.actions = new String[] { "Open Interface", null, null, null, null };
 			break;
 
 		case 5129:
 			ItemDef.copyModel(itemDef, 3951);
-			itemDef.name = "@or2@Heated Battlestaff";
+			itemDef.name = "Heated Battlestaff";
 			break;
 
 		case 19079:
@@ -4707,7 +4707,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23122;
             itemDef.femaleEquip1 = 23122;
-            itemDef.name = "@cya@Fuzed Goku Boots";
+            itemDef.name = "Fuzed Goku Boots";
             break;
             
         case 13728:
@@ -4720,7 +4720,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23379;
             itemDef.femaleEquip1 = 23379;
-            itemDef.name = "@cya@helmet";
+            itemDef.name = "helmet";
             break;
             
         case 13729:
@@ -4733,7 +4733,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23381;
             itemDef.femaleEquip1 = 23381;
-            itemDef.name = "@cya@platebody";
+            itemDef.name = "platebody";
             break;
             
             
@@ -4747,7 +4747,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23383;
             itemDef.femaleEquip1 = 23383;
-            itemDef.name = "@cya@platelegs";
+            itemDef.name = "platelegs";
             break;
         case 916:
             itemDef.modelID = 23124;
@@ -4759,7 +4759,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23123;
             itemDef.femaleEquip1 = 23123;
-            itemDef.name = "@cya@Fuzed Goku Helmet";
+            itemDef.name = "Fuzed Goku Helmet";
             break;
             
         case 917:
@@ -4772,7 +4772,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23125;
             itemDef.femaleEquip1 = 23125;
-            itemDef.name = "@cya@Fuzed Goku Legs";
+            itemDef.name = "Fuzed Goku Legs";
             break;
             
         case 918:
@@ -4785,7 +4785,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23127;
             itemDef.femaleEquip1 = 23127;
-            itemDef.name = "@cya@Fuzed Goku Platebody";
+            itemDef.name = "Fuzed Goku Platebody";
             break;
             
         case 921:
@@ -4798,11 +4798,11 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23778;
             itemDef.femaleEquip1 = 23778;
-            itemDef.name = "@cya@Fuzed Goku Gloves";
+            itemDef.name = "Fuzed Goku Gloves";
             break;
 
         case 1499:
-            itemDef.name = "@red@Defenders amulet";
+            itemDef.name = "Defenders amulet";
             itemDef.actions[1] = "Wield";
             break;
 
@@ -4812,7 +4812,7 @@ public class ItemDef_Suic {
 				break;
             
         case 15012:
-            itemDef.name = "@red@Defenders ring (i)";
+            itemDef.name = "Defenders ring (i)";
             itemDef.actions[1] = "Wield";
             break;
             
@@ -4826,7 +4826,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 40249;
             itemDef.femaleEquip1 = 40249;
-            itemDef.name = "@mag@Sephiroth's gloves";
+            itemDef.name = "Sephiroth's gloves";
             break;
         case 19619:
             itemDef.modelID = 28377;
@@ -4834,7 +4834,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 28378;
             itemDef.femaleEquip1 = 28378;
-            itemDef.name = "@mag@Heated Helmet";
+            itemDef.name = "Heated Helmet";
             break;
             
         case 732:
@@ -4844,7 +4844,7 @@ public class ItemDef_Suic {
             
         case 1543:
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@whi@Open";
+            itemDef.actions[2] = "Open";
             itemDef.modelID = 23375;
             itemDef.name = "Medium Key";
             break;
@@ -4852,7 +4852,7 @@ public class ItemDef_Suic {
             
         case 3921:
             itemDef.actions = new String[5];
-            itemDef.actions[2] = "@whi@Open";
+            itemDef.actions[2] = "Open";
             itemDef.modelID = 23375;
 			itemDef.modelZoom = 1416; 
             itemDef.name = "Sephiroths Chest Key";
@@ -4861,12 +4861,12 @@ public class ItemDef_Suic {
         case 13999:
 			itemDef.modelID = 44214;
 			itemDef.modelZoom = 2000;
-            itemDef.name = "@or2@OP Crystal";
+            itemDef.name = "OP Crystal";
             break;
             
             
         case 13727:
-            itemDef.name = "@yel@AFK Fragments";
+            itemDef.name = "AFK Fragments";
             break;
 
         case 14006:
@@ -4885,7 +4885,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28380;
             itemDef.femaleEquip1 = 28380;
-            itemDef.name = "@mag@Heated Platebody";
+            itemDef.name = "Heated Platebody";
             break;
         case 19471:
             itemDef.modelID = 28381;
@@ -4897,7 +4897,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28382;
             itemDef.femaleEquip1 = 28382;
-            itemDef.name = "@mag@Heated Platelegs";
+            itemDef.name = "Heated Platelegs";
             break;
         case 19472:
             itemDef.modelID = 28383;
@@ -4906,7 +4906,7 @@ public class ItemDef_Suic {
             itemDef.modelZoom = 800;
             itemDef.maleEquip1 = 28384;
             itemDef.femaleEquip1 = 28384;
-            itemDef.name = "@mag@Heated Gloves";
+            itemDef.name = "Heated Gloves";
             break;
         case 19473:
             itemDef.modelID = 28385;
@@ -4914,7 +4914,7 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 28385;
             itemDef.femaleEquip1 = 28385;
-            itemDef.name = "@mag@Heated Boots";
+            itemDef.name = "Heated Boots";
             break;
         case 19474:
             itemDef.modelID = 28386;
@@ -4926,7 +4926,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28387;
             itemDef.femaleEquip1 = 28387;
-            itemDef.name = "@mag@Heated Wings";
+            itemDef.name = "Heated Wings";
             break;
         case 19620:
             itemDef.modelID = 28388;
@@ -4938,7 +4938,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28389;
             itemDef.femaleEquip1 = 28389;
-            itemDef.name = "@mag@Dagger of Trinity";
+            itemDef.name = "Dagger of Trinity";
             break;
             
         case 19714:
@@ -4951,7 +4951,7 @@ public class ItemDef_Suic {
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 23075;
             itemDef.femaleEquip1 = 23075;
-            itemDef.name = "@mag@Solace Helmet";
+            itemDef.name = "Solace Helmet";
             break;   
             case 19715:
                 itemDef.modelID = 23076;
@@ -4963,7 +4963,7 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23077;
                 itemDef.femaleEquip1 = 23077;
-                itemDef.name = "@mag@Solace Platebody";
+                itemDef.name = "Solace Platebody";
                 break;
                 
             case 19716:
@@ -4976,7 +4976,7 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23079;
                 itemDef.femaleEquip1 = 23079;
-                itemDef.name = "@mag@Solace Platelegs";
+                itemDef.name = "Solace Platelegs";
                 break;
                 
                 
@@ -4991,7 +4991,7 @@ public class ItemDef_Suic {
                 itemDef.maleEquip1 = 23370;
                 itemDef.femaleEquip1 = 23370;
     			changeTexture(id, 70, 70);
-                itemDef.name = "@mag@Toxic Platelegs";
+                itemDef.name = "Toxic Platelegs";
                 break;
                 
             case 19717:
@@ -5004,7 +5004,7 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23081;
                 itemDef.femaleEquip1 = 23081;
-                itemDef.name = "@mag@Solace Gloves";
+                itemDef.name = "Solace Gloves";
                 break;
             case 19718:
                 itemDef.modelID = 23082;
@@ -5016,11 +5016,11 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23082;
                 itemDef.femaleEquip1 = 23082;
-                itemDef.name = "@mag@Solace Boots";
+                itemDef.name = "Solace Boots";
                 break;
                 
             case 3082:
-                itemDef.name = "@mag@Jokers Bow";
+                itemDef.name = "Jokers Bow";
                 break;
                 
             case 19719:
@@ -5033,7 +5033,7 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23084;
                 itemDef.femaleEquip1 = 23084;
-                itemDef.name = "@mag@Solace Cape";
+                itemDef.name = "Solace Cape";
                 break;
                 
             case 19153:
@@ -5046,7 +5046,7 @@ public class ItemDef_Suic {
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23428;
                 itemDef.femaleEquip1 = 23428;
-                itemDef.name = "@cya@Vorago's Cape";
+                itemDef.name = "Vorago's Cape";
                 break;
                 
                 
@@ -5142,7 +5142,7 @@ public class ItemDef_Suic {
     			break;
     			
     		case 15497:
-    			itemDef.name = "@whi@Imbued Slayer Helmet";
+    			itemDef.name = "Imbued Slayer Helmet";
 break;
     			
     			
@@ -5224,7 +5224,7 @@ break;
     			break;
     			
     		case 13201:
-    			itemDef.name = "@red@Supreme Herbal Bow";
+    			itemDef.name = "Supreme Herbal Bow";
     			itemDef.modelID = 40238;
     			itemDef.maleEquip1 = 40239;
     			itemDef.femaleEquip1 = 40239;
@@ -5233,7 +5233,7 @@ break;
     			break;
     			
     		case 13091:
-    			itemDef.name = "@red@Herbal Ammo";
+    			itemDef.name = "Herbal Ammo";
     			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
     			itemDef.stackable = true;
     			break;
@@ -5358,7 +5358,7 @@ break;
     			break;
                 
             case 3874:
-                itemDef.name = "@cya@Icy Skeleton Mask";
+                itemDef.name = "Icy Skeleton Mask";
                 itemDef.modelID = 40205;
                 itemDef.maleEquip1 = 40200;
                 itemDef.femaleEquip1 = 40200;
@@ -5368,7 +5368,7 @@ break;
                 break;
                 
             case 3875:
-                itemDef.name = "@cya@Icy Skeleton Body";
+                itemDef.name = "Icy Skeleton Body";
                 itemDef.modelID = 40201;
                 itemDef.maleEquip1 = 40202;
                 itemDef.femaleEquip1 = 40202;
@@ -5378,7 +5378,7 @@ break;
                 break;
                 
             case 3876:
-                itemDef.name = "@cya@Icy Skeleton Legs";
+                itemDef.name = "Icy Skeleton Legs";
                 itemDef.modelID = 40203;
                 itemDef.maleEquip1 = 40204;
                 itemDef.femaleEquip1 = 40204;
@@ -5428,7 +5428,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23177;
                 itemDef.femaleEquip1 = 23177;
-                itemDef.name = "@mag@Mystery Cape";
+                itemDef.name = "Mystery Cape";
                 break;
                 
             case 80:
@@ -5476,7 +5476,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 99891;
                 itemDef.femaleEquip1 = 99891;
-                itemDef.name = "@mag@Trimmed Darklord Cape";
+                itemDef.name = "Trimmed Darklord Cape";
                 break;
                 
             case 19720:
@@ -5491,7 +5491,7 @@ break;
                 itemDef.femaleEquip1 = 23086;
     			itemDef.editedModelColor = new int[] { 73 };//old
     			itemDef.newModelColor = new int[] {68 };//new
-                itemDef.name = "@bla@Staff of Valor";
+                itemDef.name = "Staff of Valor";
                 break;
                 
             case 15649:
@@ -5500,7 +5500,7 @@ break;
                 itemDef.actions[1] = "Wield";
                 itemDef.maleEquip1 = 90701;
                 itemDef.femaleEquip1 = 90701;
-                itemDef.name = "@mag@Dzanth's Hood";
+                itemDef.name = "Dzanth's Hood";
                 break;
                 
             case 15653:
@@ -5509,7 +5509,7 @@ break;
                 itemDef.actions[1] = "Wield";
                 itemDef.maleEquip1 = 94629;
                 itemDef.femaleEquip1 = 94629;
-                itemDef.name = "@mag@Dzanth's Trident";
+                itemDef.name = "Dzanth's Trident";
                 break;
                 
             case 15650:
@@ -5518,7 +5518,7 @@ break;
                 itemDef.actions[1] = "Wield";
                 itemDef.maleEquip1 = 90703;
                 itemDef.femaleEquip1 = 90703;
-                itemDef.name = "@mag@Dzanth's Robe top";
+                itemDef.name = "Dzanth's Robe top";
                 break;
                 
             case 15651:
@@ -5527,7 +5527,7 @@ break;
                 itemDef.actions[1] = "Wield";
                 itemDef.maleEquip1 = 90731;
                 itemDef.femaleEquip1 = 90731;
-                itemDef.name = "@mag@Dzanth's Robe bottoms";
+                itemDef.name = "Dzanth's Robe bottoms";
                 break;
                 
             case 15652:
@@ -5540,7 +5540,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 83393;
                 itemDef.femaleEquip1 = 83393;
-                itemDef.name = "@mag@Dzanth's Mythical Cape";
+                itemDef.name = "Dzanth's Mythical Cape";
                 break;
                 
             case 19721:
@@ -5553,7 +5553,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23188;
                 itemDef.femaleEquip1 = 23188;
-                itemDef.name = "@cya@Blessed Hood";
+                itemDef.name = "Blessed Hood";
                 break;
             case 19722:
                 itemDef.modelID = 23191;
@@ -5565,7 +5565,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23192;
                 itemDef.femaleEquip1 = 23192;
-                itemDef.name = "@cya@Blessed Platebody";
+                itemDef.name = "Blessed Platebody";
                 break;
                 
             case 16430:
@@ -5580,7 +5580,7 @@ break;
     			itemDef.newModelColor = new int[] { 71 };
                 itemDef.maleEquip1 = 23342;
                 itemDef.femaleEquip1 = 23342;
-                itemDef.name = "@cya@Blessed Kiteshield";
+                itemDef.name = "Blessed Kiteshield";
                 break;
                 
             case 19723:
@@ -5593,7 +5593,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23190;
                 itemDef.femaleEquip1 = 23190;
-                itemDef.name = "@mag@Blessed Platelegs";
+                itemDef.name = "Blessed Platelegs";
                 break;
 
             case 15493:
@@ -5606,7 +5606,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23302;
                 itemDef.femaleEquip1 = 23302;
-                itemDef.name = "@mag@Athos Helmet";
+                itemDef.name = "Athos Helmet";
                 break;
             case 15494:
                 itemDef.modelID = 23303;
@@ -5618,7 +5618,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23304;
                 itemDef.femaleEquip1 = 23304;
-                itemDef.name = "@mag@Athos Platebody";
+                itemDef.name = "Athos Platebody";
                 break;
                 
             case 15495:
@@ -5631,7 +5631,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23306;
                 itemDef.femaleEquip1 = 23306;
-                itemDef.name = "@mag@Athos Platelegs";
+                itemDef.name = "Athos Platelegs";
                 break;
                 
             case 19724:
@@ -5644,7 +5644,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23093;
                 itemDef.femaleEquip1 = 23093;
-                itemDef.name = "@mag@Blessed Gloves";
+                itemDef.name = "Blessed Gloves";
                 break;
                 
             case 19725:
@@ -5657,7 +5657,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23095;
                 itemDef.femaleEquip1 = 23095;
-                itemDef.name = "@mag@Blessed Boots";
+                itemDef.name = "Blessed Boots";
                 break;
                 
                 
@@ -5672,7 +5672,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23097;
                 itemDef.femaleEquip1 = 23097;
-                itemDef.name = "@bla@Exotic Staff";
+                itemDef.name = "Exotic Staff";
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
                 break;
@@ -5687,7 +5687,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 40027;
                 itemDef.femaleEquip1 = 40027;
-                itemDef.name = "@bla@Exotic Wings";
+                itemDef.name = "Exotic Wings";
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
                 break;
@@ -5705,7 +5705,7 @@ break;
                 itemDef.femaleEquip1 = 23098;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
-                itemDef.name = "@bla@Exotic Boots";
+                itemDef.name = "Exotic Boots";
                 break;
                 
             case 8667:
@@ -5720,7 +5720,7 @@ break;
                 itemDef.femaleEquip1 = 23100;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
-                itemDef.name = "@bla@Exotic Gloves";
+                itemDef.name = "Exotic Gloves";
                 break;
             case 8668:
                 itemDef.modelID = 23101;
@@ -5734,7 +5734,7 @@ break;
                 itemDef.femaleEquip1 = 23102;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
-                itemDef.name = "@bla@Exotic Helmet";
+                itemDef.name = "Exotic Helmet";
                 break;
                 
             case 8669:
@@ -5749,7 +5749,7 @@ break;
                 itemDef.femaleEquip1 = 23104;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
-                itemDef.name = "@bla@Exotic Platelegs";
+                itemDef.name = "Exotic Platelegs";
                 break;
                 
             case 8670:
@@ -5764,7 +5764,7 @@ break;
                 itemDef.femaleEquip1 = 23106;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 62 };
-                itemDef.name = "@bla@Exotic Platebody";
+                itemDef.name = "Exotic Platebody";
                 break;
                 
                 
@@ -5785,7 +5785,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23097;
                 itemDef.femaleEquip1 = 23097;
-                itemDef.name = "@red@Supreme Staff";
+                itemDef.name = "Supreme Staff";
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
                 break;
@@ -5801,13 +5801,13 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 40027;
                 itemDef.femaleEquip1 = 40027;
-                itemDef.name = "@red@Supreme Wings";
+                itemDef.name = "Supreme Wings";
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
                 break;
                 
     		case 12542:
-    			itemDef.name = "Abbadon Pet @whi@(X2 Damage)";
+    			itemDef.name = "Abbadon Pet (X2 Damage)";
                 itemDef.modelID = 91780;
                 itemDef.modelZoom = 2750;
                 itemDef.rotationY = 340;
@@ -5838,7 +5838,7 @@ break;
                 itemDef.femaleEquip1 = 23098;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
-                itemDef.name = "@red@Supreme Boots";
+                itemDef.name = "Supreme Boots";
                 break;
                 
             case 19729:
@@ -5853,7 +5853,7 @@ break;
                 itemDef.femaleEquip1 = 23100;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
-                itemDef.name = "@red@Supreme Gloves";
+                itemDef.name = "Supreme Gloves";
                 break;
             case 19730:
                 itemDef.modelID = 23101;
@@ -5867,7 +5867,7 @@ break;
                 itemDef.femaleEquip1 = 23102;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
-                itemDef.name = "@red@Supreme Helmet";
+                itemDef.name = "Supreme Helmet";
                 break;
                 
             case 19731:
@@ -5882,7 +5882,7 @@ break;
                 itemDef.femaleEquip1 = 23104;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
-                itemDef.name = "@red@Supreme Platelegs";
+                itemDef.name = "Supreme Platelegs";
                 break;
                 
             case 19732:
@@ -5897,7 +5897,7 @@ break;
                 itemDef.femaleEquip1 = 23106;
     			itemDef.originalModelColors = new int[] { 56};
     			itemDef.newModelColor = new int[] { 59 };
-                itemDef.name = "@red@Supreme Platebody";
+                itemDef.name = "Supreme Platebody";
                 break;
                 
             case 19733:
@@ -5910,7 +5910,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23109;
                 itemDef.femaleEquip1 = 23109;
-                itemDef.name = "@mag@Galvan Platebody";
+                itemDef.name = "Galvan Platebody";
                 break;
             case 19734:
                 itemDef.modelID = 23110;
@@ -5922,15 +5922,15 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23110;
                 itemDef.femaleEquip1 = 23110;
-                itemDef.name = "@cya@Blessed Boots";
+                itemDef.name = "Blessed Boots";
                 break;
                 
             case 15418:
-                itemDef.name = "@cya@Blessed Amulet";
+                itemDef.name = "Blessed Amulet";
                 break;
                 
             case 15398:
-                itemDef.name = "@cya@Blessed Ring";
+                itemDef.name = "Blessed Ring";
                 break;
                 
             case 19736:
@@ -5943,7 +5943,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23112;
                 itemDef.femaleEquip1 = 23112;
-                itemDef.name = "@cya@Blessed Gloves";
+                itemDef.name = "Blessed Gloves";
                 break;
                 
             case 19735:
@@ -5956,7 +5956,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23114;
                 itemDef.femaleEquip1 = 23114;
-                itemDef.name = "@mag@Galvan Helmet";
+                itemDef.name = "Galvan Helmet";
                 break;
                 
             case 19737:
@@ -5969,16 +5969,16 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23116;
                 itemDef.femaleEquip1 = 23116;
-                itemDef.name = "@mag@Galvan Platelegs";
+                itemDef.name = "Galvan Platelegs";
                 break;
                 
                 
             case 3821:
-                itemDef.name = "@red@Lucid Platebody";
+                itemDef.name = "Lucid Platebody";
                 break;
                 
             case 3822:
-                itemDef.name = "@red@Lucid Platelegs";
+                itemDef.name = "Lucid Platelegs";
                 break;
                 
 
@@ -5993,7 +5993,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 28391;
                 itemDef.femaleEquip1 = 28391;
-                itemDef.name = "@mag@Trinity Helmet";
+                itemDef.name = "Trinity Helmet";
                 break;   
                 
             case 18396:
@@ -6006,7 +6006,7 @@ break;
                 itemDef.modelOffsetX = 1;
                 itemDef.maleEquip1 = 23172;
                 itemDef.femaleEquip1 = 23172;
-                itemDef.name = "@mag@Paradox Helmet";
+                itemDef.name = "Paradox Helmet";
                 break;  
                 
                 case 19692:
@@ -6019,7 +6019,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 28393;
                     itemDef.femaleEquip1 = 28393;
-                    itemDef.name = "@mag@Trinity Platebody";
+                    itemDef.name = "Trinity Platebody";
                     break;
                     
                 case 19693:
@@ -6032,7 +6032,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 28395;
                     itemDef.femaleEquip1 = 28395;
-                    itemDef.name = "@mag@Trinity Platelegs";
+                    itemDef.name = "Trinity Platelegs";
                     break;
                     
                     
@@ -6043,7 +6043,7 @@ break;
                     itemDef.modelZoom = 2000;
                     itemDef.maleEquip1 = 28397;
                     itemDef.femaleEquip1 = 28397;
-                    itemDef.name = "@mag@Trinity Gloves";
+                    itemDef.name = "Trinity Gloves";
                     break;
                 case 19695:
                     itemDef.modelID = 28398;
@@ -6054,7 +6054,7 @@ break;
                     itemDef.actions[1] = "Wield";
                     itemDef.maleEquip1 = 28398;
                     itemDef.femaleEquip1 = 28398;
-                    itemDef.name = "@mag@Trinity Boots";
+                    itemDef.name = "Trinity Boots";
                     break;
                     
                 case 18397:
@@ -6067,7 +6067,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 28422;
                     itemDef.femaleEquip1 = 28422;
-                    itemDef.name = "@mag@Paradox Boots";
+                    itemDef.name = "Paradox Boots";
                     break;
                     
                 case 19696:
@@ -6081,7 +6081,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 28400;
                     itemDef.femaleEquip1 = 28400;
-                    itemDef.name = "@mag@Trinity Cape";
+                    itemDef.name = "Trinity Cape";
                     break;
                     
                 case 19618:
@@ -6094,7 +6094,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 96040;
                     itemDef.femaleEquip1 = 96040;
-                    itemDef.name = "@mag@Trinity Sword";
+                    itemDef.name = "Trinity Sword";
                     break;
                     
                 case 19154:
@@ -6107,7 +6107,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 23429;
                     itemDef.femaleEquip1 = 23429;
-                    itemDef.name = "@mag@Luminita Sword";
+                    itemDef.name = "Luminita Sword";
                     break;
                 case 19713:
                     itemDef.modelID = 95068;
@@ -6119,7 +6119,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 95069;
                     itemDef.femaleEquip1 = 95069;
-                    itemDef.name = "@mag@Colorful Swords";
+                    itemDef.name = "Colorful Swords";
                     break;
                     
                 case 19726:
@@ -6132,7 +6132,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 94139;
                     itemDef.femaleEquip1 = 94139;
-                    itemDef.name = "@mag@Relentless Ring";
+                    itemDef.name = "Relentless Ring";
                     break;
                     
                 case 19738:
@@ -6145,7 +6145,7 @@ break;
                     itemDef.modelOffsetX = 1;
                     itemDef.maleEquip1 = 91085;
                     itemDef.femaleEquip1 = 91085;
-                    itemDef.name = "@mag@Book of Secrets";
+                    itemDef.name = "Book of Secrets";
                     break;
         case 19159:
             itemDef.modelID =28355;
@@ -6157,7 +6157,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28356;
             itemDef.femaleEquip1 = 28356;
-            itemDef.name = "@mag@Cloud's Head";
+            itemDef.name = "Cloud's Head";
             itemDef.stackable = false;
             break;
             
@@ -6171,7 +6171,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28358;
             itemDef.femaleEquip1 = 28358;
-            itemDef.name = "@mag@Cloud's Platebody";
+            itemDef.name = "Cloud's Platebody";
             itemDef.stackable = false;
             break;
             
@@ -6185,7 +6185,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28360;
             itemDef.femaleEquip1 = 28360;
-            itemDef.name = "@mag@Cloud's Platlegs";
+            itemDef.name = "Cloud's Platlegs";
             itemDef.stackable = false;
             break;
         case 19163:
@@ -6198,7 +6198,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28361;
             itemDef.femaleEquip1 = 28361;
-            itemDef.name = "@mag@Cloud's Sword";
+            itemDef.name = "Cloud's Sword";
             itemDef.stackable = false;
             break;
             
@@ -6212,7 +6212,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28363;
             itemDef.femaleEquip1 = 28363;
-            itemDef.name = "@mag@Cloud's cape";
+            itemDef.name = "Cloud's cape";
             itemDef.stackable = false;
             break;
             
@@ -6222,7 +6222,7 @@ break;
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 28365;
             itemDef.femaleEquip1 = 28365;
-            itemDef.name = "@mag@Cloud's gloves";
+            itemDef.name = "Cloud's gloves";
             itemDef.stackable = false;
             break;
             
@@ -6236,7 +6236,7 @@ break;
             itemDef.modelOffsetX = 1;
             itemDef.maleEquip1 = 28366;
             itemDef.femaleEquip1 = 28366;
-            itemDef.name = "@mag@Cloud's boots";
+            itemDef.name = "Cloud's boots";
             itemDef.stackable = false;
             break;
             
@@ -6300,14 +6300,14 @@ break;
         case 1686:
 			itemDef.modelID = 23489;
 			
-			itemDef.name = "@meg@Elemental Helm";
+			itemDef.name = "Elemental Helm";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
 /*  156 */       itemDef.actions[1] = "Wear";
 			 
 			 itemDef.actions[4] = "Drop";
-/*  328 */       itemDef.description = "@meg@Elemental Helm";
+/*  328 */       itemDef.description = "Elemental Helm";
 /*  329 */       itemDef.rotationX = 119;
 /*  330 */       itemDef.rotationY = 20;
 /*  331 */       itemDef.modelZoom = 778;
@@ -6320,14 +6320,14 @@ break;
         case 1685:
 			itemDef.modelID = 23487;
 			
-			itemDef.name = "@meg@Elemental Platebody";
+			itemDef.name = "Elemental Platebody";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
 /*  156 */       itemDef.actions[1] = "Wear";
 
 			 itemDef.actions[4] = "Drop";
-/*  328 */       itemDef.description = "@meg@Elemental Platebody";
+/*  328 */       itemDef.description = "Elemental Platebody";
 			itemDef.maleEquip1 = 23486;
 			/*  332 */       itemDef.modelOffsetX = 1;
 			/*  333 */       itemDef.modelOffsetY = 200;
@@ -6337,14 +6337,14 @@ break;
         case 2544:
 			itemDef.modelID = 23491;
 			
-			itemDef.name = "@meg@Elemental Platelegs";
+			itemDef.name = "Elemental Platelegs";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
 /*  156 */       itemDef.actions[1] = "Wear";
 
 			 itemDef.actions[4] = "Drop";
-/*  328 */       itemDef.description = "@meg@Elemental Platelegs";
+/*  328 */       itemDef.description = "Elemental Platelegs";
 /*  329 */       itemDef.rotationX = 119;
 /*  330 */       itemDef.rotationY = 20;
 /*  331 */       itemDef.modelZoom = 1665;
@@ -6358,7 +6358,7 @@ break;
         case 927:
 			itemDef.modelID = 23385;
 			
-			itemDef.name = "@bla@Starter Helm";
+			itemDef.name = "Starter Helm";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
@@ -6378,7 +6378,7 @@ break;
         case 928:
 			itemDef.modelID = 23387;
 			
-			itemDef.name = "@bla@Starter Platebody";
+			itemDef.name = "Starter Platebody";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
@@ -6395,7 +6395,7 @@ break;
         case 929:
 			itemDef.modelID = 23389;
 			
-			itemDef.name = "@bla@Starter Platelegs";
+			itemDef.name = "Starter Platelegs";
 /*  327 */      itemDef.groundActions = new String[5];
 /*  154 */       itemDef.groundActions[2] = "Take";
 /*  155 */       itemDef.actions = new String[5];
@@ -6573,7 +6573,7 @@ break;
 		case 7688:
  			itemDef.modelID = 44322;
  			itemDef.name = "VIP Sword(OH)";
-			itemDef.description = "VIP Sword@whi@(OH)";
+			itemDef.description = "VIP Sword(OH)";
             itemDef.modelZoom = 2000;
             itemDef.rotationY = 500;
  			itemDef.modelOffset1 = -1;
@@ -7002,7 +7002,7 @@ break;
 			
 		case 3277:
 			itemDef.modelID = 23529;
-			itemDef.name = "@blu@Donators Aura";
+			itemDef.name = "Donators Aura";
 			itemDef.modelZoom = 2000;
 			itemDef.rotationY = 0;
 			itemDef.rotationX = 0;
@@ -7029,25 +7029,25 @@ break;
         case 4789:
 			itemDef.modelID = 44215;
 			itemDef.modelZoom = 2000;
-            itemDef.name = "@mag@Fairy Crystal";
+            itemDef.name = "Fairy Crystal";
             break;
             
         case 4790:
 			itemDef.modelID = 44214;
 			itemDef.modelZoom = 2000;
-            itemDef.name = "@red@Fire Crystal";
+            itemDef.name = "Fire Crystal";
             break;
             
         case 4791:
 			itemDef.modelID = 44213;
 			itemDef.modelZoom = 2000;
-            itemDef.name = "@blu@Water Crystal";
+            itemDef.name = "Water Crystal";
             break;
             
         case 4792:
 			itemDef.modelID = 44212;
 			itemDef.modelZoom = 2000;
-            itemDef.name = "@yel@Electric Crystal";
+            itemDef.name = "Electric Crystal";
             break;
             
 		case 6500:
@@ -7122,13 +7122,13 @@ break;
             
         case 989:
 			ItemDef.copyModel(itemDef, 1545);
-            itemDef.name = "@yel@Starter keys";
+            itemDef.name = "Starter keys";
             break;
             
         case 5136:
 			ItemDef.copyModel(itemDef, 13723);
             itemDef.actions[0] = "Break";
-            itemDef.name = "@blu@DBZ Layer 2 Teleport";
+            itemDef.name = "DBZ Layer 2 Teleport";
             break;
             
         case 5149:
@@ -7140,11 +7140,11 @@ break;
             
         case 7629:
             itemDef.actions[0] = "Read";
-            itemDef.name = "@whi@PVM Tickets";
+            itemDef.name = "PVM Tickets";
             break;
             
         case 19121:
-            itemDef.name = "@gre@Platinum Starter Box";
+            itemDef.name = "Platinum Starter Box";
             break;
             
 
@@ -7558,7 +7558,7 @@ break;
 			break;
 			
 		case 11218:
-			itemDef.name = "@blu@Pet Bluefire Dragon";
+			itemDef.name = "Pet Bluefire Dragon";
 			ItemDef itemDef7 = ItemDef.forID(12458);
 			itemDef.modelID = itemDef7.modelID;
 			itemDef.modelOffset1 = itemDef7.modelOffset1;
@@ -7592,7 +7592,7 @@ break;
 			break;
 			
 		case 4742:
-			itemDef.name = "@or2@Pet Eevee";
+			itemDef.name = "Pet Eevee";
             itemDef.modelID = 44203;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7603,7 +7603,7 @@ break;
 			
 			
 		case 19753:
-			itemDef.name = "@or2@Pet Rainbow Eevee";
+			itemDef.name = "Pet Rainbow Eevee";
             itemDef.modelID = 44287;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7614,7 +7614,7 @@ break;
 			
 			
 		case 4743:
-			itemDef.name = "@yel@Pet Jolteon";
+			itemDef.name = "Pet Jolteon";
             itemDef.modelID = 44206;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7624,7 +7624,7 @@ break;
 			break;
 			
 		case 4744:
-			itemDef.name = "@red@Pet Flareon";
+			itemDef.name = "Pet Flareon";
             itemDef.modelID = 44207;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7635,7 +7635,7 @@ break;
 			
 			
 		case 4786:
-			itemDef.name = "@cya@Pet Vapereon";
+			itemDef.name = "Pet Vapereon";
             itemDef.modelID = 44208;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7646,7 +7646,7 @@ break;
 			
 			
 		case 4787:
-			itemDef.name = "@mag@Pet Sylveon";
+			itemDef.name = "Pet Sylveon";
             itemDef.modelID = 44211;
             itemDef.modelZoom = 2750;
             itemDef.rotationY = 340;
@@ -7776,11 +7776,11 @@ break;
 			break;
 			
         case 5561:
-            itemDef.name = "@or2@VIP Gem";
+            itemDef.name = "VIP Gem";
             break;
             
         case 7678:
-            itemDef.name = "@whi@VIP Key";
+            itemDef.name = "VIP Key";
             break;
 			
 		case 18620:
@@ -7814,18 +7814,18 @@ break;
 			break;
 			
 		case 14469:
-			itemDef.name = "@or2@Key loop";
+			itemDef.name = "Key loop";
 			break;
 		case 14470:
-			itemDef.name = "@or2@Key Teeth";
+			itemDef.name = "Key Teeth";
 			break;
 			
 		case 14471:
-			itemDef.name = "@or2@Dungeon Key";
+			itemDef.name = "Dungeon Key";
 			break;
 
 		case 5163:
-			itemDef.name = "@yel@Broly Jr@bla@(DOUBLE VOTE PET)";
+			itemDef.name = "Broly Jr(DOUBLE VOTE PET)";
             itemDef.modelID = 27631;
             itemDef.modelZoom = 1750;
             itemDef.rotationY = 0;
@@ -7853,7 +7853,7 @@ break;
 			break;
 			
 		case 5135:
-			itemDef.name = "@cya@Fuzed Goku Jr";
+			itemDef.name = "Fuzed Goku Jr";
 			ItemDef.copyModel(itemDef, 12458);
 			itemDef.groundActions = new String[] { null, null, "Take", null, null };
 			itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
@@ -7930,23 +7930,23 @@ break;
 			break;
 
 		case 4647:
-			itemDef.name = "@bla@Onyx Platebody";
+			itemDef.name = "Onyx Platebody";
 			break;
 		case 4648:
-			itemDef.name = "@bla@Onyx Platelegs";
+			itemDef.name = "Onyx Platelegs";
 			break;
 		case 4649:
-			itemDef.name = "@bla@Onyx FullHelm";
+			itemDef.name = "Onyx FullHelm";
 			break;
 		case 4762:
-			itemDef.name = "@red@Kings platebody";
+			itemDef.name = "Kings platebody";
 			break;
 		case 4763:
-			itemDef.name = "@red@Kings platelegs";
+			itemDef.name = "Kings platelegs";
 			break;
 			
 		case 3981:
-			itemDef.name = "@bla@Onyx Cape";
+			itemDef.name = "Onyx Cape";
 			break;
 		case 5153:
 			itemDef.name = "Pet Lava Dragon";
