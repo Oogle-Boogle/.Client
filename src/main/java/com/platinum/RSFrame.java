@@ -48,7 +48,7 @@ final class RSFrame extends JFrame {
 		        int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Platinum", 
 		        		JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options , options[1]);
 		        if(userPrompt == JOptionPane.YES_OPTION) {
-		        	launchURL("http://platinum-rsps.com/forums/");
+		        	launchURL("http://platinum-ps.net");
 		        	destroy = true;
 		            System.exit(0);
 		        } else {

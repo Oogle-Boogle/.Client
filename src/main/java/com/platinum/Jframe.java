@@ -153,7 +153,7 @@ public class Jframe extends Client implements ActionListener {
 				int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Platinum",
 						JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 				if (userPrompt == JOptionPane.YES_OPTION) {
-					openURL("http://platinum-rsps.com/forums/");
+					openURL("http://platinum-ps.net");
 					System.exit(-1);
 					System.exit(0);
 				} else {
@@ -334,19 +334,19 @@ public class Jframe extends Client implements ActionListener {
 			if (cmd != null) {
 				switch (cmd) {
 				case "Home":
-					openURL("http://Platinum-rsps.com");
+					openURL("http://Platinum-ps.net");
 					break;
 				case "Forum":
-					openURL("http://Platinum-rsps.com");
+					openURL("http://Platinum-ps.net");
 					break;
 				case "Platinum Guides":
-					openURL("Platinum-rsps.comt");
+					openURL("");
 					break;
 				case "Store":
-					openURL("https://Platinum-rsps.com/store");
+					openURL("https://platinum.everythingrs.com/services/store");
 					break;
 				case "Vote":
-					openURL("https://Platinum-rsps.com/vote");
+					openURL("https://platinum.everythingrs.com/services/vote");
 					break;
 				case "HiScores":
 					openURL("");

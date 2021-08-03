@@ -2,7 +2,7 @@ package com.platinum;
 public final class OSRSBroadCast {
 
     private String text = "Click this Message to read our latest Patch Notes!";
-    private String link = "https://platinum-rsps.com/forums/";
+    private String link = "https://platinum-ps.net";
 
     private final Client instance = Client.instance;
 

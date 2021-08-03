@@ -8081,7 +8081,7 @@ public class RSInterface {
 	private static void newTabInterface() {
 		RSInterface tab = addTabInterface(58700);
 		RSInterface scroll = addTabInterface(58701);
-		addText(58702, "Platinum-rsps.com", fonts, 2, 16750623, false, true);
+		addText(58702, "Platinum-ps.net", fonts, 2, 16750623, false, true);
 		addSpriteLoader(58703, 722);
 		addSpriteLoader(58704, 723);
 		addSpriteLoader(58705, 722);

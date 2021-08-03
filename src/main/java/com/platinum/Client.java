@@ -1940,8 +1940,8 @@ public class Client extends RSApplet {
 				}
 			} else if (super.saveClickX >= 404 && super.saveClickX <= 515 && super.saveClickY >= clientHeight - 23
 					&& super.saveClickY <= clientHeight) {
-				launchURL("https://platinum-rsps.com");
-				pushMessage("We've attempted to open platinum-rsps.com for you.", 0, "");
+				launchURL("https://platinum-ps.net");
+				pushMessage("We've attempted to open platinum-ps.net for you.", 0, "");
 			}
 			if (!showChat) {
 				cButtonCPos = -1;
@@ -9691,8 +9691,8 @@ public class Client extends RSApplet {
 			}
 		}
 		if (l == 606) {
-			launchURL("platinum-rsps.com");
-			pushMessage("We've attempted to open platinum-rsps.com for you.", 0, "");
+			launchURL("platinum-ps.net");
+			pushMessage("We've attempted to open platinum-ps.net for you.", 0, "");
 		}
 		if (l == 491) {
 			Player class30_sub2_sub4_sub1_sub2_6 = playerArray[nodeId];
@@ -13624,7 +13624,7 @@ public class Client extends RSApplet {
 		}
 		// repackCacheIndex(2);
 		//repackCacheIndex(1);
-		// dumpCacheIndex(1);
+		 //dumpCacheIndex(1);
 		// dumpCacheIndex(4);
 		//repackCacheIndex(4);
 		// repackCacheIndex(6);
@@ -14082,7 +14082,7 @@ public class Client extends RSApplet {
 			g.setColor(Color.white);
 			g.drawString("Error - unable to load game!", 50, 50);
 			g.drawString("To play Platinum make sure you play from", 50, 100);
-			g.drawString("platinum-rsps.com", 50, 150);
+			g.drawString("platinum-ps.net", 50, 150);
 		}
 	}
 

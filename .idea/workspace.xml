@@ -6,10 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="update config for client version">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="remove item colour names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Jframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Jframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/OSRSBroadCast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/OSRSBroadCast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627430454045</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="remove item colour names">
+      <created>1628020140410</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628020140411</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +136,7 @@
     <MESSAGE value="mini me" />
     <MESSAGE value="fuser interface" />
     <MESSAGE value="Improved client load time and fixed 'walk here'" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved client load time and fixed 'walk here'" />
+    <MESSAGE value="remove item colour names" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove item colour names" />
   </component>
 </project>
