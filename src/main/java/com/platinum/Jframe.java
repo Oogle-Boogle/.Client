@@ -349,7 +349,7 @@ public class Jframe extends Client implements ActionListener {
 					openURL("https://platinum.everythingrs.com/services/vote");
 					break;
 				case "HiScores":
-					openURL("");
+					openURL("https://platinum.everythingrs.com/services/hiscores");
 					break;
 				case "Join Discord":
 					// String nickname = (Client.instance.getMyUsername() != null && Client.loggedIn
