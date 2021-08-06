@@ -12430,7 +12430,7 @@ public class Client extends RSApplet {
 	}
 
 	private int loginCode;
-	private String serial = "null";
+	private String serial = "null"; //todo change
 	private boolean LOGGING_IN;
 
 	public void login(String username, String password, boolean flag) throws ClassNotFoundException,
