@@ -34,6 +34,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 	public static int hotKey = 508;
 	public boolean resizing;
 	private int anInt4;
+	public static boolean shiftDown = false;
 	private int delayTime;
 	int minDelay;
 	private final long aLongArray7[] = new long[10];
@@ -596,11 +597,12 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		idleTime = 0;
 		int i = keyevent.getKeyCode();
 		int j = keyevent.getKeyChar();
-		if(i == KeyEvent.VK_SHIFT) {
-			shifting = true;
-		}
+	
 		if(i == KeyEvent.VK_CONTROL) {
 			controlling = true;
+		}
+		if(i == KeyEvent.VK_SHIFT) {
+			shiftDown = true;
 		}
 
 		if (keyevent.isControlDown()) {
@@ -753,11 +755,13 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		idleTime = 0;
 		int i = keyevent.getKeyCode();
 		char c = keyevent.getKeyChar();
-		if(i == KeyEvent.VK_SHIFT) {
-			shifting = false;
-		}
+	
 		if(i == KeyEvent.VK_CONTROL) {
 			controlling = false;
+		}
+		
+		if(i == KeyEvent.VK_SHIFT) {
+			shiftDown = false;
 		}
 		if (i == 17) {
 			resizing = false;

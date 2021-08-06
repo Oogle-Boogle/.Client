@@ -70,6 +70,8 @@ import javax.swing.colorchooser.AbstractColorChooserPanel;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import com.platinum.RSApplet;
+
 
 
 
@@ -414,7 +416,6 @@ public class Client extends RSApplet {
 	            options.put("hp_overlay", Boolean.valueOf(true));
 	            options.put("player_names", Boolean.valueOf(false));
 	            options.put("entity_names", Boolean.valueOf(false));
-	            options.put("shift_drop", Boolean.valueOf(true));
 	            options.put("extended_view", Boolean.valueOf(false));
 	            options.put("anim_inv_tex", Boolean.valueOf(true));
 	            options.put("anim_tex", Boolean.valueOf(false));
@@ -465,8 +466,7 @@ public class Client extends RSApplet {
 	            options.put("solid_chatbox", in.readByte() == 1);
 	            options.put("hp_overlay", Boolean.valueOf(in.readByte() == 1));
 	            options.put("player_names", Boolean.valueOf(in.readByte() == 1));
-	            options.put("entity_names", Boolean.valueOf(in.readByte() == 1));
-	            options.put("shift_drop", Boolean.valueOf(in.readByte() == 1));
+	            options.put("entity_names", Boolean.valueOf(in.readByte() == 1));	      
 	            options.put("extended_view", Boolean.valueOf(in.readByte() == 1));
 	            options.put("anim_inv_tex", Boolean.valueOf(in.readByte() == 1));
 	            options.put("anim_tex", Boolean.valueOf(in.readByte() == 1));
@@ -515,7 +515,6 @@ public class Client extends RSApplet {
 	            options.put("hp_overlay", Boolean.valueOf(true));
 	            options.put("player_names", Boolean.valueOf(false));
 	            options.put("entity_names", Boolean.valueOf(false));
-	            options.put("shift_drop", Boolean.valueOf(true));
 	            options.put("extended_view", Boolean.valueOf(false));
 	            options.put("anim_inv_tex", Boolean.valueOf(true));
 	            options.put("anim_tex", Boolean.valueOf(false));
@@ -561,7 +560,7 @@ public class Client extends RSApplet {
 	            out.write(getOption("hp_overlay") ? 1 : 0);
 	            out.write(getOption("player_names") ? 1 : 0);
 	            out.write(getOption("entity_names") ? 1 : 0);
-	            out.write(getOption("shift_drop") ? 1 : 0);
+	     
 	            out.write(getOption("extended_view") ? 1 : 0);
 	            out.write(getOption("anim_inv_tex") ? 1 : 0);
 	            out.write(getOption("anim_tex") ? 1 : 0);
@@ -4875,6 +4874,16 @@ public class Client extends RSApplet {
 											menuActionRow++;
 										}
 									} else {
+										
+									      int dropActionIndex = -1;
+	                                        for (int act = 0; act < itemDef.actions.length; act++) {
+	                                            if (itemDef.actions != null && itemDef.actions[act] != null &&
+	                                                    itemDef.actions[act].equals("Drop")) {
+	                                                dropActionIndex = act;
+	                                                break;
+	                                            }
+	                                        }
+
 										/*
 										 * int dropActionIndex = -1; for(int act = 0; act < itemDef.actions.length;
 										 * act++) { if(itemDef.actions != null && itemDef.actions[act] != null &&
@@ -4887,6 +4896,20 @@ public class Client extends RSApplet {
 										 * itemDef.id; menuActionCmd2[menuActionRow] = ptr;
 										 * menuActionCmd3[menuActionRow] = child.id; menuActionRow++; return; }
 										 */
+										
+									       boolean shiftDrop = RSApplet.shiftDown
+	                                                && dropActionIndex > -1;
+
+	                                        if (shiftDrop) {
+	                                            menuActionName[menuActionRow] = "Drop @lre@"
+	                                                    + itemDef.name;
+	                                            menuActionID[menuActionRow] = 847;
+	                                            menuActionCmd1[menuActionRow] = itemDef.id;
+	                                            menuActionCmd2[menuActionRow] = ptr;
+	                                            menuActionCmd3[menuActionRow] = child.id;
+	                                            menuActionRow++;
+	                                            return;
+	                                        }
 										if (child.isInventoryInterface) {
 											for (int l3 = 4; l3 >= 3; l3--) {
 												if (itemDef.actions != null && itemDef.actions[l3] != null) {
@@ -8202,16 +8225,7 @@ public class Client extends RSApplet {
 		 * if the player is holding down shift, and clicks an item in his inventory,
 		 * write the data(itemid/slot) to the server[3 bytes] Packet 182
 		 */
-		if (RSApplet.shifting) {
-			if (interfaceId == 3214) {
-				stream.createFrame(182);
-				stream.writeWord(nodeId);
-				stream.writeByte(slot);
-				System.out.println("Wrote: " + nodeId + " to server");
-				System.out.println("Wrote: " + slot + " to server");
-				return;
-			}
-		}
+
 
 		// System.out.println("Wrote button id: " + l + " to server");
 
@@ -16174,7 +16188,6 @@ public class Client extends RSApplet {
 			smallText.method385(0x00FF00, "Made by midnite blue :)", 257, 140);
 			smallText.method385(0xffff00, "Debug Offset2: " + iOffy, 271, 5);
 			smallText.method385(0xffff00, "Control: " + RSApplet.controlling, 285, 5);
-			smallText.method385(0xffff00, "Shifting: " + RSApplet.shifting, 299, 5);
 			smallText.method385(0xFF0000, "Hold control to offset and shift to zoom!", 313, 5);
 			smallText.method385(0xFF0000, "Type ::debugitem 0 to exit the debug interface!", 327, 5);
 		}
