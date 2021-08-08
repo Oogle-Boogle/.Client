@@ -89,6 +89,64 @@ public class RSInterface {
 		main.child(0, 23999, 450, 3);
 	}
 	
+	public static void mapteleport(TextDrawingArea[] tda) {
+		 final int STARTING_POINT = 23500;
+		 RSInterface main = addInterface(STARTING_POINT);
+		   addSpriteLoader(STARTING_POINT + 1, 1265);
+		   addHoverButtonWSpriteLoader(STARTING_POINT + 2, 1266, 15, 15, "Bank", -1, STARTING_POINT + 3, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 3, 1275, 15, 15, STARTING_POINT + 4);
+	   
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 5, 1270, 15, 15, "Prayer", -1, STARTING_POINT + 6, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 6, 1279, 15, 15, STARTING_POINT + 7);
+	    
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 8, 1272, 15, 15, "Slayer", -1, STARTING_POINT + 9, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 9, 1281, 15, 15, STARTING_POINT + 10);
+	      
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 11, 1274, 15, 15, "Sword", -1, STARTING_POINT + 12, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 12, 1283, 15, 15, STARTING_POINT + 13);
+	  
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 14, 1273, 15, 15, "Store", -1, STARTING_POINT + 15, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 15, 1282, 15, 15, STARTING_POINT + 16);
+	     
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 17, 1271, 15, 15, "Dungeon", -1, STARTING_POINT + 18, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 18, 1280, 15, 15, STARTING_POINT + 19);
+	  
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 20, 1268, 15, 15, "Hunter", -1, STARTING_POINT + 21, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 21, 1277, 15, 15, STARTING_POINT + 22);
+	   
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 23, 1269, 15, 15, "PinkIcon", -1, STARTING_POINT + 24, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 24, 1278, 15, 15, STARTING_POINT + 25);
+	 
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 26, 1267, 15, 15, "BrownIcon", -1, STARTING_POINT + 27, 1);
+	        addHoveredImageWSpriteLoader(STARTING_POINT + 27, 1276, 15, 15, STARTING_POINT + 28);
+	   
+		   
+	        main.totalChildren(19);
+	        
+	        main.child(0, STARTING_POINT + 1, 140, 50);
+	        main.child(1, STARTING_POINT + 2, 360, 150);
+	        main.child(2, STARTING_POINT + 3, 360, 150);
+	        main.child(3, STARTING_POINT + 5, 310, 145);
+	        main.child(4, STARTING_POINT + 6, 310, 145);
+	        main.child(5, STARTING_POINT + 8, 360, 80);
+	        main.child(6, STARTING_POINT + 9, 360, 80);
+	        main.child(7, STARTING_POINT + 11, 300, 270);
+	        main.child(8, STARTING_POINT + 12, 300, 270);
+	        main.child(9, STARTING_POINT + 14, 270, 150);
+	        main.child(10, STARTING_POINT + 15, 270, 150);
+	        main.child(11, STARTING_POINT + 17, 153, 63);
+	        main.child(12, STARTING_POINT + 18, 153, 63);
+	        main.child(13, STARTING_POINT + 20, 160, 150);
+	        main.child(14, STARTING_POINT + 21, 160, 150);
+	        main.child(15, STARTING_POINT + 23, 220, 160);
+	        main.child(16, STARTING_POINT + 24, 220, 160);
+	        main.child(17, STARTING_POINT + 26, 160, 220);
+	        main.child(18, STARTING_POINT + 27, 160, 220);
+	        
+	        
+		 
+	}
+	
 
 	public static void presetTab(TextDrawingArea[] tda) {
 		// statistics(fonts);
@@ -6147,6 +6205,7 @@ public class RSInterface {
 		bestItems(textDrawingAreas);
 		presetTab(textDrawingAreas);
 		drawDPSOverlay(textDrawingAreas);
+		mapteleport(textDrawingAreas);
 		customPersonalperks(textDrawingAreas);
 		perkOverlays(textDrawingAreas);
 		PersonalperkOverlays(textDrawingAreas);
@@ -9327,8 +9386,10 @@ public class RSInterface {
 	private static void groupIronmanBank() {
         final int STARTING_POINT = 19307;
         RSInterface main = addInterface(STARTING_POINT);
+        RSInterface buttion = addInterface(30100);
         addSpriteLoader(STARTING_POINT + 1, 1212);
-        main.totalChildren(4);
+        main.totalChildren(6);
+        
         main.child(0, STARTING_POINT + 1, 87, 90);
         main.child(1, STARTING_POINT + 5, 95, 128);
         addTextComponent(STARTING_POINT + 3, "Group Ironman Bank", fonts, 2, ColorConstants.ORANGE, true, false, 15,
@@ -9343,6 +9404,16 @@ public class RSInterface {
         scroll.totalChildren(1);
         addToItemGroup(STARTING_POINT + 6, 9, 20, 4, 3, true, new String[]{"Withdraw 1", "Withdraw 5", "Withdraw 10", "Withdraw all", "Withdraw x"});
         scroll.child(0, STARTING_POINT + 6, 0, 1);
+        //addSpriteLoader(STARTING_POINT + 7, 1121);
+        //main.child(4, STARTING_POINT + 7, 10, 10);
+        addHoverButtonWSpriteLoader(STARTING_POINT + 7, 933, 88, 36, "De-note", -1, STARTING_POINT + 8, 1);
+        addHoveredImageWSpriteLoader(STARTING_POINT + 8, 934, 88, 36, STARTING_POINT + 9);
+        main.child(4, STARTING_POINT + 7, 94, 95);
+        main.child(5, STARTING_POINT + 8, 94, 95);
+    
+        
+	
+		
     }
 
 	private static void printFreeInterfaceIds(int start, int end) {
