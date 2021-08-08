@@ -54,14 +54,14 @@ public final class NPCDef {
 				firstFreeSlot = i;
 			}
 			if (originalColours[i] == targetColor) {
-				System.out.println("Was same");
+				//System.out.println("Was same");
 				destColours[i] = newColor;
 				return;
 			}
 		}
 		if (firstFreeSlot == originalColours.length) {
 			int newLength = firstFreeSlot + 1;
-			System.out.println("Set newLength(param) to firstFreeSlot + 1");
+			//System.out.println("Set newLength(param) to firstFreeSlot + 1");
 			int targetColors[] = new int[newLength];
 			int newColors[] = new int[newLength];
 			System.arraycopy(originalColours, 0, targetColors, 0, firstFreeSlot);
@@ -87,14 +87,14 @@ public final class NPCDef {
 				firstFreeSlot = i;
 			}
 			if (originalModelColors[i] == targetColor) {
-				System.out.println("Was same");
+				//System.out.println("Was same");
 				newModelColor[i] = newColor;
 				return;
 			}
 		}
 		if (firstFreeSlot == originalModelColors.length) {
 			int newLength = firstFreeSlot + 1;
-			System.out.println("Set newLength(param) to firstFreeSlot + 1");
+			//System.out.println("Set newLength(param) to firstFreeSlot + 1");
 			int targetColors[] = new int[newLength];
 			int newColors[] = new int[newLength];
 			System.arraycopy(originalModelColors, 0, targetColors, 0, firstFreeSlot);

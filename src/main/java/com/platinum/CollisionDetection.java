@@ -8,7 +8,7 @@ final class CollisionDetection {
 		sizeY = 104;
 		clipData = new int[sizeX][sizeY];
 		setDefault();
-		System.out.println("CALLED -> CD");
+		//System.out.println("CALLED -> CD");
 	}
 
 	public void setDefault() {
@@ -165,7 +165,7 @@ final class CollisionDetection {
 
 	public void appendSolidFlag(int i, int k) {
 		if(Client.instance.noClip) {
-			System.out.println("Tried to add clipping but couldn't cause no clip =]");
+			//System.out.println("Tried to add clipping but couldn't cause no clip =]");
 			return;
 		}
 		clipData[k][i] |= 0x200000;
@@ -173,7 +173,7 @@ final class CollisionDetection {
 
 	private void appendFlag(int x, int y, int flag) {
 		if(Client.instance.noClip) {
-			System.out.println("Tried to add clipping but couldn't cause no clip =]");
+			//System.out.println("Tried to add clipping but couldn't cause no clip =]");
 			return;
 		}
 		clipData[x][y] |= flag;
@@ -181,7 +181,7 @@ final class CollisionDetection {
 
 	public void addClip(int i, int j, boolean flag, int k, int l) {
 		if(Client.instance.noClip) {
-			System.out.println("Didnt add clipping");
+			//System.out.println("Didnt add clipping");
 			return;
 		}
 		if (j == 0) {
@@ -329,7 +329,7 @@ final class CollisionDetection {
 
 	public void addGroundDecClip(int j, int k) {
 		if(Client.instance.noClip) {
-			System.out.println("Tried to add clipping but couldn't cause no clip =]");
+			//System.out.println("Tried to add clipping but couldn't cause no clip =]");
 			return;
 		}
 		clipData[k][j] &= 0xdfffff;

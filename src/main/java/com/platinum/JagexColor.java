@@ -28,7 +28,7 @@ public class JagexColor {
     }
     
     public static int RGB_to_RS2HSB(int red, int green, int blue) {
-    	System.out.println("("+red+", "+green+", "+blue+")");
+    	//System.out.println("("+red+", "+green+", "+blue+")");
 		float[] HSB = Color.RGBtoHSB(red, green, blue, null);
 		float hue = (HSB[0]);
 		float saturation = (HSB[1]);
@@ -108,37 +108,37 @@ public class JagexColor {
         int green = (rgb >> 8) & 0xFF;
         int blue = rgb & 0xFF;
         
-        System.out.println(color);
+        //System.out.println(color);
         
-        System.out.println(String.format("%02x%02x%02x", red, green, blue));
+        //System.out.println(String.format("%02x%02x%02x", red, green, blue));
         
-        System.out.println(red+" - "+green+" - "+blue);
+        //System.out.println(red+" - "+green+" - "+blue);
         
 		color = fromHEX(String.format("%02x%02x%02x", red, green, blue));
 		
-		System.out.println(color);
+		//System.out.println(color);
 		
         color = fromRGB(red, green, blue);
         
-		System.out.println(color);
+		//System.out.println(color);
 		
 		float[] hsb = Color.RGBtoHSB(red, green, blue, null);
 		//System.out.println(Arrays.toString(hsb));
 		color = ((int) (hsb[0] * 63) << 6) + ((int) (hsb[1] * 7) << 3) + ((int) (hsb[2] * 127));
 		
-		System.out.println(color);
+		//System.out.println(color);
 		
 		color = JagexColor.getHSLValue((int) (hsb[0] * 63), (int) (hsb[1] * 7), (int) (hsb[2] * 127));
 		
-		System.out.println(color);
+		//System.out.println(color);
 		
-		System.out.println(RGB_to_RS2HSB(red, green, blue));*/
+		//System.out.println(RGB_to_RS2HSB(red, green, blue));*/
 		
 		//[926, 350770, 928, 130770]
 		
 		int rgb = hsl2rgb[926];
 		
-		System.out.println(String.format("%02x%02x%02x", rgb & 0xFF, (rgb >> 8) & 0xFF, (rgb >> 16) & 0xFF));
+		//System.out.println(String.format("%02x%02x%02x", rgb & 0xFF, (rgb >> 8) & 0xFF, (rgb >> 16) & 0xFF));
 		
 	}
 	

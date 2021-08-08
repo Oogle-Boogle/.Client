@@ -15,7 +15,7 @@ public class GarbageCollector implements Runnable {
 	@Override
 	public void run() {
 		while(true) {
-			System.out.println("Ran garbage collector");
+			//System.out.println("Ran garbage collector");
 			System.gc();
 			try {
 				Thread.sleep(20000);

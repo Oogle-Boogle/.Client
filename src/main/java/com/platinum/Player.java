@@ -99,7 +99,7 @@ public final class Player extends Entity {
 		headIcon = stream.readUnsignedByte();
 		bountyHunterIcon = stream.readUnsignedByte();
 		skulled = stream.readUnsignedWord() == 1;
-		System.out.println("Skulled: " + skulled);
+		//System.out.println("Skulled: " + skulled);
 		if (bountyHunterIcon > 4 && bountyHunterIcon != 255)
 			bountyHunterIcon = 4;
 		desc = null;
@@ -112,10 +112,10 @@ public final class Player extends Entity {
 			}
 			int secondByte = stream.readUnsignedByte();
 			equipment[partId] = (firstByte << 8) + secondByte;
-			System.out.println("hello: " + (equipment[partId] = (firstByte << 8) + secondByte));
+			//System.out.println("hello: " + (equipment[partId] = (firstByte << 8) + secondByte));
 			if (partId == 0 && equipment[0] == 65535) {
 				desc = NPCDef.forID(stream.readUnsignedWord());
-				System.out.println("Transformation id from server: " + desc.id);
+				//System.out.println("Transformation id from server: " + desc.id);
 				break;
 			}
 
@@ -167,7 +167,7 @@ public final class Player extends Entity {
 		}
 
 		super.anInt1511 = stream.readUnsignedWord();
-		System.out.println("Anint 1511: " + super.anInt1511);
+		//System.out.println("Anint 1511: " + super.anInt1511);
 		if (super.anInt1511 == 65535)
 			super.anInt1511 = -1;
 		super.anInt1512 = stream.readUnsignedWord();
@@ -194,7 +194,7 @@ public final class Player extends Entity {
 		playerRights = stream.readUnsignedWord();
 		playerTitle = stream.readString();
 		
-		System.out.println("Rights: " + playerRights);
+		//System.out.println("Rights: " + playerRights);
 
 		visible = true;
 		aLong1718 = 0L;
@@ -228,7 +228,7 @@ public final class Player extends Entity {
 		aLong1718 <<= 1;
 		aLong1718 += myGender;
 		
-		System.out.println("Arrays player equipment: " + Arrays.toString(this.equipment));
+		//System.out.println("Arrays player equipment: " + Arrays.toString(this.equipment));
 	}
 
 	public boolean maxCapeIds(int itemId) {

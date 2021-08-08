@@ -670,7 +670,7 @@ final class WorldController {
 		int k1 = x + j;
 		int l1 = y - 1;
 		int i2 = y + k;
-		System.out.println("This method was called rendering: " + model.getModelId());
+		//System.out.println("This method was called rendering: " + model.getModelId());
 		for (int j2 = z; j2 <= z + 1; j2++)
 			if (j2 != zMapSize) {
 				for (int k2 = j1; k2 <= k1; k2++)
@@ -1973,7 +1973,7 @@ final class WorldController {
 		if (l == 128) {
 			return method324(i1, i2, j1);
 		} else {
-			System.out.println("Warning unsupported wall type");
+			//System.out.println("Warning unsupported wall type");
 			return true;
 		}
 	}

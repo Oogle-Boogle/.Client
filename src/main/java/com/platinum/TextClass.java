@@ -41,7 +41,7 @@ public final class TextClass {
 			}
 			return new String(ac, 12 - i, i);
 		} catch (RuntimeException runtimeexception) {
-			System.out.println("81570, " + l + ", " + (byte) -99 + ", " + runtimeexception.toString());
+			//System.out.println("81570, " + l + ", " + (byte) -99 + ", " + runtimeexception.toString());
 		}
 		throw new RuntimeException();
 	}

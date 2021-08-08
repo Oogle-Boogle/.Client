@@ -39,7 +39,7 @@ public class ModelUtil {
 	public static boolean parseClientCommand(String command) {
 		String[] args = command.split(" ");
 		if (command.contains("gfx")) {
-			System.out.println(Arrays.toString(args));
+			//System.out.println(Arrays.toString(args));
 			try {
 
 				int gfx = args.length < 2 ? lastGFX : Integer.parseInt(args[1]);
@@ -56,24 +56,24 @@ public class ModelUtil {
 				case "changegfxanim":
 					int anim = Integer.parseInt(args[2]);
 					spotAnim.setAnimation(anim);
-					System.out.println("Set the animation of " + gfx + " to " + anim);
+					//System.out.println("Set the animation of " + gfx + " to " + anim);
 					break;
 				case "changegfxmodel":
 					int model = Integer.parseInt(args[2]);
 					spotAnim.setModelId(model);
 					SpotAnim.modelCache.clear();
-					System.out.println("Set the model of " + gfx + " to " + model);
+					//System.out.println("Set the model of " + gfx + " to " + model);
 					break;
 				case "changegfxsize":
 					int width = Integer.parseInt(args[2]);
 					int height = Integer.parseInt(args[2]);
 					spotAnim.setSizeXY(width);
 					spotAnim.setSizeZ(height);
-					System.out.println("Set the width and height of " + gfx + " to (" + width + ", " + height + ")");
+					//System.out.println("Set the width and height of " + gfx + " to (" + width + ", " + height + ")");
 					break;
 
 				/*
-				 * case "getxysize": System.out.println(spotAnim.getSizeXY()); break;
+				 * case "getxysize": //System.out.println(spotAnim.getSizeXY()); break;
 				 */
 
 				case "rotategfx":
@@ -104,21 +104,20 @@ public class ModelUtil {
 					int targetColor = Integer.parseInt(args[2]);
 					int newColor = Integer.parseInt(args[3]);
 					spotAnim.recolor(targetColor, newColor);
-					System.out.println("Recolored " + gfx + ": " + targetColor + " -> " + newColor + "");
+					//System.out.println("Recolored " + gfx + ": " + targetColor + " -> " + newColor + "");
 					break;
 				case "removegfxrecolors":
-					System.out.println("Removing recolors of " + gfx);
+					//System.out.println("Removing recolors of " + gfx);
 					spotAnim.removeRecolors();
 					SpotAnim.modelCache.clear();
 					break;
 				case "printgfx":
-					System.out.println("Printing colors of " + gfx);
-					System.out.println(spotAnim.toString());
+					//System.out.println("Printing colors of " + gfx);
+					//System.out.println(spotAnim.toString());
 					break;
 				case "printgfxcolors":
 					getModelColors(spotAnim.getModel()).forEach(entry -> {
-						System.out.println(
-								" color(" + entry.getKey() + ") occured " + entry.getValue().get() + " times.");
+						//System.out.println(" color(" + entry.getKey() + ") occured " + entry.getValue().get() + " times.");
 					});
 					break;
 				case "cleargfxmodelcache":
@@ -128,7 +127,7 @@ public class ModelUtil {
 					final boolean copyExisting = args.length > 1;
 					final SpotAnim newGFX = copyExisting ? SpotAnim.createNewGFXFrom(Integer.parseInt(args[1]))
 							: SpotAnim.createNewGFX();
-					System.out.println("Created new gfx with id " + (newGFX.getId()));
+					//System.out.println("Created new gfx with id " + (newGFX.getId()));
 					newGFX.cache();
 					lastGFX = newGFX.getId();
 					break;
@@ -146,9 +145,9 @@ public class ModelUtil {
 			Client.currentlyEditedItemId = Integer.parseInt(itemID);
 			if (Client.currentlyEditedItemId == 0) {
 				Client.itemEditing = false;
-				System.out.println("Edited item is 0");
+				//System.out.println("Edited item is 0");
 			} else {
-				System.out.println("True");
+				//System.out.println("True");
 				Client.itemEditing = true;
 				Client.needDrawTabArea = true;
 				RSInterface rsi = RSInterface.interfaceCache[3214];
@@ -168,10 +167,10 @@ public class ModelUtil {
 		switch (command) {
 
 		/*
-		 * case "test": System.out.println("Test was executed"); String itemID =
+		 * case "test": //System.out.println("Test was executed"); String itemID =
 		 * command.substring(5); Client.currentlyEditedItemId =
-		 * Integer.parseInt(itemID); System.out.println("Executed test");
-		 * System.out.println("Now debugging item: " + itemID); new Thread(() -> {
+		 * Integer.parseInt(itemID); //System.out.println("Executed test");
+		 * //System.out.println("Now debugging item: " + itemID); new Thread(() -> {
 		 * Application.launch(SuicsItemEditorApplication.class); }).start(); break;
 		 */
 
@@ -214,7 +213,7 @@ public class ModelUtil {
 								e1.printStackTrace();
 							}
 						} else
-							System.out.println(header);
+							//System.out.println(header);
 
 						for (Map.Entry<Integer, AtomicInteger> entry : getModelColors(invModel)) {
 							String line = "	-> color(" + entry.getKey() + ") occured " + entry.getValue().get()
@@ -225,8 +224,8 @@ public class ModelUtil {
 								} catch (IOException e) {
 									e.printStackTrace();
 								}
-							} else
-								System.out.println(line);
+							}
+								//System.out.println(line);
 						}
 
 					}

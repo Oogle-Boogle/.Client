@@ -40,7 +40,7 @@ public final class SpotAnim {
 			cache[j].readValues(stream);
 		}
 		editExistinGFX();
-		System.out.println("GFX: "+smallRot+", "+bigRot);
+		//System.out.println("GFX: "+smallRot+", "+bigRot);
 		
 		try {
 			loadCustomGFXes();
@@ -164,9 +164,8 @@ public final class SpotAnim {
 					originalColours[k] = stream.readUnsignedWord();
 					destColours[k] = stream.readUnsignedWord();
 				}
-			} else
-				System.out.println("Error unrecognised spotanim config code: "
-						+ i);
+			} //else
+				//System.out.println("Error unrecognised spotanim config code: "+ i);
 		} while (true);
 	}
 
@@ -362,7 +361,7 @@ public final class SpotAnim {
 					LAST_CUSTOM_GFX_ID = custom.id;
 			}
 		}	
-		System.out.println("[SpotAnim]: loaded "+(customGFXs.size())+" customs.");
+		//System.out.println("[SpotAnim]: loaded "+(customGFXs.size())+" customs.");
 	}
 	
 	public static void saveCustomGFXes() throws IOException {

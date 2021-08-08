@@ -87,7 +87,7 @@ public class Sprite extends DrawingArea {
 			var2 = null;
 
 		} catch (Exception var5) {
-			System.out.println(var5);
+			//System.out.println(var5);
 		}
 
 	}

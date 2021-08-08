@@ -2,8 +2,6 @@ package com.platinum;
 
 public class Configuration {
 
-	 //public static final double ACTUAL_CLIENT_VERSION =
-	 //ClientUpdater.getClientUpdater().getVersion();
 	public static final int CLIENT_VER = 15; // Client Version
 
 	public static final boolean LOCAL = true; //Change this lol
@@ -53,8 +51,8 @@ public class Configuration {
 			0, 0, 0, 0, 0, 0, 0, 2, 0, 1, // 90
 			2, 2, 0, 1, -1, 4, 1, 0, 1, 0, // 100
 			1, 1, 1, 1, 2, 1, 0, 15, 0, 0, // 110
-			0, 4, 4, -1, 9, 0, -2, 2, 0, 0, // 120 // 9
-			-1, 0, 0, 0, 9, 0, 0, 0, 0, 0, // 130
+			0, 4, 4, -1, 9, 0, -2, 2, 0, -1, // 120 // 9
+			-1, -1, -1, -1, 9, 0, 0, 0, 0, -1, // 130
 			3, 10, 2, 0, 0, 0, 0, 14, 0, 0, // 140
 			0, 4, 5, 3, 0, 0, 3, 0, 0, 0, // 150
 			4, 5, 0, 0, 2, 0, 6, 0, 0, 0, // 160

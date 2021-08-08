@@ -375,17 +375,17 @@ public class RSInterface {
 		      list.child(c++, id++, 20, y);
 		      addText(id, "+4000", 16751360, true, true, 100, fonts, 1);
 		      if(j < 5) {
-		    	  System.out.println("Bonus Rank = " + id);
+		    	  //System.out.println("Bonus Rank = " + id);
 		      }
 		      list.child(c++, id++, 75, y);
 		      addText(id, "Name", 16751360, false, true, 100, fonts, 1);
 		      if(j < 5) {
-		    	  System.out.println("Name = " + id);
+		    	  //System.out.println("Name = " + id);
 		      }
 		      list.child(c++, id++, 150, y);
 		      dropGroup(id, 1, 1, 1, 1);
 		      if(j < 5) {
-		    	  System.out.println("item model = " + id);
+		    	  //System.out.println("item model = " + id);
 		      }
 		      list.child(c++, id++, 108, y - 6);
 		      y += 40;
@@ -667,13 +667,13 @@ public class RSInterface {
 
 	public static RSInterface addHoverableConfigSprite(int id, int mainSprite,
 			int hoverSprite, boolean clickable, String tooltip, int configId, int configFrame) {
-		//  System.out.println("Added hoverable sprite with param: " + clickable);
+		//  //System.out.println("Added hoverable sprite with param: " + clickable);
 		RSInterface tab = interfaceCache[id] = new RSInterface();
 		tab.id = id;
 		tab.parentID = id;
 		tab.type = 111;
 		tab.atActionType = 5;
-		//   System.out.println(tab.atActionType + " ->");
+		//   //System.out.println(tab.atActionType + " ->");
 		tab.contentType = 0;
 		tab.opacity = (byte) 0;
 		tab.hoverable = true;
@@ -5880,7 +5880,7 @@ public class RSInterface {
 								"Withdraw-All but one", "Withdraw-X" };
 
 					if (rsInterface.parentID == 57150) {
-						System.out.println("YES Is!!!");
+						//System.out.println("YES Is!!!");
 						rsInterface.actions = new String[] { "Withdraw-1", "Withdraw-5", "Withdraw-10", "Withdraw-All",
 								"Withdraw-All but one", "Withdraw-X" };
 					}
@@ -6887,7 +6887,7 @@ public class RSInterface {
 	 * list.totalChildren(textammount);
 	 * 
 	 * int y = 0; int childNum = 0; for (int i = 0; i < textammount; i++, y+=20) {
-	 * list.child(childNum++, 48105 + i, 7, y); System.out.println(y); }
+	 * list.child(childNum++, 48105 + i, 7, y); //System.out.println(y); }
 	 * 
 	 * 
 	 * 
@@ -14246,7 +14246,7 @@ public class RSInterface {
 			sprite = new Sprite(streamLoader, spriteName, spriteId);
 			spriteCache.put(sprite, l);
 		} catch (Exception _ex) {
-			System.out.println("Unable to load sprite: " + spriteName + " " + spriteId);
+			//System.out.println("Unable to load sprite: " + spriteName + " " + spriteId);
 			return null;
 		}
 		return sprite;
@@ -14309,7 +14309,7 @@ public class RSInterface {
 			model_1.applyTransform(firstFrame);
 		// model_1.light(64, 768, -50, -10, -50, true);
 		model_1.light(64, 768, 255, 250, 10, true);
-		// System.out.println(Arrays.toString(model_1.face_color));
+		// //System.out.println(Arrays.toString(model_1.face_color));
 		return model_1;
 	}
 

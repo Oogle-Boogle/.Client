@@ -189,7 +189,7 @@ public final class Rasterizer extends DrawingArea {
 			
 			if (texture == 47) {
 				texture = 61;
-			//	System.out.println("Texture(Rasterizer) = 47");
+			//	//System.out.println("Texture(Rasterizer) = 47");
 			}
 		
 		anIntArray1480[texture] = anInt1481++;

@@ -23,7 +23,7 @@ implements Runnable
 			try {
 				byte abyte[] = Client.getClient().cacheIndices[4].get(landscapeIds[i]);
 				if (abyte == null) {
-					System.out.println("Couldn't fetch cached landscape: " + landscapeIds[i]);
+					//System.out.println("Couldn't fetch cached landscape: " + landscapeIds[i]);
 					continue;
 				}
 				File map = new File(folder.getAbsolutePath() + System.getProperty("file.separator") + landscapeIds[i] + ".gz");
@@ -38,7 +38,7 @@ implements Runnable
 			try {
 				byte abyte[] = Client.getClient().cacheIndices[4].get(objectMapIds[i]);
 				if (abyte == null) {
-					System.out.println("Couldn't fetch cached terrain: " + objectMapIds[i]);
+					//System.out.println("Couldn't fetch cached terrain: " + objectMapIds[i]);
 					continue;
 				}
 				File map = new File(folder.getAbsolutePath() + System.getProperty("file.separator") + objectMapIds[i] + ".gz");
@@ -100,7 +100,7 @@ implements Runnable
 				out.writeInt(getChecksum(type, index));
 				total++;
 			}
-			System.out.println(type+"-"+total);
+			//System.out.println(type+"-"+total);
 			out.close();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -154,7 +154,7 @@ implements Runnable
 					loopCycle = 0;
 					if(receivedSize == 0)
 					{
-						System.out.println("Rej: " + receivedType + "," + receivedID);
+						//System.out.println("Rej: " + receivedType + "," + receivedID);
 						current.buffer = null;
 						if(current.isNotExtraFile)
 							synchronized(zippedNodes)
@@ -544,7 +544,7 @@ implements Runnable
 		catch(Exception exception)
 		{
 			exception.printStackTrace();
-			System.out.println("od_ex " + exception.getMessage());
+			//System.out.println("od_ex " + exception.getMessage());
 		}
 	}
 
@@ -589,7 +589,7 @@ implements Runnable
 			do
 			{
 				if(readData >= gzipInputBuffer.length) {
-					System.out.println("File: "+OnDemandRequest.id+" too large");
+					//System.out.println("File: "+OnDemandRequest.id+" too large");
 					break;
 				}
 				int tempReadData = -1;
@@ -732,7 +732,9 @@ implements Runnable
 				extraFileCount++;
 				closeRequest(OnDemandRequest_1);
 				waiting = true;
-			} catch(Exception e) { System.out.println(OnDemandRequest_1.dataType+" "+OnDemandRequest_1.id);}
+			} catch(Exception e) { //System.out.println(OnDemandRequest_1.dataType+" "+OnDemandRequest_1.id);
+
+			}
 		}
 	}
 
@@ -802,7 +804,7 @@ implements Runnable
 					if(filesLoaded < totalFiles)
 						filesLoaded++;
 					statusString = "Loading extra files - " + (filesLoaded * 100) / totalFiles + "%";
-					System.out.println(statusString);
+					//System.out.println(statusString);
 					completedCount++;
 					if(completedCount == 10)
 						return;

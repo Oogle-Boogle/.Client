@@ -38,7 +38,7 @@ public class ResourceLoader {
 		}
 		
 		if (url == null) {
-			System.out.println(imageName);
+			//System.out.println(imageName);
 			return null;
 		}
 		return Toolkit.getDefaultToolkit().getImage(url);

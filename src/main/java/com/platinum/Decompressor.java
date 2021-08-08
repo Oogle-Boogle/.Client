@@ -171,7 +171,7 @@ final class Decompressor {
 	private synchronized void seekTo(RandomAccessFile randomaccessfile, int j) throws IOException {
 		try {
 			/*if (j < 0 || j > 0x3c00000) {
-				System.out.println("Badseek - pos:" + j + " len:" + randomaccessfile.length());
+				//System.out.println("Badseek - pos:" + j + " len:" + randomaccessfile.length());
 				j = 0x3c00000;
 				try {
 					Thread.sleep(1000L);

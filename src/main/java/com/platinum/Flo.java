@@ -61,7 +61,7 @@ public final class Flo {
 				hue2 = i1;
 				hue_weight = i1;
 			} else {
-			//	System.out.println("Error unrecognised config code: " + opcode);
+			//	//System.out.println("Error unrecognised config code: " + opcode);
 			}
 		} while (true);
 	}

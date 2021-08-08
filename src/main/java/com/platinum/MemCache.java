@@ -48,7 +48,7 @@ public final class MemCache {
         }
         catch(RuntimeException runtimeexception)
         {
-        	System.out.println("47547, " + entry + ", " + hash + ", " + (byte)2 + ", " + runtimeexception.toString());
+        	//System.out.println("47547, " + entry + ", " + hash + ", " + (byte)2 + ", " + runtimeexception.toString());
         }
         throw new RuntimeException();
     }

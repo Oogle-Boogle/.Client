@@ -31,7 +31,7 @@ final class RSSocket implements Runnable {
 			if (socket != null)
 				socket.close();
 		} catch (IOException _ex) {
-			System.out.println("Error closing stream");
+			//System.out.println("Error closing stream");
 		}
 		isWriter = false;
 		synchronized (this) {
@@ -129,11 +129,11 @@ final class RSSocket implements Runnable {
 	}
 
 	public void printDebug() {
-		System.out.println("dummy:" + closed);
-		System.out.println("tcycl:" + writeIndex);
-		System.out.println("tnum:" + buffIndex);
-		System.out.println("writer:" + isWriter);
-		System.out.println("ioerror:" + hasIOError);
+		//System.out.println("dummy:" + closed);
+		//System.out.println("tcycl:" + writeIndex);
+		//System.out.println("tnum:" + buffIndex);
+		//System.out.println("writer:" + isWriter);
+		//System.out.println("ioerror:" + hasIOError);
 		try {
 			System.out.println("available:" + available());
 		} catch (IOException _ex) {

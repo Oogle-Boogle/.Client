@@ -23,13 +23,13 @@ public class RouletteGame {
 
 		shiftBoxes();
 
-		// System.out.println("Landing index: " + getLandingIndex());
-		// System.out.println("Boxes childx: " + Arrays.toString(boxes.childX));
-		// System.out.println("Boxes childx 5: " + boxes.childX[5]);
+		// //System.out.println("Landing index: " + getLandingIndex());
+		// //System.out.println("Boxes childx: " + Arrays.toString(boxes.childX));
+		// //System.out.println("Boxes childx 5: " + boxes.childX[5]);
 	}
 
 	protected int getLandingIndex() {
-		System.out.println("Landing index: " + -landCount * 43);
+		//System.out.println("Landing index: " + -landCount * 43);
 		return -landCount * 43;
 	}
 

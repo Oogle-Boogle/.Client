@@ -644,7 +644,7 @@ public final class ItemDef {
 		}
 		
 		setSettings();
-		System.out.println("Unpacking");
+		//System.out.println("Unpacking");
 		
 		/*try {
 			repack();
@@ -1094,11 +1094,11 @@ public final class ItemDef {
 		//itemDef.value = prices[itemDef.id];
 		boolean dump = false;
 		if (dump) {
-			System.out.println("item name: " + itemDef.name + "");
-			System.out.println("model id = " + itemDef.modelID + "");
+			//System.out.println("item name: " + itemDef.name + "");
+			//System.out.println("model id = " + itemDef.modelID + "");
 		}
 		int custom_start = 18888;
-		// System.out.println("Custom items: "+CustomItems.values().length);
+		// //System.out.println("Custom items: "+CustomItems.values().length);
 		for (CustomItems custom : CustomItems.values()) {
 			if (i == custom_start + custom.ordinal()) {
 				itemDef = copyRotations(itemDef, custom.getCopy());
@@ -1283,7 +1283,7 @@ public final class ItemDef {
 			} else if (i == 117) {
                 lentItemID = stream.readUnsignedWord();
             } else {
-System.out.println("Wow unknown opcode: " + i);
+//System.out.println("Wow unknown opcode: " + i);
             }
 			
 		} while (true);
@@ -1566,14 +1566,14 @@ System.out.println("Wow unknown opcode: " + i);
 				firstFreeSlot = i;
 			}
 			if (originalModelColors[i] == targetColor) {
-				System.out.println("Was same");
+				//System.out.println("Was same");
 				newModelColor[i] = newColor;
 				return;
 			}
 		}
 		if (firstFreeSlot == originalModelColors.length) {
 			int newLength = firstFreeSlot + 1;
-			System.out.println("Set newLength(param) to firstFreeSlot + 1");
+			//System.out.println("Set newLength(param) to firstFreeSlot + 1");
 			int targetColors[] = new int[newLength];
 			int newColors[] = new int[newLength];
 			System.arraycopy(originalModelColors, 0, targetColors, 0, firstFreeSlot);

@@ -14,8 +14,8 @@ public final class VarBit {
 			cache[j].readValues(stream);
 		}
 
-		if (stream.currentOffset != stream.buffer.length)
-			System.out.println("varbit load mismatch");
+		//if (stream.currentOffset != stream.buffer.length)
+			//System.out.println("varbit load mismatch");
 	}
 
 	private void readValues(Stream stream) {
@@ -34,7 +34,7 @@ public final class VarBit {
 			else if (j == 4)
 				stream.readDWord();
 			//else
-			//	System.out.println("Error unrecognised config code: " + j);
+			//	//System.out.println("Error unrecognised config code: " + j);
 		} while (true);
 	}
 

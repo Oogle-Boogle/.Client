@@ -824,8 +824,8 @@ public final class Animation {
 				priority = stream.readUnsignedByte();
 			else if (i == 11)
 				delayType = stream.readUnsignedByte();
-			else
-				System.out.println("Unrecognized seq.dat config code: " + i);
+			/*else
+				//System.out.println("Unrecognized seq.dat config code: " + i);*/
 		} while (true);
 		if (frameCount == 0) {
 			frameCount = 1;

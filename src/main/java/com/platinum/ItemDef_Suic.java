@@ -1517,7 +1517,7 @@ public class ItemDef_Suic {
 			break;
 
 		case 559:
-			System.out.println("ITEM DEF MODEL ID: " + itemDef.modelID);
+			//System.out.println("ITEM DEF MODEL ID: " + itemDef.modelID);
 			break;
 			
 			

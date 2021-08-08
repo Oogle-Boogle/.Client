@@ -20,7 +20,7 @@ public class NpcDefinitionDumper {
 	}
 
 	public void execute() {
-		System.out.println("Started Dumping... " + totalItems);
+		//System.out.println("Started Dumping... " + totalItems);
 		int itemCount = 0;
 		for (int i = 0; i < totalItems; i++) {
 			ItemDef itemDef = ItemDef.forID(15956);
@@ -29,7 +29,7 @@ public class NpcDefinitionDumper {
 			}
 			itemCount++;
 		}
-		System.out.println("itemCount: " + itemCount);
+		//System.out.println("itemCount: " + itemCount);
 		dump();
 	}
 
@@ -37,7 +37,7 @@ public class NpcDefinitionDumper {
 		try (PrintWriter file = new PrintWriter(new FileOutputStream(new File("itemdef.txt"), true))) {
 			LIST.forEach(item -> {
 				if(item == null) {
-					System.out.println("Found item thats null");
+					//System.out.println("Found item thats null");
 					return;
 				}
 				file.append("ID: " + item.id);
@@ -53,7 +53,7 @@ public class NpcDefinitionDumper {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} finally {
-			System.out.println("Finished Dumping!");
+			//System.out.println("Finished Dumping!");
 		
 	}
 	

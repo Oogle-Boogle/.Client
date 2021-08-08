@@ -38,8 +38,8 @@ public final class IDK {
 				recolourTarget[i - 50] = stream.readUnsignedWord();
 			else if (i >= 60 && i < 70)
 				headModelIDs[i - 60] = stream.readUnsignedWord();
-			else
-				System.out.println("Error unrecognised config code: " + i);
+			//else
+				//System.out.println("Error unrecognised config code: " + i);
 		} while (true);
 	}
 

@@ -246,19 +246,15 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 			}
 			processDrawing();
 			if (shouldDebug) {
-				System.out.println((new StringBuilder()).append("ntime:").append(l2).toString());
+				//System.out.println((new StringBuilder()).append("ntime:").append(l2).toString());
 				for (int k2 = 0; k2 < 10; k2++) {
 					int i3 = ((i - k2 - 1) + 20) % 10;
-					System.out.println((new StringBuilder()).append("otim").append(i3).append(":")
-							.append(aLongArray7[i3]).toString());
+					//System.out.println((new StringBuilder()).append("otim").append(i3).append(":").append(aLongArray7[i3]).toString());
 				}
 
-				System.out.println((new StringBuilder()).append("fps:").append(fps).append(" ratio:").append(j)
-						.append(" count:").append(l).toString());
-				System.out.println((new StringBuilder()).append("del:").append(k).append(" deltime:").append(delayTime)
-						.append(" mindel:").append(minDelay).toString());
-				System.out.println(
-						(new StringBuilder()).append("intex:").append(i1).append(" opos:").append(i).toString());
+				//System.out.println((new StringBuilder()).append("fps:").append(fps).append(" ratio:").append(j).append(" count:").append(l).toString());
+				//System.out.println((new StringBuilder()).append("del:").append(k).append(" deltime:").append(delayTime).append(" mindel:").append(minDelay).toString());
+				//System.out.println((new StringBuilder()).append("intex:").append(i1).append(" opos:").append(i).toString());
 				shouldDebug = false;
 				i1 = 0;
 			}
@@ -331,7 +327,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		int rotation = event.getWheelRotation();
 		if (mouseX > 0 && mouseX < 512 && mouseY > Client.getClient().clientHeight - 165
 				&& mouseY < Client.getClient().clientHeight - 25) {
-			System.out.println("YES");
+			//System.out.println("YES");
 			int scrollPos = Client.anInt1089;
 			scrollPos -= rotation * 30;
 			if (scrollPos < 0) {
@@ -420,7 +416,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 			offsetX = Client.getClient().clientSize == 0 ? 4 : (Client.getClient().clientWidth / 2) - 256;
 			offsetY = Client.getClient().clientSize == 0 ? 4 : (Client.getClient().clientHeight / 2) - 167;
 			for (int index = 0; index < rsi.children.length; index++) {
-				//This is called if i try to scroll even if it doesn't work gg lol System.out.println("User has scrolled via mousewheel");
+				//This is called if i try to scroll even if it doesn't work gg lol //System.out.println("User has scrolled via mousewheel");
 				if (RSInterface.interfaceCache[rsi.children[index]].scrollMax > 0) {
 					childID = index;
 					positionX = rsi.childX[index];
@@ -624,7 +620,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		
 		
 		if(i == KeyEvent.VK_ESCAPE) {
-			System.out.println("CLOSING INTERFACE");
+			//System.out.println("CLOSING INTERFACE");
 			Client.instance.closeInterface();
 		}
 		if(i >= 37 && i <= 40 && Client.itemDebug) {

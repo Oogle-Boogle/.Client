@@ -309,9 +309,9 @@ final class ObjectManager {
 										j23 = -1;
 									}
 
-									// System.out.println("id: " + mapTexture);
-									// System.out.println("floor id: " + floorTexture);
-									// System.out.println("j23 id: " + j23);
+									// //System.out.println("id: " + mapTexture);
+									// //System.out.println("floor id: " + floorTexture);
+									// //System.out.println("j23 id: " + j23);
 
 									worldController.method279(l, l6, k17, k22, byte4, floorTexture, 154, j19, k19, l19,
 											i20, getShadow(j21, j20), getShadow(j21, k20), getShadow(j21, l20),
@@ -512,7 +512,7 @@ final class ObjectManager {
 				if (j == 0)
 					break label0;
 				i += j;
-				System.out.println(i);
+				//System.out.println(i);
 				ObjectDef class46 = ObjectDef.forID(i);
 				class46.method574(fetcher);
 				do {
@@ -555,7 +555,7 @@ final class ObjectManager {
 			fileWriter = null;
 			bw = null;
 		} catch (Exception exception) {
-			System.out.println("Critical error while writing data: " + file);
+			//System.out.println("Critical error while writing data: " + file);
 			exception.printStackTrace();
 		}
 	}
@@ -853,7 +853,7 @@ final class ObjectManager {
 				worldController.addWallDecoration(l2, y, j1, z, 0, k2, ((Animable) (obj10)), x, byte0, 0, 768, i1);
 			}
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Error placing object (out of map boundaries)");
+			//System.out.println("Error placing object (out of map boundaries)");
 		}
 	}
 

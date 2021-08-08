@@ -32,7 +32,7 @@ public class Messages implements Runnable {
 			while ((line = reader.readLine()) != null) {
 				for (int i = 0; i < processes.length; i++) {
 					if (line.contains(processes[i])) {
-					//	System.out.println("Direct3D Error: dTriangles is null!");
+					//	//System.out.println("Direct3D Error: dTriangles is null!");
 						return true;
 					}
 				}

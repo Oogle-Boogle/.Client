@@ -141,7 +141,7 @@ public final class Background extends DrawingArea {
 		}
 		catch(Exception exception)
 		{
-			System.out.println("error in sprite clipping routine");
+			//System.out.println("error in sprite clipping routine");
 		}
 	}
 
@@ -172,7 +172,7 @@ public final class Background extends DrawingArea {
 		}
 		catch(Exception exception)
 		{
-			System.out.println("error in plot_scale");
+			//System.out.println("error in plot_scale");
 		}
 	}
 

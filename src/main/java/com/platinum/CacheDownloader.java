@@ -120,7 +120,7 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private void unZipFile(File zipFile, File outFile) throws IOException {
-		System.out.println("Unzipping cache.");
+		//System.out.println("Unzipping cache.");
 		g.setStatus("Unzipping Platinum Cache...");
 		g.setPercent(0);
 
@@ -144,7 +144,7 @@ public class CacheDownloader implements Runnable {
 				new File(outFile, e.getName()).mkdirs();
 			} else {
 				FileOutputStream out = new FileOutputStream(new File(outFile, e.getName()));
-				System.out.println("(unzip): " + outFile.getName());
+				//System.out.println("(unzip): " + outFile.getName());
 				byte[] b = new byte[1024];
 
 				int len;
@@ -164,7 +164,7 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private File downloadCache() {
-		System.out.println("downloading cache");
+		//System.out.println("downloading cache");
 		g.setStatus("Downloading Platinum Cache...");
 
 		File ret = new File(CACHE_PATH + "plat.zip");
@@ -174,7 +174,7 @@ public class CacheDownloader implements Runnable {
 			InputStream in = conn.getInputStream();
 
 			long max = conn.getContentLength();
-			System.out.println("max: " + max);
+			//System.out.println("max: " + max);
 			long curr = 0;
 
 			byte[] b = new byte[1024];
@@ -184,7 +184,7 @@ public class CacheDownloader implements Runnable {
 			while ((len = in.read(b, 0, b.length)) > -1) {
 				out.write(b, 0, len);
 				curr += len;
-				System.out.println("curr: " + curr);
+				//System.out.println("curr: " + curr);
 				g.setPercent((int) ((curr * 100) / max));
 			}
 

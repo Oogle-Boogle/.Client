@@ -27,7 +27,7 @@ public class ItemTest {
             i += indices.readUnsignedWord();
         }
 
-        System.out.println("Read " + totalItems + " items. " + Arrays.toString(streamIndices));
+        //System.out.println("Read " + totalItems + " items. " + Arrays.toString(streamIndices));
     }
 }*/
 
@@ -49,7 +49,7 @@ public class ItemTest {
 		for (int i = 0; i < second.length; i++) {
 			if (first[i] != second[i]) {
 				ItemDef.forID(i);
-				System.out.println("Started going wrong for item: " + i);
+				//System.out.println("Started going wrong for item: " + i);
 				return;
 			}
 		}
@@ -60,7 +60,7 @@ public class ItemTest {
 		Stream indices = new Stream(Files.readAllBytes(Paths.get(indexPath)));
 
 		int totalItems = indices.readUnsignedWord();
-		System.out.println("Read " + totalItems + " items. ");
+		//System.out.println("Read " + totalItems + " items. ");
 		int[] streamIndices = new int[totalItems + 1000];
 		int i = 2;
 		for (int j = 0; j < totalItems; j++) {

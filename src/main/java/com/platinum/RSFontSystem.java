@@ -32,6 +32,7 @@ public class RSFontSystem extends DrawingArea {
 	public static String endColor;
 	public static String startImage;
 	public static String startImage2;
+	public static String startImage3;
 	public static String endUnderline;
 	public static String defaultStrikethrough;
 	public static String startShadow;
@@ -217,7 +218,7 @@ public class RSFontSystem extends DrawingArea {
 						if (effectString.startsWith(startImage)) {
 							try {
 								int imageId = Integer.valueOf(effectString.substring(4));
-								Sprite icon = SpriteLoader.sprites[679 + imageId];
+								Sprite icon = SpriteLoader.sprites[1249 + imageId];
 								int iconModY = icon.myHeight;
 								if (imageId >= 8)
 									iconModY -= 2;
@@ -233,7 +234,24 @@ public class RSFontSystem extends DrawingArea {
 						} else if (effectString.startsWith(startImage2)) {
 							try {
 								int imageId = Integer.valueOf(effectString.substring(4));
-								Sprite icon = SpriteLoader.sprites[683 + imageId];
+								Sprite icon = SpriteLoader.sprites[1253 + imageId];
+								int iconModY = icon.myHeight;
+								if (imageId >= 8)
+									iconModY -= 2;
+								if (transparency == 256) {
+									icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY));
+								} else {
+									icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY), transparency);
+								}
+								drawX += icon.myWidth;
+							} catch (Exception exception) {
+								/* empty */
+							}
+						} else if (effectString.startsWith(startImage3)) {
+							try {
+								int imageId = Integer.valueOf(effectString.substring(4));
+								//System.out.println("START IMAGE 3 - 234234 - IS " + imageId);
+								Sprite icon = SpriteLoader.sprites[imageId];
 								int iconModY = icon.myHeight;
 								if (imageId >= 8)
 									iconModY -= 2;
@@ -347,7 +365,7 @@ public class RSFontSystem extends DrawingArea {
 								}
 								modifierOffset++;
 								int iconId = Integer.valueOf(effectString.substring(4));
-								Sprite icon = SpriteLoader.sprites[679 + iconId];
+								Sprite icon = SpriteLoader.sprites[1249 + iconId];
 								int iconOffsetY = icon.myHeight;
 								if (transparency == 256) {
 									icon.drawSprite(drawX + xModI, (drawY + baseCharacterHeight - iconOffsetY + yMod));
@@ -375,7 +393,36 @@ public class RSFontSystem extends DrawingArea {
 								}
 								modifierOffset++;
 								int iconId = Integer.valueOf(effectString.substring(4));
-								Sprite icon = SpriteLoader.sprites[683 + iconId];
+								Sprite icon = SpriteLoader.sprites[1253 + iconId];
+								int iconOffsetY = icon.myHeight;
+								if (transparency == 256) {
+									icon.drawSprite(drawX + xModI, (drawY + baseCharacterHeight - iconOffsetY + yMod));
+								} else {
+									icon.drawSprite(drawX + xModI, (drawY + baseCharacterHeight - iconOffsetY + yMod),
+											transparency);
+								}
+								drawX += icon.myWidth;
+							} catch (Exception exception) {
+								/* empty */
+							}
+						} else if (effectString.startsWith(startImage3)) {
+							try {
+								int xModI;
+								if (xModifier != null) {
+									xModI = xModifier[modifierOffset];
+								} else {
+									xModI = 0;
+								}
+								int yMod;
+								if (yModifier != null) {
+									yMod = yModifier[modifierOffset];
+								} else {
+									yMod = 0;
+								}
+								modifierOffset++;
+								int iconId = Integer.valueOf(effectString.substring(4));
+								//System.out.println("ICON ID  sdfsdf IS " + iconId);
+								Sprite icon = SpriteLoader.sprites[iconId];
 								int iconOffsetY = icon.myHeight;
 								if (transparency == 256) {
 									icon.drawSprite(drawX + xModI, (drawY + baseCharacterHeight - iconOffsetY + yMod));
@@ -541,7 +588,15 @@ public class RSFontSystem extends DrawingArea {
 						if (effectString.startsWith(startImage) ) {
 							try {// <img=
 								int iconId = Integer.valueOf(effectString.substring(4));
-								finalWidth += SpriteLoader.sprites[679 + iconId].myWidth;
+								finalWidth += SpriteLoader.sprites[1249 + iconId].myWidth;
+							} catch (Exception exception) {
+								/* empty */
+							}
+						} else if (effectString.startsWith(startImage3)) {
+							try {// <img=
+								int iconId = Integer.valueOf(effectString.substring(4));
+								//System.out.println("Icon ID : "+iconId);
+								finalWidth += SpriteLoader.sprites[1191 + iconId].myWidth;
 							} catch (Exception exception) {
 								/* empty */
 							}
@@ -605,7 +660,7 @@ public class RSFontSystem extends DrawingArea {
 		 * try {
 		 * 
 		 * if(s.contains(from)) {
-		 * System.out.println("FOund: "+from+" in string "+s+", replacing to: "+s.
+		 * //System.out.println("FOund: "+from+" in string "+s+", replacing to: "+s.
 		 * replaceAll(from, to)); return s.replace(from, to); } } catch(Exception e) {
 		 * e.printStackTrace(); }
 		 */
@@ -614,7 +669,7 @@ public class RSFontSystem extends DrawingArea {
 	}
 
 	public static String handleOldSyntax(String text) {
-		// System.out.println(text);
+		//System.out.println("OLD SYNTAX HANDLER:" + text);
 		text = replace(text, "@red@", "<col=ff0000>");
 		text = replace(text, "@gre@", "<col=65280>");
 		text = replace(text, "@blu@", "<col=255>");
@@ -632,12 +687,13 @@ public class RSFontSystem extends DrawingArea {
 		text = replace(text, "@gr1@", "<col=c0ff00>");
 		text = replace(text, "@gr2@", "<col=80ff00>");
 		text = replace(text, "@gr3@", "<col=40ff00>");
+		text = replace(text, "@cr0@", "<img=0>"); //Flub added
 		text = replace(text, "@cr1@", "<img=1>");
 		text = replace(text, "@cr2@", "<img=2>");
 		text = replace(text, "@cr3@", "<img=3>");
-		text = replace(text, "@scr1@", "<zmg=1>");
+		/*text = replace(text, "@scr1@", "<zmg=1>");
 		text = replace(text, "@scr2@", "<zmg=2>");
-		text = replace(text, "@scr3@", "<zmg=3>");
+		text = replace(text, "@scr3@", "<zmg=3>");*/
 		text = replace(text, "@dev@", "<img=3>");
 		text = replace(text, "@des@", "<img=4>");
 		text = replace(text, "@vet@", "<img=5>");
@@ -669,6 +725,7 @@ public class RSFontSystem extends DrawingArea {
 		aRSString_4169 = null;
 		startImage = null;
 		startImage2 = null;
+		startImage3 = null;
 		lineBreak = null;
 		startColor = null;
 		endColor = null;
@@ -833,6 +890,7 @@ public class RSFontSystem extends DrawingArea {
 		endUnderline = "/u";
 		startImage = "img=";
 		startImage2 = "zmg=";
+		startImage3 = "irn=";
 		startShadow = "shad=";
 		startUnderline = "u=";
 		endColor = "/col";

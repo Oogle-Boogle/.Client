@@ -142,7 +142,7 @@ public final class ByteBuffer extends QueueNode {
 			buffer[currentOffset++] = (byte) (int) (l >> 8);
 			buffer[currentOffset++] = (byte) (int) l;
 		} catch (RuntimeException runtimeexception) {
-			System.out.println((new StringBuilder()).append("14395, 5, ").append(l).append(", ").append(runtimeexception.toString()).toString());
+			//System.out.println((new StringBuilder()).append("14395, 5, ").append(l).append(", ").append(runtimeexception.toString()).toString());
 			throw new RuntimeException();
 		}
 	}

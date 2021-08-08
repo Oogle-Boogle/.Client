@@ -10,7 +10,7 @@ public final class ObjectDef {
 		for (int i = 0; i < streamIndices667.length - 1; i++) {
 			ObjectDef object = forID(i);
 			BufferedWriter bw = null;
-			System.out.println("dumped " + i);
+			//System.out.println("dumped " + i);
 			try {
 				bw = new BufferedWriter(new FileWriter("./objects.txt", true));
 				bw.write("ID: " + i);
@@ -771,10 +771,10 @@ public final class ObjectDef {
 	}
 
 	public void method574(OnDemandFetcher fetcher) {
-		System.out.println("shud do this one " + type);
+		//System.out.println("shud do this one " + type);
 		if (objectModelIDs == null)
 			return;
-		System.out.println("shud do this one " + type);
+		//System.out.println("shud do this one " + type);
 		for (int j = 0; j < objectModelIDs.length; j++) {
 			fetcher.insertExtraFilesRequest(objectModelIDs[j] & 0xffff, 0);
 		}

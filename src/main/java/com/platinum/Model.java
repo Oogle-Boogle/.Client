@@ -409,7 +409,7 @@ public class Model extends Animable {
 		anIntArray1633 = model.anIntArray1633;
 		face_render_priorities = model.face_render_priorities;
 		face_priority = model.face_priority;
-	//	System.out.println("Executed this gr8 method");
+	//	//System.out.println("Executed this gr8 method");
 		// || model.getModelId() == 28301 || model.getModelId() == 28302 || model.getModelId() == 17423
 		
 		anIntArray1643 = model.anIntArray1643;

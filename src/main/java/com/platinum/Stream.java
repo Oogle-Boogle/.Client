@@ -127,8 +127,7 @@ public final class Stream extends QueueNode {
 			buffer[currentOffset++] = (byte) (int) (l >> 8);
 			buffer[currentOffset++] = (byte) (int) l;
 		} catch (RuntimeException runtimeexception) {
-			System.out.println("14395, " + 5 + ", " + l + ", "
-					+ runtimeexception.toString());
+			//System.out.println("14395, " + 5 + ", " + l + ", "+ runtimeexception.toString());
 			throw new RuntimeException();
 		}
 	}

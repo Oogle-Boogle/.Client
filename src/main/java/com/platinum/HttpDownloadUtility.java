@@ -52,7 +52,7 @@ public class HttpDownloadUtility {
 			inputStream.close();
 
 		} else {
-			System.out.println("Ruse-PS.Com replied HTTP code: " + responseCode);
+			//System.out.println("Ruse-PS.Com replied HTTP code: " + responseCode);
 		}
 		httpConn.disconnect();
 	}

@@ -38,7 +38,7 @@ public class FileOperations {
             TotalWrite++;
             CompleteWrite++;
         }  catch(Throwable throwable) {
-            System.out.println((new StringBuilder()).append("Write Error: ").append(s).toString());
+            //System.out.println((new StringBuilder()).append("Write Error: ").append(s).toString());
         }
     }
 	

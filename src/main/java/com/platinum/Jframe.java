@@ -313,7 +313,7 @@ public class Jframe extends Client implements ActionListener {
 	}
 
 	public void loadError(String s) {
-		System.out.println("loadError: " + s);
+		//System.out.println("loadError: " + s);
 	}
 
 	public String getParameter(String key) {

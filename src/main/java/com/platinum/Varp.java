@@ -15,8 +15,8 @@ public final class Varp {
 				cache[j] = new Varp();
 			cache[j].readValues(stream, j);
 		}
-		if (stream.currentOffset != stream.buffer.length)
-			System.out.println("varptype load mismatch");
+		//if (stream.currentOffset != stream.buffer.length)
+			//System.out.println("varptype load mismatch");
 	}
 
 	private void readValues(Stream stream, int i) {
@@ -46,7 +46,7 @@ public final class Varp {
 			else if (j == 13)
 				dummy = 2;
 		//	else
-			//	System.out.println("Error unrecognised config code: " + j);
+			//	//System.out.println("Error unrecognised config code: " + j);
 		} while (true);
 	}
 
