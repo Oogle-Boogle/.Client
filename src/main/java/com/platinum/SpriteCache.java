@@ -52,10 +52,10 @@ public class SpriteCache {
 	public static void preloadLowPriorityImages() {	
 		loadSprite(678, c.search);//c.search = new Sprite("1");
 		loadSprite(679, c.Search);//c.Search = new Sprite("2");
-		loadSprite(27, c.SubmitBuy);//("Interfaces/GE/SubmitBuy");
-		loadSprite(28, c.SubmitSell);//("Interfaces/GE/SubmitSell");
-		loadSprite(29, c.Buy);//("Interfaces/GE/buySubmit");
-		loadSprite(30, c.Sell);//("Interfaces/GE/sellSubmit");
+		loadSprite(27, c.SubmitBuy);//("data/Interfaces/GE/SubmitBuy");
+		loadSprite(28, c.SubmitSell);//("data/Interfaces/GE/SubmitSell");
+		loadSprite(29, c.Buy);//("data/Interfaces/GE/buySubmit");
+		loadSprite(30, c.Sell);//("data/Interfaces/GE/sellSubmit");
 		loadSprite(31, c.loadingPleaseWait);//loadingPleaseWait = new Sprite("loadingPleaseWait");
 		loadSprite(32, c.reestablish);//reestablish = new Sprite("reestablish");
 		/* Custom sprite unpacking */

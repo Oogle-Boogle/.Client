@@ -50,7 +50,7 @@ public class Jframe extends Client implements ActionListener {
 
 	public void setTray() {
 		if (SystemTray.isSupported()) {
-			Image icon = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "/Interfaces/icon.png");
+			Image icon = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "/data/Interfaces/icon.png");
 			trayIcon = new TrayIcon(icon, Configuration.CLIENT_NAME);
 			trayIcon.setImageAutoSize(true);
 			try {
@@ -248,7 +248,7 @@ public class Jframe extends Client implements ActionListener {
 		 */
 		
 		JButton homeButton = createButton("Home", "House_icon.png", "Open the official Platinumum homepage.");
-		JButton forumsButton = createButton("Forum", "forums.png", "Open the official Platinum forums.");
+		//JButton forumsButton = createButton("Forum", "forums.png", "Open the official Platinum forums.");
 
 		JButton knowledgeBaseButton = createButton("Platinum Guides", "3366503.gif",
 				"Open the Platinum Guides Section on the forums.");
@@ -262,7 +262,7 @@ public class Jframe extends Client implements ActionListener {
 		 * Add our buttons to the menu panel
 		 */
 		menuPanel.add(homeButton);
-		menuPanel.add(forumsButton);
+		//menuPanel.add(forumsButton);
 		menuPanel.add(knowledgeBaseButton);
 		menuPanel.add(storeButton);
 		menuPanel.add(voteButton);
@@ -336,9 +336,9 @@ public class Jframe extends Client implements ActionListener {
 				case "Home":
 					openURL("http://Platinum-ps.net");
 					break;
-				case "Forum":
+				/*case "Forum":
 					openURL("http://Platinum-ps.net");
-					break;
+					break;*/
 				case "Platinum Guides":
 					openURL("");
 					break;

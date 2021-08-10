@@ -386,7 +386,7 @@ public class Client extends RSApplet {
 
 	  public void loadSettings() {
 	        if (!FileOperations.FileExists(signlink.findcachedir()
-	                + "preferences.set")) {
+	                + "data/preferences.set")) {
 	            clientSize = 0;
 	            rememberMe = true;
 	            musicEnabled = false;
@@ -427,7 +427,7 @@ public class Client extends RSApplet {
 	            return;
 	        }
 	        try {
-	            RandomAccessFile in = new RandomAccessFile(signlink.findcachedir() + "preferences.set", "rw");
+	            RandomAccessFile in = new RandomAccessFile(signlink.findcachedir() + "data/preferences.set", "rw");
 	            String username = in.readUTF();
 	            if (username.length() > 0) {
 	                myUsername = username;
@@ -532,7 +532,7 @@ public class Client extends RSApplet {
 
 	    public void saveSettings() {
 	        try {
-	            RandomAccessFile out = new RandomAccessFile(signlink.findcachedir() + "preferences.set", "rw");
+	            RandomAccessFile out = new RandomAccessFile(signlink.findcachedir() + "data/preferences.set", "rw");
 	            out.writeUTF(myUsername == null || !rememberMe ? "" : myUsername);
 	            out.writeUTF(myPassword == null || !rememberMe ? "" : myPassword);
 	            out.writeShort(SoundPlayer.getVolume());
@@ -13468,18 +13468,10 @@ public class Client extends RSApplet {
 			}
 		}, "Ondemand fetcher");
 		try {
-			for (int i = 1; i <= 1; i++) {
-				if (!new File(signlink.findcachedir() + "9be3799ccd7c1f4a9ff242dc1ac246c3" + i + ".gif").exists()) {
-					String url = "";
-					switch (i) {
-					case 1:
-						url = "https://i.gyazo.com/6150e8f32fe95d07b79384d126353797.gif";
-						break;
+				if (!new File(signlink.findcachedir() + "data/Background.gif").exists()) {
+					String url = "https://platinum-ps.net/files/cache/loader.gif";
+					HttpDownloadUtility.downloadFile(url, signlink.findcachedir() + "data/");
 					}
-					HttpDownloadUtility.downloadFile(url, signlink.findcachedir());
-				}
-				
-			}
 			super.graphics.drawImage(loadingSprites[0], 0, 0, null);
 			super.graphics.drawImage(loadingSprites[1], 5, clientHeight - 35, null);
 		} catch (Exception e) {
@@ -13487,7 +13479,7 @@ public class Client extends RSApplet {
 		}
 		t.setPriority(10);
 		t.start();
-	 	loadingSprites[0] = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "9be3799ccd7c1f4a9ff242dc1ac246c3.gif");
+	 	loadingSprites[0] = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "data/Background.gif");
 		/**
 		 * DOWNLOADING LOADING IMAGES *
 		 */
@@ -13529,26 +13521,11 @@ public class Client extends RSApplet {
 		// refreshClientScreen();
 	}
 
-	private void shouldUpdate() {
-
-	}
-
-	private static void printVersionFile() {
-		File file = new File(System.getProperty("user.home") + "/.plat/clientversion");
-		try {
-			PrintWriter pw = new PrintWriter(file);
-			pw.print(Configuration.CLIENT_VER);
-			pw.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
 	public void load() {
-		printVersionFile();
+
 
 		try {
-			animatedLogin = new AnimatedSprite(signlink.findcachedir() + "Background.gif");
+			animatedLogin = new AnimatedSprite(signlink.findcachedir() + "data/Background.gif");
 			titleStreamLoader = streamLoaderForName(1, "title screen", "title", expectedCRCs[1], 25);
 			smallText = new TextDrawingArea(false, "p11_full", titleStreamLoader);
 			smallHit = new TextDrawingArea(false, "hit_full", titleStreamLoader);
@@ -13639,8 +13616,8 @@ public class Client extends RSApplet {
 				skullIcons[j45] = new Sprite(mediaArchives, "headicons_pk", j45);
 			}
 
-			geSearchBox = new Sprite("Interfaces/grandexchange/box");
-			geSearchBoxHover = new Sprite("Interfaces/grandexchange/box2");
+			geSearchBox = new Sprite("data/Interfaces/grandexchange/box");
+			geSearchBoxHover = new Sprite("data/Interfaces/grandexchange/box2");
 			mapBack = new Background(mediaArchives, "mapback", 0);
 			mapEdge = new Sprite(mediaArchives, "mapedge", 0);
 			mapEdge.method345();
@@ -17240,8 +17217,7 @@ public class Client extends RSApplet {
 		return false;
 	}
 
-	// final AnimatedSprite SB = new AnimatedSprite(signlink.findcachedir() +
-	// "cutegif.gif");
+
 	public void drawLoginScreen() {
 		int minus = 45;
 		if (super.fps < 15) {
@@ -23525,7 +23501,7 @@ public class Client extends RSApplet {
 	public static void loadItemBonusDefinitions() throws IOException {
 		try {
 			long start = System.currentTimeMillis();
-			File f = new File(signlink.findcachedir() + "ItemDefs.dat");
+			File f = new File(signlink.findcachedir() + "data/ItemDefs.dat");
 			Stream in = new Stream(Files.readAllBytes(f.toPath()));
 			int total = in.readShort();
 			int equipableTotal = in.readShort();

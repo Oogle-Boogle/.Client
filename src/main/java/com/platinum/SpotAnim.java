@@ -346,7 +346,7 @@ public final class SpotAnim {
 			.setPrettyPrinting()
 			.create();
 	private final static Type TYPE = new TypeToken<HashSet<SpotAnim>>() {}.getType();
-	private final static Path PATH = Paths.get(signlink.findcachedir(), "custom_gfx.json");
+	private final static Path PATH = Paths.get(signlink.findcachedir(), "data/custom_gfx.json");
 	
 	private static void loadCustomGFXes() throws IOException {
 		File file = PATH.toFile();

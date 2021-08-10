@@ -13,7 +13,7 @@ public enum GamePreferences {
 	/**
 	 * The file containing the player's saved preferences.
 	 */
-	private static final File SAVED_PREF = new File(signlink.findcachedir() + ".preference.sim");
+	private static final File SAVED_PREF = new File(signlink.findcachedir() + "data/.client-preferences.sim");
 
 	/**
 	 * The current state of this preference. The number 0 indicates disabled and

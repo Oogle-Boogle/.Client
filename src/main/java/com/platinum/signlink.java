@@ -1,10 +1,4 @@
 package com.platinum;
-// Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
-// Jad home page: http://www.kpdus.com/jad.html
-// Decompiler options: packimports(3)
-// Source File Name:   signlink.java
-
-
 
 import java.applet.Applet;
 import java.io.DataInputStream;
@@ -330,7 +324,7 @@ public final class signlink implements Runnable {
 			savelen = i;
 			savebuf = abyte0;
 			midiplay = true;
-			savereq = "jingle" + midipos + ".mid";
+			savereq = "/data/jingle" + midipos + ".mid";
 			return;
 		}
 	}

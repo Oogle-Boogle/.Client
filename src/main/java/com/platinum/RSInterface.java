@@ -152,15 +152,15 @@ public class RSInterface {
 		// statistics(fonts);
 		RSInterface tab = addInterface(46500);
 
-		addSprite(46501, 0, "images/Preset/BG");
+		addSprite(46501, 0, "data/Interfaces/Preset/BG");
 
 		addHoverButtonWSpriteLoader(46502, 996, 21, 21, "Close Window", 0, 46503, 1);
 		addHoveredImageWSpriteLoader(46503, 997, 21, 21, 46504);
 
-		addHover(46505, 1, 0, 46506, 0, "images/Preset/SPRITE", 72, 32, "Edit preset");
-		addHovered(46506, 1, "images/Preset/SPRITE", 72, 32, 46507);
-		addHover(46508, 1, 0, 46509, 2, "images/Preset/SPRITE", 72, 32, "Load preset");
-		addHovered(46509, 3, "images/Preset/SPRITE", 72, 32, 46510);
+		addHover(46505, 1, 0, 46506, 0, "data/Interfaces/Preset/SPRITE", 72, 32, "Edit preset");
+		addHovered(46506, 1, "data/Interfaces/Preset/SPRITE", 72, 32, 46507);
+		addHover(46508, 1, 0, 46509, 2, "data/Interfaces/Preset/SPRITE", 72, 32, "Load preset");
+		addHovered(46509, 3, "data/Interfaces/Preset/SPRITE", 72, 32, 46510);
 
 		addText(46511, "Manage presets", 0xff9933, true, false, -1, tda, 2);
 		addText(46512, "", 0xff9933, false, false, -1, tda, 2);
@@ -168,8 +168,8 @@ public class RSInterface {
 		addText(46514, "Curses", 0xff9933, true, false, -1, tda, 2);
 		addText(46515, "", 0xff9933, true, false, -1, tda, 1);
 		addChar(46516);
-		// addSprite(46517, 4, "images/Preset/SPRITE");
-		// addSprite(46518, 5, "images/Preset/SPRITE");
+		// addSprite(46517, 4, "data/Interfaces/Preset/SPRITE");
+		// addSprite(46518, 5, "data/Interfaces/Preset/SPRITE");
 		addText(46518, "", 0xff9933, false, false, -1, tda, 2);
 		addText(46517, "", 0xff9933, false, false, -1, tda, 2);
 		addText(46519, "", 0xff9933, false, false, -1, tda, 2);
@@ -1348,8 +1348,8 @@ public class RSInterface {
 //47502
 		addHoverButtonWSpriteLoader(47502, 1121, 163, 25, "@red@Click Here To Go Back", -1, 44502, 1);
 		addHoveredImageWSpriteLoader(44502, 1137, 163, 25, 44503);
-		addSprite(47503, 0, "Interfaces/HelpTab/SPRITE");
-		addSprite(47504, 1, "Interfaces/HelpTab/SPRITE");
+		addSprite(47503, 0, "data/Interfaces/HelpTab/SPRITE");
+		addSprite(47504, 1, "data/Interfaces/HelpTab/SPRITE");
 		addText(44504, "@whi@Click Here To Go Back", 0xff9933, true, true, -1, tda, 2);
 
 		int childId = 19050;
@@ -1374,8 +1374,8 @@ public class RSInterface {
 
 		for (int i = 0; i < tabs.length; i++) {
 			CoinTab coinTab = tabs[i];
-			addHoverButton(childId++, "Interfaces/HelpTab/BUTTON", 1, 170, 28, coinTab.string, -1, childId, 1);
-			addHoveredButton(childId++, "Interfaces/HelpTab/BUTTON", 0, 170, 28, childId++);
+			addHoverButton(childId++, "data/Interfaces/HelpTab/BUTTON", 1, 170, 28, coinTab.string, -1, childId, 1);
+			addHoveredButton(childId++, "data/Interfaces/HelpTab/BUTTON", 0, 170, 28, childId++);
 
 			childId -= 3;
 
@@ -1386,7 +1386,7 @@ public class RSInterface {
 			addText(childId, coinTab.string, tda, 2, 0xff9933, true, true);
 			scroll.child(scrollFrame++, childId++, 90, startY + 5);
 
-			addSprite(childId, coinTab.icon, "Interfaces/HelpTab/ICON");
+			addSprite(childId, coinTab.icon, "data/Interfaces/HelpTab/ICON");
 			scroll.child(scrollFrame++, childId++, 66 + coinTab.x, startY + coinTab.y);
 
 			startY += 28;
@@ -2444,33 +2444,33 @@ public class RSInterface {
 
 	public static void Pets(TextDrawingArea atextdrawingarea[]) {
 		RSInterface rsinterface = addScreenInterface(3200);
-		addSprite(3201, 0, "Pets/Bg");
-		addHoverButton(3202, "Pets/Close", 0, 16, 16, "Close", 250, 3203, 3);
-		addHoveredButton(3203, "Pets/Close", 1, 16, 16, 20881);
-		addHoverButton(3204, "Pets/Pack", 1, 100, 74, "Buy @or2@Rare Package", -1, 3205, 1);
-		addHoveredButton(3205, "Pets/Pack", 2, 101, 74, 20882);
-		addHoverButton(3206, "Pets/Pack", 3, 100, 74, "Buy @or2@Extreme Package", -1, 3207, 1);
-		addHoveredButton(3207, "Pets/Pack", 4, 101, 74, 20883);
-		addHoverButton(3208, "Pets/Pack", 5, 100, 74, "Buy @or2@Uncommon Package", -1, 3209, 1);
-		addHoveredButton(3209, "Pets/Pack", 6, 101, 74, 20884);
-		addHoverButton(3225, "Pets/Pack", 7, 100, 74, "Buy @or2@Common Package", -1, 3226, 1);
-		addHoveredButton(3226, "Pets/Pack", 8, 101, 74, 20885);
-		addHoverButton(3235, "Pets/Pack", 9, 100, 74, "Value @or2@Legendary Package", -1, 3236, 1);
-		addHoveredButton(3236, "Pets/Pack", 10, 101, 74, 20886);
+		addSprite(3201, 0, "data/Interfaces/Packages/Bg");
+		addHoverButton(3202, "data/Interfaces/Packages/Close", 0, 16, 16, "Close", 250, 3203, 3);
+		addHoveredButton(3203, "data/Interfaces/Packages/Close", 1, 16, 16, 20881);
+		addHoverButton(3204, "data/Interfaces/Packages/Pack", 1, 100, 74, "Buy @or2@Rare Package", -1, 3205, 1);
+		addHoveredButton(3205, "data/Interfaces/Packages/Pack", 2, 101, 74, 20882);
+		addHoverButton(3206, "data/Interfaces/Packages/Pack", 3, 100, 74, "Buy @or2@Extreme Package", -1, 3207, 1);
+		addHoveredButton(3207, "data/Interfaces/Packages/Pack", 4, 101, 74, 20883);
+		addHoverButton(3208, "data/Interfaces/Packages/Pack", 5, 100, 74, "Buy @or2@Uncommon Package", -1, 3209, 1);
+		addHoveredButton(3209, "data/Interfaces/Packages/Pack", 6, 101, 74, 20884);
+		addHoverButton(3225, "data/Interfaces/Packages/Pack", 7, 100, 74, "Buy @or2@Common Package", -1, 3226, 1);
+		addHoveredButton(3226, "data/Interfaces/Packages/Pack", 8, 101, 74, 20885);
+		addHoverButton(3235, "data/Interfaces/Packages/Pack", 9, 100, 74, "Value @or2@Legendary Package", -1, 3236, 1);
+		addHoveredButton(3236, "data/Interfaces/Packages/Pack", 10, 101, 74, 20886);
 		addText(3210, "Platinum Point Shop", atextdrawingarea, 3, 0xffcc33, false, true);
 		addText(3211, "RP:", atextdrawingarea, 3, 0xffcc33, false, true);
-		addHoverButton(3215, "Pets/Pack", 3, 100, 74, "Value @or2@Extreme Package", -1, 3216, 1);
-		addHoveredButton(3216, "Pets/Pack", 4, 101, 74, 3217);
-		addHoverButton(3218, "Pets/Pack", 5, 100, 74, "Value @or2@Uncommon Package", -1, 3219, 1);
-		addHoveredButton(3219, "Pets/Pack", 6, 101, 74, 3220);
-		addHoverButton(3240, "Pets/Pack", 9, 100, 74, "Buy @or2@Legendary Package", -1, 3241, 1);
-		addHoveredButton(3241, "Pets/Pack", 10, 101, 74, 3241);
-		addHoverButton(3221, "Pets/Pack", 1, 100, 74, "Value @or2@Rare Package", -1, 3222, 1);
-		addHoveredButton(3222, "Pets/Pack", 2, 101, 74, 3223);
-		addHoverButton(3229, "Pets/Pack", 7, 100, 74, "Value @or2@Common Package", -1, 3230, 1);
-		addHoveredButton(3230, "Pets/Pack", 8, 101, 74, 3231);
-		addHoverButton(3260, "Pets/Pack", 11, 100, 74, "@gre@Learn More", -1, 3261, 1);
-		addHoveredButton(3261, "Pets/Pack", 12, 101, 74, 3262);
+		addHoverButton(3215, "data/Interfaces/Packages/Pack", 3, 100, 74, "Value @or2@Extreme Package", -1, 3216, 1);
+		addHoveredButton(3216, "data/Interfaces/Packages/Pack", 4, 101, 74, 3217);
+		addHoverButton(3218, "data/Interfaces/Packages/Pack", 5, 100, 74, "Value @or2@Uncommon Package", -1, 3219, 1);
+		addHoveredButton(3219, "data/Interfaces/Packages/Pack", 6, 101, 74, 3220);
+		addHoverButton(3240, "data/Interfaces/Packages/Pack", 9, 100, 74, "Buy @or2@Legendary Package", -1, 3241, 1);
+		addHoveredButton(3241, "data/Interfaces/Packages/Pack", 10, 101, 74, 3241);
+		addHoverButton(3221, "data/Interfaces/Packages/Pack", 1, 100, 74, "Value @or2@Rare Package", -1, 3222, 1);
+		addHoveredButton(3222, "data/Interfaces/Packages/Pack", 2, 101, 74, 3223);
+		addHoverButton(3229, "data/Interfaces/Packages/Pack", 7, 100, 74, "Value @or2@Common Package", -1, 3230, 1);
+		addHoveredButton(3230, "data/Interfaces/Packages/Pack", 8, 101, 74, 3231);
+		addHoverButton(3260, "data/Interfaces/Packages/Pack", 11, 100, 74, "@gre@Learn More", -1, 3261, 1);
+		addHoveredButton(3261, "data/Interfaces/Packages/Pack", 12, 101, 74, 3262);
 		addText(3270, "Rare Package", atextdrawingarea, 0, 0xffcc33, false, true);
 		addText(3271, "Common Package", atextdrawingarea, 0, 0xffcc33, false, true);
 		addText(3272, "Extreme Package", atextdrawingarea, 0, 0xffcc33, false, true);
@@ -2527,7 +2527,7 @@ public class RSInterface {
 
 	public static void GoldenScratchCardNew(TextDrawingArea[] tda) {
 		RSInterface tab = RSInterface.addInterface(39300);
-		String dir = "ScratchCard/Button";
+		String dir = "data/Interfaces/ScratchCard/Button";
 		addSprite(39301, 0, dir);
 
 		RSInterface.addText(39302, "Platinum Golden Scratch Card", tda, 2, 0xFF9900, true, true); // 20014
@@ -3037,7 +3037,7 @@ public class RSInterface {
 	public static void customization(TextDrawingArea[] tda) {
 
 		RSInterface tab = addTabInterface(60000);
-		addSprite(60001, 0, "Interfaces/customization/BG");
+		addSprite(60001, 0, "data/Interfaces/customization/BG");
 		addButton(60002, -1, "", 16, 16, "Close", 5);
 		addMaxCape(60003, 75, 50, 420);
 		addColorBox(60004, 41, 41, 0x92343A);
@@ -3110,7 +3110,7 @@ public class RSInterface {
 		RSInterface tab = addInterface(32600);
 		RSInterface tab2 = addInterface(32620);
 		RSInterface tab3 = addInterface(32622);
-		String dir = "ok/ok";
+		String dir = "data/Interfaces/PlayerShops/ok";
 		addSprite(32601, 0, dir);
 		addConfigButton(32602, 32603, 3, 4, dir, 164, 22, "Search", 1, 4, 968);
 		// addConfigButton(32604, 32605, 5, 6, dir, 164, 22, "Search for players", 1, 4,
@@ -3121,8 +3121,8 @@ public class RSInterface {
 		addText(32611, "Search", tda, 1, 0xff7000, false, true);
 		// addText(32612, "Search a player", tda, 1, 0xff7000, false, true);
 
-		addHover(54098, 1, 0, 54099, 0, "ok/SPRITE", 72, 32, "My Shop");
-		addHovered(54099, 1, "ok/SPRITE", 72, 32, 54100);
+		addHover(54098, 1, 0, 54099, 0, "data/Interfaces/PlayerShops/SPRITE", 72, 32, "My Shop");
+		addHovered(54099, 1, "data/Interfaces/PlayerShops/SPRITE", 72, 32, 54100);
 		addText(54101, "My Shop", tda, 1, 0xff7000, false, true);
 
 		int x = 10, y = 10;
@@ -3161,7 +3161,7 @@ public class RSInterface {
 	public static void playerOwnedShopInterface2(TextDrawingArea[] tda) {
 		RSInterface tab = addInterface(33600);
 		RSInterface tab2 = addInterface(33620);
-		String dir = "ok/ok";
+		String dir = "data/Interfaces/PlayerShops/ok";
 		addSprite(33601, 7, dir);
 		addHoverButton(33606, dir, 1, 16, 16, "Close Window", 250, 32607, 3);
 		addHoveredButton(33607, dir, 2, 16, 16, 32608);
@@ -3451,8 +3451,8 @@ public class RSInterface {
 
 	static void playerOwnedShopInterface3(TextDrawingArea[] tda) {
 		RSInterface rsi = addInterface(37000);
-		addSprite(37001, 0, "Interfaces/ResourceBag/SPRITE");
-		addSprite(37002, 1, "Interfaces/ResourceBag/SPRITE");
+		addSprite(37001, 0, "data/Interfaces/ResourceBag/SPRITE");
+		addSprite(37002, 1, "data/Interfaces/ResourceBag/SPRITE");
 		for (int i = 0; i < 28; i++)
 			addToItemGroup(37003 + i, 1, 1, 0, 0, true,
 					new String[] { "Withdraw 1", "Withdraw 5", "Withdraw 10", "Withdraw all", "Withdraw all to bank" });
@@ -4108,55 +4108,55 @@ public class RSInterface {
 	public static void TeleTAB1() {
 		RSInterface RSinterface = addTabInterface(37400);
 
-		addSprite(37401, 0, "Interfaces/Tele/BG");
+		addSprite(37401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(37402, "Interfaces/Tele/TAB/TABL", 0, 130, 55, "Training", -1, 37403, 1);
-		addHoverButton(37404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "Dungeons", -1, 37405, 1);
-		addHoverButton(37406, "Interfaces/Tele/TAB/TAB", 2, 130, 55, "Bosses", -1, 37407, 1);
-		addHoverButton(37408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGames", -1, 37409, 1);
-		addHoverButton(37410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 37411, 1);
+		addHoverButton(37402, "data/Interfaces/Tele/TAB/TABL", 0, 130, 55, "Training", -1, 37403, 1);
+		addHoverButton(37404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "Dungeons", -1, 37405, 1);
+		addHoverButton(37406, "data/Interfaces/Tele/TAB/TAB", 2, 130, 55, "Bosses", -1, 37407, 1);
+		addHoverButton(37408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGames", -1, 37409, 1);
+		addHoverButton(37410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 37411, 1);
 
-		addHoverButton(37412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 37413, 1);
-		addHoveredButton(37413, "Interfaces/Tele/Close", 1, 16, 16, 37414);
+		addHoverButton(37412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 37413, 1);
+		addHoveredButton(37413, "data/Interfaces/Tele/Close", 1, 16, 16, 37414);
 
 		// buttons
 
-		addHoverButton(37414, "Interfaces/Tele/TBUTTONS/B", 0, 81, 34, "", -1, 37415, 1);
-		addHoverButton(37416, "Interfaces/Tele/TBUTTONS/B", 1, 81, 34, "", -1, 37417, 1);
-		addHoverButton(37418, "Interfaces/Tele/TBUTTONS/B", 2, 81, 34, "", -1, 37419, 1);
-		addHoverButton(37420, "Interfaces/Tele/TBUTTONS/B", 3, 81, 34, "", -1, 37421, 1);
-		addHoverButton(37422, "Interfaces/Tele/TBUTTONS/B", 4, 81, 34, "", -1, 37423, 1);
-		addHoverButton(37424, "Interfaces/Tele/TBUTTONS/B", 5, 81, 34, "", -1, 37425, 1);
-		addHoverButton(37426, "Interfaces/Tele/TBUTTONS/B", 6, 81, 34, "", -1, 37427, 1);
-		addHoverButton(37428, "Interfaces/Tele/TBUTTONS/B", 7, 81, 34, "", -1, 37429, 1);
-		addHoverButton(37430, "Interfaces/Tele/TBUTTONS/B", 8, 81, 34, "", -1, 37431, 1);
-		addHoverButton(37432, "Interfaces/Tele/TBUTTONS/B", 9, 81, 34, "", -1, 37433, 1);
-		addHoverButton(37434, "Interfaces/Tele/TBUTTONS/B", 10, 81, 34, "", -1, 37435, 1);
-		addHoverButton(37436, "Interfaces/Tele/TBUTTONS/B", 11, 81, 34, "", -1, 37437, 1);
+		addHoverButton(37414, "data/Interfaces/Tele/TBUTTONS/B", 0, 81, 34, "", -1, 37415, 1);
+		addHoverButton(37416, "data/Interfaces/Tele/TBUTTONS/B", 1, 81, 34, "", -1, 37417, 1);
+		addHoverButton(37418, "data/Interfaces/Tele/TBUTTONS/B", 2, 81, 34, "", -1, 37419, 1);
+		addHoverButton(37420, "data/Interfaces/Tele/TBUTTONS/B", 3, 81, 34, "", -1, 37421, 1);
+		addHoverButton(37422, "data/Interfaces/Tele/TBUTTONS/B", 4, 81, 34, "", -1, 37423, 1);
+		addHoverButton(37424, "data/Interfaces/Tele/TBUTTONS/B", 5, 81, 34, "", -1, 37425, 1);
+		addHoverButton(37426, "data/Interfaces/Tele/TBUTTONS/B", 6, 81, 34, "", -1, 37427, 1);
+		addHoverButton(37428, "data/Interfaces/Tele/TBUTTONS/B", 7, 81, 34, "", -1, 37429, 1);
+		addHoverButton(37430, "data/Interfaces/Tele/TBUTTONS/B", 8, 81, 34, "", -1, 37431, 1);
+		addHoverButton(37432, "data/Interfaces/Tele/TBUTTONS/B", 9, 81, 34, "", -1, 37433, 1);
+		addHoverButton(37434, "data/Interfaces/Tele/TBUTTONS/B", 10, 81, 34, "", -1, 37435, 1);
+		addHoverButton(37436, "data/Interfaces/Tele/TBUTTONS/B", 11, 81, 34, "", -1, 37437, 1);
 
-		addHoveredButton(37415, "Interfaces/Tele/TBUTTONS/BH", 0, 81, 34, 37616);
+		addHoveredButton(37415, "data/Interfaces/Tele/TBUTTONS/BH", 0, 81, 34, 37616);
 
-		addHoveredButton(37417, "Interfaces/Tele/TBUTTONS/BH", 1, 81, 34, 37618);
+		addHoveredButton(37417, "data/Interfaces/Tele/TBUTTONS/BH", 1, 81, 34, 37618);
 
-		addHoveredButton(37419, "Interfaces/Tele/TBUTTONS/BH", 2, 81, 34, 37620);
+		addHoveredButton(37419, "data/Interfaces/Tele/TBUTTONS/BH", 2, 81, 34, 37620);
 
-		addHoveredButton(37421, "Interfaces/Tele/TBUTTONS/BH", 3, 81, 34, 37622);
+		addHoveredButton(37421, "data/Interfaces/Tele/TBUTTONS/BH", 3, 81, 34, 37622);
 
-		addHoveredButton(37423, "Interfaces/Tele/TBUTTONS/BH", 4, 81, 34, 37624);
+		addHoveredButton(37423, "data/Interfaces/Tele/TBUTTONS/BH", 4, 81, 34, 37624);
 
-		addHoveredButton(37425, "Interfaces/Tele/TBUTTONS/BH", 5, 81, 34, 37626);
+		addHoveredButton(37425, "data/Interfaces/Tele/TBUTTONS/BH", 5, 81, 34, 37626);
 
-		addHoveredButton(37427, "Interfaces/Tele/TBUTTONS/BH", 6, 81, 34, 37628);
+		addHoveredButton(37427, "data/Interfaces/Tele/TBUTTONS/BH", 6, 81, 34, 37628);
 
-		addHoveredButton(37429, "Interfaces/Tele/TBUTTONS/BH", 7, 81, 34, 37630);
+		addHoveredButton(37429, "data/Interfaces/Tele/TBUTTONS/BH", 7, 81, 34, 37630);
 
-		addHoveredButton(37431, "Interfaces/Tele/TBUTTONS/BH", 8, 81, 34, 37632);
+		addHoveredButton(37431, "data/Interfaces/Tele/TBUTTONS/BH", 8, 81, 34, 37632);
 
-		addHoveredButton(37433, "Interfaces/Tele/TBUTTONS/BH", 9, 81, 34, 37634);
+		addHoveredButton(37433, "data/Interfaces/Tele/TBUTTONS/BH", 9, 81, 34, 37634);
 
-		addHoveredButton(37435, "Interfaces/Tele/TBUTTONS/BH", 10, 81, 34, 37636);
+		addHoveredButton(37435, "data/Interfaces/Tele/TBUTTONS/BH", 10, 81, 34, 37636);
 
-		addHoveredButton(37437, "Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 37638);
+		addHoveredButton(37437, "data/Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 37638);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true); // rename it whatever
 
@@ -4213,41 +4213,41 @@ public class RSInterface {
 	public static void TeleTAB2() {
 		RSInterface RSinterface = addTabInterface(38400);
 
-		addSprite(38401, 0, "Interfaces/Tele/BG");
+		addSprite(38401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(38402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 38403, 1);
+		addHoverButton(38402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 38403, 1);
 
-		addHoverButton(38404, "Interfaces/Tele/TAB/TABL", 1, 130, 55, "Deungeon", -1, 38405, 1);
-		addHoverButton(38406, "Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 38407, 1);
-		addHoverButton(38408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGame", -1, 38409, 1);
-		addHoverButton(38410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 38411, 1);
+		addHoverButton(38404, "data/Interfaces/Tele/TAB/TABL", 1, 130, 55, "Deungeon", -1, 38405, 1);
+		addHoverButton(38406, "data/Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 38407, 1);
+		addHoverButton(38408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGame", -1, 38409, 1);
+		addHoverButton(38410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 38411, 1);
 
-		addHoverButton(38412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 38413, 1);
-		addHoveredButton(38413, "Interfaces/Tele/Close", 1, 16, 16, 38614);
+		addHoverButton(38412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 38413, 1);
+		addHoveredButton(38413, "data/Interfaces/Tele/Close", 1, 16, 16, 38614);
 
 		// buttons
 
-		addHoverButton(38414, "Interfaces/Tele/DBUTTONS/B", 0, 81, 34, "", -1, 38415, 1);
-		addHoverButton(38416, "Interfaces/Tele/DBUTTONS/B", 1, 81, 34, "", -1, 38417, 1);
-		addHoverButton(38418, "Interfaces/Tele/DBUTTONS/B", 2, 81, 34, "", -1, 38419, 1);
-		addHoverButton(38420, "Interfaces/Tele/DBUTTONS/B", 3, 81, 34, "", -1, 38421, 1);
-		addHoverButton(38422, "Interfaces/Tele/DBUTTONS/B", 4, 81, 34, "", -1, 38423, 1);
-		addHoverButton(38424, "Interfaces/Tele/DBUTTONS/B", 5, 81, 34, "", -1, 38425, 1);
-		addHoverButton(38426, "Interfaces/Tele/DBUTTONS/B", 6, 81, 34, "", -1, 38427, 1);
-		addHoverButton(38428, "Interfaces/Tele/DBUTTONS/B", 7, 81, 34, "", -1, 38429, 1);
-		addHoverButton(38430, "Interfaces/Tele/DBUTTONS/B", 8, 81, 34, "", -1, 38431, 1);
-		addHoverButton(38432, "Interfaces/Tele/DBUTTONS/B", 9, 81, 34, "", -1, 38433, 1);
+		addHoverButton(38414, "data/Interfaces/Tele/DBUTTONS/B", 0, 81, 34, "", -1, 38415, 1);
+		addHoverButton(38416, "data/Interfaces/Tele/DBUTTONS/B", 1, 81, 34, "", -1, 38417, 1);
+		addHoverButton(38418, "data/Interfaces/Tele/DBUTTONS/B", 2, 81, 34, "", -1, 38419, 1);
+		addHoverButton(38420, "data/Interfaces/Tele/DBUTTONS/B", 3, 81, 34, "", -1, 38421, 1);
+		addHoverButton(38422, "data/Interfaces/Tele/DBUTTONS/B", 4, 81, 34, "", -1, 38423, 1);
+		addHoverButton(38424, "data/Interfaces/Tele/DBUTTONS/B", 5, 81, 34, "", -1, 38425, 1);
+		addHoverButton(38426, "data/Interfaces/Tele/DBUTTONS/B", 6, 81, 34, "", -1, 38427, 1);
+		addHoverButton(38428, "data/Interfaces/Tele/DBUTTONS/B", 7, 81, 34, "", -1, 38429, 1);
+		addHoverButton(38430, "data/Interfaces/Tele/DBUTTONS/B", 8, 81, 34, "", -1, 38431, 1);
+		addHoverButton(38432, "data/Interfaces/Tele/DBUTTONS/B", 9, 81, 34, "", -1, 38433, 1);
 
-		addHoveredButton(38415, "Interfaces/Tele/DBUTTONS/BH", 0, 81, 34, 38616);
-		addHoveredButton(38417, "Interfaces/Tele/DBUTTONS/BH", 1, 81, 34, 38618);
-		addHoveredButton(38419, "Interfaces/Tele/DBUTTONS/BH", 2, 81, 34, 38620);
-		addHoveredButton(38421, "Interfaces/Tele/DBUTTONS/BH", 3, 81, 34, 38622);
-		addHoveredButton(38423, "Interfaces/Tele/DBUTTONS/BH", 4, 81, 34, 38624);
-		addHoveredButton(38425, "Interfaces/Tele/DBUTTONS/BH", 5, 81, 34, 38626);
-		addHoveredButton(38427, "Interfaces/Tele/DBUTTONS/BH", 6, 81, 34, 38628);
-		addHoveredButton(38429, "Interfaces/Tele/DBUTTONS/BH", 7, 81, 34, 38630);
-		addHoveredButton(38431, "Interfaces/Tele/DBUTTONS/BH", 8, 81, 34, 38632);
-		addHoveredButton(38433, "Interfaces/Tele/DBUTTONS/BH", 9, 81, 34, 38634);
+		addHoveredButton(38415, "data/Interfaces/Tele/DBUTTONS/BH", 0, 81, 34, 38616);
+		addHoveredButton(38417, "data/Interfaces/Tele/DBUTTONS/BH", 1, 81, 34, 38618);
+		addHoveredButton(38419, "data/Interfaces/Tele/DBUTTONS/BH", 2, 81, 34, 38620);
+		addHoveredButton(38421, "data/Interfaces/Tele/DBUTTONS/BH", 3, 81, 34, 38622);
+		addHoveredButton(38423, "data/Interfaces/Tele/DBUTTONS/BH", 4, 81, 34, 38624);
+		addHoveredButton(38425, "data/Interfaces/Tele/DBUTTONS/BH", 5, 81, 34, 38626);
+		addHoveredButton(38427, "data/Interfaces/Tele/DBUTTONS/BH", 6, 81, 34, 38628);
+		addHoveredButton(38429, "data/Interfaces/Tele/DBUTTONS/BH", 7, 81, 34, 38630);
+		addHoveredButton(38431, "data/Interfaces/Tele/DBUTTONS/BH", 8, 81, 34, 38632);
+		addHoveredButton(38433, "data/Interfaces/Tele/DBUTTONS/BH", 9, 81, 34, 38634);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
 
@@ -4301,47 +4301,47 @@ public class RSInterface {
 	public static void TeleTAB3_1() {
 		RSInterface RSinterface = addTabInterface(41400); // Interface id
 
-		addSprite(41401, 0, "Interfaces/Tele/BG");
+		addSprite(41401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(41402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 41403, 1);
-		addHoverButton(41404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 41405, 1);
-		addHoverButton(41406, "Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 41407, 1);
-		addHoverButton(41408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 41409, 1);
-		addHoverButton(41410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 41411, 1);
+		addHoverButton(41402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 41403, 1);
+		addHoverButton(41404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 41405, 1);
+		addHoverButton(41406, "data/Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 41407, 1);
+		addHoverButton(41408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 41409, 1);
+		addHoverButton(41410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 41411, 1);
 
-		addHoverButton(41412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 41413, 1);
-		addHoveredButton(41413, "Interfaces/Tele/Close", 1, 16, 16, 41614);
+		addHoverButton(41412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 41413, 1);
+		addHoveredButton(41413, "data/Interfaces/Tele/Close", 1, 16, 16, 41614);
 
 		// buttons
 
-		addHoverButton(41414, "Interfaces/Tele/BBUTTONS/B", 0, 81, 34, "", -1, 41415, 1);
-		addHoverButton(41416, "Interfaces/Tele/BBUTTONS/B", 1, 81, 34, "", -1, 41417, 1);
-		addHoverButton(41418, "Interfaces/Tele/BBUTTONS/B", 2, 81, 34, "", -1, 41419, 1);
-		addHoverButton(41420, "Interfaces/Tele/BBUTTONS/B", 3, 81, 34, "", -1, 41421, 1);
-		addHoverButton(41422, "Interfaces/Tele/BBUTTONS/B", 4, 81, 34, "", -1, 41423, 1);
-		addHoverButton(41424, "Interfaces/Tele/BBUTTONS/B", 5, 81, 34, "", -1, 41425, 1);
-		addHoverButton(41426, "Interfaces/Tele/BBUTTONS/B", 6, 81, 34, "", -1, 41427, 1);
-		addHoverButton(41428, "Interfaces/Tele/BBUTTONS/B", 7, 81, 34, "", -1, 41429, 1);
-		addHoverButton(41430, "Interfaces/Tele/BBUTTONS/B", 8, 81, 34, "", -1, 41431, 1);
-		addHoverButton(41432, "Interfaces/Tele/BBUTTONS/B", 9, 81, 34, "", -1, 41433, 1);
-		addHoverButton(41434, "Interfaces/Tele/BBUTTONS/B", 10, 81, 34, "", -1, 41435, 1);
-		addHoverButton(41436, "Interfaces/Tele/BBUTTONS/B", 11, 81, 34, "", -1, 41437, 1);
+		addHoverButton(41414, "data/Interfaces/Tele/BBUTTONS/B", 0, 81, 34, "", -1, 41415, 1);
+		addHoverButton(41416, "data/Interfaces/Tele/BBUTTONS/B", 1, 81, 34, "", -1, 41417, 1);
+		addHoverButton(41418, "data/Interfaces/Tele/BBUTTONS/B", 2, 81, 34, "", -1, 41419, 1);
+		addHoverButton(41420, "data/Interfaces/Tele/BBUTTONS/B", 3, 81, 34, "", -1, 41421, 1);
+		addHoverButton(41422, "data/Interfaces/Tele/BBUTTONS/B", 4, 81, 34, "", -1, 41423, 1);
+		addHoverButton(41424, "data/Interfaces/Tele/BBUTTONS/B", 5, 81, 34, "", -1, 41425, 1);
+		addHoverButton(41426, "data/Interfaces/Tele/BBUTTONS/B", 6, 81, 34, "", -1, 41427, 1);
+		addHoverButton(41428, "data/Interfaces/Tele/BBUTTONS/B", 7, 81, 34, "", -1, 41429, 1);
+		addHoverButton(41430, "data/Interfaces/Tele/BBUTTONS/B", 8, 81, 34, "", -1, 41431, 1);
+		addHoverButton(41432, "data/Interfaces/Tele/BBUTTONS/B", 9, 81, 34, "", -1, 41433, 1);
+		addHoverButton(41434, "data/Interfaces/Tele/BBUTTONS/B", 10, 81, 34, "", -1, 41435, 1);
+		addHoverButton(41436, "data/Interfaces/Tele/BBUTTONS/B", 11, 81, 34, "", -1, 41437, 1);
 
-		addHoveredButton(41415, "Interfaces/Tele/BBUTTONS/BH", 0, 81, 34, 41616);
-		addHoveredButton(41417, "Interfaces/Tele/BBUTTONS/BH", 1, 81, 34, 41618);
-		addHoveredButton(41419, "Interfaces/Tele/BBUTTONS/BH", 2, 81, 34, 41620);
-		addHoveredButton(41421, "Interfaces/Tele/BBUTTONS/BH", 3, 81, 34, 41622);
-		addHoveredButton(41423, "Interfaces/Tele/BBUTTONS/BH", 4, 81, 34, 41624);
-		addHoveredButton(41425, "Interfaces/Tele/BBUTTONS/BH", 5, 81, 34, 41626);
-		addHoveredButton(41427, "Interfaces/Tele/BBUTTONS/BH", 6, 81, 34, 41628);
-		addHoveredButton(41429, "Interfaces/Tele/BBUTTONS/BH", 7, 81, 34, 41630);
-		addHoveredButton(41431, "Interfaces/Tele/BBUTTONS/BH", 8, 81, 34, 41632);
-		addHoveredButton(41433, "Interfaces/Tele/BBUTTONS/BH", 9, 81, 34, 41634);
-		addHoveredButton(41435, "Interfaces/Tele/BBUTTONS/BH", 10, 81, 34, 41636);
-		addHoveredButton(41437, "Interfaces/Tele/BBUTTONS/BH", 11, 81, 34, 41638);
+		addHoveredButton(41415, "data/Interfaces/Tele/BBUTTONS/BH", 0, 81, 34, 41616);
+		addHoveredButton(41417, "data/Interfaces/Tele/BBUTTONS/BH", 1, 81, 34, 41618);
+		addHoveredButton(41419, "data/Interfaces/Tele/BBUTTONS/BH", 2, 81, 34, 41620);
+		addHoveredButton(41421, "data/Interfaces/Tele/BBUTTONS/BH", 3, 81, 34, 41622);
+		addHoveredButton(41423, "data/Interfaces/Tele/BBUTTONS/BH", 4, 81, 34, 41624);
+		addHoveredButton(41425, "data/Interfaces/Tele/BBUTTONS/BH", 5, 81, 34, 41626);
+		addHoveredButton(41427, "data/Interfaces/Tele/BBUTTONS/BH", 6, 81, 34, 41628);
+		addHoveredButton(41429, "data/Interfaces/Tele/BBUTTONS/BH", 7, 81, 34, 41630);
+		addHoveredButton(41431, "data/Interfaces/Tele/BBUTTONS/BH", 8, 81, 34, 41632);
+		addHoveredButton(41433, "data/Interfaces/Tele/BBUTTONS/BH", 9, 81, 34, 41634);
+		addHoveredButton(41435, "data/Interfaces/Tele/BBUTTONS/BH", 10, 81, 34, 41636);
+		addHoveredButton(41437, "data/Interfaces/Tele/BBUTTONS/BH", 11, 81, 34, 41638);
 
-		addHoverButton(41438, "Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 41439, 1);
-		// addHoverButton(41440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 41441,
+		addHoverButton(41438, "data/Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 41439, 1);
+		// addHoverButton(41440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 41441,
 		// 1);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
@@ -4398,47 +4398,47 @@ public class RSInterface {
 	public static void TeleTAB3_2() {
 		RSInterface RSinterface = addTabInterface(42400);
 
-		addSprite(42401, 0, "Interfaces/Tele/BG");
+		addSprite(42401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(42402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 42403, 1);
-		addHoverButton(42404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 42405, 1);
-		addHoverButton(42406, "Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 42407, 1);
-		addHoverButton(42408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 42409, 1);
-		addHoverButton(42410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 42411, 1);
+		addHoverButton(42402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 42403, 1);
+		addHoverButton(42404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 42405, 1);
+		addHoverButton(42406, "data/Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 42407, 1);
+		addHoverButton(42408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 42409, 1);
+		addHoverButton(42410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 42411, 1);
 
-		addHoverButton(42412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 42413, 1);
-		addHoveredButton(42413, "Interfaces/Tele/Close", 1, 16, 16, 42614);
+		addHoverButton(42412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 42413, 1);
+		addHoveredButton(42413, "data/Interfaces/Tele/Close", 1, 16, 16, 42614);
 
 		// buttons
 
-		addHoverButton(42414, "Interfaces/Tele/BBUTTONS/B", 12, 81, 34, "", -1, 42415, 1);
-		addHoverButton(42416, "Interfaces/Tele/BBUTTONS/B", 13, 81, 34, "", -1, 42417, 1);
-		addHoverButton(42418, "Interfaces/Tele/BBUTTONS/B", 14, 81, 34, "", -1, 42419, 1);
-		addHoverButton(42420, "Interfaces/Tele/BBUTTONS/B", 15, 81, 34, "", -1, 42421, 1);
-		addHoverButton(42422, "Interfaces/Tele/BBUTTONS/B", 16, 81, 34, "", -1, 42423, 1);
-		addHoverButton(42424, "Interfaces/Tele/BBUTTONS/B", 17, 81, 34, "", -1, 42425, 1);
-		addHoverButton(42426, "Interfaces/Tele/BBUTTONS/B", 18, 81, 34, "", -1, 42427, 1);
-		addHoverButton(42428, "Interfaces/Tele/BBUTTONS/B", 19, 81, 34, "", -1, 42429, 1);
-		addHoverButton(42430, "Interfaces/Tele/BBUTTONS/B", 20, 81, 34, "", -1, 42431, 1);
-		addHoverButton(42432, "Interfaces/Tele/BBUTTONS/B", 21, 81, 34, "", -1, 42433, 1);
-		addHoverButton(42434, "Interfaces/Tele/BBUTTONS/B", 22, 81, 34, "", -1, 42435, 1);
-		addHoverButton(42436, "Interfaces/Tele/BBUTTONS/B", 23, 81, 34, "", -1, 42437, 1);
+		addHoverButton(42414, "data/Interfaces/Tele/BBUTTONS/B", 12, 81, 34, "", -1, 42415, 1);
+		addHoverButton(42416, "data/Interfaces/Tele/BBUTTONS/B", 13, 81, 34, "", -1, 42417, 1);
+		addHoverButton(42418, "data/Interfaces/Tele/BBUTTONS/B", 14, 81, 34, "", -1, 42419, 1);
+		addHoverButton(42420, "data/Interfaces/Tele/BBUTTONS/B", 15, 81, 34, "", -1, 42421, 1);
+		addHoverButton(42422, "data/Interfaces/Tele/BBUTTONS/B", 16, 81, 34, "", -1, 42423, 1);
+		addHoverButton(42424, "data/Interfaces/Tele/BBUTTONS/B", 17, 81, 34, "", -1, 42425, 1);
+		addHoverButton(42426, "data/Interfaces/Tele/BBUTTONS/B", 18, 81, 34, "", -1, 42427, 1);
+		addHoverButton(42428, "data/Interfaces/Tele/BBUTTONS/B", 19, 81, 34, "", -1, 42429, 1);
+		addHoverButton(42430, "data/Interfaces/Tele/BBUTTONS/B", 20, 81, 34, "", -1, 42431, 1);
+		addHoverButton(42432, "data/Interfaces/Tele/BBUTTONS/B", 21, 81, 34, "", -1, 42433, 1);
+		addHoverButton(42434, "data/Interfaces/Tele/BBUTTONS/B", 22, 81, 34, "", -1, 42435, 1);
+		addHoverButton(42436, "data/Interfaces/Tele/BBUTTONS/B", 23, 81, 34, "", -1, 42437, 1);
 
-		addHoveredButton(42415, "Interfaces/Tele/BBUTTONS/BH", 12, 81, 34, 42616);
-		addHoveredButton(42417, "Interfaces/Tele/BBUTTONS/BH", 13, 81, 34, 42618);
-		addHoveredButton(42419, "Interfaces/Tele/BBUTTONS/BH", 14, 81, 34, 42620);
-		addHoveredButton(42421, "Interfaces/Tele/BBUTTONS/BH", 15, 81, 34, 42622);
-		addHoveredButton(42423, "Interfaces/Tele/BBUTTONS/BH", 16, 81, 34, 42624);
-		addHoveredButton(42425, "Interfaces/Tele/BBUTTONS/BH", 17, 81, 34, 42626);
-		addHoveredButton(42427, "Interfaces/Tele/BBUTTONS/BH", 18, 81, 34, 42628);
-		addHoveredButton(42429, "Interfaces/Tele/BBUTTONS/BH", 19, 81, 34, 42630);
-		addHoveredButton(42431, "Interfaces/Tele/BBUTTONS/BH", 20, 81, 34, 42632);
-		addHoveredButton(42433, "Interfaces/Tele/BBUTTONS/BH", 21, 81, 34, 42634);
-		addHoveredButton(42435, "Interfaces/Tele/BBUTTONS/BH", 22, 81, 34, 42636);
-		addHoveredButton(42437, "Interfaces/Tele/BBUTTONS/BH", 23, 81, 34, 42638);
+		addHoveredButton(42415, "data/Interfaces/Tele/BBUTTONS/BH", 12, 81, 34, 42616);
+		addHoveredButton(42417, "data/Interfaces/Tele/BBUTTONS/BH", 13, 81, 34, 42618);
+		addHoveredButton(42419, "data/Interfaces/Tele/BBUTTONS/BH", 14, 81, 34, 42620);
+		addHoveredButton(42421, "data/Interfaces/Tele/BBUTTONS/BH", 15, 81, 34, 42622);
+		addHoveredButton(42423, "data/Interfaces/Tele/BBUTTONS/BH", 16, 81, 34, 42624);
+		addHoveredButton(42425, "data/Interfaces/Tele/BBUTTONS/BH", 17, 81, 34, 42626);
+		addHoveredButton(42427, "data/Interfaces/Tele/BBUTTONS/BH", 18, 81, 34, 42628);
+		addHoveredButton(42429, "data/Interfaces/Tele/BBUTTONS/BH", 19, 81, 34, 42630);
+		addHoveredButton(42431, "data/Interfaces/Tele/BBUTTONS/BH", 20, 81, 34, 42632);
+		addHoveredButton(42433, "data/Interfaces/Tele/BBUTTONS/BH", 21, 81, 34, 42634);
+		addHoveredButton(42435, "data/Interfaces/Tele/BBUTTONS/BH", 22, 81, 34, 42636);
+		addHoveredButton(42437, "data/Interfaces/Tele/BBUTTONS/BH", 23, 81, 34, 42638);
 
-		addHoverButton(42438, "Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 42439, 1);
-		addHoverButton(42440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 42441, 1);
+		addHoverButton(42438, "data/Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 42439, 1);
+		addHoverButton(42440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 42441, 1);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
 
@@ -4495,53 +4495,53 @@ public class RSInterface {
 	public static void TeleTAB3_3() {
 		RSInterface RSinterface = addTabInterface(43400);
 
-		addSprite(43401, 0, "Interfaces/Tele/BG");
+		addSprite(43401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(43402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 43403, 1);
-		addHoverButton(43404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 43405, 1);
-		addHoverButton(43406, "Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 43407, 1);
-		addHoverButton(43408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 43409, 1);
-		addHoverButton(43410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 43411, 1);
+		addHoverButton(43402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 43403, 1);
+		addHoverButton(43404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "DeungeonS", -1, 43405, 1);
+		addHoverButton(43406, "data/Interfaces/Tele/TAB/TABL", 2, 130, 55, "BossES", -1, 43407, 1);
+		addHoverButton(43408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGameS", -1, 43409, 1);
+		addHoverButton(43410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 43411, 1);
 
-		addHoverButton(43412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 43413, 1);
-		addHoveredButton(43413, "Interfaces/Tele/Close", 1, 16, 16, 43614);
+		addHoverButton(43412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 43413, 1);
+		addHoveredButton(43413, "data/Interfaces/Tele/Close", 1, 16, 16, 43614);
 
 		// buttons
 
-		addHoverButton(43414, "Interfaces/Tele/BBUTTONS/B", 24, 81, 34, "", -1, 43415, 1);
-		addHoverButton(43416, "Interfaces/Tele/BBUTTONS/B", 25, 81, 34, "", -1, 43417, 1);
-		addHoverButton(43418, "Interfaces/Tele/BBUTTONS/B", 26, 81, 34, "", -1, 43419, 1);
-		addHoverButton(43420, "Interfaces/Tele/BBUTTONS/B", 27, 81, 34, "", -1, 43421, 1);
-		addHoverButton(43422, "Interfaces/Tele/BBUTTONS/B", 28, 81, 34, "", -1, 43423, 1);
-		addHoverButton(43424, "Interfaces/Tele/BBUTTONS/B", 29, 81, 34, "", -1, 43425, 1);
-		addHoverButton(43426, "Interfaces/Tele/BBUTTONS/B", 30, 81, 34, "", -1, 43427, 1);
-		// addHoverButton(42428, "Interfaces/Tele/BBUTTONS/B", 19, 81, 34, "", -1,
+		addHoverButton(43414, "data/Interfaces/Tele/BBUTTONS/B", 24, 81, 34, "", -1, 43415, 1);
+		addHoverButton(43416, "data/Interfaces/Tele/BBUTTONS/B", 25, 81, 34, "", -1, 43417, 1);
+		addHoverButton(43418, "data/Interfaces/Tele/BBUTTONS/B", 26, 81, 34, "", -1, 43419, 1);
+		addHoverButton(43420, "data/Interfaces/Tele/BBUTTONS/B", 27, 81, 34, "", -1, 43421, 1);
+		addHoverButton(43422, "data/Interfaces/Tele/BBUTTONS/B", 28, 81, 34, "", -1, 43423, 1);
+		addHoverButton(43424, "data/Interfaces/Tele/BBUTTONS/B", 29, 81, 34, "", -1, 43425, 1);
+		addHoverButton(43426, "data/Interfaces/Tele/BBUTTONS/B", 30, 81, 34, "", -1, 43427, 1);
+		// addHoverButton(42428, "data/Interfaces/Tele/BBUTTONS/B", 19, 81, 34, "", -1,
 		// 42429, 1);
-		// addHoverButton(42430, "Interfaces/Tele/BBUTTONS/B", 20, 81, 34, "", -1,
+		// addHoverButton(42430, "data/Interfaces/Tele/BBUTTONS/B", 20, 81, 34, "", -1,
 		// 42431, 1);
-		// addHoverButton(42432, "Interfaces/Tele/BBUTTONS/B", 21, 81, 34, "", -1,
+		// addHoverButton(42432, "data/Interfaces/Tele/BBUTTONS/B", 21, 81, 34, "", -1,
 		// 42433, 1);
-		// addHoverButton(42434, "Interfaces/Tele/BBUTTONS/B", 22, 81, 34, "", -1,
+		// addHoverButton(42434, "data/Interfaces/Tele/BBUTTONS/B", 22, 81, 34, "", -1,
 		// 42435, 1);
-		// addHoverButton(42436, "Interfaces/Tele/BBUTTONS/B", 23, 81, 34, "", -1,
+		// addHoverButton(42436, "data/Interfaces/Tele/BBUTTONS/B", 23, 81, 34, "", -1,
 		// 42437, 1);
 
-		addHoveredButton(43415, "Interfaces/Tele/BBUTTONS/BH", 24, 81, 34, 43616);
-		addHoveredButton(43417, "Interfaces/Tele/BBUTTONS/BH", 25, 81, 34, 43618);
-		addHoveredButton(43419, "Interfaces/Tele/BBUTTONS/BH", 26, 81, 34, 43620);
-		addHoveredButton(43421, "Interfaces/Tele/BBUTTONS/BH", 27, 81, 34, 43622);
-		addHoveredButton(43423, "Interfaces/Tele/BBUTTONS/BH", 28, 81, 34, 43624);
-		addHoveredButton(43425, "Interfaces/Tele/BBUTTONS/BH", 29, 81, 34, 43626);
-		addHoveredButton(43427, "Interfaces/Tele/BBUTTONS/BH", 30, 81, 34, 43628);
-		// addHoveredButton(42429, "Interfaces/Tele/BBUTTONS/BH", 19, 81, 34, 42630);
-		// addHoveredButton(42431, "Interfaces/Tele/BBUTTONS/BH", 20, 81, 34, 42632);
-		// addHoveredButton(42433, "Interfaces/Tele/BBUTTONS/BH", 21, 81, 34, 42634);
-		// addHoveredButton(42435, "Interfaces/Tele/BBUTTONS/BH", 22, 81, 34, 42636);
-		// addHoveredButton(42437, "Interfaces/Tele/BBUTTONS/BH", 23, 81, 34, 42638);
+		addHoveredButton(43415, "data/Interfaces/Tele/BBUTTONS/BH", 24, 81, 34, 43616);
+		addHoveredButton(43417, "data/Interfaces/Tele/BBUTTONS/BH", 25, 81, 34, 43618);
+		addHoveredButton(43419, "data/Interfaces/Tele/BBUTTONS/BH", 26, 81, 34, 43620);
+		addHoveredButton(43421, "data/Interfaces/Tele/BBUTTONS/BH", 27, 81, 34, 43622);
+		addHoveredButton(43423, "data/Interfaces/Tele/BBUTTONS/BH", 28, 81, 34, 43624);
+		addHoveredButton(43425, "data/Interfaces/Tele/BBUTTONS/BH", 29, 81, 34, 43626);
+		addHoveredButton(43427, "data/Interfaces/Tele/BBUTTONS/BH", 30, 81, 34, 43628);
+		// addHoveredButton(42429, "data/Interfaces/Tele/BBUTTONS/BH", 19, 81, 34, 42630);
+		// addHoveredButton(42431, "data/Interfaces/Tele/BBUTTONS/BH", 20, 81, 34, 42632);
+		// addHoveredButton(42433, "data/Interfaces/Tele/BBUTTONS/BH", 21, 81, 34, 42634);
+		// addHoveredButton(42435, "data/Interfaces/Tele/BBUTTONS/BH", 22, 81, 34, 42636);
+		// addHoveredButton(42437, "data/Interfaces/Tele/BBUTTONS/BH", 23, 81, 34, 42638);
 
-		// addHoverButton(42438, "Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 43439,
+		// addHoverButton(42438, "data/Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 43439,
 		// 1);
-		addHoverButton(43440, "Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 43441, 1);
+		addHoverButton(43440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 43441, 1);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
 
@@ -4598,37 +4598,37 @@ public class RSInterface {
 	public static void TeleTAB4() {
 		RSInterface RSinterface = addTabInterface(39400);
 
-		addSprite(39401, 0, "Interfaces/Tele/BG");
+		addSprite(39401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(39402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 39403, 1);
+		addHoverButton(39402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 39403, 1);
 
-		addHoverButton(39404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "Deungeon", -1, 39405, 1);
-		addHoverButton(39406, "Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 39407, 1);
-		addHoverButton(39408, "Interfaces/Tele/TAB/TABL", 3, 130, 55, "MiniGame", -1, 39409, 1);
-		addHoverButton(39410, "Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 39411, 1);
+		addHoverButton(39404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "Deungeon", -1, 39405, 1);
+		addHoverButton(39406, "data/Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 39407, 1);
+		addHoverButton(39408, "data/Interfaces/Tele/TAB/TABL", 3, 130, 55, "MiniGame", -1, 39409, 1);
+		addHoverButton(39410, "data/Interfaces/Tele/TAB/TAB", 4, 130, 55, "Wilderness", -1, 39411, 1);
 
-		addHoverButton(39412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 39413, 1);
-		addHoveredButton(39413, "Interfaces/Tele/Close", 1, 16, 16, 39614);
+		addHoverButton(39412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 39413, 1);
+		addHoveredButton(39413, "data/Interfaces/Tele/Close", 1, 16, 16, 39614);
 
 		// buttons
 
-		addHoverButton(39414, "Interfaces/Tele/MBUTTONS/B", 0, 81, 34, "", -1, 39415, 1);
-		addHoverButton(39416, "Interfaces/Tele/MBUTTONS/B", 1, 81, 34, "", -1, 39417, 1);
-		addHoverButton(39418, "Interfaces/Tele/MBUTTONS/B", 2, 81, 34, "", -1, 39419, 1);
-		addHoverButton(39420, "Interfaces/Tele/MBUTTONS/B", 3, 81, 34, "", -1, 39421, 1);
-		addHoverButton(39422, "Interfaces/Tele/MBUTTONS/B", 4, 81, 34, "", -1, 39423, 1);
-		addHoverButton(39424, "Interfaces/Tele/MBUTTONS/B", 5, 81, 34, "", -1, 39425, 1);
-		addHoverButton(39426, "Interfaces/Tele/MBUTTONS/B", 6, 81, 34, "", -1, 39427, 1);
-		addHoverButton(39428, "Interfaces/Tele/MBUTTONS/B", 7, 81, 34, "", -1, 39429, 1);
+		addHoverButton(39414, "data/Interfaces/Tele/MBUTTONS/B", 0, 81, 34, "", -1, 39415, 1);
+		addHoverButton(39416, "data/Interfaces/Tele/MBUTTONS/B", 1, 81, 34, "", -1, 39417, 1);
+		addHoverButton(39418, "data/Interfaces/Tele/MBUTTONS/B", 2, 81, 34, "", -1, 39419, 1);
+		addHoverButton(39420, "data/Interfaces/Tele/MBUTTONS/B", 3, 81, 34, "", -1, 39421, 1);
+		addHoverButton(39422, "data/Interfaces/Tele/MBUTTONS/B", 4, 81, 34, "", -1, 39423, 1);
+		addHoverButton(39424, "data/Interfaces/Tele/MBUTTONS/B", 5, 81, 34, "", -1, 39425, 1);
+		addHoverButton(39426, "data/Interfaces/Tele/MBUTTONS/B", 6, 81, 34, "", -1, 39427, 1);
+		addHoverButton(39428, "data/Interfaces/Tele/MBUTTONS/B", 7, 81, 34, "", -1, 39429, 1);
 
-		addHoveredButton(39415, "Interfaces/Tele/MBUTTONS/BH", 0, 81, 34, 39616);
-		addHoveredButton(39417, "Interfaces/Tele/MBUTTONS/BH", 1, 81, 34, 39618);
-		addHoveredButton(39419, "Interfaces/Tele/MBUTTONS/BH", 2, 81, 34, 39620);
-		addHoveredButton(39421, "Interfaces/Tele/MBUTTONS/BH", 3, 81, 34, 39622);
-		addHoveredButton(39423, "Interfaces/Tele/MBUTTONS/BH", 4, 81, 34, 39624);
-		addHoveredButton(39425, "Interfaces/Tele/MBUTTONS/BH", 5, 81, 34, 39626);
-		addHoveredButton(39427, "Interfaces/Tele/MBUTTONS/BH", 6, 81, 34, 39628);
-		addHoveredButton(39429, "Interfaces/Tele/MBUTTONS/BH", 7, 81, 34, 39630);
+		addHoveredButton(39415, "data/Interfaces/Tele/MBUTTONS/BH", 0, 81, 34, 39616);
+		addHoveredButton(39417, "data/Interfaces/Tele/MBUTTONS/BH", 1, 81, 34, 39618);
+		addHoveredButton(39419, "data/Interfaces/Tele/MBUTTONS/BH", 2, 81, 34, 39620);
+		addHoveredButton(39421, "data/Interfaces/Tele/MBUTTONS/BH", 3, 81, 34, 39622);
+		addHoveredButton(39423, "data/Interfaces/Tele/MBUTTONS/BH", 4, 81, 34, 39624);
+		addHoveredButton(39425, "data/Interfaces/Tele/MBUTTONS/BH", 5, 81, 34, 39626);
+		addHoveredButton(39427, "data/Interfaces/Tele/MBUTTONS/BH", 6, 81, 34, 39628);
+		addHoveredButton(39429, "data/Interfaces/Tele/MBUTTONS/BH", 7, 81, 34, 39630);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
 
@@ -4675,56 +4675,56 @@ public class RSInterface {
 	public static void TeleTAB5() {
 		RSInterface RSinterface = addTabInterface(40400);
 
-		addSprite(40401, 0, "Interfaces/Tele/BG");
+		addSprite(40401, 0, "data/Interfaces/Tele/BG");
 
-		addHoverButton(40402, "Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 40403, 1);
+		addHoverButton(40402, "data/Interfaces/Tele/TAB/TAB", 0, 130, 55, "Training", -1, 40403, 1);
 
-		// addHoveredButton(39003, "Interfaces/colorSelection/GoldBox", 0, 19, 20,
+		// addHoveredButton(39003, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20,
 		// 39004);
 
-		addHoverButton(40404, "Interfaces/Tele/TAB/TAB", 1, 130, 55, "Deungeon", -1, 40405, 1);
-		addHoverButton(40406, "Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 40407, 1);
-		addHoverButton(40408, "Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGame", -1, 40409, 1);
-		addHoverButton(40410, "Interfaces/Tele/TAB/TABL", 4, 130, 55, "Wilderness", -1, 40411, 1);
+		addHoverButton(40404, "data/Interfaces/Tele/TAB/TAB", 1, 130, 55, "Deungeon", -1, 40405, 1);
+		addHoverButton(40406, "data/Interfaces/Tele/TAB/TAB", 2, 130, 55, "Boss", -1, 40407, 1);
+		addHoverButton(40408, "data/Interfaces/Tele/TAB/TAB", 3, 130, 55, "MiniGame", -1, 40409, 1);
+		addHoverButton(40410, "data/Interfaces/Tele/TAB/TABL", 4, 130, 55, "Wilderness", -1, 40411, 1);
 
-		addHoverButton(40412, "Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 40413, 1);
-		addHoveredButton(40413, "Interfaces/Tele/Close", 1, 16, 16, 40614);
+		addHoverButton(40412, "data/Interfaces/Tele/Close", 0, 16, 16, "Close", -1, 40413, 1);
+		addHoveredButton(40413, "data/Interfaces/Tele/Close", 1, 16, 16, 40614);
 
 		// buttons
 
-		addHoverButton(40414, "Interfaces/Tele/WBUTTONS/B", 0, 81, 34, "", -1, 40415, 1);
-		addHoverButton(40416, "Interfaces/Tele/WBUTTONS/B", 1, 81, 34, "", -1, 40417, 1);
-		addHoverButton(40418, "Interfaces/Tele/WBUTTONS/B", 2, 81, 34, "", -1, 40419, 1);
-		addHoverButton(40420, "Interfaces/Tele/WBUTTONS/B", 3, 81, 34, "", -1, 40421, 1);
-		addHoverButton(40422, "Interfaces/Tele/WBUTTONS/B", 4, 81, 34, "", -1, 40423, 1);
-		addHoverButton(40424, "Interfaces/Tele/WBUTTONS/B", 5, 81, 34, "", -1, 40425, 1);
-		addHoverButton(40426, "Interfaces/Tele/WBUTTONS/B", 6, 81, 34, "", -1, 40427, 1);
-		addHoverButton(40428, "Interfaces/Tele/WBUTTONS/B", 7, 81, 34, "", -1, 40429, 1);
-		// addHoverButton(40430, "Interfaces/Tele/DBUTTONS/B", 8, 81, 34, "", -1, 40431,
+		addHoverButton(40414, "data/Interfaces/Tele/WBUTTONS/B", 0, 81, 34, "", -1, 40415, 1);
+		addHoverButton(40416, "data/Interfaces/Tele/WBUTTONS/B", 1, 81, 34, "", -1, 40417, 1);
+		addHoverButton(40418, "data/Interfaces/Tele/WBUTTONS/B", 2, 81, 34, "", -1, 40419, 1);
+		addHoverButton(40420, "data/Interfaces/Tele/WBUTTONS/B", 3, 81, 34, "", -1, 40421, 1);
+		addHoverButton(40422, "data/Interfaces/Tele/WBUTTONS/B", 4, 81, 34, "", -1, 40423, 1);
+		addHoverButton(40424, "data/Interfaces/Tele/WBUTTONS/B", 5, 81, 34, "", -1, 40425, 1);
+		addHoverButton(40426, "data/Interfaces/Tele/WBUTTONS/B", 6, 81, 34, "", -1, 40427, 1);
+		addHoverButton(40428, "data/Interfaces/Tele/WBUTTONS/B", 7, 81, 34, "", -1, 40429, 1);
+		// addHoverButton(40430, "data/Interfaces/Tele/DBUTTONS/B", 8, 81, 34, "", -1, 40431,
 		// 1);
-		// addHoverButton(40432, "Interfaces/Tele/TBUTTONS/B", 9, 81, 34, "", -1, 40433,
+		// addHoverButton(40432, "data/Interfaces/Tele/TBUTTONS/B", 9, 81, 34, "", -1, 40433,
 		// 1);
-		// addHoverButton(40434, "Interfaces/Tele/TBUTTONS/B", 10, 81, 34, "", -1,
+		// addHoverButton(40434, "data/Interfaces/Tele/TBUTTONS/B", 10, 81, 34, "", -1,
 		// 40435, 1);
-		// addHoverButton(40436, "Interfaces/Tele/TBUTTONS/B", 11, 81, 34, "", -1,
+		// addHoverButton(40436, "data/Interfaces/Tele/TBUTTONS/B", 11, 81, 34, "", -1,
 		// 40439, 1);
 
-		addHoveredButton(40415, "Interfaces/Tele/WBUTTONS/BH", 0, 81, 34, 40616);
-		addHoveredButton(40417, "Interfaces/Tele/WBUTTONS/BH", 1, 81, 34, 40618);
-		addHoveredButton(40419, "Interfaces/Tele/WBUTTONS/BH", 2, 81, 34, 40620);
-		addHoveredButton(40421, "Interfaces/Tele/WBUTTONS/BH", 3, 81, 34, 40622);
-		addHoveredButton(40423, "Interfaces/Tele/WBUTTONS/BH", 4, 81, 34, 40624);
-		addHoveredButton(40425, "Interfaces/Tele/WBUTTONS/BH", 5, 81, 34, 40626);
-		addHoveredButton(40427, "Interfaces/Tele/WBUTTONS/BH", 6, 81, 34, 40628);
-		addHoveredButton(40429, "Interfaces/Tele/WBUTTONS/BH", 7, 81, 34, 40630);
+		addHoveredButton(40415, "data/Interfaces/Tele/WBUTTONS/BH", 0, 81, 34, 40616);
+		addHoveredButton(40417, "data/Interfaces/Tele/WBUTTONS/BH", 1, 81, 34, 40618);
+		addHoveredButton(40419, "data/Interfaces/Tele/WBUTTONS/BH", 2, 81, 34, 40620);
+		addHoveredButton(40421, "data/Interfaces/Tele/WBUTTONS/BH", 3, 81, 34, 40622);
+		addHoveredButton(40423, "data/Interfaces/Tele/WBUTTONS/BH", 4, 81, 34, 40624);
+		addHoveredButton(40425, "data/Interfaces/Tele/WBUTTONS/BH", 5, 81, 34, 40626);
+		addHoveredButton(40427, "data/Interfaces/Tele/WBUTTONS/BH", 6, 81, 34, 40628);
+		addHoveredButton(40429, "data/Interfaces/Tele/WBUTTONS/BH", 7, 81, 34, 40630);
 
-		// addHoveredButton(40431, "Interfaces/Tele/TBUTTONS/BH", 8, 81, 34, 39632);
+		// addHoveredButton(40431, "data/Interfaces/Tele/TBUTTONS/BH", 8, 81, 34, 39632);
 
-		// addHoveredButton(40433, "Interfaces/Tele/TBUTTONS/BH", 9, 81, 34, 39634);
+		// addHoveredButton(40433, "data/Interfaces/Tele/TBUTTONS/BH", 9, 81, 34, 39634);
 
-		// addHoveredButton(40435, "Interfaces/Tele/TBUTTONS/BH", 10, 81, 34, 39636);
+		// addHoveredButton(40435, "data/Interfaces/Tele/TBUTTONS/BH", 10, 81, 34, 39636);
 
-		// addHoveredButton(40439, "Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 39639);
+		// addHoveredButton(40439, "data/Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 39639);
 
 		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
 
@@ -5027,7 +5027,7 @@ public class RSInterface {
 	public static void shortCutInterface() {
 		RSInterface scInterface = addTabInterface(17930);
 		setChildren(14, scInterface);
-		addSprite(17931, 0, "Interfaces/Shortcut/s");
+		addSprite(17931, 0, "data/Interfaces/Shortcut/s");
 		// row1
 		addButton(17932, -1, "Empty Inventory", 93, 55, "Empty Inventory", 5);
 		addButton(17933, -1, "Request Help", 93, 55, "Request Help", 5);
@@ -7004,28 +7004,28 @@ public class RSInterface {
 	private static void soulwarsRewards(TextDrawingArea[] textDrawingAreas2) {
 		RSInterface Interface = addTabInterface(31000);
 		setChildren(24, Interface);
-		addSprite(31001, 0, "Interfaces/Soul Wars/EXPERIENCE/MAIN_EXPERIENCE");
-		addHoverButton(31002, "Interfaces/Soul Wars/EXPERIENCE/CLOSE", 0, 16, 16, "Close", -1, 31003, 3);
-		addHoveredButton(31003, "Interfaces/Soul Wars/EXPERIENCE/CLOSE", 1, 16, 16, 31004);
-		addHoverButton(31005, "Interfaces/Soul Wars/EXPERIENCE/ATTACK", 0, 64, 64, "Buy @or1@Attack XP", -1, 31006, 1);
-		addHoveredButton(31006, "Interfaces/Soul Wars/EXPERIENCE/ATTACK", 1, 64, 64, 31007);
-		addHoverButton(31008, "Interfaces/Soul Wars/EXPERIENCE/STRENGTH", 0, 64, 64, "Buy @or1@Strength XP", -1, 31009,
+		addSprite(31001, 0, "data/Interfaces/Soul Wars/EXPERIENCE/MAIN_EXPERIENCE");
+		addHoverButton(31002, "data/Interfaces/Soul Wars/EXPERIENCE/CLOSE", 0, 16, 16, "Close", -1, 31003, 3);
+		addHoveredButton(31003, "data/Interfaces/Soul Wars/EXPERIENCE/CLOSE", 1, 16, 16, 31004);
+		addHoverButton(31005, "data/Interfaces/Soul Wars/EXPERIENCE/ATTACK", 0, 64, 64, "Buy @or1@Attack XP", -1, 31006, 1);
+		addHoveredButton(31006, "data/Interfaces/Soul Wars/EXPERIENCE/ATTACK", 1, 64, 64, 31007);
+		addHoverButton(31008, "data/Interfaces/Soul Wars/EXPERIENCE/STRENGTH", 0, 64, 64, "Buy @or1@Strength XP", -1, 31009,
 				1);
-		addHoveredButton(31009, "Interfaces/Soul Wars/EXPERIENCE/STRENGTH", 1, 64, 64, 31010);
-		addHoverButton(31011, "Interfaces/Soul Wars/EXPERIENCE/DEFENCE", 0, 64, 64, "Buy @or1@Defence XP", -1, 31012,
+		addHoveredButton(31009, "data/Interfaces/Soul Wars/EXPERIENCE/STRENGTH", 1, 64, 64, 31010);
+		addHoverButton(31011, "data/Interfaces/Soul Wars/EXPERIENCE/DEFENCE", 0, 64, 64, "Buy @or1@Defence XP", -1, 31012,
 				1);
-		addHoveredButton(31012, "Interfaces/Soul Wars/EXPERIENCE/DEFENCE", 1, 64, 64, 40013);
-		addHoverButton(31014, "Interfaces/Soul Wars/EXPERIENCE/CONSTITUTION", 0, 64, 64, "Buy 50K @or1@Constitution XP",
+		addHoveredButton(31012, "data/Interfaces/Soul Wars/EXPERIENCE/DEFENCE", 1, 64, 64, 40013);
+		addHoverButton(31014, "data/Interfaces/Soul Wars/EXPERIENCE/CONSTITUTION", 0, 64, 64, "Buy 50K @or1@Constitution XP",
 				-1, 31015, 1);
-		addHoveredButton(31015, "Interfaces/Soul Wars/EXPERIENCE/CONSTITUTION", 1, 64, 64, 31016);
-		addHoverButton(31017, "Interfaces/Soul Wars/EXPERIENCE/RANGE", 0, 64, 64, "Buy @or1@Ranged XP", -1, 31018, 1);
-		addHoveredButton(31018, "Interfaces/Soul Wars/EXPERIENCE/RANGE", 1, 64, 64, 31019);
-		addHoverButton(31020, "Interfaces/Soul Wars/EXPERIENCE/MAGIC", 0, 64, 64, "Buy @or1@Magic XP", -1, 31021, 1);
-		addHoveredButton(31021, "Interfaces/Soul Wars/EXPERIENCE/MAGIC", 1, 64, 64, 31022);
-		addHoverButton(31023, "Interfaces/Soul Wars/EXPERIENCE/PRAYER", 0, 64, 64, "Buy @or1@Prayer XP", -1, 31024, 1);
-		addHoveredButton(31024, "Interfaces/Soul Wars/EXPERIENCE/PRAYER", 1, 64, 64, 40025);
-		addHoverButton(31026, "Interfaces/Soul Wars/EXPERIENCE/SLAYER", 0, 64, 64, "Buy @or1@Slayer XP", -1, 31027, 1);
-		addHoveredButton(31027, "Interfaces/Soul Wars/EXPERIENCE/SLAYER", 1, 64, 64, 31028);
+		addHoveredButton(31015, "data/Interfaces/Soul Wars/EXPERIENCE/CONSTITUTION", 1, 64, 64, 31016);
+		addHoverButton(31017, "data/Interfaces/Soul Wars/EXPERIENCE/RANGE", 0, 64, 64, "Buy @or1@Ranged XP", -1, 31018, 1);
+		addHoveredButton(31018, "data/Interfaces/Soul Wars/EXPERIENCE/RANGE", 1, 64, 64, 31019);
+		addHoverButton(31020, "data/Interfaces/Soul Wars/EXPERIENCE/MAGIC", 0, 64, 64, "Buy @or1@Magic XP", -1, 31021, 1);
+		addHoveredButton(31021, "data/Interfaces/Soul Wars/EXPERIENCE/MAGIC", 1, 64, 64, 31022);
+		addHoverButton(31023, "data/Interfaces/Soul Wars/EXPERIENCE/PRAYER", 0, 64, 64, "Buy @or1@Prayer XP", -1, 31024, 1);
+		addHoveredButton(31024, "data/Interfaces/Soul Wars/EXPERIENCE/PRAYER", 1, 64, 64, 40025);
+		addHoverButton(31026, "data/Interfaces/Soul Wars/EXPERIENCE/SLAYER", 0, 64, 64, "Buy @or1@Slayer XP", -1, 31027, 1);
+		addHoveredButton(31027, "data/Interfaces/Soul Wars/EXPERIENCE/SLAYER", 1, 64, 64, 31028);
 		addHoverButton(31029, "", 0, 64, 25, "Items", -1, 31030, 1);
 		addHoveredButton(31030, "", 1, 64, 25, 31031);
 		addHoverButton(31032, "", 0, 64, 25, "Other", -1, 31033, 1);
@@ -7064,17 +7064,17 @@ public class RSInterface {
 	public static void soulPointsCharms(TextDrawingArea[] Soul) {
 		RSInterface Interface = addTabInterface(31035);
 		setChildren(16, Interface);
-		addSprite(31036, 0, "Interfaces/Soul Wars/CHARMS/MAIN_CHARMS");
-		addHoverButton(31037, "Interfaces/Soul Wars/CHARMS/CLOSE", 0, 16, 16, "Close", -1, 31038, 3);
-		addHoveredButton(31038, "Interfaces/Soul Wars/CHARMS/CLOSE", 1, 16, 16, 31039);
+		addSprite(31036, 0, "data/Interfaces/Soul Wars/CHARMS/MAIN_CHARMS");
+		addHoverButton(31037, "data/Interfaces/Soul Wars/CHARMS/CLOSE", 0, 16, 16, "Close", -1, 31038, 3);
+		addHoveredButton(31038, "data/Interfaces/Soul Wars/CHARMS/CLOSE", 1, 16, 16, 31039);
 		addHoverButton(31040, "", 0, 64, 64, "Buy @or1@Gold charms", -1, 31041, 1);
-		addHoveredButton(31041, "Interfaces/Soul Wars/CHARMS/GOLD", 1, 64, 64, 31042);
+		addHoveredButton(31041, "data/Interfaces/Soul Wars/CHARMS/GOLD", 1, 64, 64, 31042);
 		addHoverButton(31043, "", 0, 64, 64, "Buy @or1@Green charms", -1, 31044, 1);
-		addHoveredButton(31044, "Interfaces/Soul Wars/CHARMS/GREEN", 1, 64, 64, 31045);
+		addHoveredButton(31044, "data/Interfaces/Soul Wars/CHARMS/GREEN", 1, 64, 64, 31045);
 		addHoverButton(31046, "", 0, 64, 64, "Buy @or1@Chrimson charms", -1, 31047, 1);
-		addHoveredButton(31047, "Interfaces/Soul Wars/CHARMS/CRIMSON", 1, 64, 64, 31048);
+		addHoveredButton(31047, "data/Interfaces/Soul Wars/CHARMS/CRIMSON", 1, 64, 64, 31048);
 		addHoverButton(31049, "", 0, 64, 64, "Buy @or1@Blue charms", -1, 31050, 1);
-		addHoveredButton(31050, "Interfaces/Soul Wars/CHARMS/BLUE", 1, 64, 64, 31051);
+		addHoveredButton(31050, "data/Interfaces/Soul Wars/CHARMS/BLUE", 1, 64, 64, 31051);
 		addHoverButton(31052, "", 0, 64, 25, "Experience", -1, 31053, 1);
 		addHoveredButton(31053, "", 1, 64, 25, 31054);
 		addHoverButton(31055, "", 0, 64, 25, "Other", -1, 31056, 1);
@@ -7286,7 +7286,7 @@ public class RSInterface {
 	private static void reportPlayerInterface() {
 		int id = 10000;
 		RSInterface rsi = addTabInterface(id);
-		addSprite(id + 1, 0, "Interfaces/Report/REPORT");
+		addSprite(id + 1, 0, "data/Interfaces/Report/REPORT");
 		addButton(id + 2, 1, "report", "Select", 170, 30);
 		addButton(id + 3, 1, "report", "Select", 440, 60);
 		addText(id + 4, "", fonts, 0, 0xff9933, false, true);
@@ -7898,7 +7898,7 @@ public class RSInterface {
 
 		final RSInterface tab = addInterface(id);
 
-		final String directory = "Achievement/achievement";
+		final String directory = "data/Interfaces/Achievement/achievement";
 
 		addScroll(id + 1, 200, 135, 620, 40);// is it delayed lol
 		addScroll(id + 81, 200, 140, 600, 40);
@@ -7952,15 +7952,15 @@ public class RSInterface {
 		// statistics(fonts);
 		RSInterface tab = addInterface(36500);
 		tab.totalChildren(39);
-		addSprite(36501, 0, "Interfaces/PlayerProfile/BG");
+		addSprite(36501, 0, "data/Interfaces/PlayerProfile/BG");
 
-		addHover(36502, 3, 0, 36503, 0, "Interfaces/PlayerProfile/CLOSE", 21, 21, "Close");
-		addHovered(36503, 1, "Interfaces/PlayerProfile/CLOSE", 21, 21, 36504);
+		addHover(36502, 3, 0, 36503, 0, "data/Interfaces/PlayerProfile/CLOSE", 21, 21, "Close");
+		addHovered(36503, 1, "data/Interfaces/PlayerProfile/CLOSE", 21, 21, 36504);
 
-		addHover(36505, 1, 0, 36506, 0, "Interfaces/PlayerProfile/SPRITE", 72, 32, "Like");
-		addHovered(36506, 1, "Interfaces/PlayerProfile/SPRITE", 72, 32, 36507);
-		addHover(36508, 1, 0, 36509, 2, "Interfaces/PlayerProfile/SPRITE", 72, 32, "Dislike");
-		addHovered(36509, 3, "Interfaces/PlayerProfile/SPRITE", 72, 32, 36510);
+		addHover(36505, 1, 0, 36506, 0, "data/Interfaces/PlayerProfile/SPRITE", 72, 32, "Like");
+		addHovered(36506, 1, "data/Interfaces/PlayerProfile/SPRITE", 72, 32, 36507);
+		addHover(36508, 1, 0, 36509, 2, "data/Interfaces/PlayerProfile/SPRITE", 72, 32, "Dislike");
+		addHovered(36509, 3, "data/Interfaces/PlayerProfile/SPRITE", 72, 32, 36510);
 
 		addText(36511, "Player Profile", 0xff9933, true, false, -1, tda, 2);
 		addText(36512, "Viewing: ", 0xff9933, true, false, -1, tda, 2);
@@ -7968,8 +7968,8 @@ public class RSInterface {
 		addText(36514, "Dislikes: 0", 0xff9933, true, false, -1, tda, 1);
 		addText(36515, "Views: 0", 0xff9933, true, false, -1, tda, 1);
 		addChar(36516);
-		addSprite(36517, 4, "Interfaces/PlayerProfile/SPRITE");
-		addSprite(36518, 5, "Interfaces/PlayerProfile/SPRITE");
+		addSprite(36517, 4, "data/Interfaces/PlayerProfile/SPRITE");
+		addSprite(36518, 5, "data/Interfaces/PlayerProfile/SPRITE");
 		addText(36519, "Combat:", 0xff9933, false, false, -1, tda, 2);
 		addText(36520, "Skilling:", 0xff9933, false, false, -1, tda, 2);
 		addText(36521, "Kills: 0", 0xff9933, false, false, -1, tda, 1);
@@ -9197,16 +9197,16 @@ public class RSInterface {
 			addHoverButtonWSpriteLoader(79974 + i, 752, 60, 27, "Clear Goal", 1323, -1, 1);
 			addHoverButtonWSpriteLoader(80000 + i, 752, 60, 27, "Prestige", 5000 + i, -1, 1);
 			/*
-			 * addHoverButton(79924 + i, getSprite("Interfaces/Skilltab/Button"), 0, 60, 27,
+			 * addHoverButton(79924 + i, getSprite("data/Interfaces/Skilltab/Button"), 0, 60, 27,
 			 * "Set Level Goal", 1321, -1, 1); addHoverButton(79949 + i,
-			 * getSprite("Interfaces/Skilltab/Button"), 0, 60, 27, "Set Exp Goal", 1322, -1,
-			 * 1); addHoverButton(79974 + i, getSprite("Interfaces/Skilltab/Button"), 0, 60,
+			 * getSprite("data/Interfaces/Skilltab/Button"), 0, 60, 27, "Set Exp Goal", 1322, -1,
+			 * 1); addHoverButton(79974 + i, getSprite("data/Interfaces/Skilltab/Button"), 0, 60,
 			 * 27, "Clear Goal", 1323, -1, 1); addHoverButton(80000 + i,
-			 * getSprite("Interfaces/Skilltab/Button"), 0, 60, 27, "Prestige", 5000+i, -1,
+			 * getSprite("data/Interfaces/Skilltab/Button"), 0, 60, 27, "Prestige", 5000+i, -1,
 			 * 1);
 			 * 
 			 * 
-			 * addSprite(icons[i], getSprite("Interfaces/Skilltab/" + spriteNames[i]));
+			 * addSprite(icons[i], getSprite("data/Interfaces/Skilltab/" + spriteNames[i]));
 			 */
 			addSpriteLoader(icons[i], spriteIds[i]);
 		}
@@ -9593,47 +9593,47 @@ public class RSInterface {
 
 	public static void trainingTeleports(TextDrawingArea[] tda) {
 		RSInterface rsInterface = addInterface(60600);
-		addSprite(60601, 0, "Teleporting/Background");
-		addHoverButton(60602, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60603, 1);
-		addHoveredButton(60603, "Teleporting/Tab", 1, 114, 35, 60604);
-		addHoverButton(60605, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60606, 1);
-		addHoveredButton(60606, "Teleporting/Tab", 1, 114, 35, 60607);
-		addHoverButton(60608, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60609, 1);
-		addHoveredButton(60609, "Teleporting/Tab", 1, 114, 35, 60610);
-		addHoverButton(60611, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60612, 1);
-		addHoveredButton(60612, "Teleporting/Tab", 1, 114, 35, 60613);
-		addHoverButton(60614, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60615, 1);
-		addHoveredButton(60615, "Teleporting/Tab", 1, 114, 35, 60616);
-		addHoverButton(60617, "Teleporting/Tab", 0, 114, 35, "Select", 0, 60618, 1);
-		addHoveredButton(60618, "Teleporting/Tab", 1, 114, 35, 60619);
-		addHoverButton(60622, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60623, 1);
-		addHoveredButton(60623, "Teleporting/Button", 1, 90, 32, 60624);
-		addHoverButton(60625, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60626, 1);
-		addHoveredButton(60626, "Teleporting/Button", 1, 90, 32, 60627);
-		addHoverButton(60628, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60629, 1);
-		addHoveredButton(60629, "Teleporting/Button", 1, 90, 32, 60630);
-		addHoverButton(60631, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60632, 1);
-		addHoveredButton(60632, "Teleporting/Button", 1, 90, 32, 60633);
-		addHoverButton(60634, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60635, 1);
-		addHoveredButton(60635, "Teleporting/Button", 1, 90, 32, 60636);
-		addHoverButton(60637, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60638, 1);
-		addHoveredButton(60638, "Teleporting/Button", 1, 90, 32, 60639);
-		addHoverButton(60640, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60641, 1);
-		addHoveredButton(60641, "Teleporting/Button", 1, 90, 32, 60642);
-		addHoverButton(60643, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60644, 1);
-		addHoveredButton(60644, "Teleporting/Button", 1, 90, 32, 60645);
-		addHoverButton(60646, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60647, 1);
-		addHoveredButton(60647, "Teleporting/Button", 1, 90, 32, 60648);
+		addSprite(60601, 0, "data/Interfaces/data/Interfaces/Teleporting/Background");
+		addHoverButton(60602, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60603, 1);
+		addHoveredButton(60603, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60604);
+		addHoverButton(60605, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60606, 1);
+		addHoveredButton(60606, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60607);
+		addHoverButton(60608, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60609, 1);
+		addHoveredButton(60609, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60610);
+		addHoverButton(60611, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60612, 1);
+		addHoveredButton(60612, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60613);
+		addHoverButton(60614, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60615, 1);
+		addHoveredButton(60615, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60616);
+		addHoverButton(60617, "data/Interfaces/Teleporting/Tab", 0, 114, 35, "Select", 0, 60618, 1);
+		addHoveredButton(60618, "data/Interfaces/Teleporting/Tab", 1, 114, 35, 60619);
+		addHoverButton(60622, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60623, 1);
+		addHoveredButton(60623, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60624);
+		addHoverButton(60625, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60626, 1);
+		addHoveredButton(60626, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60627);
+		addHoverButton(60628, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60629, 1);
+		addHoveredButton(60629, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60630);
+		addHoverButton(60631, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60632, 1);
+		addHoveredButton(60632, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60633);
+		addHoverButton(60634, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60635, 1);
+		addHoveredButton(60635, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60636);
+		addHoverButton(60637, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60638, 1);
+		addHoveredButton(60638, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60639);
+		addHoverButton(60640, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60641, 1);
+		addHoveredButton(60641, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60642);
+		addHoverButton(60643, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60644, 1);
+		addHoveredButton(60644, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60645);
+		addHoverButton(60646, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60647, 1);
+		addHoveredButton(60647, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60648);
 		// extra buttons
-		addHoverButton(60691, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60692, 1);
-		addHoveredButton(60692, "Teleporting/Button", 1, 90, 32, 60693);
-		addHoverButton(60694, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60695, 1);
-		addHoveredButton(60695, "Teleporting/Button", 1, 90, 32, 60696);
-		addHoverButton(60697, "Teleporting/Button", 0, 90, 32, "Teleport", 0, 60698, 1);
-		addHoveredButton(60698, "Teleporting/Button", 1, 90, 32, 60699);
+		addHoverButton(60691, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60692, 1);
+		addHoveredButton(60692, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60693);
+		addHoverButton(60694, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60695, 1);
+		addHoveredButton(60695, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60696);
+		addHoverButton(60697, "data/Interfaces/Teleporting/Button", 0, 90, 32, "Teleport", 0, 60698, 1);
+		addHoveredButton(60698, "data/Interfaces/Teleporting/Button", 1, 90, 32, 60699);
 
-		addHoverButton(60652, "Teleporting/Close", 0, 16, 16, "Close", 0, 60653, 3);
-		addHoveredButton(60653, "Teleporting/Close", 1, 16, 16, 60654);
+		addHoverButton(60652, "data/Interfaces/Teleporting/Close", 0, 16, 16, "Close", 0, 60653, 3);
+		addHoveredButton(60653, "data/Interfaces/Teleporting/Close", 1, 16, 16, 60654);
 
 		addText(60656, "Monsters", tda, 1, 0xF7FE2E, true, true);
 		addText(60657, "Minigames", tda, 1, 0xF7FE2E, true, true);
@@ -10155,7 +10155,7 @@ public class RSInterface {
 		button.contentType = 0;
 		button.width = 60;
 		button.height = 28;
-		button.disabledSprite = getSprite("Interfaces/Skilltab/Button");
+		button.disabledSprite = getSprite("data/Interfaces/Skilltab/Button");
 		button.tooltip = "@whi@View @or1@" + skillGuide + " @whi@Options";
 	}
 
@@ -11770,7 +11770,7 @@ public class RSInterface {
 
 		final RSInterface tab = addInterface(26139);
 		final RSInterface scroll = addInterface(26140);
-		final String directory = "Achievement/achievement";
+		final String directory = "data/Interfaces/Achievement/achievement";
 
 		addClickText(26131, "", 0xAF6A1B, false, true, 0, tda, 0, "Information");// is it delayed? ahhh ye
 
@@ -12686,7 +12686,7 @@ public class RSInterface {
 				setBounds(ID - 1204, 133, 65, 8, hover);
 		} else
 			setChildren(3, hover);
-		addSprite(ID + 2, 0, "Interfaces/summoning/creation/BLACKBOX", -1, -1);
+		addSprite(ID + 2, 0, "data/Interfaces/summoning/creation/BLACKBOX", -1, -1);
 		addSpriteLoader(ID + 2, 894);
 		addText(ID + 3, (new StringBuilder()).append("Level ").append(lvl).append(": ").append(name).toString(),
 				0xff981f, true, true, 52, 1);
@@ -15347,9 +15347,9 @@ public class RSInterface {
 	private static void tradeInterface() {
 		RSInterface Interface = addTabInterface(3323);
 		setChildren(26, Interface);
-		addSprite(3324, 6, "Interfaces/Trade/TRADE");
+		addSprite(3324, 6, "data/Interfaces/Trade/TRADE");
 		addCloseButton(3442, 3445, 3446);
-		addHoveredButton(3325, "Interfaces/Trade/TRADE", 2, 17, 17, 3326);
+		addHoveredButton(3325, "data/Interfaces/Trade/TRADE", 2, 17, 17, 3326);
 		addText(3417, "Trading With:", 0xFF981F, true, true, 52, fonts, 2);
 		addText(3418, "Trader's Offer", 0xFF981F, false, true, 52, fonts, 1);
 		addText(3419, "Your Offer", 0xFF981F, false, true, 52, fonts, 1);
@@ -15362,14 +15362,14 @@ public class RSInterface {
 		addText(12506, "Wealth transfer: 2147,000,000 coins' worth to Zezimablud12", 0xB9B855, false, true, -1, fonts,
 				0);
 		addText(12507, "Wealth transfer: 2147,000,000 coins' worth to me", 0xB9B855, false, true, -1, fonts, 0);
-		addHoverButton(3420, "Interfaces/Trade/TRADE", 5, 65, 32, "Accept", -1, 3327, 1);
-		addHoveredButton(3327, "Interfaces/Trade/TRADE", 2, 65, 32, 3328);
+		addHoverButton(3420, "data/Interfaces/Trade/TRADE", 5, 65, 32, "Accept", -1, 3327, 1);
+		addHoveredButton(3327, "data/Interfaces/Trade/TRADE", 2, 65, 32, 3328);
 		/*
 		 * addHover(3420, 1, 0, 3327, 5, "Trade/TRADE", 65, 32, "Accept");
 		 * addHovered(3327, 2, "Trade/TRADE", 65, 32, 3328);
 		 */
-		addHoverButton(3422, "Interfaces/Trade/TRADE", 5, 65, 32, "Decline", -1, 3329, 1);
-		addHoveredButton(3329, "Interfaces/Trade/TRADE", 2, 65, 32, 3330);
+		addHoverButton(3422, "data/Interfaces/Trade/TRADE", 5, 65, 32, "Decline", -1, 3329, 1);
+		addHoveredButton(3329, "data/Interfaces/Trade/TRADE", 2, 65, 32, 3330);
 		addText(3452, "Loan:", 0xFF981F, false, true, 52, fonts, 1);
 		addText(3453, "Loan:", 0xFF981F, false, true, 52, fonts, 1);
 		String[] options = { "Remove" };
@@ -15409,11 +15409,11 @@ public class RSInterface {
 		setBounds(3445, 485, 24, 25, Interface);
 		Interface = addTabInterface(3443);
 		setChildren(15, Interface);
-		addSprite(3444, 3, "Interfaces/Trade/TRADE");
+		addSprite(3444, 3, "data/Interfaces/Trade/TRADE");
 		// THE TRADE BUTTON IMAGES ARE NOT USED! I didn't like them. The interface looks
 		// better without them.
-		addButton(3546, 1, "Interfaces/Trade/TRADE", "Accept", 65, 32);
-		addButton(3548, 1, "Interfaces/Trade/TRADE", "Decline", 63, 24);
+		addButton(3546, 1, "data/Interfaces/Trade/TRADE", "Accept", 65, 32);
+		addButton(3548, 1, "data/Interfaces/Trade/TRADE", "Decline", 63, 24);
 		addText(3547, "Accept", 0x00C000, true, true, 52, fonts, 1);
 		addText(3549, "Decline", 0xC00000, true, true, 52, fonts, 1);
 		addText(3450, "Trading With:", 0x00FFFF, true, true, 52, fonts, 2);
@@ -15799,29 +15799,29 @@ public class RSInterface {
 
 		setBounds(5384, 476, 16, 3, rsinterface);
 		setBounds(5380, 476, 16, 4, rsinterface);
-		//addButton(5294, 3, "Interfaces/BANK/BANK", "Click here to handle Bank PIN");
+		//addButton(5294, 3, "data/Interfaces/BANK/BANK", "Click here to handle Bank PIN");
 		addHoverButtonWSpriteLoader(5294, 915, 114, 25, "Manage Bank PIN", -1, 22045, 1);
 		addHoveredImageWSpriteLoader(22045, 916, 114, 25, 22046);
 
 		setBounds(5294, 110, 285, 5, rsinterface);
 		setBounds(22045, 110, 285, 37, rsinterface);
 		//(27651, "CUSTOM", "Equipment", 1, 40, 40, "Show Equipment Screen", 0, 27652, 1);
-		//addHoverButton(22000, "Interfaces/BANK/BANK", 5, 35, 25, "Deposit Money-Pouch", 0, 22001, 4);
-		//addHoveredButton(22001, "Interfaces/BANK/BANK", 8 ,35, 25, 22002);
+		//addHoverButton(22000, "data/Interfaces/BANK/BANK", 5, 35, 25, "Deposit Money-Pouch", 0, 22001, 4);
+		//addHoveredButton(22001, "data/Interfaces/BANK/BANK", 8 ,35, 25, 22002);
 		addHoverButtonWSpriteLoader(27009, 917, 35, 25, "Deposit Money-Pouch", -1, 27010, 1);
 		addHoveredImageWSpriteLoader(27010, 918, 35, 25, 27011);
 
-		//addBankHover(22000, 4, 22001, 5, 8, "Interfaces/BANK/BANK", 35, 25, 304, 1, "Deposit Money-Pouch", 22002, 7, 6, "Interfaces/BANK/BANK", 22003, "Switch to insert items \nmode", "Switch to swap items \nmode.", 12, 20);
+		//addBankHover(22000, 4, 22001, 5, 8, "data/Interfaces/BANK/BANK", 35, 25, 304, 1, "Deposit Money-Pouch", 22002, 7, 6, "data/Interfaces/BANK/BANK", 22003, "Switch to insert items \nmode", "Switch to swap items \nmode.", 12, 20);
 		setBounds(27009, 25, 285, 6, rsinterface);
 		setBounds(27010, 25, 285, 7, rsinterface);
-		addBankHover(22004, 4, 22005, 13, 15, "Interfaces/BANK/BANK", 35, 25, 117, 1, "Search", 22006, 14, 16, "Interfaces/BANK/BANK", 22007, "Click here to search your \nbank", "Click here to search your \nbank", 12, 20, 931, 932);
+		addBankHover(22004, 4, 22005, 13, 15, "data/Interfaces/BANK/BANK", 35, 25, 117, 1, "Search", 22006, 14, 16, "data/Interfaces/BANK/BANK", 22007, "Click here to search your \nbank", "Click here to search your \nbank", 12, 20, 931, 932);
 
 		setBounds(22004, 65, 285, 8, rsinterface);
 		setBounds(22005, 50, 225, 9, rsinterface);
-		addBankHover(22008, 4, 22009, 9, 11, "Interfaces/BANK/BANK", 35, 25, 115, 1, "Withdraw as Note", 22010, 10, 12, "Interfaces/BANK/BANK", 22011, "Switch to note withdrawal \nmode", "Switch to item withdrawal \nmode", 12, 20, 933, 934);
+		addBankHover(22008, 4, 22009, 9, 11, "data/Interfaces/BANK/BANK", 35, 25, 115, 1, "Withdraw as Note", 22010, 10, 12, "data/Interfaces/BANK/BANK", 22011, "Switch to note withdrawal \nmode", "Switch to item withdrawal \nmode", 12, 20, 933, 934);
 		setBounds(22008, 285, 285, 10, rsinterface);
 		setBounds(22009, 285, 285, 11, rsinterface);
-		//addBankHover1(22012, 5, 22013, 17, "Interfaces/BANK/BANK", 35, 25, "Deposit carried tems", 22014, 18, "Interfaces/BANK/BANK", 22015, "Empty your backpack into\nyour bank", 0, 20);
+		//addBankHover1(22012, 5, 22013, 17, "data/Interfaces/BANK/BANK", 35, 25, "Deposit carried tems", 22014, 18, "data/Interfaces/BANK/BANK", 22015, "Empty your backpack into\nyour bank", 0, 20);
 
 		addBankHover(27026, 4, 27027, 9, 11, "", 35, 25, 324, 1, "Toggle Placeholders", 27028, 10, 12, "", 27029, "Enable placeholders \nmode", "Disable placeholders \nmode", 12, 20, 1247, 1248);
 		setBounds(27026, 333, 285, 38, rsinterface);
@@ -15832,14 +15832,14 @@ public class RSInterface {
 
 		setBounds(22012, 375, 285, 12, rsinterface);
 		setBounds(22013, 375, 285, 13, rsinterface);
-		//addBankHover1(22016, 5, 22017, 19, "Interfaces/BANK/BANK", 35, 25, "Deposit worn items", 22018, 20, "Interfaces/BANK/BANK", 22019, "Empty the items your are\nwearing into your bank", 0, 20);
+		//addBankHover1(22016, 5, 22017, 19, "data/Interfaces/BANK/BANK", 35, 25, "Deposit worn items", 22018, 20, "data/Interfaces/BANK/BANK", 22019, "Empty the items your are\nwearing into your bank", 0, 20);
 
 		addHoverButtonWSpriteLoader(27005, 921, 35, 25, "Deposit worn items", -1, 27006, 1);
 		addHoveredImageWSpriteLoader(27006, 922, 35, 25, 27007);
 
 		setBounds(27005, 415, 285, 14, rsinterface);
 		setBounds(27006, 415, 285, 15, rsinterface);
-		//addBankHover1(22020, 5, 22021, 21, "Interfaces/BANK/BANK", 35, 25, "Deposit Beast of Burden's inventory.", 22022, 22, "Interfaces/BANK/BANK", 22023, "Empty your BoB's inventory\ninto your bank", 0, 20);
+		//addBankHover1(22020, 5, 22021, 21, "data/Interfaces/BANK/BANK", 35, 25, "Deposit Beast of Burden's inventory.", 22022, 22, "data/Interfaces/BANK/BANK", 22023, "Empty your BoB's inventory\ninto your bank", 0, 20);
 
 		addHoverButtonWSpriteLoader(27023, 919, 35, 25, "Deposit Beast of Burden's inventory", -1, 27024, 1);
 		addHoveredImageWSpriteLoader(27024, 920, 35, 25, 27025);
@@ -15952,12 +15952,12 @@ public class RSInterface {
 	private static void shopInterface(TextDrawingArea[] tda) {
 		RSInterface Interface = addTabInterface(3824);
 		setChildren(8, Interface);
-		addSprite(3825, 0, "Shop/SHOP");
-		addHover(3902, 3, 0, 3826, 1, "Shop/EXIT", 17, 17, "Close Window");
-		addHovered(3826, 2, "Shop/EXIT", 17, 17, 3827);
+		addSprite(3825, 0, "data/Interfaces/Shop/SHOP");
+		addHover(3902, 3, 0, 3826, 1, "data/Interfaces/Shop/EXIT", 17, 17, "Close Window");
+		addHovered(3826, 2, "data/Interfaces/Shop/EXIT", 17, 17, 3827);
 		addText(19679, " ", 0xff981f, false, true, 52, tda, 1);
 		addText(19680, " ", 0xbf751d, false, true, 52, tda, 1);
-		addButton(19681, 2, "Shop/SHOP", 95, 19, " ", 1);
+		addButton(19681, 2, "data/Interfaces/Shop/SHOP", 95, 19, " ", 1);
 		setBounds(3825, 12, 12, 0, Interface);
 		setBounds(3902, 471, 22, 1, Interface);
 		setBounds(3826, 471, 22, 2, Interface);
@@ -15972,10 +15972,10 @@ public class RSInterface {
 		Interface.height = 4;
 		Interface.invSpritePadY = 10;
 		Interface = addTabInterface(19682);
-		addSprite(19683, 1, "Shop/SHOP");
+		addSprite(19683, 1, "data/Interfaces/Shop/SHOP");
 		addText(19684, " ", 0xbf751d, false, true, 52, tda, 1);
 		addText(19685, " ", 0xff981f, false, true, 52, tda, 1);
-		addButton(19686, 2, "Shop/SHOP", 95, 19, " ", 1);
+		addButton(19686, 2, "data/Interfaces/Shop/SHOP", 95, 19, " ", 1);
 		setChildren(7, Interface);
 		setBounds(19683, 12, 12, 0, Interface);
 		setBounds(3901, 240, 21, 1, Interface);
@@ -16992,7 +16992,7 @@ public class RSInterface {
 
 	public static void graveStoneTimerInterface() {
 		RSInterface RSinterface = addTabInterface(37400);
-		addSprite(37401, 0, "Interfaces/Grave/TIMER");
+		addSprite(37401, 0, "data/Interfaces/Grave/TIMER");
 		addText(37402, "1:20", fonts, 1, 0xff9040, true, true);
 		int last = 2;
 		RSinterface.children = new int[last];
@@ -17280,42 +17280,42 @@ public class RSInterface {
 
 	private static void colorSelectionInterface() {
 		RSInterface tab = addTabInterface(39000);
-		addSprite(39001, 0, "Interfaces/colorSelection/SPRITE");
-		addHoverButton(39002, "Interfaces/colorSelection/Color", 0, 16, 16, "Choose Color", -1, 39003, 1);
-		addHoveredButton(39003, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39004);
-		addHoverButton(39005, "Interfaces/colorSelection/Color", 1, 16, 16, "Choose Color", -1, 39006, 1);
-		addHoveredButton(39006, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39007);
-		addHoverButton(39008, "Interfaces/colorSelection/Color", 2, 16, 16, "Choose Color", -1, 39009, 1);
-		addHoveredButton(39009, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39010);
-		addHoverButton(39011, "Interfaces/colorSelection/Color", 3, 16, 16, "Choose Color", -1, 39012, 1);
-		addHoveredButton(39012, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39013);
-		addHoverButton(39014, "Interfaces/colorSelection/Color", 4, 16, 16, "Choose Color", -1, 39015, 1);
-		addHoveredButton(39015, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39016);
-		addHoverButton(39017, "Interfaces/colorSelection/Color", 5, 16, 16, "Choose Color", -1, 39018, 1);
-		addHoveredButton(39018, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39019);
-		addHoverButton(39020, "Interfaces/colorSelection/Color", 6, 16, 16, "Choose Color", -1, 39021, 1);
-		addHoveredButton(39021, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39022);
-		addHoverButton(39023, "Interfaces/colorSelection/Color", 7, 16, 16, "Choose Color", -1, 39024, 1);
-		addHoveredButton(39024, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39025);
-		addHoverButton(39026, "Interfaces/colorSelection/Color", 8, 16, 16, "Choose Color", -1, 39027, 1);
-		addHoveredButton(39027, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39028);
-		addHoverButton(39029, "Interfaces/colorSelection/Color", 9, 16, 16, "Choose Color", -1, 39030, 1);
-		addHoveredButton(39030, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39031);
-		addHoverButton(39032, "Interfaces/colorSelection/Color", 10, 16, 16, "Choose Color", -1, 39033, 1);
-		addHoveredButton(39033, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39034);
-		addHoverButton(39035, "Interfaces/colorSelection/Color", 11, 16, 16, "Choose Color", -1, 39036, 1);
-		addHoveredButton(39036, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39037);
-		addHoverButton(39038, "Interfaces/colorSelection/Color", 12, 16, 16, "Choose Color", -1, 39039, 1);
-		addHoveredButton(39039, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39040);
-		addHoverButton(39041, "Interfaces/colorSelection/Color", 13, 16, 16, "Choose Color", -1, 39042, 1);
-		addHoveredButton(39042, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39043);
-		addHoverButton(39044, "Interfaces/colorSelection/Color", 14, 16, 16, "Choose Color", -1, 39045, 1);
-		addHoveredButton(39045, "Interfaces/colorSelection/GoldBox", 0, 19, 20, 39046);
+		addSprite(39001, 0, "data/Interfaces/colorSelection/SPRITE");
+		addHoverButton(39002, "data/Interfaces/colorSelection/Color", 0, 16, 16, "Choose Color", -1, 39003, 1);
+		addHoveredButton(39003, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39004);
+		addHoverButton(39005, "data/Interfaces/colorSelection/Color", 1, 16, 16, "Choose Color", -1, 39006, 1);
+		addHoveredButton(39006, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39007);
+		addHoverButton(39008, "data/Interfaces/colorSelection/Color", 2, 16, 16, "Choose Color", -1, 39009, 1);
+		addHoveredButton(39009, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39010);
+		addHoverButton(39011, "data/Interfaces/colorSelection/Color", 3, 16, 16, "Choose Color", -1, 39012, 1);
+		addHoveredButton(39012, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39013);
+		addHoverButton(39014, "data/Interfaces/colorSelection/Color", 4, 16, 16, "Choose Color", -1, 39015, 1);
+		addHoveredButton(39015, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39016);
+		addHoverButton(39017, "data/Interfaces/colorSelection/Color", 5, 16, 16, "Choose Color", -1, 39018, 1);
+		addHoveredButton(39018, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39019);
+		addHoverButton(39020, "data/Interfaces/colorSelection/Color", 6, 16, 16, "Choose Color", -1, 39021, 1);
+		addHoveredButton(39021, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39022);
+		addHoverButton(39023, "data/Interfaces/colorSelection/Color", 7, 16, 16, "Choose Color", -1, 39024, 1);
+		addHoveredButton(39024, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39025);
+		addHoverButton(39026, "data/Interfaces/colorSelection/Color", 8, 16, 16, "Choose Color", -1, 39027, 1);
+		addHoveredButton(39027, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39028);
+		addHoverButton(39029, "data/Interfaces/colorSelection/Color", 9, 16, 16, "Choose Color", -1, 39030, 1);
+		addHoveredButton(39030, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39031);
+		addHoverButton(39032, "data/Interfaces/colorSelection/Color", 10, 16, 16, "Choose Color", -1, 39033, 1);
+		addHoveredButton(39033, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39034);
+		addHoverButton(39035, "data/Interfaces/colorSelection/Color", 11, 16, 16, "Choose Color", -1, 39036, 1);
+		addHoveredButton(39036, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39037);
+		addHoverButton(39038, "data/Interfaces/colorSelection/Color", 12, 16, 16, "Choose Color", -1, 39039, 1);
+		addHoveredButton(39039, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39040);
+		addHoverButton(39041, "data/Interfaces/colorSelection/Color", 13, 16, 16, "Choose Color", -1, 39042, 1);
+		addHoveredButton(39042, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39043);
+		addHoverButton(39044, "data/Interfaces/colorSelection/Color", 14, 16, 16, "Choose Color", -1, 39045, 1);
+		addHoveredButton(39045, "data/Interfaces/colorSelection/GoldBox", 0, 19, 20, 39046);
 		addText(39047, "Clan Chat Color", fonts, 2, 0xFF9900, false, true);
 		addText(39048, "Please select a color below.", fonts, 0, 0xFF9900, false, true);
 		addText(39049, "All clan chat messages will be shown", fonts, 0, 0xFF9900, false, true);
 		addText(39050, "in the color of your choice.", fonts, 0, 0xFF9900, false, true);
-		// addToggleButton(39050, 0, 2, "Interfaces/colorSelection/CHECK", "Toggle-Split
+		// addToggleButton(39050, 0, 2, "data/Interfaces/colorSelection/CHECK", "Toggle-Split
 		// Private Chat", 1, 4, 500, 0);
 		addCloseButton(39051, 39055, 39056);
 		tab.totalChildren(35);

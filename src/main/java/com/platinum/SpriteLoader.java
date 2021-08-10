@@ -12,7 +12,7 @@ public class SpriteLoader {
 	 * Loads the sprite data and index files from the cache location. This can
 	 * be edited to use an archive such as config or media to load from the
 	 * cache.
-	 * 
+	 *
 	 * @param archive
 	 */
 	public static void loadSprites(CacheArchive CacheArchive) {
@@ -42,23 +42,22 @@ public class SpriteLoader {
 			e.printStackTrace();
 		} finally {
 			try {
-				if(indexFile != null) {
+				if (indexFile != null) {
 					indexFile.close();
 				}
-				if(dataFile != null) {
+				if (dataFile != null) {
 					dataFile.close();
 				}
-			} catch(Exception e) {}
+			} catch (Exception e) {
+			}
 		}
 	}
 
 	/**
 	 * Reads the information from the index and data files.
-	 * 
-	 * @param index
-	 *            holds the sprite indices
-	 * @param data
-	 *            holds the sprite data per index
+	 *
+	 * @param index holds the sprite indices
+	 * @param data  holds the sprite data per index
 	 * @throws IOException
 	 */
 	public void readValues(DataInputStream data, DataInputStream indexFile) throws IOException {
@@ -80,37 +79,32 @@ public class SpriteLoader {
 				data.readFully(dataread);
 				spriteData = dataread;
 			}
-		} while(true);
+		} while (true);
 	}
 
 	/**
 	 * Creates a sprite out of the spriteData.
-	 * 
-	 * @param sprite
-	 */
-	
-	/**
-	 * Creates a sprite out of the spriteData.
-	 * 
+	 *
 	 * @param sprite
 	 */
 	public static void createSprite(SpriteLoader sprite, boolean second) {
-	File directory = new File(signlink.findcachedir() + "sprites"); if
+
+			/*	File directory = new File(signlink.findcachedir() + "dump"); if
 		(!directory.exists()) { directory.mkdir(); } FileOperations.WriteFile(directory.getAbsolutePath() +
 				System.getProperty("file.separator") + sprite.id + ".png",
-				sprite.spriteData);
-			//System.out.print("Successfuly Dumped Sprites");
-		if(!second) {
+				sprite.spriteData); */
+
+		if (!second) {
 			sprites[sprite.id] = new Sprite(sprite.spriteData);
 			sprites[sprite.id].drawOffsetX = sprite.drawOffsetX;
 			sprites[sprite.id].drawOffsetY = sprite.drawOffsetY;
-		} 
+		}
 
 	}
 
 	/**
 	 * Gets the name of a specified sprite index.
-	 * 
+	 *
 	 * @param index
 	 * @return
 	 */
@@ -124,7 +118,7 @@ public class SpriteLoader {
 
 	/**
 	 * Gets the drawOffsetX of a specified sprite index.
-	 * 
+	 *
 	 * @param index
 	 * @return
 	 */
@@ -134,7 +128,7 @@ public class SpriteLoader {
 
 	/**
 	 * Gets the drawOffsetY of a specified sprite index.
-	 * 
+	 *
 	 * @param index
 	 * @return
 	 */

@@ -17,16 +17,7 @@ public class Configuration {
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
 	 */
 	public final static int NPC_BITS = 18;
-	/*
-	 * 123456789012030304304023402304230502350230523050230540235402305032060235023040340320403240230505325302530205320502305
-	 ** 
-	 */
 
-	/*
-	 * Update-server enabled?
-	 * 
-	 */
-	
 	public static final boolean JAGCACHED_ENABLED = false;
 
 	public static int[] ITEMS_WITH_BLACK = { 1277, 560, 559, 1077, 1089, 1125, 1149, 1153, 1155, 1157, 1159, 1161, 1163,
@@ -37,7 +28,6 @@ public class Configuration {
 	public static int FOG_BEGIN_DEPTH = 2000;
 
 	public static int FOG_END_DEPTH = 3000;
-
 
 	public static final int[] packetSizes = { 0, 0, 0, 1, 6, 0, 0, 0, 4, 0, // 0
 			0, 2, -1, 1, 1, -1, 1, 0, 0, 0, // 10
@@ -66,7 +56,6 @@ public class Configuration {
 			8, 0, 3, 0, 0, 0, 0, 0, 0, 0, // 230
 			2, -2, 0, 0, -1, 0, 6, 0, 4, 3, // 240
 			-1, 0, 0, -1, 6, 0, 0// 250
-
 	};
 
 	public static final int statMenuColor = 0x0E8B8B;
