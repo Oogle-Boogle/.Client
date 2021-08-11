@@ -102,7 +102,7 @@ public class RSInterface {
 	        addHoverButtonWSpriteLoader(STARTING_POINT + 8, 1272, 15, 15, "Slayer", -1, STARTING_POINT + 9, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 9, 1281, 15, 15, STARTING_POINT + 10);
 	      
-	        addHoverButtonWSpriteLoader(STARTING_POINT + 11, 1274, 15, 15, "Sword", -1, STARTING_POINT + 12, 1);
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 11, 1274, 15, 15, "World bosses", -1, STARTING_POINT + 12, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 12, 1283, 15, 15, STARTING_POINT + 13);
 	  
 	        addHoverButtonWSpriteLoader(STARTING_POINT + 14, 1273, 15, 15, "Store", -1, STARTING_POINT + 15, 1);
@@ -111,13 +111,13 @@ public class RSInterface {
 	        addHoverButtonWSpriteLoader(STARTING_POINT + 17, 1271, 15, 15, "Dungeon", -1, STARTING_POINT + 18, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 18, 1280, 15, 15, STARTING_POINT + 19);
 	  
-	        addHoverButtonWSpriteLoader(STARTING_POINT + 20, 1268, 15, 15, "Hunter", -1, STARTING_POINT + 21, 1);
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 20, 1268, 15, 15, "Skilling Boss", -1, STARTING_POINT + 21, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 21, 1277, 15, 15, STARTING_POINT + 22);
 	   
-	        addHoverButtonWSpriteLoader(STARTING_POINT + 23, 1269, 15, 15, "PinkIcon", -1, STARTING_POINT + 24, 1);
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 23, 1269, 15, 15, "AFK", -1, STARTING_POINT + 24, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 24, 1278, 15, 15, STARTING_POINT + 25);
 	 
-	        addHoverButtonWSpriteLoader(STARTING_POINT + 26, 1267, 15, 15, "BrownIcon", -1, STARTING_POINT + 27, 1);
+	        addHoverButtonWSpriteLoader(STARTING_POINT + 26, 1267, 15, 15, "Instances", -1, STARTING_POINT + 27, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 27, 1276, 15, 15, STARTING_POINT + 28);
 	   
 		   
