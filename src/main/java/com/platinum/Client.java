@@ -15055,20 +15055,20 @@ public class Client extends RSApplet {
 						int imageDraw = 0;
 						final String INITIAL_MESSAGE = s;
 						//System.out.println("Initial message = "+s);
-						if (s.contains("<img=")||s.contains("<zmg=") || s.contains("<irn=")) {
+						if (s.contains("<img=")/*||s.contains("<zmg=") || s.contains("<irn=")*/) {
 							int prefix = s.indexOf("<img=");
-							int prefix2 = s.indexOf("<zmg=");
-							int prefix3 = s.indexOf("<irn=");
+							/*int prefix2 = s.indexOf("<zmg=");
+							int prefix3 = s.indexOf("<irn=");*/
 							int suffix = s.indexOf(">");
 							try {
 								imageDraw = Integer.parseInt(s.substring(prefix + 5, suffix));
 								s = s.replaceAll(s.substring(prefix + 5, suffix), "");
-								s = s.replaceAll(s.substring(prefix2 + 9, suffix), "");
-								s = s.replaceAll(s.substring(prefix3 + 9, suffix), "");
+								/*s = s.replaceAll(s.substring(prefix2 + 9, suffix), "");
+								s = s.replaceAll(s.substring(prefix3 + 9, suffix), "");*/
 								s = s.replaceAll("</img>", "");
 								s = s.replaceAll("<img=>", "");
-								s = s.replaceAll("<zmg=>", "");
-								s = s.replaceAll("<irn=>", "");
+								/*s = s.replaceAll("<zmg=>", "");
+								s = s.replaceAll("<irn=>", "");*/
 							} catch (NumberFormatException nfe) {
 								// //System.out.println("Unable to draw player
 								// crown on interface. Unable to read rights.");
