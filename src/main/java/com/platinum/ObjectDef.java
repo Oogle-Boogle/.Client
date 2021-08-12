@@ -537,6 +537,11 @@ public final class ObjectDef {
 			objectDef.hasActions = true;
 			objectDef.actions = new String[5];
 		}
+		if (i == 9391) {
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "View Map";
+		}
 		if (i == 26280) {
 			objectDef.hasActions = true;
 			objectDef.actions = new String[5];

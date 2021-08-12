@@ -13501,42 +13501,18 @@ public class Client extends RSApplet {
 		//repackCacheIndex(1);
 		 //dumpCacheIndex(1);
 		// dumpCacheIndex(4);
-		//repackCacheIndex(4);
+		repackCacheIndex(4);
 		// repackCacheIndex(6);
 		load();
 		// ModelUtil.dumpItemModelColors(true);
 		// refreshClientScreen();
 	}
 
-	public void deleteClientVersion() throws IOException {
-		try {
-			File file = new File(signlink.findcachedir() + "data/client_version.txt");
-			Files.deleteIfExists(file.toPath());
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println(e.getMessage());
-		}
-	}
-
-	public void setClientVersion() throws IOException {
-		int ver = Configuration.CLIENT_VER;
-				try {
-					FileWriter fw = new FileWriter(signlink.findcachedir() + "data/client_version.txt", true);
-					if (fw != null) {
-						fw.write(String.valueOf(ver));
-						fw.close();
-					}
-				} catch (Exception e) {
-					e.printStackTrace();
-					System.out.println(e.getMessage());
-				}
-	}
 
 	public void load() {
 
 
 		try {
-			//deleteClientVersion();
 			animatedLogin = new AnimatedSprite(signlink.findcachedir() + "data/Background.gif");
 			titleStreamLoader = streamLoaderForName(1, "title screen", "title", expectedCRCs[1], 25);
 			smallText = new TextDrawingArea(false, "p11_full", titleStreamLoader);
