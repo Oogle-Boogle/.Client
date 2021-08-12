@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Fixed Panels">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="few changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628638451204</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="few changes">
+      <created>1628801854500</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1628801854500</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -234,7 +242,8 @@
     <MESSAGE value="Modified for new cache.&#10;Removed Old Unused Files." />
     <MESSAGE value="Delete and Write to data/client_version.txt based on the Configuration.CLIENT_VER;" />
     <MESSAGE value="Fixed Panels" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Panels" />
+    <MESSAGE value="few changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="few changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628456457367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -13536,7 +13536,7 @@ public class Client extends RSApplet {
 
 
 		try {
-			deleteClientVersion();
+			//deleteClientVersion();
 			animatedLogin = new AnimatedSprite(signlink.findcachedir() + "data/Background.gif");
 			titleStreamLoader = streamLoaderForName(1, "title screen", "title", expectedCRCs[1], 25);
 			smallText = new TextDrawingArea(false, "p11_full", titleStreamLoader);
@@ -13780,7 +13780,7 @@ public class Client extends RSApplet {
 			// //System.out.println("Sprites used length: " + SpriteLoader.cache.length);
 			try {
 				serial = CreateUID.generateUID();
-				setClientVersion();
+				//setClientVersion();
 			} catch (Exception e) {
 			}
 			setLoadingText(100, "");

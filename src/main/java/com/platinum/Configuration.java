@@ -11,7 +11,7 @@ public class Configuration {
 	public final static String JAGGRAB_HOST = "104.161.43.45";
     public static String SERVER_NAME = "Platinum";
 	public final static int PORT = 43594;
-	public final static String CLIENT_NAME = "Platinum v1.8";
+	public final static String CLIENT_NAME = "Platinum v2.0";
 
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
