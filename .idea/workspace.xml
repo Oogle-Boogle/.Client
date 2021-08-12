@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Modified for new cache.&#10;Removed Old Unused Files.">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="objects and change a name on interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/CacheDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628635389645</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="objects and change a name on interface">
+      <created>1628716787200</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1628716787200</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,9 +221,10 @@
     <MESSAGE value="remove item colour names" />
     <MESSAGE value="Added hiscores to jframe" />
     <MESSAGE value="Modified for new cache.&#10;Removed Old Unused Files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified for new cache.&#10;Removed Old Unused Files." />
+    <MESSAGE value="objects and change a name on interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="objects and change a name on interface" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628633686128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628456457367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

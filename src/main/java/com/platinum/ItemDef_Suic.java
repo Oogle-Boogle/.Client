@@ -1979,7 +1979,7 @@ public class ItemDef_Suic {
  			itemDef.femaleEquip1 = 44284;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
- 			itemDef.actions[4] = "Drop";   
+ 			itemDef.actions[4] = "Drop";
  			break;
 			
 			

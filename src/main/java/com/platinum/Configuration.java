@@ -4,7 +4,7 @@ public class Configuration {
 
 	public static final int CLIENT_VER = 15; // Client Version
 
-	public static final boolean LOCAL = true; //Change this lol
+	public static final boolean LOCAL = false; //Change this lol
 
 	public final static String HOST = LOCAL ? "127.0.0.1" : "104.161.43.45";
 	// 									Local? Yes : No
