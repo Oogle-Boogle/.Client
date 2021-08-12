@@ -13501,7 +13501,7 @@ public class Client extends RSApplet {
 		//repackCacheIndex(1);
 		 //dumpCacheIndex(1);
 		// dumpCacheIndex(4);
-		repackCacheIndex(4);
+		//repackCacheIndex(4);
 		// repackCacheIndex(6);
 		load();
 		// ModelUtil.dumpItemModelColors(true);
