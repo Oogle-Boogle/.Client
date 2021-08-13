@@ -231,7 +231,7 @@ public class RSFontSystem extends DrawingArea {
 							} catch (Exception exception) {
 								/* empty */
 							}
-						} else if (effectString.startsWith(startImage2)) {
+						} else if (effectString.startsWith(startImage2)) { //zmg=
 							try {
 								int imageId = Integer.valueOf(effectString.substring(4));
 								Sprite icon = SpriteLoader.sprites[1253 + imageId];
@@ -247,7 +247,7 @@ public class RSFontSystem extends DrawingArea {
 							} catch (Exception exception) {
 								/* empty */
 							}
-						} else if (effectString.startsWith(startImage3)) {
+						} else if (effectString.startsWith(startImage3)) { //irn=
 							try {
 								int imageId = Integer.valueOf(effectString.substring(4));
 								//System.out.println("START IMAGE 3 - 234234 - IS " + imageId);
@@ -421,7 +421,7 @@ public class RSFontSystem extends DrawingArea {
 								}
 								modifierOffset++;
 								int iconId = Integer.valueOf(effectString.substring(4));
-								//System.out.println("ICON ID  sdfsdf IS " + iconId);
+								System.out.println("Ironman Icon ID IS " + iconId);
 								Sprite icon = SpriteLoader.sprites[iconId];
 								int iconOffsetY = icon.myHeight;
 								if (transparency == 256) {

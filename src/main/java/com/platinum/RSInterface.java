@@ -7338,12 +7338,17 @@ public class RSInterface {
 		// Tab.aString228 = "";
 		Tab.textColor(id, color);
 		String s = Tab.message;
-		if (s.contains("<img")) {
+		/*if (s.contains("<img")) {
 			int prefix = s.indexOf("<img=");
 			int suffix = s.indexOf(">");
 			s = s.replaceAll(s.substring(prefix + 5, suffix), "");
 			s = s.replaceAll("</img>", "");
 			s = s.replaceAll("<img=>", "");
+		}*/
+		if (s.contains("<img=") || s.contains("<zmg=") || s.contains("<irn=") ) {
+			s = s.replaceAll("<img=\\d>", "");
+			s = s.replaceAll("<zmg=\\d>", "");
+			s = s.replaceAll("<irn=\\d>", "");
 		}
 		if (!s.equals(ignore)) {
 			if (owner) {

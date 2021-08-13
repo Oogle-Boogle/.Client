@@ -614,14 +614,16 @@ public class Client extends RSApplet {
 
 	public String getPrefix(int rights, int secondaryrights, int ironman) {
 
+		System.out.println("Got prefix.. ironman was "+ironman);
+
 		String ironRank;
 
 		// Sets the ironRank string
 		switch (ironman) {
-			case 1:
+			case 2: // Reg Iron
 				ironRank = "<irn=1193>";
 				break;
-			case 2:
+			case 1: // Hardcore Iron
 				ironRank = "<irn=1192>";
 				break;
 			case 3:
@@ -1030,7 +1032,7 @@ public class Client extends RSApplet {
 								}
 
 
-								xPos += newRegularFont.getTextWidth(name) + 7;
+								xPos += newRegularFont.getTextWidth(name) + 7; //Todo check if reducing this will fix the big gap
 								// chat message
 								newRegularFont.drawBasicString(chatMessages[index], xPos + offsetX, positionY + offsetY,
 										255, -1);
@@ -1172,19 +1174,44 @@ public class Client extends RSApplet {
 			} else {
 				name = TextClass.fixName(myUsername);
 			}
-			if ((myRights > 0 || ironman > 0 || secondaryRights > 0) && ironman != 3) {
 
-				if (ironman > 0 && myRights == 0) {
+			//name = getPrefix(myRights, secondaryRights, ironman) + name;
+
+			if ((myRights > 0 || ironman > 0 || secondaryRights > 0)) {
+
+				if (ironman > 0) {
+					if(ironman == 3) {
+						SpriteLoader.sprites[1036].drawSprite(12 + offsetX, 122 + offsetY);
+						//offsetX += 20;
+						offsetX += SpriteLoader.sprites[1036].myWidth;
+						if (secondaryRights > 0) {
+							SpriteLoader.sprites[1253+secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
+							offsetX += SpriteLoader.sprites[1253+secondaryRights].myWidth+4;
+						}
+					} else {
 						SpriteLoader.sprites[1191 + ironman].drawSprite(12 + offsetX, 122 + offsetY);
-						offsetX += 20;
-				} else if (myRights > 0 && secondaryRights == 0) {
+						offsetX += SpriteLoader.sprites[1191 + ironman].myWidth;
+						if (secondaryRights > 0) {
+							SpriteLoader.sprites[1253 + secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
+							/*offsetX += 20;*/
+							offsetX += SpriteLoader.sprites[1253 + secondaryRights].myWidth+4;
+						}
+					}
+
+
+				} else {
 					//System.out.print("MY RIGHTS = " + myRights);
 					SpriteLoader.sprites[1249 + myRights].drawSprite(12 + offsetX, 122 + offsetY);
 					/*offsetX += 20;*/
 					offsetX += SpriteLoader.sprites[1249 + myRights].myWidth+4;
+					if (secondaryRights > 0) {
+						SpriteLoader.sprites[1253 + secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
+						/*offsetX += 20;*/
+						offsetX += SpriteLoader.sprites[1253 + secondaryRights].myWidth+4;
+					}
 				}
 
-				if (secondaryRights > 0 && myRights == 0) {
+				/*if (secondaryRights > 0 && myRights == 0) {
 					//System.out.print("MY SECONDARY RIGHTS = " + secondaryRights);
 					SpriteLoader.sprites[1253+secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
 					offsetX += SpriteLoader.sprites[1253+secondaryRights].myWidth+4;
@@ -1195,12 +1222,9 @@ public class Client extends RSApplet {
 					offsetX += SpriteLoader.sprites[1249 + myRights].myWidth;
 					SpriteLoader.sprites[1253+secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
 					offsetX += SpriteLoader.sprites[1253+secondaryRights].myWidth+4;
-				}
+				}*/
 			}
-			if(ironman == 3) {
-				SpriteLoader.sprites[1036].drawSprite(12 + offsetX, 122 + offsetY);
-				offsetX += 20;
-			}
+
 			if (myPlayer.playerTitle != null && myPlayer.playerTitle.length() > 0) {
 				textDrawingArea.drawRegularText(false, 10 + offsetX, 0, myPlayer.playerTitle, 133 + offsetY);
 				offsetX += textDrawingArea.getTextWidth(myPlayer.playerTitle) + 2;
@@ -11066,10 +11090,11 @@ public class Client extends RSApplet {
 						inputString = Censor.doCensor(inputString);
 						myPlayer.textSpoken = inputString;
 						myPlayer.anInt1513 = color; // text Color
-						myPlayer.anInt1531 = effect; // text Effect
+						myPlayer.anInt1531 = effect; // text EffectF
 						myPlayer.textCycle = 150;
 						pushMessage("  " +myPlayer.textSpoken, 2, getPrefix(myRights, secondaryRights, ironman) + myPlayer.name,
 								myPlayer.playerTitle);
+						//todo fix big gap
 						if (publicChatMode == 2) {
 							publicChatMode = 3;
 							stream.createFrame(95);
@@ -19348,11 +19373,12 @@ public class Client extends RSApplet {
 				opCode = -1;
 				return true;
 
-			case 196:
+			case 196: //Priv message
 				long l5 = inStream.readQWord();
 				inStream.readDWord();
 				int playerRights = inStream.readUnsignedByte();
 				int rights2 = inStream.readUnsignedByte();
+				int gamemode = inStream.readUnsignedByte(); //Iron man shit
 				boolean flag5 = false;
 				if (playerRights <= 1) {
 					for (int l29 = 0; l29 < ignoreCount; l29++) {
@@ -19368,7 +19394,7 @@ public class Client extends RSApplet {
 						String message = TextInput.decodeToString(pktSize - 13, inStream);
 						if (playerRights != 0) {
 							pushMessage(" "+message, 7,
-									getPrefix(playerRights, rights2, 0) + TextClass.fixName(TextClass.nameForLong(l5)));
+									getPrefix(playerRights, rights2, gamemode) + TextClass.fixName(TextClass.nameForLong(l5)));
 						} else {
 							pushMessage(message, 3, TextClass.fixName(TextClass.nameForLong(l5)));
 						}
