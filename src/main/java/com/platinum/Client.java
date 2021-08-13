@@ -613,53 +613,74 @@ public class Client extends RSApplet {
 	}
 
 	public String getPrefix(int rights, int secondaryrights, int ironman) {
-		if(ironman == 3) {
-			return "<irn=1036>";
-		}
-		if (rights == 0 && ironman > 0) {
-			return ironman == 1 ? "<irn=1193>" : "<irn=1192>";
+
+		String ironRank;
+
+		// Sets the ironRank string
+		switch (ironman) {
+			case 1:
+				ironRank = "<irn=1193>";
+				break;
+			case 2:
+				ironRank = "<irn=1192>";
+				break;
+			case 3:
+				ironRank = "<irn=1036>";
+				break;
+			default:
+				ironRank = "";
+				break;
 		}
 
-		if (rights > 0 && secondaryrights > 0) {
-			return "<img=" + rights + ">" + "<zmg=" + secondaryrights + ">";
-		}
+		String primaryRank = rights > 0 ? "<img=" + rights + ">" : "";
+		String secondaryRank = secondaryrights > 0 ? "<zmg=" + secondaryrights + ">" : "";
+		String finalPrefix = ironman > 0 ? ironRank + secondaryRank : primaryRank + secondaryRank;
 
-		if (rights == 0 && secondaryrights == 0) {
-			return "";
-		}
-
-		if (rights > 0 && secondaryrights == 0) {
-			return "<img=" + rights + ">";
-		}
-		if (rights == 0 && secondaryrights > 0) {
-			return "<zmg=" + secondaryrights+4 + ">";
-		}
-		if (rights > 0 || secondaryrights > 0) {
-			return "<img=" + rights + ">" + "<zmg=" + secondaryrights + 4 + ">";
-		} else {
-			return "";
-		}
+		return finalPrefix;
 	}
 
-	public int getPrefixRights(String prefix) {
+	public int getPrimaryRights(String prefix) {
 		//System.out.println("Prefix was: "+prefix);
-		int rights = 0;
-		int start = 6;
-		int end = 8;
-		if (!prefix.contains("<img=")) {
+		int start;
+		int end;
+		int rights3 = 0;
+
+		//Checks the rank numbers if the rights are over 10
+		if (prefix.contains("<img=10")
+				|| prefix.contains("<img=11")
+				|| prefix.contains("<img=12")
+				|| prefix.contains("<img=13")
+				|| prefix.contains("<img=14")
+				|| prefix.contains("<img=15")) {
 			start = 6;
+			end = 8;
+			rights3 = Integer.parseInt(prefix.substring(start, end));
+			//System.out.println("Rights were = " + rights);
+		} else if (prefix.contains("<img=")) {
+			start = 5;
+			end = 6;
+			rights3 = Integer.parseInt(prefix.substring(start, end));
+			//System.out.println("Rights were = " + rights);
 		}
-		if (end >= prefix.length()) {
-			return 0;
-		}
-		try {
-			rights = Integer.parseInt(prefix.substring(start, end));
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		//System.out.println("Rights were = "+rights);
-		return rights;
+		return rights3;
 	}
+
+	public int getSecondaryRights(String prefix) {
+		//System.out.println("Prefix was: "+prefix);
+		int start;
+		int end;
+		int secondaryRights1 = -1;
+
+		//Checks the rank numbers if the rights are over 10
+		 if (prefix.contains("<zmg=") && !prefix.contains("<img=")) {
+			start = 5;
+			end = 6;
+			secondaryRights1 = Integer.parseInt(prefix.substring(start, end));
+			System.out.println("Secondary Rights were = " + secondaryRights1);
+		}
+		return secondaryRights1;
+	}
+
 
 	/**
 	 * Draws a black pane, used for quests
@@ -889,6 +910,7 @@ public class Client extends RSApplet {
 			DrawingArea.setDrawingArea(121 + offsetY, 8 + offsetX, 512 + offsetX, 7 + offsetY);
 			for (int index = 0; index < 500; index++) {
 
+				/** PUBLIC CHAT ICONS RANKS? **/
 				if (chatMessages[index] != null) {
 					int chatType = chatTypes[index];
 					int positionY = (70 - messageY * 14) + anInt1089 + 6;
@@ -911,14 +933,26 @@ public class Client extends RSApplet {
 						} else if (name.contains("<irn=1193>")) {
 							ironman2 = 1;
 							fixed = true;
-						}
-
-						name = name.substring(fixed ? 10 : 5);
-						if (!fixed) {
-							playerRights = getPrefixRights(prefixName.substring(0, prefixName.indexOf(name)));
+						} else if (prefixName.contains("<irn=1036>")) {
+							ironman2 = 3;
+							fixed = true;
 						}
 					}
 
+					if (!name.isEmpty() && name != null) {
+						System.out.println("NAME IS "+name + " PREFIX NAME IS "+prefixName);
+						playerRights = getPrimaryRights(name);
+						System.out.println("Player rights are "+playerRights);
+						secondaryPlayerRights = getSecondaryRights(name.replaceAll("<img=\\d>", ""));
+						System.out.println("Secondary rights are "+secondaryPlayerRights);
+
+					}
+
+					if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
+						name = name.replaceAll("<img=\\d> ", "");
+						name = name.replaceAll("<zmg=\\d> ", "");
+						name = name.replaceAll("<irn=\\d> ", "");
+					}
 
 					boolean glow = false;
 					int gloColor = 16722474;
@@ -946,44 +980,63 @@ public class Client extends RSApplet {
 						if (chatTypeView == 1 || chatTypeView == 0 || (playerRights > 0)) {
 							if (positionY > 0 && positionY < 210) {
 								int xPos = 11;
-								if ((playerRights > 0 || ironman2 > 0 || secondaryRights > 0) && ironman2 != 3) {
-									if (ironman2 > 0 && ironman2 < 3 && playerRights == 0) {
-										SpriteLoader.sprites[1191 + ironman2].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += 19;
-									} else if (playerRights > 0 && ironman2 == 0) {
 
-										SpriteLoader.sprites[1249 + playerRights].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += SpriteLoader.sprites[1249 + playerRights].myWidth + 4;
-
-									}
+								/*if (ironman2 > 0) {
 
 									if (ironman2 == 3) {
 										SpriteLoader.sprites[1036].drawSprite(xPos + 1 + offsetX,
 												positionY - 11 + offsetY);
 										xPos += 19;
-									}
-									if (title != null && title.length() > 0) {
-										newRegularFont.drawBasicString(title, xPos - 3, positionY + offsetY, 0, -1);
-										xPos += newRegularFont.getTextWidth(title) + 2;
-									}
-
-									if (playerRights > 0 && name.contains("<zmg")) {
-										newRegularFont.drawBasicString(name + ":", xPos + offsetX + 3, positionY + offsetY, 0, -1);
+										if (secondaryPlayerRights > 0) {
+											SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
+													positionY - 11 + offsetY);
+											xPos += 19;
+										}
 									} else {
-										newRegularFont.drawBasicString(name + ":", xPos + offsetX, positionY + offsetY, 0, -1);
-
+										SpriteLoader.sprites[1191 + ironman2].drawSprite(xPos + 1 + offsetX,
+												positionY - 11 + offsetY);
+										xPos += 19;
+										if (secondaryPlayerRights > 0) {
+											SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
+													positionY - 11 + offsetY);
+											xPos += 19;
+										}
 									}
+								}*/
 
-									xPos += newRegularFont.getTextWidth(name) + 7;
-									// chat message
-									newRegularFont.drawBasicString(chatMessages[index], xPos + offsetX, positionY + offsetY,
-											255, -1);
+
+								/*if (ironman2 == 0) {
+									if (playerRights > 0) {
+										SpriteLoader.sprites[1249 + playerRights].drawSprite(xPos + 1 + offsetX,
+												positionY - 11 + offsetY);
+										xPos += 19;
+									}
+									if (secondaryPlayerRights > 0) {
+										SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
+												positionY - 11 + offsetY);
+										xPos += 19;
+									}
+								}*/
+
+								if (title != null && title.length() > 0) {
+									newRegularFont.drawBasicString(title, xPos - 3, positionY + offsetY, 0, -1);
+									xPos += newRegularFont.getTextWidth(title) + 2;
 								}
-								scrollPosition++;
-								messageY++;
+
+								if (playerRights > 0 && name.contains("<zmg")) {
+									newRegularFont.drawBasicString(name + ":", xPos + offsetX + 3, positionY + offsetY, 0, -1);
+								} else {
+									newRegularFont.drawBasicString(name + ":", xPos + offsetX, positionY + offsetY, 0, -1);
+								}
+
+
+								xPos += newRegularFont.getTextWidth(name) + 7;
+								// chat message
+								newRegularFont.drawBasicString(chatMessages[index], xPos + offsetX, positionY + offsetY,
+										255, -1);
 							}
+							scrollPosition++;
+							messageY++;
 						}
 					}
 					if ((chatType == 3 || chatType == 7) && (splitPrivateChat == 0 || chatTypeView == 2)
@@ -11015,9 +11068,7 @@ public class Client extends RSApplet {
 						myPlayer.anInt1513 = color; // text Color
 						myPlayer.anInt1531 = effect; // text Effect
 						myPlayer.textCycle = 150;
-						pushMessage("  "
-										+ (myRights > 0 && secondaryRights > 0 ? "  " : "") +myPlayer.textSpoken, 2, getPrefix(myRights, secondaryRights, ironman)
-								+ (myPlayer.secondaryRights > 0 ? "" : " ") + myPlayer.name,
+						pushMessage("  " +myPlayer.textSpoken, 2, getPrefix(myRights, secondaryRights, ironman) + myPlayer.name,
 								myPlayer.playerTitle);
 						if (publicChatMode == 2) {
 							publicChatMode = 3;
@@ -11209,6 +11260,7 @@ public class Client extends RSApplet {
 		}
 	}
 
+	/** What you see when right clicking a players name in the chat box - remove icon code **/
 	private void buildChatAreaMenu(int j) {
 		int l = 0;
 		for (int i1 = 0; i1 < 500; i1++) {
@@ -11240,44 +11292,17 @@ public class Client extends RSApplet {
 			if (chatTypeView == 5) {
 				break;
 			}
-			boolean fixed = false;
-			// //System.out.println("Name: " + name);
-			if (name != null && name.indexOf("@") == 0) {
-				if (name.contains("@cr10")) {
-					rights = 10;
-					fixed = true;
-				} else if (name.contains("@cr11")) {
-					rights = 11;
-					fixed = true;
-				} else if (name.contains("@cr12")) {
-					fixed = true;
-				} else if (name.contains("@cr13")) {
-					fixed = true;
-				} else if (name.contains("@cr18")) {
-					fixed = true;
-				} else if (name.contains("@cr15@")) {
-					rights = 13;
-					fixed = true;
-				} else if (name.contains("@cr16@")) {
-					rights = 14;
-					fixed = true;
-				} else if (name.contains("@cr10@")) {
-					rights = 16;
-					fixed = true;
-				} else if (name.contains("@cr17@")) {
-					rights = 15; // pretty much sets rights to 15(jacob rank) when name has @cr17@ in it.
-					fixed = true;
+
+			/** THIS RUNS THE CODE YOU SEE WHEN RIGHT CLICKING A PLAYERS NAME IN THE CHAT BOX!!!!! **/
+			//rights = getPrimaryRights(name); //Get the number in the rights
+			//System.out.println("Trying to get rights.." + rights);
+			/** Removed all the img code shit **/
+				if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
+						name = name.replaceAll("<img=\\d>", "");
+						name = name.replaceAll("<zmg=\\d>", "");
+						name = name.replaceAll("<irn=\\d>", "");
 				}
-				
-				name = name.substring(fixed ? 6 : 5);
-				if (!fixed) {
-					rights = getPrefixRights(name.substring(0, name.indexOf(name)));
-				}
-			}
-			if (rights == 0 && name != null && name.startsWith("<img=0>")) {
-				name = name.substring(7);
-				rights = 1;
-			}
+
 			if (j1 == 0) {
 				l++;
 			}
@@ -11435,10 +11460,10 @@ public class Client extends RSApplet {
 				return;
 			}
 			String name = capitalizeFirstChar(itemResultNames[idx]);
-			for (int i = 0; i <= 20; i++) {
-				if (name.contains(" <img=" + i + ">")) {
-					name = name.replaceAll(" <img=" + i + ">", "");
-				}
+
+				if (name.contains("<img=")) {
+					name = name.replaceAll(" <img=\\d>", "");
+
 			}
 			int textY = (21 + y * 14) - itemResultScrollPos;
 			if (mouseY > textY - 14 && mouseY <= textY && super.mouseX > 74 && super.mouseX < 495) {
@@ -11822,6 +11847,7 @@ public class Client extends RSApplet {
 		}
 	}
 
+	//TODO Split Priv Chat Icons
 	private void drawSplitPrivateChat() {
 		if (splitPrivateChat == 0) {
 			return;
@@ -11836,8 +11862,10 @@ public class Client extends RSApplet {
 				int type = chatTypes[j];
 				String name = chatNames[j];
 				String prefixName = name;
-				int rights = 0, secondaryPlayerRights, ironman2;
-				
+				//int rights = 0;
+				//int secondaryPlayerRights = 0;
+				int ironman2 = 0;
+				//public chat icon drawing
 				if ((type == 3 || type == 7)
 						&& (type == 7 || privateChatMode == 0 || privateChatMode == 1 && isFriendOrSelf(name))) {
 					int l = (clientHeight - 184) - i * 13;
@@ -11847,56 +11875,17 @@ public class Client extends RSApplet {
 					k1 += textDrawingArea.getTextWidth("From ");
 					boolean fixed = false;
 					boolean fixed2 = false;
-					if (prefixName != null && prefixName.indexOf("@") == 0) {
-						if (prefixName.contains("<img=0>")) {
-							rights = 1;
-							fixed = true;
-						} else if (prefixName.contains("<img=1>")) {
-							rights = 2;
-							fixed = true;
-						} else if (prefixName.contains("<img=2>")) {
-							rights = 3;
-							fixed = true;
-						}else if (prefixName.contains("<img=3>")) {
-							rights = 4;
-							fixed = true;
-						}else if (prefixName.contains("<img=4>")) {
-							rights = 5;
-							fixed = true;
-						}else if (prefixName.contains("<img=5>")) {
-							rights = 6;
-							fixed = true;
-						}else if (prefixName.contains("<img=6>")) {
-							rights = 7;
-							fixed = true;
-						}else if (prefixName.contains("<img=7>")) {
-							rights = 8;
-							fixed = true;
-						}else if (prefixName.contains("<img=8>")) {
-							rights = 9;
-							fixed = true;
-						}else if (prefixName.contains("<img=9>")) {
-							rights = 10;
-							fixed = true;
-						}else if (prefixName.contains("<img=10>")) {
-							rights = 11;
-							fixed = true;
-						}else if (prefixName.contains("<img=11>")) {
-							rights = 12;
-							fixed = true;
-						}else if (prefixName.contains("<img=12>")) {
-							rights = 13;
-							fixed = true;
-						}else if (prefixName.contains("<img=13>")) {
-							rights = 14;
-							fixed = true;
-						}else if (prefixName.contains("<img=14>")) {
-							rights = 15;
-							fixed = true;
-						}else if (prefixName.contains("<img=15>")) {
-							rights = 16;
-							fixed = true;
-						} else if (prefixName.contains("<irn=1193>")) {
+
+					
+					if (prefixName != null && !prefixName.isEmpty()) {
+
+
+
+						/*rights = getPrimaryRights(prefixName);
+						secondaryPlayerRights = getSecondaryRights(prefixName.replaceAll("<img=\\d>", ""));
+						System.out.println("Primary rights "+rights + " secondary rights "+secondaryPlayerRights);
+
+						if (prefixName.contains("<irn=1193>")) {
 							ironman2 = 1;
 							fixed = true;
 						} else if (prefixName.contains("<irn=1192>")) {
@@ -11905,81 +11894,44 @@ public class Client extends RSApplet {
 						} else if (prefixName.contains("<irn=1036>")) {
 							ironman2 = 3;
 							fixed = true;
-						}
-						if (name.contains("<img=0>")) {
-							secondaryPlayerRights = 1;
-							fixed2 = true;
-						}
-						if (name.contains("<img=1>")) {
-							secondaryPlayerRights = 2;
-							fixed2 = true;
-						}
-						if (name.contains("<img=2>")) {
-							secondaryPlayerRights = 3;
-							fixed2 = true;
-						}
-						if (name.contains("<img=3>")) {
-							secondaryPlayerRights = 4;
-							fixed2 = true;
-						}
-						if (name.contains("<img=4>")) {
-							secondaryPlayerRights = 5;
-							fixed2 = true;
-						}
-						if (name.contains("<img=5>")) {
-							secondaryPlayerRights = 6;
-							fixed2 = true;
-						}
-						if (name.contains("<img=6>")) {
-							secondaryPlayerRights = 7;
-							fixed2 = true;
+						}*/
+
+
+					}
+					/*if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
+						name = name.replaceAll("<img=\\d>", "");
+						name = name.replaceAll("<zmg=\\d>", "");
+						name = name.replaceAll("<irn=\\d>", "");
+					}*/
+
+
+					/*if (ironman2 > 0) {
+						System.out.println(name + " WAS iron");
+						if(ironman2 == 3) {
+							SpriteLoader.sprites[1036].drawSprite(k1, l - 12);
+							k1 += 12;
+							if (secondaryPlayerRights > 0) {
+								SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(k1, l - 12);
+							}
+						} else {
+								SpriteLoader.sprites[1191 + ironman].drawSprite(k1, l - 12);
+								k1 += 12;
+							if (secondaryPlayerRights > 0) {
+								SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(k1, l - 12);
+							}
+							}
 						}
 
-						name = name.substring(fixed ? 6 : 5);
-						if (!fixed) {
-							rights = getPrefixRights(prefixName.substring(0, prefixName.indexOf(name)));
-						}
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=0>")) {
-						name = name.substring(7);
-						rights = 1;
-					}
-					if (rights > 0 && secondaryRights > 0 && name != null) {
-						name = name.substring(13);
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=0>")) {
-						secondaryRights = 1;
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=1>")) {
-						secondaryRights = 2;
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=2>")) {
-						secondaryRights = 3;
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=3>")) {
-						secondaryRights = 4;
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=4>")) {
-						secondaryRights = 5;
-					}
-					if (rights == 0 && name != null && name.startsWith("<img=5>")) {
-						secondaryRights = 6;
-					}
-					
-					if ((rights != 0 || ironman != 0) && ironman != 3) {
-
-						if (rights != 0) {
-							SpriteLoader.sprites[1249 + rights].drawSprite(k1, l - 12);
-							k1 += 12;
-						}  else if (ironman != 0) {
-							SpriteLoader.sprites[1191 + ironman].drawSprite(k1, l - 12);
-							k1 += 12;
-						}
-					}
-					if(ironman == 3) {
-						SpriteLoader.sprites[1036].drawSprite(k1, l - 12);
-						k1 += 12;
-					}
+						if (ironman2 == 0) {
+							System.out.println(name + " was no iron");
+							if (rights > 0) {
+								SpriteLoader.sprites[1249 + rights].drawSprite(k1, l - 12);
+								k1 += 12;
+							}
+							if (secondaryPlayerRights > 0) {
+								SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(k1, l - 12);
+							}
+						}*/
 
 					textDrawingArea.method385(0, name + ": " + chatMessages[j], l, k1);
 					textDrawingArea.method385(65535, name + ": " + chatMessages[j], l - 1, k1);
@@ -15039,12 +14991,9 @@ public class Client extends RSApplet {
 							try {
 								imageDraw = Integer.parseInt(s.substring(prefix + 5, suffix));
 								s = s.replaceAll(s.substring(prefix + 5, suffix), "");
-								/*s = s.replaceAll(s.substring(prefix2 + 9, suffix), "");
-								s = s.replaceAll(s.substring(prefix3 + 9, suffix), "");*/
 								s = s.replaceAll("</img>", "");
-								s = s.replaceAll("<img=>", "");
-								/*s = s.replaceAll("<zmg=>", "");
-								s = s.replaceAll("<irn=>", "");*/
+								s = s.replaceAll("<img=\\d>", "");
+
 							} catch (NumberFormatException nfe) {
 								// //System.out.println("Unable to draw player
 								// crown on interface. Unable to read rights.");
@@ -15327,39 +15276,7 @@ public class Client extends RSApplet {
 							model.renderSingle(child.modelRotation2, 0, child.modelRotation1, 0, i5, l5);
 						}
 
-						/*
-						 * if (child.id == 58004) { if (animId == -1) { model =
-						 * child.getAnimatedModel2(-1, -1, selected); } else { Animation animation =
-						 * Animation.anims[animId];
-						 * 
-						 * model = child.getAnimatedModel2(animation.frameIDs2[child.currentFrame],
-						 * animation.frameIDs[child.currentFrame], selected); } } else { if (animId ==
-						 * -1) { model = child.getAnimatedModel(-1, -1, selected); } else { Animation
-						 * animation = Animation.anims[animId];
-						 * 
-						 * model = child.getAnimatedModel(animation.frameIDs2[child.currentFrame],
-						 * animation.frameIDs[child.currentFrame], selected); } }
-						 * 
-						 * if (model != null) { if (child.id == 58004) { if (santaColors != null) {
-						 * ItemDef def = ItemDef.forID(1050); //
-						 * //System.out.println(Arrays.toString(maxCapeColors)); if (santaColor != null &&
-						 * santaSlot != -1 && santaSlot != -1) {
-						 * Client.this.previousSantaColors[santaSlot] =
-						 * Client.this.santaColors[santaSlot]; int hash =
-						 * JagexColor.toHSB(santaColor.getRed(), santaColor.getGreen(),
-						 * santaColor.getBlue()); Client.this.santaColors[santaSlot] = hash;
-						 * RSInterface.interfaceCache[santaSlot].enabledColor = santaColor.getRGB();
-						 * santaColor = null; } for (int i11 = 0; i11 < previousSantaColors.length;
-						 * i11++) model.recolour(previousSantaColors[i11], santaColors[i11]);
-						 * //Player.modelCache.clear(); //ItemDef.spriteCache.clear();
-						 * //ItemDef.modelCache.clear(); } }
-						 * 
-						 * model.renderSingle(child.modelRotation2, 0, child.modelRotation1, 0, i5, l5);
-						 * }
-						 */
 
-						// model.reset();
-						// model = null;
 						Rasterizer.textureInt1 = k3;
 						Rasterizer.textureInt2 = j4;
 					} else if (child.type == 7) {
