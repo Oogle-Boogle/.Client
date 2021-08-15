@@ -614,7 +614,7 @@ public class Client extends RSApplet {
 
 	public String getPrefix(int rights, int secondaryrights, int ironman) {
 
-		System.out.println("Got prefix.. ironman was "+ironman);
+		//System.out.println("Got prefix.. ironman was "+ironman);
 
 		String ironRank;
 
@@ -638,6 +638,7 @@ public class Client extends RSApplet {
 		String secondaryRank = secondaryrights > 0 ? "<zmg=" + secondaryrights + ">" : "";
 		String finalPrefix = ironman > 0 ? ironRank + secondaryRank : primaryRank + secondaryRank;
 
+		//System.out.println("FINAL PREFIX 2144241 WAS " + finalPrefix);
 		return finalPrefix;
 	}
 
@@ -648,38 +649,82 @@ public class Client extends RSApplet {
 		int rights3 = 0;
 
 		//Checks the rank numbers if the rights are over 10
-		if (prefix.contains("<img=10")
-				|| prefix.contains("<img=11")
-				|| prefix.contains("<img=12")
-				|| prefix.contains("<img=13")
-				|| prefix.contains("<img=14")
-				|| prefix.contains("<img=15")) {
-			start = 6;
-			end = 8;
-			rights3 = Integer.parseInt(prefix.substring(start, end));
-			//System.out.println("Rights were = " + rights);
-		} else if (prefix.contains("<img=")) {
-			start = 5;
-			end = 6;
-			rights3 = Integer.parseInt(prefix.substring(start, end));
-			//System.out.println("Rights were = " + rights);
+
+		if (prefix.contains("<img=1>")) {
+			rights3 = 1;
 		}
+		if (prefix.contains("<img=2>")) {
+			rights3 = 2;
+		}
+		if (prefix.contains("<img=3>")) {
+			rights3 = 3;
+		}
+		if (prefix.contains("<img=4>")) {
+			rights3 = 4;
+		}
+		if (prefix.contains("<img=5>")) {
+			rights3 = 5;
+		}
+		if (prefix.contains("<img=6>")) {
+			rights3 = 6;
+		}
+		if (prefix.contains("<img=7>")) {
+			rights3 = 7;
+		}
+		if (prefix.contains("<img=8>")) {
+			rights3 = 8;
+		}
+		if (prefix.contains("<img=9>")) {
+			rights3 = 9;
+		}
+		if (prefix.contains("<img=10>")) {
+			rights3 = 10;
+		}
+		if (prefix.contains("<img=11>")) {
+			rights3 = 11;
+		}
+		if (prefix.contains("<img=12>")) {
+			rights3 = 12;
+		}
+		if (prefix.contains("<img=13>")) {
+			rights3 = 13;
+		}
+		if (prefix.contains("<img=14>")) {
+			rights3 = 14;
+		}
+		if (prefix.contains("<img=15>")) {
+			rights3 = 15;
+		}
+		if (prefix.contains("<img=35>")) {
+			rights3 = 35;
+		}
+		//System.out.println("FINAL primary rights 3322 were " + rights3);
 		return rights3;
 	}
 
 	public int getSecondaryRights(String prefix) {
 		//System.out.println("Prefix was: "+prefix);
-		int start;
-		int end;
 		int secondaryRights1 = -1;
 
-		//Checks the rank numbers if the rights are over 10
-		 if (prefix.contains("<zmg=") && !prefix.contains("<img=")) {
-			start = 5;
-			end = 6;
-			secondaryRights1 = Integer.parseInt(prefix.substring(start, end));
-			System.out.println("Secondary Rights were = " + secondaryRights1);
+		if (prefix.contains("<zmg=1>")) {
+			secondaryRights1 = 1;
 		}
+		if (prefix.contains("<zmg=2>")) {
+			secondaryRights1 = 2;
+		}
+		if (prefix.contains("<zmg=3>")) {
+			secondaryRights1 = 3;
+		}
+		if (prefix.contains("<zmg=4>")) {
+			secondaryRights1 = 4;
+		}
+		if (prefix.contains("<zmg=5>")) {
+			secondaryRights1 = 5;
+		}
+		if (prefix.contains("<zmg=6>")) {
+			secondaryRights1 = 6;
+		}
+		//System.out.println("FINALLY.. SECONDARY RIGHTS ARE " + secondaryRights1);
 		return secondaryRights1;
 	}
 
@@ -942,19 +987,62 @@ public class Client extends RSApplet {
 					}
 
 					if (!name.isEmpty() && name != null) {
-						System.out.println("NAME IS "+name + " PREFIX NAME IS "+prefixName);
+						//System.out.println("NAME IS "+name + " PREFIX NAME IS "+prefixName);
 						playerRights = getPrimaryRights(name);
-						System.out.println("Player rights are "+playerRights);
-						secondaryPlayerRights = getSecondaryRights(name.replaceAll("<img=\\d>", ""));
-						System.out.println("Secondary rights are "+secondaryPlayerRights);
+						//System.out.println("Player rights are "+playerRights);
+						secondaryPlayerRights = getSecondaryRights(name); //todo change to detect <img= code
+						//System.out.println("Secondary rights are "+secondaryPlayerRights);
 
 					}
+					// No need to remove the text from the name here, it'll break icons
 
-					if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
+					/*if (name.contains("<img=0") ||
+							name.contains("<img=1") ||
+							name.contains("<img=2") ||
+							name.contains("<img=3") ||
+							name.contains("<img=4") ||
+							name.contains("<img=5") ||
+							name.contains("<img=6") ||
+							name.contains("<img=7") ||
+							name.contains("<img=8") ||
+							name.contains("<img=9")) {
+						name = name.substring(7);
+						//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
+					}
+					if (name.contains("<img=10") ||
+							name.contains("<img=11") ||
+							name.contains("<img=12") ||
+							name.contains("<img=13") ||
+							name.contains("<img=14") ||
+							name.contains("<img=15")) {
+						name = name.substring(8);
+						//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+					}
+					if (name.contains("<zmg=0") ||
+							name.contains("<zmg=1") ||
+							name.contains("<zmg=2") ||
+							name.contains("<zmg=3") ||
+							name.contains("<zmg=4") ||
+							name.contains("<zmg=5") ||
+							name.contains("<zmg=6")) {
+						name = name.substring(7);
+						//System.out.println("NAME if contains zmg CHANGE " + name);
+					}
+					if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+						name = name.substring(10);
+						//System.out.println("NAME if contains zmg CHANGE " + name);
+					}*/
+
+					/*if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
 						name = name.replaceAll("<img=\\d> ", "");
+						name = name.replaceAll("<img=\\d\\d> ", "");
 						name = name.replaceAll("<zmg=\\d> ", "");
+						name = name.replaceAll("<zmg=\\d\\d> ", "");
 						name = name.replaceAll("<irn=\\d> ", "");
-					}
+						name = name.replaceAll("<irn=\\d\\d\\d\\d> ", "");
+					}*/
 
 					boolean glow = false;
 					int gloColor = 16722474;
@@ -1200,10 +1288,12 @@ public class Client extends RSApplet {
 
 
 				} else {
+					if (myRights > 0) {
 					//System.out.print("MY RIGHTS = " + myRights);
 					SpriteLoader.sprites[1249 + myRights].drawSprite(12 + offsetX, 122 + offsetY);
 					/*offsetX += 20;*/
 					offsetX += SpriteLoader.sprites[1249 + myRights].myWidth+4;
+				}
 					if (secondaryRights > 0) {
 						SpriteLoader.sprites[1253 + secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
 						/*offsetX += 20;*/
@@ -1619,7 +1709,10 @@ public class Client extends RSApplet {
 		myPlayer.anInt1513 = chatColor;
 		myPlayer.anInt1531 = chatEffect;
 		myPlayer.textCycle = 150;
-		pushMessage("  "+myPlayer.textSpoken, 2,
+		/*String gaps;
+		if (myRights > 0)
+			gaps = " ";*/
+		pushMessage("1111111111111111"+myPlayer.textSpoken, 2,
 				getPrefix(myRights, secondaryRights, ironman) + (glowColor != 0 ? "@glo" + glowColor + "@" : "")
 						+  myPlayer.name,
 				myPlayer.playerTitle);
@@ -11092,7 +11185,37 @@ public class Client extends RSApplet {
 						myPlayer.anInt1513 = color; // text Color
 						myPlayer.anInt1531 = effect; // text EffectF
 						myPlayer.textCycle = 150;
-						pushMessage("  " +myPlayer.textSpoken, 2, getPrefix(myRights, secondaryRights, ironman) + myPlayer.name,
+						//Public chat shit
+						//Normal no ranks OK
+						String spaces = "";
+						System.out.println("Rights for the space shit first: " + myRights);
+						System.out.println("Rights for the space shit second: " + secondaryRights);
+						System.out.println("Rights for the space shit iron: " + ironman);
+
+						if (ironman > 0 && secondaryRights > 0){ //Iron and second rank
+							System.out.println("First");
+							spaces = "       ";
+						}
+						if (ironman > 0 && secondaryRights == 0){ //Just Iron
+							spaces = "11111";
+							System.out.println("second");
+
+						}
+						if (myRights > 0 && secondaryRights > 0 && ironman == 0){ // Two ranks not iron
+							spaces = "       ";
+							System.out.println("third");
+
+						}
+						if (myRights > 0 && secondaryRights == 0 && ironman == 0){ // Just one rank
+							spaces = "";
+							System.out.println("fourth");
+						}
+						if (secondaryRights > 0 && myRights == 0 && ironman == 0){ // Just second rank
+							spaces = "  ";
+							System.out.println("fifth");
+						}
+
+						pushMessage(spaces +myPlayer.textSpoken, 2, getPrefix(myRights, secondaryRights, ironman) + myPlayer.name,
 								myPlayer.playerTitle);
 						//todo fix big gap
 						if (publicChatMode == 2) {
@@ -11141,8 +11264,43 @@ public class Client extends RSApplet {
 			if (positionY < -23) {
 				break;
 			}
-			if (name != null && name.indexOf("@") == 0) {
-				name = name.substring(5);
+			if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+				name = name.substring(10);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
+			}
+			if (name.contains("<img=0>") ||
+					name.contains("<img=1>") ||
+					name.contains("<img=2>") ||
+					name.contains("<img=3>") ||
+					name.contains("<img=4>") ||
+					name.contains("<img=5>") ||
+					name.contains("<img=6>") ||
+					name.contains("<img=7>") ||
+					name.contains("<img=8>") ||
+					name.contains("<img=9>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
+			}
+			if (name.contains("<img=10>") ||
+					name.contains("<img=11>") ||
+					name.contains("<img=12>") ||
+					name.contains("<img=13>") ||
+					name.contains("<img=14>") ||
+					name.contains("<img=15>")) {
+				name = name.substring(8);
+				//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+			}
+			if (name.contains("<zmg=0>") ||
+					name.contains("<zmg=1>") ||
+					name.contains("<zmg=2>") ||
+					name.contains("<zmg=3>") ||
+					name.contains("<zmg=4>") ||
+					name.contains("<zmg=5>") ||
+					name.contains("<zmg=6>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
 			if ((type == 1 || type == 2)
 					&& (type == 1 || publicChatMode == 0 || publicChatMode == 1 && isFriendOrSelf(name))) {
@@ -11187,9 +11345,45 @@ public class Client extends RSApplet {
 			if (k1 < -23) {
 				break;
 			}
-			if (name != null && name.indexOf("@") == 0) {
-				// name = name.substring(5);
+			if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+				name = name.substring(10);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
+			if (name.contains("<img=0>") ||
+					name.contains("<img=1>") ||
+					name.contains("<img=2>") ||
+					name.contains("<img=3>") ||
+					name.contains("<img=4>") ||
+					name.contains("<img=5>") ||
+					name.contains("<img=6>") ||
+					name.contains("<img=7>") ||
+					name.contains("<img=8>") ||
+					name.contains("<img=9>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
+			}
+			if (name.contains("<img=10>") ||
+					name.contains("<img=11>") ||
+					name.contains("<img=12>") ||
+					name.contains("<img=13>") ||
+					name.contains("<img=14>") ||
+					name.contains("<img=15>")) {
+				name = name.substring(8);
+				//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+			}
+			if (name.contains("<zmg=0>") ||
+					name.contains("<zmg=1>") ||
+					name.contains("<zmg=2>") ||
+					name.contains("<zmg=3>") ||
+					name.contains("<zmg=4>") ||
+					name.contains("<zmg=5>") ||
+					name.contains("<zmg=6>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
+			}
+
 			if ((type == 5 || type == 6) && (splitPrivateChat == 0 || chatTypeView == 2)
 					&& (type == 6 || privateChatMode == 0 || privateChatMode == 1 && isFriendOrSelf(name))) {
 				l++;
@@ -11236,9 +11430,45 @@ public class Client extends RSApplet {
 			if (k1 < -23) {
 				break;
 			}
-			if (name != null && name.indexOf("@") == 0) {
-				name = name.substring(5);
+			if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+				name = name.substring(10);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
+			if (name.contains("<img=0>") ||
+					name.contains("<img=1>") ||
+					name.contains("<img=2>") ||
+					name.contains("<img=3>") ||
+					name.contains("<img=4>") ||
+					name.contains("<img=5>") ||
+					name.contains("<img=6>") ||
+					name.contains("<img=7>") ||
+					name.contains("<img=8>") ||
+					name.contains("<img=9>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
+			}
+			if (name.contains("<img=10>") ||
+					name.contains("<img=11>") ||
+					name.contains("<img=12>") ||
+					name.contains("<img=13>") ||
+					name.contains("<img=14>") ||
+					name.contains("<img=15>")) {
+				name = name.substring(8);
+				//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+			}
+			if (name.contains("<zmg=0>") ||
+					name.contains("<zmg=1>") ||
+					name.contains("<zmg=2>") ||
+					name.contains("<zmg=3>") ||
+					name.contains("<zmg=4>") ||
+					name.contains("<zmg=5>") ||
+					name.contains("<zmg=6>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
+			}
+
 			if (chatTypeView == 3 && j1 == 4 && (tradeMode == 0 || tradeMode == 1 && isFriendOrSelf(name))) {
 				if (j > k1 - 14 && j <= k1) {
 					menuActionName[menuActionRow] = "Accept trade @whi@" + name;
@@ -11322,11 +11552,45 @@ public class Client extends RSApplet {
 			//rights = getPrimaryRights(name); //Get the number in the rights
 			//System.out.println("Trying to get rights.." + rights);
 			/** Removed all the img code shit **/
-				if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
-						name = name.replaceAll("<img=\\d>", "");
-						name = name.replaceAll("<zmg=\\d>", "");
-						name = name.replaceAll("<irn=\\d>", "");
+			//System.out.println("NAME BEFORE ANY CHANGE " + name);
+			if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+				name = name.substring(10);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
+			}
+				if (name.contains("<img=0>") ||
+						name.contains("<img=1>") ||
+						name.contains("<img=2>") ||
+						name.contains("<img=3>") ||
+						name.contains("<img=4>") ||
+						name.contains("<img=5>") ||
+						name.contains("<img=6>") ||
+						name.contains("<img=7>") ||
+						name.contains("<img=8>") ||
+						name.contains("<img=9>")) {
+					name = name.substring(7);
+					//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
 				}
+			if (name.contains("<img=10>") ||
+					name.contains("<img=11>") ||
+					name.contains("<img=12>") ||
+					name.contains("<img=13>") ||
+					name.contains("<img=14>") ||
+					name.contains("<img=15>")) {
+				name = name.substring(8);
+				//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+			}
+			if (name.contains("<zmg=0>") ||
+					name.contains("<zmg=1>") ||
+					name.contains("<zmg=2>") ||
+					name.contains("<zmg=3>") ||
+					name.contains("<zmg=4>") ||
+					name.contains("<zmg=5>") ||
+					name.contains("<zmg=6>")) {
+				name = name.substring(7);
+				//System.out.println("NAME if contains zmg CHANGE " + name);
+			}
 
 			if (j1 == 0) {
 				l++;
@@ -11488,6 +11752,7 @@ public class Client extends RSApplet {
 
 				if (name.contains("<img=")) {
 					name = name.replaceAll(" <img=\\d>", "");
+					name = name.replaceAll(" <img=\\d\\d>", "");
 
 			}
 			int textY = (21 + y * 14) - itemResultScrollPos;
@@ -15005,38 +15270,76 @@ public class Client extends RSApplet {
 						TextDrawingArea textDrawingArea = child.textDrawingAreas;
 						String s = child.message;
 						int xOffset = 0;
-						int imageDraw = 0;
+						int imageDraw = 0; //First Rights
+						int secondRights = 0;
+						int ironRank = 0;
 						final String INITIAL_MESSAGE = s;
 						//System.out.println("Initial message = "+s);
-						if (s.contains("<img=")/*||s.contains("<zmg=") || s.contains("<irn=")*/) {
-							int prefix = s.indexOf("<img=");
-							/*int prefix2 = s.indexOf("<zmg=");
-							int prefix3 = s.indexOf("<irn=");*/
-							int suffix = s.indexOf(">");
-							try {
-								imageDraw = Integer.parseInt(s.substring(prefix + 5, suffix));
-								s = s.replaceAll(s.substring(prefix + 5, suffix), "");
-								s = s.replaceAll("</img>", "");
-								s = s.replaceAll("<img=\\d>", "");
+						if (s.contains("<img=") || s.contains("<zmg=") || s.contains("<irn=")) {
 
-							} catch (NumberFormatException nfe) {
-								// //System.out.println("Unable to draw player
-								// crown on interface. Unable to read rights.");
-								s = INITIAL_MESSAGE;
-							} catch (IllegalStateException ise) {
-								// //System.out.println("Unable to draw player
-								// crown on interface, rights too low or
-								// high.");
-								s = INITIAL_MESSAGE;
+						if (s.contains("<img=")) { //Exclude Diamond icon on interfaces
+							imageDraw = getPrimaryRights(s);
+							//System.out.println("NAME if containing img < 10 CHANGE " + name);
+						}
+						if (s.contains("<zmg=")) {
+							secondRights = getSecondaryRights(s);
+						}
+						if (s.contains("<irn=1035")) { //All irons are 4 digit numbers so not needed like the others
+							ironRank = 1035;
+						}
+						if (s.contains("<irn=1193")) { //All irons are 4 digit numbers so not needed like the others
+							ironRank = 1193;
+						}
+						if (s.contains("<irn=1192")) { //All irons are 4 digit numbers so not needed like the others
+							ironRank = 1192;
+						}
+							if (s.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+								s = s.substring(10);
+								//System.out.println("NAME if contains zmg CHANGE " + name);
 							}
-							if (suffix > prefix) {
-								xOffset += 14;
+
+							if (s.contains("<img=0") ||
+									s.contains("<img=1>>") ||
+									s.contains("<img=2>>") ||
+									s.contains("<img=3>") ||
+									s.contains("<img=4>") ||
+									s.contains("<img=5>") ||
+									s.contains("<img=6>") ||
+									s.contains("<img=7>") ||
+									s.contains("<img=8>") ||
+									s.contains("<img=9>")) {
+								s = s.substring(7);
+								//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
 							}
+							if (s.contains("<img=10>") ||
+									s.contains("<img=11>") ||
+									s.contains("<img=12>") ||
+									s.contains("<img=13>") ||
+									s.contains("<img=14>") ||
+									s.contains("<img=15>") ||
+									s.contains("<img=35>")) {
+								s = s.substring(8);
+								//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+							}
+							if (s.contains("<zmg=0>") ||
+									s.contains("<zmg=1>") ||
+									s.contains("<zmg=2>") ||
+									s.contains("<zmg=3>") ||
+									s.contains("<zmg=4>") ||
+									s.contains("<zmg=5>") ||
+									s.contains("<zmg=6>")) {
+								s = s.substring(7);
+								//System.out.println("NAME if contains zmg CHANGE " + name);
+							}
+
 						}
 						// s = RSFontSystem.replaceSyntaxes(s);
 						if (child.id == 2458) {
 							s = "Click here to logout";
 						}
+						
 
 						boolean hovered = false;
 						if (anInt1039 == child.id || anInt1048 == child.id || anInt1026 == child.id) {
@@ -15143,13 +15446,26 @@ public class Client extends RSApplet {
 								s1 = s;
 								s = "";
 							}
-							if (imageDraw > 0 && xOffset > 0) {
+							if (imageDraw > 0 || secondRights > 0 || ironRank > 0 && xOffset > 0) {
 								int drawImageY = childY + 14;
-								if (imageDraw >= 34) { // Clan chat images
-									xOffset -= 5;
-									drawImageY -= 7;
+
+								String primaryRights = imageDraw > 0 ? "<img=" + imageDraw + ">" : "";
+								String secondRightsString = secondRights > 0 ? "<zmg=" + secondRights + ">" : "";
+								String ironRightsString = ironRank > 0 ? "<irn=" + ironRank + ">" : "";
+
+								if (imageDraw > 0) {
+									xOffset += 14;
 								}
-								newRegularFont.drawBasicString("<img=" + imageDraw + ">", childX, drawImageY);
+								if (secondRights > 0) {
+									xOffset += 14;
+								}
+								if (ironRank > 0) {
+									xOffset += 14;
+								}
+
+								String prefix = ironRank > 0 ? ironRightsString + secondRightsString : primaryRights + secondRightsString;
+
+								newRegularFont.drawBasicString(prefix, childX, drawImageY);
 							}
 							if (child.centerText) {
 								textDrawingArea.drawCenteredText(color, childX + child.width / 2 + xOffset, s1, l6,
@@ -15614,7 +15930,7 @@ public class Client extends RSApplet {
 						player.secondaryRights = rights2;
 						player.anInt1531 = effects & 0xff;
 						player.textCycle = 150;
-						pushMessage(" "+message, 2, getPrefix(rights, rights2, ironman2)
+						pushMessage("33333333333"+message, 2, getPrefix(rights, rights2, ironman2)
 								+ (gloColor != 0 ? "@glo" + gloColor + "@" : "") + player.name, player.playerTitle);
 						//System.out.println("CALLED ->>erre22>>");
 					} catch (Exception exception) {
@@ -19393,7 +19709,7 @@ public class Client extends RSApplet {
 					try {
 						String message = TextInput.decodeToString(pktSize - 13, inStream);
 						if (playerRights != 0) {
-							pushMessage(" "+message, 7,
+							pushMessage("44444444444"+message, 7,
 									getPrefix(playerRights, rights2, gamemode) + TextClass.fixName(TextClass.nameForLong(l5)));
 						} else {
 							pushMessage(message, 3, TextClass.fixName(TextClass.nameForLong(l5)));
@@ -19766,6 +20082,9 @@ public class Client extends RSApplet {
 					friendsListAction = 4;
 					promptMessage = "Enter name of player to add to ignore list";
 				}
+				/*if (text.contains("<img=")){
+					text.replaceAll("")
+				}*/
 				updateStrings(text, frame);
 				sendFrame126(text, frame);
 				if (frame >= 18144 && frame <= 18244) {

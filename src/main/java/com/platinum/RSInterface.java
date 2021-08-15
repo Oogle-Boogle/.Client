@@ -7338,18 +7338,62 @@ public class RSInterface {
 		// Tab.aString228 = "";
 		Tab.textColor(id, color);
 		String s = Tab.message;
-		/*if (s.contains("<img")) {
-			int prefix = s.indexOf("<img=");
+		if (s.contains("<img=0>") ||
+				s.contains("<img=1>") ||
+				s.contains("<img=2>") ||
+				s.contains("<img=3>") ||
+				s.contains("<img=4>") ||
+				s.contains("<img=5>") ||
+				s.contains("<img=6>") ||
+				s.contains("<img=7>") ||
+				s.contains("<img=8>") ||
+				s.contains("<img=9>")) {
+			s = s.substring(7);
+			//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
+		}
+		if (s.contains("<img=10>") ||
+				s.contains("<img=11>") ||
+				s.contains("<img=12>") ||
+				s.contains("<img=13>") ||
+				s.contains("<img=14>") ||
+				s.contains("<img=15>")) {
+			s = s.substring(8);
+			//System.out.println("NAME if contains img > 10 CHANGE " + name);
+
+		}
+		if (s.contains("<zmg=0>") ||
+				s.contains("<zmg=1>") ||
+				s.contains("<zmg=2>") ||
+				s.contains("<zmg=3>") ||
+				s.contains("<zmg=4>") ||
+				s.contains("<zmg=5>") ||
+				s.contains("<zmg=6>")) {
+			s = s.substring(7);
+			//System.out.println("NAME if contains zmg CHANGE " + name);
+		}
+		if (s.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
+			s = s.substring(10);
+			//System.out.println("NAME if contains zmg CHANGE " + name);
+		}
+		/*if (s.contains("<zmg")) {
+			int prefix = s.indexOf("<zmg=");
 			int suffix = s.indexOf(">");
-			s = s.replaceAll(s.substring(prefix + 5, suffix), "");
-			s = s.replaceAll("</img>", "");
-			s = s.replaceAll("<img=>", "");
+			s = s.replaceAll(s.substring(prefix + 6, suffix), "");
+			s = s.replaceAll("<zmg=>", "");
+		}
+		if (s.contains("<irn")) {
+			int prefix = s.indexOf("<irn=");
+			int suffix = s.indexOf(">");
+			s = s.replaceAll(s.substring(prefix + 9, suffix), "");
+			s = s.replaceAll("<irn=>", "");
 		}*/
-		if (s.contains("<img=") || s.contains("<zmg=") || s.contains("<irn=") ) {
+		// Handles the right click menu on a player when viewing clan chat list
+		/*if (s.contains("<img=") || s.contains("<zmg=") || s.contains("<irn=") ) {
 			s = s.replaceAll("<img=\\d>", "");
 			s = s.replaceAll("<zmg=\\d>", "");
-			s = s.replaceAll("<irn=\\d>", "");
-		}
+			s = s.replaceFirst("<irn=\\d\\d\\d\\d>", "");
+		}*/
 		if (!s.equals(ignore)) {
 			if (owner) {
 				Tab.actions = new String[] { "Promote to Recruit @or1@" + s + "", "Promote to Corporal @or1@" + s + "",

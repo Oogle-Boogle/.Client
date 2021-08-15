@@ -222,12 +222,14 @@ public class RSFontSystem extends DrawingArea {
 								int iconModY = icon.myHeight;
 								if (imageId >= 8)
 									iconModY -= 2;
-								if (transparency == 256) {
-									icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY));
-								} else {
-									icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY), transparency);
+								if (imageId > 0) {
+									if (transparency == 256) {
+										icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY));
+									} else {
+										icon.drawSprite(drawX, (drawY + baseCharacterHeight - iconModY), transparency);
+									}
+									drawX += icon.myWidth;
 								}
-								drawX += icon.myWidth;
 							} catch (Exception exception) {
 								/* empty */
 							}
@@ -421,7 +423,6 @@ public class RSFontSystem extends DrawingArea {
 								}
 								modifierOffset++;
 								int iconId = Integer.valueOf(effectString.substring(4));
-								System.out.println("Ironman Icon ID IS " + iconId);
 								Sprite icon = SpriteLoader.sprites[iconId];
 								int iconOffsetY = icon.myHeight;
 								if (transparency == 256) {
