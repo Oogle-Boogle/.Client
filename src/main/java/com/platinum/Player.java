@@ -410,6 +410,7 @@ public final class Player extends Entity {
 
 	public int playerRights;
 	public int secondaryRights;
+	public int ironManRank;
 	public String playerTitle;
 
 	public Model getPlayerModel() {
