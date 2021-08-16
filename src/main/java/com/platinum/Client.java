@@ -2496,7 +2496,7 @@ public class Client extends RSApplet {
 
 		if (clientSize == 0 ? mouseX >= 562 && mouseX <= 586 && mouseY >= 143 && mouseY < 166
 				: mouseX >= clientWidth - 37 && mouseX <= clientWidth - 5 && mouseY >= 138 && mouseY <= 161) {
-			menuActionName[menuActionRow] = "@red@Boss Teleport";
+			menuActionName[menuActionRow] = "@red@Home Map";
 			menuActionID[menuActionRow] = 10004;
 			menuActionRow++;
 		}
@@ -11290,7 +11290,7 @@ public class Client extends RSApplet {
 					name.contains("<img=8>") ||
 					name.contains("<img=9>")) {
 				name = name.substring(7);
-				System.out.println("NAME 223333 if containing img < 10 CHANGE " + name);
+				//System.out.println("NAME 223333 if containing img < 10 CHANGE " + name);
 			}
 			if (name.contains("<img=10>") ||
 					name.contains("<img=11>") ||
@@ -11370,7 +11370,7 @@ public class Client extends RSApplet {
 					name.contains("<img=8>") ||
 					name.contains("<img=9>")) {
 				name = name.substring(7);
-				System.out.println("NAME  883992 if containing img < 10 CHANGE " + name);
+				//System.out.println("NAME  883992 if containing img < 10 CHANGE " + name);
 
 			}
 			if (name.contains("<img=10>") ||
@@ -11455,7 +11455,7 @@ public class Client extends RSApplet {
 					name.contains("<img=8>") ||
 					name.contains("<img=9>")) {
 				name = name.substring(7);
-				System.out.println("NAME 7273663 if containing img < 10 CHANGE " + name);
+				//System.out.println("NAME 7273663 if containing img < 10 CHANGE " + name);
 			}
 			if (name.contains("<img=10>") ||
 					name.contains("<img=11>") ||
@@ -11577,7 +11577,7 @@ public class Client extends RSApplet {
 						name.contains("<img=8>") ||
 						name.contains("<img=9>")) {
 					name = name.substring(7);
-					System.out.println("NAME 847088111 if containing img < 10 CHANGE " + name);
+					//System.out.println("NAME 847088111 if containing img < 10 CHANGE " + name);
 
 				}
 			if (name.contains("<img=10>") ||
