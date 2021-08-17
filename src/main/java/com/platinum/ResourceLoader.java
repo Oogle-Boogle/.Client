@@ -19,6 +19,7 @@ public class ResourceLoader {
 		try {
 			img = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + ""+imageName+".png");
 		} catch(Exception e) {
+			System.out.println(imageName);
 			e.printStackTrace();
 			img = null;
 		}

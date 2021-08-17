@@ -1,5 +1,7 @@
 package com.platinum;
 
+import images.Resources;
+
 import java.awt.AWTException;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -18,6 +20,7 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.IOException;
 import java.net.InetAddress;
 import java.net.URI;
 import java.net.URL;
@@ -37,7 +40,9 @@ public class Jframe extends Client implements ActionListener {
 	public static JFrame frame;
 	public static TrayIcon trayIcon;
 
-	public Jframe(String[] args, int width, int height, boolean resizable) {
+	Image icon = javax.imageio.ImageIO.read(Resources.class.getResourceAsStream("icon.png"));
+
+	public Jframe(String[] args, int width, int height, boolean resizable) throws IOException {
 		super();
 		setTray();
 		try {
@@ -50,7 +55,7 @@ public class Jframe extends Client implements ActionListener {
 
 	public void setTray() {
 		if (SystemTray.isSupported()) {
-			Image icon = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "/data/Interfaces/icon.png");
+			//Image icon = Toolkit.getDefaultToolkit().getImage(signlink.findcachedir() + "/data/Interfaces/icon.png");
 			trayIcon = new TrayIcon(icon, Configuration.CLIENT_NAME);
 			trayIcon.setImageAutoSize(true);
 			try {
@@ -206,8 +211,8 @@ public class Jframe extends Client implements ActionListener {
 	}
 
 	public void setClientIcon() {
-		Image img = Client.resourceLoader.getImage("icon");
-		if (img == null)
+		Image img = ResourceLoader.loadImage("icon.png");
+		if(img == null)
 			return;
 		frame.setIconImage(img);
 

@@ -88,7 +88,7 @@ final class RSFrame extends JFrame {
 	}
 	
 	public void setClientIcon() {
-		Image img = Client.resourceLoader.getImage("icon");
+		Image img = ResourceLoader.loadImage("icon.png");
 		if(img == null)
 			return;
 		setIconImage(img);
