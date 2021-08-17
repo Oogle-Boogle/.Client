@@ -267,7 +267,7 @@ public class Client extends RSApplet {
 		return options.get(s).booleanValue();
 	}
 
-	 private void handleSettings() {
+	 private void handleSettings() throws IOException {
 	        if (!isWebclient()) {
 	            if (clientSize != 0) {
 	                toggleSize(clientSize);
@@ -773,7 +773,7 @@ public class Client extends RSApplet {
 	public static int cameraZoom = 600;
 	public static int REGULAR_WIDTH = 774, REGULAR_HEIGHT = 512;
 
-	public void toggleSize(int size) {
+	public void toggleSize(int size) throws IOException {
 
 		// if (clientSize != size) {
 		if (isWebclient() && Jframe.frame == null) {
@@ -4056,7 +4056,7 @@ public class Client extends RSApplet {
 		}
 	}
 
-	private boolean processMenuClick() {
+	private boolean processMenuClick() throws IOException {
 		if (activeInterfaceType != 0) {
 			return false;
 		}
@@ -6260,6 +6260,8 @@ public class Client extends RSApplet {
 				e.printStackTrace();
 			} catch (UnsupportedLookAndFeelException e) {
 				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
 		}
 		processOnDemandQueue();
@@ -7104,7 +7106,7 @@ public class Client extends RSApplet {
 	int counter = 0;
 
 	private void mainGameProcessor() throws ClassNotFoundException, InstantiationException, IllegalAccessException,
-			UnsupportedLookAndFeelException {
+			UnsupportedLookAndFeelException, IOException {
 		if (openInterfaceID == 24600 && buttonclicked && interfaceButtonAction != 1558 && interfaceButtonAction != 1557
 				&& inputDialogState != 3) {
 			if (inputDialogState == 1) {
@@ -8156,7 +8158,7 @@ public class Client extends RSApplet {
 		}
 	}
 
-	private void doAction(int i) {
+	private void doAction(int i) throws IOException {
 		if (i < 0) {
 			return;
 		}
@@ -13706,7 +13708,7 @@ public class Client extends RSApplet {
 		}
 	}
 
-	void startUp() {
+	void startUp() throws IOException {
 		loadSettings();
 		Thread t = new Thread(new Runnable() {
 			@Override

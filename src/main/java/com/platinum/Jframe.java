@@ -107,7 +107,8 @@ public class Jframe extends Client implements ActionListener {
 			frame.setLayout(new BorderLayout());
 			frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
-			frame.setAlwaysOnTop(Client.ALWAYS_ON_TOP);
+			frame.setIconImage(javax.imageio.ImageIO.read(Resources.class.getResourceAsStream("icon.png")));
+					frame.setAlwaysOnTop(Client.ALWAYS_ON_TOP);
 			frame.addWindowListener(new WindowAdapter() {
 				@Override
 				public void windowClosing(WindowEvent we) {
@@ -210,8 +211,8 @@ public class Jframe extends Client implements ActionListener {
 
 	}
 
-	public void setClientIcon() {
-		Image img = ResourceLoader.loadImage("icon.png");
+	public void setClientIcon() throws IOException {
+		Image img = javax.imageio.ImageIO.read(Resources.class.getResourceAsStream("icon.png"));
 		if(img == null)
 			return;
 		frame.setIconImage(img);

@@ -1,6 +1,8 @@
 package com.platinum;
 
 
+import images.Resources;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -14,6 +16,7 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 import java.awt.event.WindowEvent;
+import java.io.IOException;
 import java.lang.reflect.Method;
 
 @SuppressWarnings("all")
@@ -22,7 +25,7 @@ final class RSFrame extends JFrame {
 	public static boolean destroy;
 	
 	
-	public RSFrame(RSApplet rsapplet, int width, int height, boolean undecorative, boolean resizable) {
+	public RSFrame(RSApplet rsapplet, int width, int height, boolean undecorative, boolean resizable) throws IOException {
 		rsApplet = rsapplet;
 		setTitle(Configuration.CLIENT_NAME);
 		setUndecorated(undecorative);
@@ -39,6 +42,8 @@ final class RSFrame extends JFrame {
 		toFront();
 		this.setFocusTraversalKeysEnabled(false);
 		setBackground(Color.BLACK);
+
+		setIconImage(javax.imageio.ImageIO.read(Resources.class.getResourceAsStream("icon.png")));
 
 		setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 		addWindowListener(new WindowAdapter() {
@@ -87,8 +92,8 @@ final class RSFrame extends JFrame {
 		}
 	}
 	
-	public void setClientIcon() {
-		Image img = ResourceLoader.loadImage("icon.png");
+	public void setClientIcon() throws IOException {
+		Image img = javax.imageio.ImageIO.read(Resources.class.getResourceAsStream("icon.png"));
 		if(img == null)
 			return;
 		setIconImage(img);

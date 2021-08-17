@@ -21,6 +21,7 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.IOException;
 
 import javax.swing.SwingUtilities;
 
@@ -80,7 +81,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		return mainFrame;
 	}
 
-	public void rebuildFrame(boolean undecorated, int width, int height, boolean resizable, boolean full) {
+	public void rebuildFrame(boolean undecorated, int width, int height, boolean resizable, boolean full) throws IOException {
 		boolean webc = Client.webclient && Jframe.frame == null;
 		if (webc) {
 			if (mainFrame != null)
@@ -127,7 +128,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 
 	}
 
-	final void createClientFrame(int w, int h) {
+	final void createClientFrame(int w, int h) throws IOException {
 		isApplet = false;
 		myWidth = w;
 		myHeight = h;
@@ -169,7 +170,11 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		}
 
 		colorStart = startTime = 0L;
-		startUp();
+		try {
+			startUp();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		int i = 0;
 		int j = 256;
 		int k = 1;
@@ -857,7 +862,7 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 	public final void windowOpened(WindowEvent windowevent) {
 	}
 
-	void startUp() {
+	void startUp() throws IOException {
 	}
 
 	void processGameLoop() {
