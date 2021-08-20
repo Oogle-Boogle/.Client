@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="fml prefixes">
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Remove repack index 4">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSFontSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSFontSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,6 +263,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="fml prefixes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628808864386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628456457367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
