@@ -9,16 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Program Run Icon!">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Client_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Client_jar.xml" afterDir="false" />
+    <list default="true" id="50401bdf-d310-44a7-8939-69fe4ffe0682" name="Default Changelist" comment="Remove repack index 4">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Client.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Platinum.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Platinum.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ObjectDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/RSInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/t.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/platinum/ItemDef_Suic.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,11 +57,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Documents/Platinum/Tools" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.breadcrumbs" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager" selected="Application.Try this shit">
     <configuration name="JagexColor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -223,49 +218,7 @@
       <option name="project" value="LOCAL" />
       <updated>1628869103384</updated>
     </task>
-    <task id="LOCAL-00015" summary="fml prefixes">
-      <created>1628898747190</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1628898747190</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Loads of prefix work">
-      <created>1628990363300</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1628990363300</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Loads of prefix work and fixed priv chat">
-      <created>1629063480592</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1629063480592</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Boss TP Button Changed to Home Map">
-      <created>1629148687674</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1629148687674</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Tray Icon">
-      <created>1629240068850</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1629240068850</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Program Run Icon!">
-      <created>1629242721436</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1629242721436</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -307,14 +260,9 @@
     <MESSAGE value="Object shit" />
     <MESSAGE value="Remove repack index 4" />
     <MESSAGE value="fml prefixes" />
-    <MESSAGE value="Loads of prefix work" />
-    <MESSAGE value="Loads of prefix work and fixed priv chat" />
-    <MESSAGE value="Boss TP Button Changed to Home Map" />
-    <MESSAGE value="Tray Icon" />
-    <MESSAGE value="Program Run Icon!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Program Run Icon!" />
+    <option name="LAST_COMMIT_MESSAGE" value="fml prefixes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628808864386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Platinum_Client$Try_this_shit.ic" NAME="Try this shit Coverage Results" MODIFIED="1628456457367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

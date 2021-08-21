@@ -1965,22 +1965,38 @@ public class ItemDef_Suic {
 			itemDef.animateInventory = true;
 			itemDef.stackable = true;
 			break;
-			
-		case 19156:
- 			itemDef.modelID = 44283;
- 			itemDef.name = "Sharingan Aura";
- 			itemDef.description = "Sharingan Aura";
- 		     itemDef.modelZoom = 1600;
-             itemDef.rotationY = 500;
-  			itemDef.rotationX = 0;
-  			itemDef.modelOffset1 = -1;
-  			itemDef.modelOffsetY = -1;
- 			itemDef.maleEquip1 = 44284;
- 			itemDef.femaleEquip1 = 44284;
- 			itemDef.actions = new String[5];
- 			itemDef.actions[1] = "Wear";
- 			itemDef.actions[4] = "Drop";
- 			break;
+
+			case 14934:
+				itemDef.modelID = 40005;
+				itemDef.name = "Harmonised Nightmare Staff";
+				itemDef.description = "its a AOE weapon";
+				itemDef.modelZoom = 1000;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 40006;
+				itemDef.femaleEquip1 = 40006;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
+			case 19156:
+			itemDef.modelID = 40000;
+			itemDef.name = "Recolored Sharingan Aura";
+			itemDef.description = "Sharingan Aura";
+			itemDef.modelZoom = 1600;
+			itemDef.rotationY = 500;
+			itemDef.rotationX = 0;
+			itemDef.modelOffset1 = -1;
+			itemDef.modelOffsetY = -1;
+			itemDef.maleEquip1 = 40000;
+			itemDef.femaleEquip1 = 40000;
+			itemDef.actions = new String[5];
+			itemDef.actions[1] = "Wear";
+			itemDef.actions[4] = "Drop";
+			break;
 			
 			
 			
@@ -7142,6 +7158,10 @@ break;
             itemDef.actions[0] = "Read";
             itemDef.name = "PVM Tickets";
             break;
+
+			case 19892:
+				itemDef.name = "Hellfire Necklace";
+				break;
             
         case 19121:
             itemDef.name = "Platinum Starter Box";
