@@ -4020,7 +4020,7 @@ public class Client extends RSApplet {
 	 * here's the problem.
 	 */
 	public void repackCacheIndex(int cacheIndex) {
-		//System.out.println("Started repacking index " + cacheIndex + ".");
+		System.out.println("Started repacking index " + cacheIndex + ".");
 		int indexLength = new File(indexLocation(cacheIndex, -1)).listFiles().length;
 		File[] file = new File(indexLocation(cacheIndex, -1)).listFiles();
 		try {
@@ -4029,15 +4029,15 @@ public class Client extends RSApplet {
 				byte[] data = fileToByteArray(cacheIndex, fileIndex);
 				if (data != null && data.length > 0) {
 					cacheIndices[cacheIndex].put(data.length, data, fileIndex);
-					//System.out.println("Repacked " + fileIndex + ".");
+					System.out.println("Repacked " + fileIndex + ".");
 				} else {
-					//System.out.println("Unable to locate index " + fileIndex + ".");
+					System.out.println("Unable to locate index " + fileIndex + ".");
 				}
 			}
 		} catch (Exception e) {
-			//System.out.println("Error packing cache index " + cacheIndex + ".");
+			System.out.println("Error packing cache index " + cacheIndex + ".");
 		}
-		//System.out.println("Finished repacking " + cacheIndex + ".");
+		System.out.println("Finished repacking " + cacheIndex + ".");
 	}
 
 	public byte[] fileToByteArray(int cacheIndex, int index) {

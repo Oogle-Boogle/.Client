@@ -554,6 +554,74 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Travel";
 			objectDef.actions[1] = "Pray-at";
 		}
+		/** Start AFK Zone Objects **/
+		if (i == 8381) {
+			objectDef.name = "AFK Tree";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Chop";
+		}
+		if (i == 49522) {
+			objectDef.name = "AFK Fishing";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Fish";
+		}
+		if (i == 61334) {
+			objectDef.name = "AFK Crafting";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Create";
+		}
+		if (i == 15931) {
+			objectDef.name = "AFK Fletching";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Fletch";
+		}
+		if (i == 9682) {
+			objectDef.name = "AFK Cooking";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Cook";
+		}
+		if (i == 40951) {
+			objectDef.name = "AFK Thieving";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Steal";
+		}
+		if (i == 28750) {
+			objectDef.name = "AFK Hunter";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Trap";
+		}
+		if (i == 50051) {
+			objectDef.name = "AFK Farming";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Trim";
+		}
+		if (i == 36959) {
+			objectDef.name = "AFK Combat";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Murder";
+		}
+		if (i == 619) {
+			objectDef.name = "AFK Herblore";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Mix";
+		}
+		if (i == 565) {
+			objectDef.name = "AFK Prayer";
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Worship";
+		}
+
 
 		for (int i1 : hotSpotIDs) {
 			if (i1 == i) {

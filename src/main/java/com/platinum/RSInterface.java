@@ -1,5 +1,6 @@
 package com.platinum;
 
+import static com.platinum.Client.clientSize;
 import static com.platinum.RSInterface.addInterface;
 import static com.platinum.RSInterface.addRectangle;
 import static com.platinum.RSInterface.addText;
@@ -84,8 +85,10 @@ public class RSInterface {
 	
 	public static void drawDPSOverlay(TextDrawingArea[] tda) {
 		RSInterface main = addInterface(23998);
-		addText(23999, "DPS: 0", tda, 1, ColorConstants.SNOW_WHITE, false, true);
+		addText(23999, "", tda, 1, ColorConstants.SNOW_WHITE, false, true);
 		main.totalChildren(1);
+
+
 		main.child(0, 23999, 450, 3);
 	}
 	
@@ -7527,7 +7530,6 @@ public class RSInterface {
 
 	public static void vidOptions(TextDrawingArea tda[]) {
 		RSInterface tab = addTabInterface(40030);
-		// RSInterface rsinterface = addTabInterface(40030);
 		int i = 0;
 		byte byte0 = 2;
 		addHDSprite(40042, 375, 375);
