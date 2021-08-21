@@ -31,7 +31,7 @@ public class CacheDownloader implements Runnable {
 	private static final String ZIP_URL = "https://platinum-ps.net/files/cache/plat.zip";
 	
 	private static final String VERSION_FILE = CACHE_PATH + "/data/cache_version.txt";
-	private static final int CACHE_VERSION = 92;
+	private static final int CACHE_VERSION = 93;
 
 	private CacheDownloader.GUI g;
 
