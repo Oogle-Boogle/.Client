@@ -444,6 +444,11 @@ public final class ObjectDef {
 			objectDef.objectModelIDs = new int[] { 44200};
 			objectDef.actions[1] = "Check Rewards";
 		}
+
+		if (i == 11402) {
+			objectDef.name = "@gre@Bank Booth";
+			objectDef.objectModelIDs = new int[] { 13007};
+		}
 		
 		if (i == 4114) {
 			objectDef.name = "@gre@VIP chest";

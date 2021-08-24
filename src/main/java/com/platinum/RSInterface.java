@@ -2067,6 +2067,7 @@ public class RSInterface {
 		main.child(3, 53204, 205, 236);
 		main.child(4, 53206, 0, 64);
 
+
 		/**
 		 * Text childs for description
 		 */
@@ -9439,7 +9440,7 @@ public class RSInterface {
         RSInterface main = addInterface(STARTING_POINT);
         RSInterface buttion = addInterface(30100);
         addSpriteLoader(STARTING_POINT + 1, 1212);
-        main.totalChildren(6);
+        main.totalChildren(5);
         
         main.child(0, STARTING_POINT + 1, 87, 90);
         main.child(1, STARTING_POINT + 5, 95, 128);
@@ -9457,13 +9458,15 @@ public class RSInterface {
         scroll.child(0, STARTING_POINT + 6, 0, 1);
         //addSpriteLoader(STARTING_POINT + 7, 1121);
         //main.child(4, STARTING_POINT + 7, 10, 10);
-        addHoverButtonWSpriteLoader(STARTING_POINT + 7, 933, 88, 36, "De-note", -1, STARTING_POINT + 8, 1);
-        addHoveredImageWSpriteLoader(STARTING_POINT + 8, 934, 88, 36, STARTING_POINT + 9);
+		addToggleButton1(STARTING_POINT + 7, 933, 934, 25, 25, "De-Note");
         main.child(4, STARTING_POINT + 7, 94, 95);
-        main.child(5, STARTING_POINT + 8, 94, 95);
+
+
     
         
-	
+
+
+
 		
     }
 

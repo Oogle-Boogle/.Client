@@ -3323,10 +3323,14 @@ public class ItemDef_Suic {
             break;
             
         case 10835:
+        	itemDef.modelID = 28679;
             itemDef.actions = new String[5];
 			itemDef.actions = new String[] { "Add to Inv", null, "Add to pouch",null, null};
-            itemDef.name = "1b Taxbag";
-            break;
+            itemDef.name = "1B Coin";
+			itemDef.rotationX = 2; // the rotation x u chose in editor
+			itemDef.rotationY = 400;
+			itemDef.modelZoom = 1600;
+			break;
             
 
             
