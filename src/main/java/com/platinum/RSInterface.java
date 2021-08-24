@@ -9458,7 +9458,7 @@ public class RSInterface {
         scroll.child(0, STARTING_POINT + 6, 0, 1);
         //addSpriteLoader(STARTING_POINT + 7, 1121);
         //main.child(4, STARTING_POINT + 7, 10, 10);
-		addToggleButton1(STARTING_POINT + 7, 933, 934, 25, 25, "De-Note");
+		addToggleButton1(STARTING_POINT + 7, 933, 888, 25, 25, "Withdraw As Note");
         main.child(4, STARTING_POINT + 7, 94, 95);
 
 
