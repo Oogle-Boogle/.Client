@@ -428,6 +428,26 @@ public final class ObjectDef {
 		if (i == 13493) {
 			objectDef.name = "Platinum Armour";
 		}
+		if (i == 172) {
+			objectDef.name = "@blu@Tier 1-3 Chest";
+			objectDef.objectModelIDs = new int[] {19090};
+		}
+		if (i == 19852) {
+			objectDef.name = "Instance";
+			objectDef.objectModelIDs = new int[]{18000};
+			objectDef.animationID = 504;
+			objectDef.hasActions = true;
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Open";
+		}
+		if (i == 6422) {
+			objectDef.name = "@blu@Fuser";
+			objectDef.objectModelIDs = new int[] {19093};
+		}
+		if (i == 6423) {
+			objectDef.name = "Upgrader";
+			objectDef.objectModelIDs = new int[] {19094};
+		}
 		if (i == 8702) {
 			objectDef.name = "Rocktail Barrel";
 			objectDef.actions = new String[5];
@@ -438,11 +458,6 @@ public final class ObjectDef {
 			objectDef.name = "Anvil";
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Smith-on";
-		}
-		if (i == 172) {
-			objectDef.name = "@gre@Starter chest";
-			objectDef.objectModelIDs = new int[] { 44200};
-			objectDef.actions[1] = "Check Rewards";
 		}
 
 		if (i == 11402) {
@@ -461,13 +476,16 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Open";
 		}
 		if (i == 2183) {
-			objectDef.name = "@bla@Treasure chest";
+			objectDef.name = "Treasure chest";
 		}
 		
 		if (i == 6420) {
-			objectDef.name = "@yel@Medium chest";
-			objectDef.objectModelIDs = new int[] { 40288};
-			objectDef.actions[1] = "@whi@Check Rewards";
+			objectDef.name = "@or2@Tier 4-7 Chest";
+			objectDef.objectModelIDs = new int[] { 19091};
+		}
+		if (i == 6421) {
+			objectDef.name = "@red@Tier 8-10 Chest";
+			objectDef.objectModelIDs = new int[] { 19091};
 		}
 		if (i == 6714) {
 			objectDef.hasActions = true;
