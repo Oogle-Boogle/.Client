@@ -485,7 +485,7 @@ public final class ObjectDef {
 		}
 		if (i == 6421) {
 			objectDef.name = "@red@Tier 8-10 Chest";
-			objectDef.objectModelIDs = new int[] { 19091};
+			objectDef.objectModelIDs = new int[] { 19092};
 		}
 		if (i == 6714) {
 			objectDef.hasActions = true;
