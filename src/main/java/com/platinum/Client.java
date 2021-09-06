@@ -12907,8 +12907,8 @@ public class Client extends RSApplet {
 				loginMessages = new String[] { "Login limit exceeded. Too many connections", "from your address." };
 				return;
 			}
-			if (loginCode == 10) {
-				loginMessages = new String[] { "Unable to connect!", "Server responded: bad session id!" };
+			if (loginCode == 10) { //VPN Block
+				loginMessages = new String[] { "VPN or Proxy Dedected!", "You cannot login using either!" };
 				return;
 			}
 			if (loginCode == 11) {
