@@ -131,7 +131,7 @@ public class Jframe extends Client implements ActionListener {
 			frame.setLayout(new BorderLayout());
 			gamePanel.setLayout(new BorderLayout());
 			gamePanel.add(this);
-			gamePanel.setBackground(Color.BLUE);
+			gamePanel.setBackground(Color.BLACK);
 			initializeMenuBar();
 			frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 			frame.pack();
