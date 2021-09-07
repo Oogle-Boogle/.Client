@@ -5464,7 +5464,7 @@ break;
                 itemDef.modelOffsetX = 0;
                 itemDef.modelOffsetY = 0;
                 itemDef.maleEquip1 = 23179;
-                itemDef.femaleEquip1 = 23179;
+                itemDef.femaleEquip1 = 23179; //95120
                 itemDef.description = "CUSTOM BFG-900.";
                 break;
                 
@@ -7236,7 +7236,7 @@ break;
             itemDef.actions[1] = "Wear";
 			
             itemDef.actions[4] = "Drop";
-            itemDef.modelID = 23174;
+            itemDef.modelID = 23173;
             itemDef.name = "BFG-900";
             itemDef.modelZoom = 900;
             itemDef.rotationY = 165;

@@ -113,7 +113,7 @@ public class Jframe extends Client implements ActionListener {
 				@Override
 				public void windowClosing(WindowEvent we) {
 					String options[] = { "Yes", "No" };
-					int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you wish to exit?", "Platinum",
+					int userPrompt = JOptionPane.showOptionDialog(null, "Why not use ::afk instead?", "Platinum",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 					if (userPrompt == JOptionPane.YES_OPTION) {
 						// openURL("http://Platinum-RSPS.net/forum");
@@ -131,7 +131,7 @@ public class Jframe extends Client implements ActionListener {
 			frame.setLayout(new BorderLayout());
 			gamePanel.setLayout(new BorderLayout());
 			gamePanel.add(this);
-			gamePanel.setBackground(Color.BLACK);
+			gamePanel.setBackground(Color.BLUE);
 			initializeMenuBar();
 			frame.getContentPane().add(gamePanel, BorderLayout.CENTER);
 			frame.pack();

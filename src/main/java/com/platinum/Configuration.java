@@ -4,14 +4,14 @@ public class Configuration {
 
 	public static final int CLIENT_VER = 15; // Client Version Unused ATM
 
-	public static final boolean LOCAL = true; //Change this lol
+	public static final boolean LOCAL = false; //Change this lol
 
 	public final static String HOST = LOCAL ? "127.0.0.1" : "104.161.43.45";
 	// 									Local? Yes : No
 	public final static String JAGGRAB_HOST = "104.161.43.45";
     public static String SERVER_NAME = "Platinum";
 	public final static int PORT = 43594;
-	public final static String CLIENT_NAME = "Platinum v2.2";
+	public final static String CLIENT_NAME = "Platinum v2.3";
 
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+

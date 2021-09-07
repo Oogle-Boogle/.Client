@@ -431,6 +431,8 @@ public final class ObjectDef {
 		if (i == 172) {
 			objectDef.name = "@blu@Tier 1-3 Chest";
 			objectDef.objectModelIDs = new int[] {19090};
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Open";
 		}
 		if (i == 19852) {
 			objectDef.name = "Instance";
@@ -482,10 +484,14 @@ public final class ObjectDef {
 		if (i == 6420) {
 			objectDef.name = "@or2@Tier 4-7 Chest";
 			objectDef.objectModelIDs = new int[] { 19091};
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Open";
 		}
 		if (i == 6421) {
 			objectDef.name = "@red@Tier 8-10 Chest";
 			objectDef.objectModelIDs = new int[] { 19092};
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Open";
 		}
 		if (i == 6714) {
 			objectDef.hasActions = true;
