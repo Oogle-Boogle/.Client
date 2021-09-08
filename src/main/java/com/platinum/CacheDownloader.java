@@ -12,7 +12,7 @@ public class CacheDownloader implements Runnable {
 
 	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".plat" + File.separator;
 	private static final String ZIP_URL = "https://www.platinum-ps.net/files/cache/plat.zip";
-	private static final String VERSION_FILE = CACHE_PATH + "cacheVersion.dat";
+	private static final String VERSION_FILE = CACHE_PATH + "/data/cacheVersion.dat";
 
 	private CacheDownloader.GUI g;
 
