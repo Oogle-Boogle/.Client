@@ -2,7 +2,7 @@ package com.platinum;
 
 public class Configuration {
 
-	public static final int CLIENT_VER = 15; // Client Version
+	public static final int CLIENT_VER = 16; // Client Version
 
 	public static final boolean LOCAL = true; //Change this lol
 
@@ -11,7 +11,7 @@ public class Configuration {
 	public final static String JAGGRAB_HOST = "104.161.43.45";
     public static String SERVER_NAME = "Platinum";
 	public final static int PORT = 43594;
-	public final static String CLIENT_NAME = "Platinum v2.3";
+	public final static String CLIENT_NAME = "Platinum v2.4";
 
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
@@ -47,7 +47,7 @@ public class Configuration {
 			6, 0, 0, -2, 0, 2, -1, 2, -1, 6, // 190
 			4, 10, 0, 3, 0, -1, 3, 10, 4, 4, // 200
 			0, 0, 0, 0, -1, 7, 0, -2, 2, 0, // 210
-			0, 1, -2, -2, 0, 0, 0, 0, 0, 0, // 220
+			-1, 1, -2, -2, 0, 0, 0, 0, 0, 0, // 220
 			8, 0, 3, 0, 0, 0, 0, 0, 0, 0, // 230
 			2, -2, 0, 0, -1, 0, 6, 0, 4, 3, // 240
 			-1, 0, 0, -1, 6, 0, 0// 250
