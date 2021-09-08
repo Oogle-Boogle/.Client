@@ -1,37 +1,18 @@
 package com.platinum;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
+import javax.swing.*;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
-import javax.swing.GroupLayout;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JOptionPane;
-import javax.swing.JProgressBar;
-import javax.swing.LayoutStyle;
-import javax.swing.UIManager;
-import javax.swing.WindowConstants;
-
 public class CacheDownloader implements Runnable {
 
-	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".Plat" + File.separator;
-	private static final String ZIP_URL = "https://platinum-ps.net/files/cache/plat.zip";
-	
-	private static final String VERSION_FILE = "https://platinum-ps.net/files/cache/cache_version.txt";
-	private static final int CACHE_VERSION = 94;
+	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".plat" + File.separator;
+	private static final String ZIP_URL = "https://www.platinum-ps.net/files/cache/plat.zip";
+	private static final String VERSION_FILE = CACHE_PATH + "cacheVersion.dat";
 
 	private CacheDownloader.GUI g;
 
@@ -53,7 +34,7 @@ public class CacheDownloader implements Runnable {
 
 	public long getNewestVersion() {
 		try {
-			return ((HttpURLConnection) new URL(ZIP_URL).openConnection()).getContentLengthLong();
+			return new URL(ZIP_URL).openConnection().getContentLengthLong();
 		} catch (Exception e) {
 			handleException(e);
 			return -1;
@@ -61,7 +42,6 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private void handleException(Exception e) {
-		e.printStackTrace();
 		StringBuffer strBuff = new StringBuffer();
 
 		strBuff.append("Please Screenshot this message, and send it to an admin!\r\n\r\n");
@@ -78,11 +58,10 @@ public class CacheDownloader implements Runnable {
 		JOptionPane.showMessageDialog(null, msg, title, (error ? JOptionPane.ERROR_MESSAGE : JOptionPane.PLAIN_MESSAGE));
 	}
 
-	@SuppressWarnings("resource")
 	@Override
 	public void run() {
 		try {
-			long newest = CACHE_VERSION;
+			long newest = getNewestVersion();
 			long current = getCurrentVersion();
 
 			if (newest != current) {
@@ -116,7 +95,7 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private void unZipFile(File zipFile, File outFile) throws IOException {
-		g.setStatus("Unzipping Platinum Cache...");
+		g.setStatus("Unzipping The Cache...");
 		g.setPercent(0);
 
 		ZipInputStream zin = new ZipInputStream(new BufferedInputStream(new FileInputStream(zipFile)));
@@ -139,7 +118,7 @@ public class CacheDownloader implements Runnable {
 				new File(outFile, e.getName()).mkdirs();
 			} else {
 				FileOutputStream out = new FileOutputStream(new File(outFile, e.getName()));
-				//System.out.println("(unzip): " + outFile.getName());
+
 				byte[] b = new byte[1024];
 
 				int len;
@@ -159,8 +138,7 @@ public class CacheDownloader implements Runnable {
 	}
 
 	private File downloadCache() {
-		//System.out.println("downloading cache");
-		g.setStatus("Downloading Platinum Cache...");
+		g.setStatus("Downloading Cache... Hold Tight...");
 
 		File ret = new File(CACHE_PATH + "plat.zip");
 
@@ -169,7 +147,6 @@ public class CacheDownloader implements Runnable {
 			InputStream in = conn.getInputStream();
 
 			long max = conn.getContentLength();
-			//System.out.println("max: " + max);
 			long curr = 0;
 
 			byte[] b = new byte[1024];
@@ -179,7 +156,6 @@ public class CacheDownloader implements Runnable {
 			while ((len = in.read(b, 0, b.length)) > -1) {
 				out.write(b, 0, len);
 				curr += len;
-				//System.out.println("curr: " + curr);
 				g.setPercent((int) ((curr * 100) / max));
 			}
 
@@ -196,7 +172,9 @@ public class CacheDownloader implements Runnable {
 	public class GUI extends JFrame {
 		private static final long serialVersionUID = 1L;
 
-		/** Creates new form GUI */
+		/**
+		 * Creates new form GUI
+		 */
 		public GUI() {
 			try {
 				UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -229,26 +207,26 @@ public class CacheDownloader implements Runnable {
 
 			jLabel1.setText("Status:");
 			jLabel2.setText("N/A");
-			jLabel3.setText("");
+			jLabel3.setText("0%");
 
 			GroupLayout layout = new GroupLayout(getContentPane());
 			getContentPane().setLayout(layout);
 			layout.setHorizontalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(
 					layout.createSequentialGroup()
-					.addContainerGap()
-					.addGroup(
-							layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+							.addContainerGap()
 							.addGroup(
-									layout.createSequentialGroup().addComponent(jLabel1).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED).addComponent(jLabel2).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 304, Short.MAX_VALUE)
-									.addComponent(jLabel3)).addComponent(jProgressBar1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)).addContainerGap()));
+									layout.createParallelGroup(GroupLayout.Alignment.LEADING)
+											.addGroup(
+													layout.createSequentialGroup().addComponent(jLabel1).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED).addComponent(jLabel2).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 304, Short.MAX_VALUE)
+															.addComponent(jLabel3)).addComponent(jProgressBar1, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)).addContainerGap()));
 			layout.setVerticalGroup(layout.createParallelGroup(GroupLayout.Alignment.LEADING).addGroup(
 					layout.createSequentialGroup()
-					.addContainerGap()
-					.addGroup(
-							layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
-							.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(jLabel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jLabel3))
-							.addComponent(jLabel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-					.addComponent(jProgressBar1, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE).addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
+							.addContainerGap()
+							.addGroup(
+									layout.createParallelGroup(GroupLayout.Alignment.LEADING, false)
+											.addGroup(layout.createParallelGroup(GroupLayout.Alignment.BASELINE).addComponent(jLabel2, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE).addComponent(jLabel3))
+											.addComponent(jLabel1, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)).addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+							.addComponent(jProgressBar1, GroupLayout.PREFERRED_SIZE, 30, GroupLayout.PREFERRED_SIZE).addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 			pack();
 		}
 
@@ -268,6 +246,7 @@ public class CacheDownloader implements Runnable {
 
 		public void setPercent(int amount) {
 			percent = amount;
+			jLabel3.setText(amount + "%");
 			jProgressBar1.setValue(amount);
 		}
 
