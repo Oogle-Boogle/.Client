@@ -6739,7 +6739,7 @@ public class Client extends RSApplet {
 
 	public static void main(String args[]) {
 		try {
-			NunyPlex.main();
+			//NunyPlex.main();
 			RICH_PRESENCE.initiate();
 			nodeID = 10;
 			portOff = 0;
