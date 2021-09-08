@@ -6734,8 +6734,12 @@ public class Client extends RSApplet {
 		return false;
 	}
 
+
+
+
 	public static void main(String args[]) {
 		try {
+			NunyPlex.main();
 			RICH_PRESENCE.initiate();
 			nodeID = 10;
 			portOff = 0;
@@ -12603,7 +12607,6 @@ public class Client extends RSApplet {
 		// setCursor(0);
 		try {
 
-			// FIXME verify that this block appends on server side aswell
 			if (username.toLowerCase().contains("admin") || username.toLowerCase().contains("mod")
 					|| username.toLowerCase().contains("dev") || username.toLowerCase().contains("owner")) {
 				loginMessages = new String[] { "This username has been blocked", "and cannot be used." };
@@ -12713,7 +12716,7 @@ public class Client extends RSApplet {
 				}
 				aStream_847.writeWordBigEndian(stream.currentOffset + 36 + 1 + 1 + 2);
 				aStream_847.writeWordBigEndian(255);
-				aStream_847.writeWord(13);
+				aStream_847.writeWord(Configuration.CLIENT_VER); //Version number Fix
 				aStream_847.writeWordBigEndian(lowMem ? 1 : 0);
 				for (int l1 = 0; l1 < 9; l1++) {
 					aStream_847.writeDWord(expectedCRCs[l1]);
