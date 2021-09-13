@@ -346,7 +346,7 @@ public class Jframe extends Client implements ActionListener {
 					openURL("http://Platinum-ps.net");
 					break;*/
 				case "Platinum Guides":
-					openURL("");
+					openURL("https://discord.gg/pDq5vfyadn");
 					break;
 				case "Store":
 					openURL("https://platinum.everythingrs.com/services/store");
