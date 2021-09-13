@@ -12899,7 +12899,7 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 10) { //VPN Block
-				loginMessages = new String[] { "VPN or Proxy Dedected!", "You cannot login using either!" };
+				loginMessages = new String[] { "VPN or Proxy Detected!", "You cannot login using either!" };
 				return;
 			}
 			if (loginCode == 11) {
