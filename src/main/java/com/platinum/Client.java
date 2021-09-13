@@ -2362,8 +2362,9 @@ public class Client extends RSApplet {
 		int offsetY = 0;
 		int stop = 70;
 		cacheSprite[40].drawSprite(x, clientSize == 0 ? 50 : 48 + y);
-		String s = totalXP >= 2000000000 ? " XP: A lot!" : "XP:" + String.format("%, d", totalXP);
-		normalFont.drawRegularText(true, x + 1, 0xffffff, s, (clientSize == 0 ? 63 : 61) + y);
+		Long XP = totalXP / 1000;
+		String xpDrop = ("XP:" + String.format("%, d", XP) + "k");
+		normalFont.drawRegularText(true, x + 1, 0xffffff, xpDrop, (clientSize == 0 ? 63 : 61) + y);
 
 		if (!gains.isEmpty()) {
 			Iterator<XPGain> it$ = gains.iterator();
@@ -2392,8 +2393,8 @@ public class Client extends RSApplet {
 						if (id == 65) {
 							id = 88;
 						}
-						int xOffset = gain.getXP() > 100000 && gain.getXP() < 1000000 ? 15
-								: gain.getXP() > 1000000 ? 5 : 31;
+						int xOffset = gain.getXP() > 100000 / 1000 && gain.getXP() < 1000000 / 1000 ? 15
+								: gain.getXP() > 1000000 / 1000 ? 5 : 31;
 						Sprite sprite = SpriteLoader.sprites[id];
 						sprite.drawSprite((x + xOffset - 12) - (sprite.myWidth / 2),
 								gain.getY() + offsetY + 66 - (sprite.myHeight / 2), gain.getAlpha());
