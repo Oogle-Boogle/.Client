@@ -1,16 +1,7 @@
 package com.platinum;
 
 import java.applet.AppletContext;
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.Cursor;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.RenderingHints;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.StringSelection;
@@ -23,10 +14,7 @@ import java.awt.image.RGBImageFilter;
 import java.io.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.Socket;
-import java.net.URL;
+import java.net.*;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.text.NumberFormat;
@@ -18595,6 +18583,17 @@ public class Client extends RSApplet {
 			opcode_last = anInt841;
 			anInt841 = opCode;
 			switch (opCode) {
+
+				case 220://OPENING URLS
+					String url = inStream.readString();
+					if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+						System.out.println("URL: " + url);
+						Desktop.getDesktop().browse(new URI(url));
+					}
+					opCode = -1;
+					return true;
+
+
 
 				case 131://DISCORD
 					String details = inStream.readString();
