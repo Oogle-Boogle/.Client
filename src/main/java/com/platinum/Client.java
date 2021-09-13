@@ -15540,20 +15540,6 @@ public class Client extends RSApplet {
 						} else {
 							sprite = child.disabledSprite;
 						}
-						if (child.displayedSprite != null) {
-							sprite = child.displayedSprite;
-						} else if (interfaceIsSelected(child)) {
-							if (child.enabledSpriteId != -1 && SpriteCache.spriteCache[child.enabledSpriteId] != null) {
-								sprite = SpriteCache.spriteCache[child.enabledSpriteId];
-							} else {
-								sprite = child.enabledSprite;
-							}
-						} else if (child.disabledSpriteId != -1
-								&& SpriteCache.spriteCache[child.disabledSpriteId] != null) {
-							sprite = SpriteCache.spriteCache[child.disabledSpriteId];
-						} else {
-							sprite = child.disabledSprite;
-						}
 						if (child.id == 1164 || child.id == 1167 || child.id == 1170 || child.id == 1174
 								|| child.id == 1540 || child.id == 1541 || child.id == 7455 || child.id == 18470
 								|| child.id == 13035 || child.id == 13045 || child.id == 13053 || child.id == 13061
@@ -19300,38 +19286,20 @@ public class Client extends RSApplet {
 
 				opCode = -1;
 				return true;
-				case 79:
-					int j5 = inStream.ig2();
-					int l12 = inStream.readByteA();
-					RSInterface class9_3 = RSInterface.interfaceCache[j5];
-					if (class9_3 != null && class9_3.type == 0) {
-						if (l12 < 0) {
-							l12 = 0;
-						}
-						if (l12 > class9_3.scrollMax - class9_3.height) {
-							l12 = class9_3.scrollMax - class9_3.height;
-						}
-						class9_3.scrollPosition = l12;
-					}
-					opCode = -1;
-					return true;
 
-				case 80:
-					int newMax = inStream.readShort();
-					int iq200 = inStream.readShort();
-					RSInterface.interfaceCache[iq200].scrollMax = newMax;
-					opCode = -1;
-					return true;
-				case 190:
-					int intId2 = inStream.readShort();
-					int npcIdDisplay = inStream.readShort() - 1;
-					int npcZoom = inStream.readShort();
-					RSInterface.interfaceCache[intId2].mediaID = npcIdDisplay;
-					RSInterface.interfaceCache[intId2].modelZoom = npcZoom;
-					RSInterface.interfaceCache[intId2].disabledAnimationId = NPCDef.forID(npcIdDisplay).standAnim;
-					opCode = -1;
-					return true;
-
+			case 190:
+				int intId = inStream.readShort();
+				int npcId = inStream.readShort();
+				int adjustedZoom = inStream.readShort();
+				RSInterface npcOnInterface = RSInterface.interfaceCache[intId];
+				npcOnInterface.npcDisplay = npcId;
+				if (adjustedZoom > 999) {
+					npcOnInterface.modelZoom = adjustedZoom;
+				} else {
+					npcOnInterface.modelZoom = 1400;
+				}
+				opCode = -1;
+				return true;
 				
             case 203:
                 int progressBarIntId = inStream.readShort();
@@ -19764,6 +19732,21 @@ public class Client extends RSApplet {
 				opCode = -1;
 				return true;
 
+			case 79:
+				int j5 = inStream.ig2();
+				int l12 = inStream.readByteA();
+				RSInterface class9_3 = RSInterface.interfaceCache[j5];
+				if (class9_3 != null && class9_3.type == 0) {
+					if (l12 < 0) {
+						l12 = 0;
+					}
+					if (l12 > class9_3.scrollMax - class9_3.height) {
+						l12 = class9_3.scrollMax - class9_3.height;
+					}
+					class9_3.scrollPosition = l12;
+				}
+				opCode = -1;
+				return true;
 
 			case 68:
 				for (int k5 = 0; k5 < variousSettings.length; k5++) {
