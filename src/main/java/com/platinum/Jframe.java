@@ -113,7 +113,7 @@ public class Jframe extends Client implements ActionListener {
 				@Override
 				public void windowClosing(WindowEvent we) {
 					String options[] = { "Yes", "No" };
-					int userPrompt = JOptionPane.showOptionDialog(null, "You can progress more by typing ::afk. Still want to quit?", "Platinum PS",
+					int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you want to quit?", "Platinum",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 					if (userPrompt == JOptionPane.YES_OPTION) {
 						// openURL("http://Platinum-RSPS.net/forum");
@@ -346,7 +346,7 @@ public class Jframe extends Client implements ActionListener {
 					openURL("http://Platinum-ps.net");
 					break;*/
 				case "Platinum Guides":
-					openURL("https://discord.gg/pDq5vfyadn");
+					openURL("");
 					break;
 				case "Store":
 					openURL("https://platinum.everythingrs.com/services/store");

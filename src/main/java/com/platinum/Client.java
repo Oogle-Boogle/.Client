@@ -2355,16 +2355,21 @@ public class Client extends RSApplet {
 		}
 	}
 
-	public void displayXPCounter() {
+	/*public void displayXPCounter() {
 		int x = clientSize == 0 ? 419 : clientWidth - 310;
 		int y = clientSize == 0 ? 0 : -36;
 		int currentIndex = 0;
 		int offsetY = 0;
 		int stop = 70;
 		cacheSprite[40].drawSprite(x, clientSize == 0 ? 50 : 48 + y);
+<<<<<<< HEAD
 		Long XP = totalXP / 1000;
 		String xpDrop = ("XP:" + String.format("%, d", XP) + "k");
 		normalFont.drawRegularText(true, x + 1, 0xffffff, xpDrop, (clientSize == 0 ? 63 : 61) + y);
+=======
+		String s = totalXP >= 1000000000 ? " XP: A lot!" : "XP:" + String.format("%, d", totalXP);
+		normalFont.drawRegularText(true, x + 1, 0xffffff, s, (clientSize == 0 ? 63 : 61) + y);
+>>>>>>> parent of 79308ca (Merge branch 'master' of https://github.com/Platinum2021/Platinum-Client)
 
 		if (!gains.isEmpty()) {
 			Iterator<XPGain> it$ = gains.iterator();
@@ -2410,7 +2415,7 @@ public class Client extends RSApplet {
 				currentIndex++;
 			}
 		}
-	}
+	}*/
 
 	public int hoverPos;
 
@@ -12900,7 +12905,7 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 10) { //VPN Block
-				loginMessages = new String[] { "VPN or Proxy Detected!", "You cannot login using either!" };
+				loginMessages = new String[] { "VPN or Proxy Dedected!", "You cannot login using either!" };
 				return;
 			}
 			if (loginCode == 11) {
@@ -19287,19 +19292,19 @@ public class Client extends RSApplet {
 				opCode = -1;
 				return true;
 
-			case 190:
-				int intId = inStream.readShort();
-				int npcId = inStream.readShort();
-				int adjustedZoom = inStream.readShort();
-				RSInterface npcOnInterface = RSInterface.interfaceCache[intId];
-				npcOnInterface.npcDisplay = npcId;
-				if (adjustedZoom > 999) {
-					npcOnInterface.modelZoom = adjustedZoom;
-				} else {
-					npcOnInterface.modelZoom = 1400;
-				}
-				opCode = -1;
-				return true;
+				case 190:
+					int intId = inStream.readShort();
+					int npcId = inStream.readShort();
+					int adjustedZoom = inStream.readShort();
+					RSInterface npcOnInterface = RSInterface.interfaceCache[intId];
+					npcOnInterface.npcDisplay = npcId;
+					if (adjustedZoom > 999) {
+						npcOnInterface.modelZoom = adjustedZoom;
+					} else {
+						npcOnInterface.modelZoom = 1400;
+					}
+					opCode = -1;
+					return true;
 				
             case 203:
                 int progressBarIntId = inStream.readShort();
@@ -19732,21 +19737,21 @@ public class Client extends RSApplet {
 				opCode = -1;
 				return true;
 
-			case 79:
-				int j5 = inStream.ig2();
-				int l12 = inStream.readByteA();
-				RSInterface class9_3 = RSInterface.interfaceCache[j5];
-				if (class9_3 != null && class9_3.type == 0) {
-					if (l12 < 0) {
-						l12 = 0;
+				case 79:
+					int j5 = inStream.ig2();
+					int l12 = inStream.readByteA();
+					RSInterface class9_3 = RSInterface.interfaceCache[j5];
+					if (class9_3 != null && class9_3.type == 0) {
+						if (l12 < 0) {
+							l12 = 0;
+						}
+						if (l12 > class9_3.scrollMax - class9_3.height) {
+							l12 = class9_3.scrollMax - class9_3.height;
+						}
+						class9_3.scrollPosition = l12;
 					}
-					if (l12 > class9_3.scrollMax - class9_3.height) {
-						l12 = class9_3.scrollMax - class9_3.height;
-					}
-					class9_3.scrollPosition = l12;
-				}
-				opCode = -1;
-				return true;
+					opCode = -1;
+					return true;
 
 			case 68:
 				for (int k5 = 0; k5 < variousSettings.length; k5++) {
@@ -20850,9 +20855,9 @@ public class Client extends RSApplet {
             draw3dScreen();
 
         }
-		if (showXP && loggedIn) {
+		/*if (showXP && loggedIn) {
 			displayXPCounter();
-		}
+		}*/
 		if (consoleOpen && loggedIn) {
 			drawConsole();
 			drawConsoleArea();
