@@ -337,7 +337,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40150;
 			itemDef.femaleEquip1 = 40150;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "M118i's Mask";
+			itemDef.name = "Pirate Mask";
 			break;
 			
 		case 4805:
@@ -345,7 +345,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40152;
 			itemDef.femaleEquip1 = 40152;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "M118i's Top";
+			itemDef.name = "Pirate Top";
 			break;
 			
 		case 4806:
@@ -353,7 +353,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40154;
 			itemDef.femaleEquip1 = 40154;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "M118i's Leggings";
+			itemDef.name = "Pirate Leggings";
 			break;
 			
 		case 4807:
@@ -361,7 +361,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 40156;
 			itemDef.femaleEquip1 = 40156;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "M118i's Gloves";
+			itemDef.name = "Pirate Gloves";
 			break;
 			
 		case 4808:
@@ -422,7 +422,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23999;
 			itemDef.femaleEquip1 = 23999;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "Corrupt Platebody";
+			itemDef.name = "Sulphur Platebody";
 			break;
 			
 		case 3314:
@@ -430,7 +430,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24001;
 			itemDef.femaleEquip1 = 24001;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "Corrupt Platelegs";
+			itemDef.name = "Sulphur Platelegs";
 			break;
 			
 		
@@ -439,7 +439,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24003;
 			itemDef.femaleEquip1 = 24003;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "Corrupt Boots";
+			itemDef.name = "Sulphur Boots";
 			break;
 			
 			
@@ -448,7 +448,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24005;
 			itemDef.femaleEquip1 = 24005;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "Corrupt Gloves";
+			itemDef.name = "Sulphur Gloves";
 			break;
 			
 			
@@ -607,7 +607,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 24007;
 			itemDef.femaleEquip1 = 24007;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
-			itemDef.name = "Corrupt Helmet";
+			itemDef.name = "Sulphur Helmet";
 			break;
 			
 		case 3310:
