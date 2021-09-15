@@ -2355,16 +2355,21 @@ public class Client extends RSApplet {
 		}
 	}
 
-	public void displayXPCounter() {
+	/*public void displayXPCounter() {
 		int x = clientSize == 0 ? 419 : clientWidth - 310;
 		int y = clientSize == 0 ? 0 : -36;
 		int currentIndex = 0;
 		int offsetY = 0;
 		int stop = 70;
 		cacheSprite[40].drawSprite(x, clientSize == 0 ? 50 : 48 + y);
+<<<<<<< HEAD
 		Long XP = totalXP / 1000;
 		String xpDrop = ("XP:" + String.format("%, d", XP) + "k");
 		normalFont.drawRegularText(true, x + 1, 0xffffff, xpDrop, (clientSize == 0 ? 63 : 61) + y);
+=======
+		String s = totalXP >= 1000000000 ? " XP: A lot!" : "XP:" + String.format("%, d", totalXP);
+		normalFont.drawRegularText(true, x + 1, 0xffffff, s, (clientSize == 0 ? 63 : 61) + y);
+>>>>>>> parent of 79308ca (Merge branch 'master' of https://github.com/Platinum2021/Platinum-Client)
 
 		if (!gains.isEmpty()) {
 			Iterator<XPGain> it$ = gains.iterator();
@@ -2410,7 +2415,7 @@ public class Client extends RSApplet {
 				currentIndex++;
 			}
 		}
-	}
+	}*/
 
 	public int hoverPos;
 
@@ -20850,9 +20855,9 @@ public class Client extends RSApplet {
             draw3dScreen();
 
         }
-		if (showXP && loggedIn) {
+		/*if (showXP && loggedIn) {
 			displayXPCounter();
-		}
+		}*/
 		if (consoleOpen && loggedIn) {
 			drawConsole();
 			drawConsoleArea();
