@@ -3513,7 +3513,7 @@ public class ItemDef_Suic {
 			
 			
         case 1413:
-            itemDef.name = "Scythe Of Virtur";
+            itemDef.name = "Sulpher Scythe";
             itemDef.modelID = 23962;
             itemDef.maleEquip1 = 23963;
             itemDef.femaleEquip1 = 23963;
