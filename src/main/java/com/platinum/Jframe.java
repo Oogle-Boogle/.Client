@@ -112,8 +112,8 @@ public class Jframe extends Client implements ActionListener {
 			frame.addWindowListener(new WindowAdapter() {
 				@Override
 				public void windowClosing(WindowEvent we) {
-					String options[] = { "Yes", "No" };
-					int userPrompt = JOptionPane.showOptionDialog(null, "Are you sure you want to quit?", "Platinum",
+					String options[] = { "Quit", "Go AFK!" };
+					int userPrompt = JOptionPane.showOptionDialog(null, "If you use ::afk you can still progress! Still Quit?", "Platinum",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 					if (userPrompt == JOptionPane.YES_OPTION) {
 						// openURL("http://Platinum-RSPS.net/forum");
