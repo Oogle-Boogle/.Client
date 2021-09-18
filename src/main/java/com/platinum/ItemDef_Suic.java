@@ -4435,7 +4435,7 @@ public class ItemDef_Suic {
         case 3250:
             itemDef.modelID = 23525;
             itemDef.stackable = false;
-            itemDef.name = "Sires Staff";
+            itemDef.name = "Sulphur Staff";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23524;
             itemDef.femaleEquip1 = 23524;
