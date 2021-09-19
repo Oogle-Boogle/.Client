@@ -7028,7 +7028,7 @@ public class Client extends RSApplet {
 		float percentage = ((float) currentEntityHealth / (float) maximumEntityHealth) * (float) 100;
 		DrawingArea.drawPixels(16, iface.y + 30, iface.x, 0x00b300, (int) percentage * 7/6);
 		// drawPixels(int height_, int yPos, int xPos, int color, int width_)
-		iface.message = current / 1000 + "k" + " / " + max /1000 +"k";
+		iface.message = current / 1000 + "k"  + " / " + max /1000 +"k";
 		TextDrawingArea.drawAlphaFilledPixels(iface.x, iface.y + 30, 117, 16, 0xff000d, 50);
 		// int xPos, int yPos,
 		// int pixelWidth, int pixelHeight, int color, int alpha) {// method586

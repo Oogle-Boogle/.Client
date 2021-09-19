@@ -7995,6 +7995,122 @@ break;
 			itemDef.groundActions = new String[] { null, null, "Take", null, null };
 			itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
 			break;
+
+			case 22196:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7782;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7783;
+				itemDef.femaleEquip1 = 7783;
+				itemDef.editedModelColor = new int[] {40};
+				itemDef.newModelColor = new int[]  {51};
+				itemDef.name = "@red@Assassin Sword";
+				break;
+
+			case 22197:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7782;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7784;
+				itemDef.femaleEquip1 = 7784;
+				itemDef.editedModelColor = new int[] {40};
+				itemDef.newModelColor = new int[]  {51};
+				itemDef.name = "@red@Assassin Sword Off-Hand";
+				break;
+
+			case 22198:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7773;
+				itemDef.modelZoom = 1000;
+				itemDef.rotationY = 100;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7774;
+				itemDef.femaleEquip1 = 7774;
+				itemDef.name = "@red@Assassin Hood";
+				break;
+
+			case 22199:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7775;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7776;
+				itemDef.femaleEquip1 = 7776;
+				itemDef.name = "@red@Assassin PlateBody";
+				break;
+
+			case 22200:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7777;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7778;
+				itemDef.femaleEquip1 = 7778;
+				itemDef.name = "@red@Assassin Legs";
+				break;
+
+			case 22201:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7781;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7781;
+				itemDef.femaleEquip1 = 7781;
+				itemDef.name = "@red@Assassin Boots";
+				break;
+
+			case 22202:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7778;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7779;
+				itemDef.femaleEquip1 = 7779;
+				itemDef.name = "@red@Assassin Gloves";
+				break;
+
+			case 22203:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 7782;
+				itemDef.modelZoom = 1300;
+				itemDef.rotationY = 800;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 7785;
+				itemDef.femaleEquip1 = 7785;
+				itemDef.name = "@red@Assassin Back Sword";
+				break;
 		}
 		
 

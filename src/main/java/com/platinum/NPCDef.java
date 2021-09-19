@@ -1124,8 +1124,8 @@ public final class NPCDef {
 		case 6309:
 			npc.name = "@or2@Deziqn nr1";
 			npc.description = "Deziqn's brethren!";
-			npc.sizeXZ = 350;
-			npc.sizeY = 350;
+			npc.sizeXZ = 150;
+			npc.sizeY = 150;
 			npc.walkAnim = 5325;
 			npc.standAnim = 5326;
 			npc.combatLevel = 164;
@@ -3068,25 +3068,23 @@ public final class NPCDef {
 			npc.actions[4] = null;
 			break;
 		case 9944:
-			npc.name = "@or2@Hurricane Warrior";
+			npc.name = "assassin";
 			npc.originalColours= new int[1];
 			npc.destColours = new int[1];
 			npc.originalColours[0] = 40;
 			npc.destColours[0] = 51;
-			npc.walkAnim = 1660;
+			npc.walkAnim = 11975;
 			npc.standAnim = 11973;
-			npc.models = new int[9];
-			npc.models[0] = 91609; // HEAD
-			npc.models[2] = 91611; // CHEST
-			npc.models[3] = 9638; // CAPE
-			npc.models[7] = 91607; // LEG
-			npc.models[6] = 111; // WEP
+			npc.models = new int[]{7786};
 			npc.actions = new String[5];
 			npc.actions[0] = "Examine";
 			npc.actions[1] = "Attack";
 			npc.actions[2] = null;
 			npc.actions[3] = null;
 			npc.actions[4] = null;
+			npc.sizeY = 278;
+			npc.sizeXZ = 308;
+			npc.squaresNeeded = 2;
 			break;
 		case 200:
 			npc.name = "Darth Beasts";
@@ -5058,7 +5056,6 @@ public final class NPCDef {
 			npc.sizeXZ = 100 / 2;
 			npc.squaresNeeded = 2;
 			break;
-			
 		case 53:
 			npc.models = new int[] { 57937 };
 			npc.name = "@blu@Sirenic Dragon";
