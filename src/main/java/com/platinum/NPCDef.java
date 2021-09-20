@@ -3068,7 +3068,7 @@ public final class NPCDef {
 			npc.actions[4] = null;
 			break;
 		case 9944:
-			npc.name = "assassin";
+			npc.name = "Assassin";
 			npc.originalColours= new int[1];
 			npc.destColours = new int[1];
 			npc.originalColours[0] = 40;
