@@ -79,6 +79,23 @@ public class Client extends RSApplet {
         DrawingArea.drawStroke(xPos - strokeWidth, yPos, width + strokeWidth, height, 0x141414, strokeWidth);
     }
 
+
+	private void drawProgressBar() {
+		int text1 = Integer.parseInt((RSInterface.interfaceCache[19990]).message);
+		int text2 = Integer.parseInt((RSInterface.interfaceCache[19991]).message);
+		int text3 = Integer.parseInt((RSInterface.interfaceCache[19992]).message);
+		double start = 0.43D;
+		double percentage1 = start * text1;
+		double percentage2 = start * text2;
+		double percentage3 = start * text3;
+		TextDrawingArea.drawPixels3(12, 253, 196, 16758531, 0, Math.round((int)percentage1));
+		TextDrawingArea.drawPixels3(12, 253, 257, 16758531, 0, Math.round((int)percentage2));
+		TextDrawingArea.drawPixels3(12, 253, 318, 16758531, 0, Math.round((int)percentage3));
+		this.newSmallFont.drawCenteredString(String.valueOf(text1) + "%", 213, 264, 16777215, 1);
+		this.newSmallFont.drawCenteredString(String.valueOf(text2) + "%", 275, 264, 16777215, 1);
+		this.newSmallFont.drawCenteredString(String.valueOf(text3) + "%", 337, 264, 16777215, 1);
+	}
+
 	private int cutCounter = 0;
 	private int cutAmount = 0;
 	int currentIndex = 0;
@@ -11860,6 +11877,32 @@ public class Client extends RSApplet {
 			return;
 		}
 
+		if (j == 7070) {
+			int itemCount = 0;
+			for (int i = 0; i < rsi.inv.length; i++) {
+				if (rsi.inv[i] > 0)
+					itemCount++;
+			}
+			if (itemCount > rsi.viewableColumns) {
+				if (rsi.frameTimer < 0) {
+					if (--rsi.scrollPosition <= -(32 + rsi.invSpritePadX) * (itemCount - rsi.viewableColumns))
+						rsi.frameTimer = 1;
+				} else if (rsi.frameTimer == 0) {
+					if (++rsi.scrollPosition >= 0)
+						rsi.frameTimer = 101;
+				} else {
+					rsi.frameTimer++;
+					if (rsi.frameTimer == 200) {
+						rsi.frameTimer = -1;
+					} else if (rsi.frameTimer == 100) {
+						rsi.frameTimer = 0;
+					}
+				}
+				RSInterface parent = RSInterface.interfaceCache[rsi.parentID];
+				parent.childX[0] = rsi.scrollPosition;
+			}
+		}
+
 		if (j == 901) {
 			rsi.message = friendsCount + " / 200";
 			return;
@@ -16317,7 +16360,8 @@ public class Client extends RSApplet {
 			 * / 2) - 256, RSInterface.interfaceCache[37400], clientSize == 0 ? 0 :
 			 * (clientHeight / 2) - 167); }
 			 */
-
+		if (openInterfaceID == 23500)
+			drawProgressBar();
 		if (openInterfaceID == 5292) {
 			drawOnBankInterface();
 		}

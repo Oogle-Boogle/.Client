@@ -11,6 +11,50 @@ public class DrawingArea extends QueueNode {
 		setDrawingArea(i, 0, j, 0);
 	}
 
+	public static void drawPixels3(int height, int posY, int posX, int color, final int color2, int width) {
+		if (posX < DrawingArea.topX) {
+			width -= DrawingArea.topX - posX;
+			posX = DrawingArea.topX;
+		}
+		if (posY < DrawingArea.topY) {
+			height -= DrawingArea.topY - posY;
+			posY = DrawingArea.topY;
+		}
+		if (posX + width > DrawingArea.bottomX) {
+			width = DrawingArea.bottomX - posX;
+		}
+		if (posY + height > DrawingArea.bottomY) {
+			height = DrawingArea.bottomY - posY;
+		}
+		int p = 0;
+		final int k1 = DrawingArea.width - width;
+		int l1 = posX + posY * DrawingArea.width;
+		for (int i2 = -height; i2 < 0; ++i2) {
+			for (int j2 = -width; j2 < 0; ++j2) {
+				if (++p == 7) {
+					color += ReturnDarkerColor(color);
+					DrawingArea.pixels[l1++] = color;
+					p = 0;
+				}
+				else {
+					DrawingArea.pixels[l1++] = color;
+				}
+			}
+			l1 += k1;
+		}
+	}
+
+
+	public static int ReturnDarkerColor(final int color) {
+		final float ratio = -0.012f;
+		final int a = color >> 24 & 0xFF;
+		final int r = (int)((color >> 16 & 0xFF) * -0.03f);
+		final int g = (int)((color >> 8 & 0xFF) * ratio);
+		final int b = (int)((color & 0xFF) * -0.03f);
+		return a << 24 | r << 16 | g << 8 | b;
+	}
+
+
 	public static void drawTransparentBox(int leftX, int topY, int width, int height, int rgbColour, int opacity) {
 		if (leftX < DrawingArea.topX) { // if leftX is less than topX
 			width -= DrawingArea.topX - leftX; // substract (topX - leftX) from width

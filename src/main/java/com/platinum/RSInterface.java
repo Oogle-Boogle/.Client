@@ -91,7 +91,318 @@ public class RSInterface {
 
 		main.child(0, 23999, 450, 3);
 	}
-	
+
+	public static void addConfigButtonWSpriteLoaderWithHover(final int ID, final int pID, final int bID, final int bID2, final int width, final int height, final String tT, final int configID, final int aT, final int configFrame, final int hoverId) {
+		addConfigButtonWSpriteLoader(ID, pID, bID, bID2, width, height, tT, configID, aT, configFrame);
+		RSInterface.interfaceCache[ID].hoverType = hoverId;
+	}
+
+	public static void addSingleHoverSprite(final int id, final int sprite, final int width, final int height) {
+		final RSInterface tab = addTabInterface(id);
+		tab.id = id;
+		tab.type = 5;
+		tab.contentType = 0;
+		tab.width = width;
+		tab.height = height;
+		tab.enabledSprite = SpriteLoader.sprites[sprite];
+		tab.disabledSprite = SpriteLoader.sprites[sprite];
+	}
+
+
+
+
+/*
+	public static void NewteleportZone(final TextDrawingArea[] tda) {
+		final RSInterface main = addInterface(19720);
+		addSpriteLoader(19721, 1310);
+		main.totalChildren(1);
+		main.child(0, 19740, 0, 0);
+		final RSInterface scroll = addInterface(19740);
+		scroll.totalChildren(8);
+		final int xPos = 25;
+		final int yPos = 5;
+		final int i = 0;
+		addSpriteLoader(19925 + i, 1309);
+		scroll.child(0 + i, 19925 + i, 160, 83);
+		addSpriteLoader(19955 + i, 1309);
+		scroll.child(1, 19955 + i, 221, 83);
+		addSpriteLoader(19985 + i, 1309);
+		scroll.child(2, 19985 + i, 282, 83);
+		addText(19986, "Tasks & Rewards", tda, 2, 16746020, true, true);
+		scroll.child(3, 19986, 243, 9);
+		addText(19987, "1. kill 75 Bomby's Minnions", tda, 0, 16746020, false, true);
+		scroll.child(4, 19987, 150, 30);
+		addText(19988, "2. Loot 2500 tokens.", tda, 0, 16746020, false, true);
+		scroll.child(5, 19988, 150, 48);
+		addText(19989, "3. Get Bomby's pet drop.", tda, 0, 16746020, false, true);
+		scroll.child(6, 19989, 150, 66);
+		addText(19990, "80", tda, 0, 16746020, false, true);
+		addText(19991, "40", tda, 0, 16746020, false, true);
+		addText(19992, "20", tda, 0, 16746020, false, true);
+		addToItemGroup(20125, 3, 1, 29, 32, true, new String[5]);
+		scroll.child(7, 20125, 167, 90);
+	}
+*/
+
+	public static void NewestTelelport(final TextDrawingArea[] tda) {
+		int id;
+		final int parentId = id = 23500;
+		final RSInterface rs = addInterface(id++);
+		int frame = 0;
+		rs.totalChildren(80);
+		addSpriteLoader(id, 1287);
+		rs.child(frame++, id++, 15, 20);
+		addHoverButtonWSpriteLoader(id, 740, 16, 16, "Close Window", 0, id + 1, 1);
+		addHoveredImageWSpriteLoader(id + 1, 741, 16, 16, id + 2);
+		rs.child(frame++, id, 470, 30);
+		rs.child(frame++, id + 1, 470, 30);
+		id += 3;
+		addText(id, "Teleport Menu", tda, 2, 16746020, true, true);
+		rs.child(frame++, id++, 256, 30);
+		addHoverButtonWSpriteLoader(id, 1288, 75, 25, "Teleport", 0, id + 1, 1);
+		addHoveredImageWSpriteLoader(id + 1, 1299, 75, 25, id + 2);
+		rs.child(frame++, id, 241, 275);
+		rs.child(frame++, id + 1, 241, 275);
+		id += 3;
+		addText(id, "Teleport!", tda, 1, 16746020, true, true);
+		rs.child(frame++, id++, 278, 280);
+		addText(id, "Teleports", tda, 2, 16746020, true, true);
+		rs.child(frame++, id++, 100, 83);
+		addText(id, "Favourite", tda, 2, 16746020, true, true);
+		rs.child(frame++, id++, 433, 84);
+		rs.child(frame++, 19720, 35, 125);
+		++id;
+		final int maxFavourites = 10;
+		for (int i = 0; i < maxFavourites; ++i) {
+			addConfigButtonWSpriteLoaderWithHover(id, parentId, (i % 2 == 0) ? 1290 : 1291, (i % 2 == 1) ? 1290 : 1291, 101, 20, "Select Favourite", i, 5, 1094, id + maxFavourites);
+			rs.child(frame++, id++, 383, 101 + i * 20);
+		}
+		for (int i = 0; i < maxFavourites; ++i) {
+			addSingleHoverSprite(id, (i % 2 == 1) ? 1290 : 1291, 101, 20);
+			rs.child(frame++, id++, 383, 101 + i * 20);
+		}
+		for (int i = 0; i < maxFavourites; ++i) {
+			addText(id, "", tda, 0, 16746020, false, true);
+			rs.child(frame++, id++, 387, 105 + i * 20);
+		}
+		for (int i = 0; i < maxFavourites; ++i) {
+			addButtonWithHover(id, 1292, "Remove", 15, 14, id + maxFavourites);
+			rs.child(frame++, id++, 472, 106 + i * 20);
+		}
+		for (int i = 0; i < maxFavourites; ++i) {
+			addSingleHoverSprite(id, 1293, 15, 14);
+			rs.child(frame++, id++, 472, 106 + i * 20);
+		}
+		rs.child(frame++, id, 180, 90);
+		itemGroupAutoScroll(id, id + 1, 20, 1, 8, 4, 5);
+		RSInterface.interfaceCache[id].width = 196;
+		RSInterface.interfaceCache[id].height = 42;
+		id += 2;
+		final String[] categoryNames = { "Monsters", "Bosses", "Minigames", "Global", "Ultra Bosses", "Skilling" };
+		for (int j = 0; j < categoryNames.length; ++j) {
+			addConfigButtonWSpriteLoaderWithHover(id, parentId, 1294, 1295, 76, 20, "View " + categoryNames[j], j, 5, 1096, id + categoryNames.length);
+			rs.child(frame++, id++, 25 + j * 77, 58);
+		}
+		for (int j = 0; j < categoryNames.length; ++j) {
+			addSingleHoverSprite(id, 1295, 76, 20);
+			rs.child(frame++, id++, 25 + j * 77, 58);
+		}
+		for (int j = 0; j < categoryNames.length; ++j) {
+			addText(id, categoryNames[j], tda, 0, 16746020, true, true);
+			rs.child(frame++, id++, 63 + j * 77, 63);
+		}
+		teleScroll(tda, id);
+		rs.child(frame++, id++, 27, 101);
+	}
+
+	private static void teleScroll(final TextDrawingArea[] tda, int id) {
+		final int numOfTeles = 50;
+		int frame = 0;
+		final int parent = id++;
+		final RSInterface rs = addInterface(parent);
+		rs.width = 130;
+		rs.height = 200;
+		final int heightSeparation = 20;
+		rs.scrollMax = numOfTeles * heightSeparation;
+		rs.totalChildren(numOfTeles * 5);
+		for (int i = 0; i < numOfTeles; ++i) {
+			addConfigButtonWSpriteLoaderWithHover(id, parent, (i % 2 == 0) ? 1296 : 1297, (i % 2 == 0) ? 1298 : 1299, 146, 20, "Select", i, 5, 1095, id + numOfTeles);
+			rs.child(frame++, id++, 0, i * heightSeparation);
+		}
+		for (int i = 0; i < numOfTeles; ++i) {
+			addSingleHoverSprite(id, (i % 2 == 0) ? 1298 : 1299, 146, 20);
+			rs.child(frame++, id++, 0, i * heightSeparation);
+		}
+		for (int i = 0; i < numOfTeles; ++i) {
+			addText(id, new StringBuilder().append(id).toString(), tda, 0, 16746020, false, true);
+			rs.child(frame++, id++, 4, 5 + i * heightSeparation);
+		}
+		for (int i = 0; i < numOfTeles; ++i) {
+			addSpriteToggleButton(id, parent, 1301, 1300, 15, 14, "Toggle Favourite", 4, 1097 + i, id + 50);
+			rs.child(frame++, id++, 112, 3 + i * heightSeparation);
+		}
+		for (int i = 0; i < numOfTeles; ++i) {
+			addHoverImage2(id, 1303, 1302, 15, 14, 1097 + i);
+			rs.child(frame++, id++, 112, 3 + i * heightSeparation);
+		}
+	}
+
+	public static void addHoverImage2(final int id, final int spriteOn, final int spriteOff, final int width, final int height, final int configFrame) {
+		final RSInterface tab = addTabInterface(id);
+		tab.id = id;
+		tab.type = 5;
+		tab.interfaceShown = false;
+		tab.contentType = 0;
+		tab.width = width;
+		tab.height = height;
+		tab.valueCompareType = new int[1];
+		tab.requiredValues = new int[1];
+		tab.valueCompareType[0] = 1;
+		tab.requiredValues[0] = 0;
+		tab.valueIndexArray = new int[1][3];
+		tab.valueIndexArray[0][0] = 5;
+		tab.valueIndexArray[0][1] = configFrame;
+		tab.valueIndexArray[0][2] = 0;
+		tab.enabledSprite = SpriteLoader.sprites[spriteOn];
+		tab.disabledSprite = SpriteLoader.sprites[spriteOff];
+	}
+
+
+	public static void addSpriteToggleButton(final int id, final int parentId, final int spriteOn, final int spriteOff, final int width, final int height, final String tooltip, final int actionType, final int configFrame, final int hoverInt) {
+		final RSInterface tab = addTabInterface(id);
+		tab.parentID = parentId;
+		tab.id = id;
+		tab.type = 5;
+		tab.atActionType = actionType;
+		tab.contentType = 0;
+		tab.width = width;
+		tab.height = height;
+		tab.hoverType = hoverInt;
+		tab.valueCompareType = new int[1];
+		tab.requiredValues = new int[1];
+		tab.valueCompareType[0] = 1;
+		tab.requiredValues[0] = 0;
+		tab.valueIndexArray = new int[1][3];
+		tab.valueIndexArray[0][0] = 5;
+		tab.valueIndexArray[0][1] = configFrame;
+		tab.valueIndexArray[0][2] = 0;
+		tab.enabledSprite = SpriteLoader.sprites[spriteOn];
+		tab.disabledSprite = SpriteLoader.sprites[spriteOff];
+		tab.tooltip = tooltip;
+	}
+
+
+	public static void itemGroupAutoScroll(final int id, final int itemsId, final int w, final int h, final int x, final int y, final int viewableColumns) {
+		final RSInterface items = addInterface(id);
+		final RSInterface rsi = addInterface(itemsId);
+		rsi.parentID = id;
+		rsi.width = w;
+		rsi.height = h;
+		rsi.inv = new int[w * h];
+		rsi.invStackSizes = new int[w * h];
+		rsi.usableItemInterface = false;
+		rsi.isInventoryInterface = false;
+		rsi.invSpritePadX = x;
+		rsi.invSpritePadY = y;
+		rsi.spritesX = new int[20];
+		rsi.spritesY = new int[20];
+		rsi.sprites = new Sprite[20];
+		rsi.type = 2;
+		rsi.contentType = 7070;
+		rsi.viewableColumns = viewableColumns;
+		final int scrollItemAmount = w - viewableColumns;
+		rsi.scrollMax = (32 + x) * scrollItemAmount;
+		items.width = 32 * viewableColumns + (viewableColumns - 1) * x;
+		items.totalChildren(1);
+		items.child(0, itemsId, 0, 0);
+	}
+
+
+	public static void addButtonWithHover(final int id, final int sid, final String tooltip, final int w, final int h, final int hoverId) {
+		final RSInterface[] interfaceCache = RSInterface.interfaceCache;
+		final RSInterface rsInterface = new RSInterface();
+		interfaceCache[id] = rsInterface;
+		final RSInterface tab = rsInterface;
+		tab.id = id;
+		tab.parentID = id;
+		tab.type = 5;
+		tab.atActionType = 1;
+		tab.contentType = 0;
+		tab.opacity = 0;
+		tab.disabledSprite = SpriteLoader.sprites[sid];
+		tab.enabledSprite = SpriteLoader.sprites[sid];
+		tab.width = w;
+		tab.height = h;
+		tab.tooltip = tooltip;
+		RSInterface.interfaceCache[id].hoverType = hoverId;
+	}
+	public static void Gamemode(TextDrawingArea[]tda) {
+		final int STARTING_POINT = 48500;
+		RSInterface main = addInterface(STARTING_POINT);
+		addSpriteLoader(STARTING_POINT + 1, 1306);
+		//buttion
+		RSInterface.addButton(STARTING_POINT+ 2, 1307, 1308, "Easy");
+		RSInterface.addButton(STARTING_POINT+ 3, 1307, 1308, "Medium");
+		RSInterface.addButton(STARTING_POINT+ 4, 1307, 1308, "Hard");
+		RSInterface.addButton(STARTING_POINT+ 5, 1307, 1308, "Insane");
+		RSInterface.addButton(STARTING_POINT+ 6, 1307, 1308, "Elite");
+//End
+//Text
+		addText(STARTING_POINT+ 7, "Easy", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 8, "Medium", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 9, "Hard", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 10, "Insane", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 11, "Elite", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 12, "GameMode", 0xff9933, true, true, 100, tda, 2);
+
+//xp
+		addText(STARTING_POINT+ 13, "100", 0x8B0000, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 14, "100", 0x8B0000, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 15, "100", 0x8B0000, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 16, "100", 0x8B0000, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 17, "100", 0x8B0000, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 18, "XP", 0xff9933, true, true, 100, tda, 2);
+//end
+
+
+
+
+		main.totalChildren(18);
+		main.child(0, STARTING_POINT + 1, 200, 100);
+//Buttion
+		main.child(1, STARTING_POINT + 2, 204, 131);
+		main.child(2, STARTING_POINT + 3, 204, 157);
+		main.child(3, STARTING_POINT + 4, 204, 183);
+		main.child(4, STARTING_POINT + 5, 204, 209);
+		main.child(5, STARTING_POINT + 6, 204, 235);
+//End
+//Text
+		main.child(6, STARTING_POINT + 7, 243, 134);
+		main.child(7, STARTING_POINT + 8, 243, 161);
+		main.child(8, STARTING_POINT + 9, 243, 187);
+		main.child(9, STARTING_POINT + 10, 243, 213);
+		main.child(10, STARTING_POINT + 11, 243, 239);
+
+
+		main.child(11, STARTING_POINT + 12, 242, 110);
+
+//xp
+		main.child(12, STARTING_POINT + 13, 294, 134);
+		main.child(13, STARTING_POINT + 14, 294, 161);
+		main.child(14, STARTING_POINT + 15, 294, 187);
+		main.child(15, STARTING_POINT + 16, 294, 213);
+		main.child(16, STARTING_POINT + 17, 294, 239);
+
+		main.child(17, STARTING_POINT + 18, 297, 110);
+//End
+
+	}
+
+
+
+
+
+
 	public static void mapteleport(TextDrawingArea[] tda) {
 		 final int STARTING_POINT = 23500;
 		 RSInterface main = addInterface(STARTING_POINT);
@@ -1800,6 +2111,8 @@ public class RSInterface {
 	}
 
 	public int npcDisplay = 0;
+
+	public int viewableColumns;
 
 	public static void bossTeles(TextDrawingArea[] tda) {
 		RSInterface tab = addInterface(36800);
@@ -6210,6 +6523,8 @@ public class RSInterface {
 		presetTab(textDrawingAreas);
 		drawDPSOverlay(textDrawingAreas);
 		mapteleport(textDrawingAreas);
+		NewestTelelport (textDrawingAreas);
+				Gamemode(textDrawingAreas);
 		customPersonalperks(textDrawingAreas);
 		perkOverlays(textDrawingAreas);
 		PersonalperkOverlays(textDrawingAreas);
