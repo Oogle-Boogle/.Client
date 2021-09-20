@@ -3918,7 +3918,7 @@ public class RSInterface {
 		addText(53496, "Vote", 0xF7AA25, true, true, 52, tda, 3);
 		tab.totalChildren(29);
 		tab.child(0, 52751, 38, 20);
-		tab.child(1, 52752, 250, 17);
+		tab.child(1, 52752, 250, 20);
 		tab.child(2, 52753, 90, 87);
 		tab.child(3, 52754, 347, 45);
 		tab.child(4, 52755, 335, 87);
