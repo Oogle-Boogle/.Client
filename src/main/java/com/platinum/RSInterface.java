@@ -143,7 +143,7 @@ public class RSInterface {
 		scroll.child(7, 20125, 167, 90);
 	}
 */
-
+/*
 	public static void NewestTelelport(final TextDrawingArea[] tda) {
 		int id;
 		final int parentId = id = 23500;
@@ -246,7 +246,7 @@ public class RSInterface {
 			rs.child(frame++, id++, 112, 3 + i * heightSeparation);
 		}
 	}
-
+*/
 	public static void addHoverImage2(final int id, final int spriteOn, final int spriteOff, final int width, final int height, final int configFrame) {
 		final RSInterface tab = addTabInterface(id);
 		tab.id = id;
@@ -6523,7 +6523,7 @@ public class RSInterface {
 		presetTab(textDrawingAreas);
 		drawDPSOverlay(textDrawingAreas);
 		mapteleport(textDrawingAreas);
-		NewestTelelport (textDrawingAreas);
+		//NewestTelelport (textDrawingAreas);
 				Gamemode(textDrawingAreas);
 		customPersonalperks(textDrawingAreas);
 		perkOverlays(textDrawingAreas);
