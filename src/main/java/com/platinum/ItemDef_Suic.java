@@ -7699,7 +7699,17 @@ break;
 			itemDef.groundActions = new String[] { null, null, "Take", null, null };
 			itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
 			break;
-			
+
+			case 22204:
+				itemDef.name = "Pet Assassin";
+				itemDef.modelID = 7785;
+				itemDef.modelZoom = 2750;
+				itemDef.rotationY = 340;
+				itemDef.rotationX = 0;
+				itemDef.groundActions = new String[] { null, null, "Take", null, null };
+				itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
+				break;
+
 		case 1855:
 			itemDef.name = "Pet Zorbak";
             itemDef.modelID = 23973;

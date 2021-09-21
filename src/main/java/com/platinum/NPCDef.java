@@ -3086,6 +3086,20 @@ public final class NPCDef {
 			npc.sizeXZ = 308;
 			npc.squaresNeeded = 2;
 			break;
+			case 9945:
+				npc.name = "Pet Assassin";
+				npc.combatLevel = 0;
+				npc.originalColours= new int[1];
+				npc.destColours = new int[1];
+				npc.originalColours[0] = 40;
+				npc.destColours[0] = 51;
+				npc.walkAnim = 11975;
+				npc.standAnim = 11973;
+				npc.models = new int[]{7786};
+				npc.sizeY = 69;
+				npc.sizeXZ = 77;
+				npc.squaresNeeded = 1;
+				break;
 		case 200:
 			npc.name = "Darth Beasts";
 			npc.walkAnim = 1660;
@@ -3571,10 +3585,16 @@ public final class NPCDef {
 			npc.name = "@whi@Pet Banker";;
 			npc.actions = new String[5];
 			npc.actions[0] = "@or2@Bank";
-
 			npc.standAnim = 808;
 			npc.walkAnim = 819;
 			break;
+			case 9447:
+				copyModel(npc, 9444);
+				npc.name = "@whi@Pet Assassin";;
+				npc.actions = new String[5];
+				npc.standAnim = 11975;
+				npc.walkAnim = 11973;
+				break;
 		case 2009:
 			npc.name = "Callisto";
 			npc.models = new int[] { 28298 };
