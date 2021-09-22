@@ -1119,7 +1119,21 @@ public final class ItemDef {
 				itemDef.actions[1] = custom.isWeapon() ? "Wield" : "Wear";
 			}
 			switch(itemDef.id) {
-				
+
+				/** Donor Chest Keys **/
+				case 3459: // T1-3
+					itemDef.name = "T1-3 Chest Key";
+					itemDef.description = "Unlock the low tier chest with this key!";
+					break;
+				case 3455: // T4-7
+					itemDef.name = "T4-7 Chest Key";
+					itemDef.description = "Unlock the medium tier chest with this key!";
+					break;
+				case 3458: // T8-10
+					itemDef.name = "T8-10 Chest Key";
+					itemDef.description = "Unlock the top tier chest with this key!";
+					break;
+
 			case 19106:
 				copyModel(itemDef, 19886);
 				itemDef.name = "@or2@Collector's Necklace @red@(I)";

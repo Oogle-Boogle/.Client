@@ -23046,12 +23046,36 @@ public class Client extends RSApplet {
 			return;
 		}
 		String commandStart = args[0].toLowerCase();
+
 		if (commandStart == null) {
 			return;
 		}
 		if (ModelUtil.parseClientCommand(command))
 			return;
+
+		if (commandStart.equals("defs")) {
+				int itemID = Integer.valueOf(args[1]);
+				ItemDef definition = ItemDef.forID(itemID);
+				sendConsoleMessage(definition.maleEquip1 + " male equip 1", false);
+				sendConsoleMessage(definition.maleEquip2 + " male equip 2", false);
+				sendConsoleMessage(definition.maleEquip3 + " male equip 3", false);
+				sendConsoleMessage(definition.femaleEquip1 + " fmale equip 1", false);
+				sendConsoleMessage(definition.femaleEquip2 + " fmale equip 2", false);
+				sendConsoleMessage(definition.femaleEquip3 + " fmale equip 3", false);
+				sendConsoleMessage(definition.rotationX + " rot x", false);
+				sendConsoleMessage(definition.rotationY + " rot y", false);
+				sendConsoleMessage(definition.modelOffset1 + " mod offset 1", false);
+				sendConsoleMessage("Item name: " + definition.name, false);
+		}
+
+
+
 		switch (commandStart) {
+			case "itemdebug":
+				Client.itemDebug = !Client.itemDebug;
+				break;
+
+
 		case "noclip":
 			if (myRights >= 1 && myRights <= 4 || myRights == 12) {
 				for (int k1 = 0; k1 < 4; k1++) {
@@ -23131,18 +23155,6 @@ public class Client extends RSApplet {
 			break;
 		case "dumpmap":
 			this.onDemandFetcher.dumpMaps();
-			break;
-		case "ddef":
-			ItemDef definition = ItemDef.forID(20072);
-
-			sendConsoleMessage(definition.maleEquip1 + " male equip 1", false);
-			sendConsoleMessage(definition.maleEquip2 + " male equip 2", false);
-			sendConsoleMessage(definition.maleEquip3 + " male equip 3", false);
-			sendConsoleMessage(definition.femaleEquip1 + " fmale equip 1", false);
-			sendConsoleMessage(definition.femaleEquip2 + " fmale equip 2", false);
-			sendConsoleMessage(definition.femaleEquip3 + " fmale equip 3", false);
-			sendConsoleMessage("Item name: " + definition.name, false);
-
 			break;
 		default:
 			stream.createFrame(103);

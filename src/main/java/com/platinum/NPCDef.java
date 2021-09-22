@@ -4827,13 +4827,17 @@ public final class NPCDef {
 			npc.standAnim = 808;
 			npc.walkAnim = 819;
 			break;
+
+			case 212:
+				npc.name = "Donor Store";
+				npc.actions = new String[] { "Items", null, "@gre@Buy Bonds", null, null };
+				npc.combatLevel = 420;
+				break;
 			
 		case 203:
 			npc.models = new int[] { 23803 };
 			npc.name = "Kid Buu Pet";
 			npc.actions = new String[5];
-
-
 			npc.combatLevel = 210;
 			npc.sizeY = 75;
 			npc.sizeXZ = 75;
@@ -4844,8 +4848,6 @@ public final class NPCDef {
 			npc.models = new int[] { 23804};
 			npc.name = "Perfect Cell Pet";
 			npc.actions = new String[5];
-
-
 			npc.combatLevel = 210;
 			npc.sizeY = 75;
 			npc.sizeXZ = 75;
