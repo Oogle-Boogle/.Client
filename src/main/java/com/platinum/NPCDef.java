@@ -5185,12 +5185,12 @@ public final class NPCDef {
 			npc.squaresNeeded = 2;
 			break;
 		}
-		if (npc.actions != null) {
+	/*	if (npc.actions != null) {
 			for (int index = 0; index < npc.actions.length; index++) {
 				if (npc.actions[index] != null && npc.actions[index].contains("Attack"))
 					npc.actions[2] = "Show Drops";
 			}
-		}
+		}*/
 		
 		if (npc.actions != null) {
 			for (int x = 0; x < npc.actions.length; x++) {
