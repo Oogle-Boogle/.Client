@@ -1,7 +1,5 @@
 package com.platinum;
 
-import org.apache.commons.io.FileUtils;
-
 import java.applet.AppletContext;
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;
