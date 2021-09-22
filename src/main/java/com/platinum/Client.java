@@ -16360,8 +16360,8 @@ public class Client extends RSApplet {
 			 * / 2) - 256, RSInterface.interfaceCache[37400], clientSize == 0 ? 0 :
 			 * (clientHeight / 2) - 167); }
 			 */
-		if (openInterfaceID == 23500)
-			drawProgressBar();
+		/*if (openInterfaceID == 23500)
+			drawProgressBar();*/
 		if (openInterfaceID == 5292) {
 			drawOnBankInterface();
 		}

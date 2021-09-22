@@ -2,7 +2,7 @@ package com.platinum;
 
 public class Configuration {
 
-	public static final int CLIENT_VER = 18; // Client Version
+	public static final int CLIENT_VER = 19; // Client Version
 
 	public static final boolean LOCAL = true; //Change this lol
 
