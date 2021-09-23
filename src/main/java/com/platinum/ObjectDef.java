@@ -176,8 +176,12 @@ public final class ObjectDef {
 				objectDef.actions[0] = "Use";
 			}
 		}
-		
 
+		if (i == 38150) {
+			objectDef.name = "City Portal";
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Enter";
+		}
 
 		if (i == 375) {
 			objectDef.name = "@red@Platinum Chest @yel@(Easy)";
