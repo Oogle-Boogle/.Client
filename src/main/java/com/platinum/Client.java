@@ -12991,6 +12991,15 @@ public class Client extends RSApplet {
 			}
 			if (loginCode == 30) {
 				loginMessages = new String[] { "You need to make sure you use the latest client!!" };
+				try {
+					String URL = "https://pltnm.link/dl";
+					if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
+						System.out.println("URL: " + URL);
+						Desktop.getDesktop().browse(new URI(URL));
+					}
+				} catch (Exception ignored) {
+
+				}
 				return;
 			}
 			if (loginCode == 15) {
