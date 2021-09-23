@@ -3088,6 +3088,7 @@ public final class NPCDef {
 			break;
 			case 9945:
 				npc.name = "Pet Assassin";
+				npc.actions = new String[] {null, null, null, "Pick Up", null};
 				npc.combatLevel = 0;
 				npc.originalColours= new int[1];
 				npc.destColours = new int[1];
