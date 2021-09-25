@@ -2519,9 +2519,19 @@ public final class NPCDef {
 			break;
 			
 		case 2862:
-			npc.name = "@or2@Halloween @bla@Event";
+			npc.name = "@red@ Death";
+			npc.combatLevel = 666;
+			npc.standAnim = 808;
+			npc.walkAnim = 819;
 			npc.actions = new String[5];
-			npc.actions[0] = "@whi@Visit";
+			npc.actions[0] = "@red@ Examine";
+			npc.actions[1] = "@red@ Attack";
+			npc.actions[2] = null;
+			npc.actions[3] = null;
+			npc.actions[4] = null;
+			npc.sizeY = 278;
+			npc.sizeXZ = 308;
+			npc.squaresNeeded = 3;
 
 			break;
 			
