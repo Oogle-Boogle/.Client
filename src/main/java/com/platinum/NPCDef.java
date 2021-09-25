@@ -2524,7 +2524,6 @@ public final class NPCDef {
 			npc.standAnim = 808;
 			npc.walkAnim = 819;
 			npc.actions = new String[5];
-			npc.actions[0] = "@red@ Examine";
 			npc.actions[1] = "@red@ Attack";
 			npc.actions[2] = null;
 			npc.actions[3] = null;
