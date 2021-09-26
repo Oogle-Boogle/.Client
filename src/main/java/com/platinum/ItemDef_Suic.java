@@ -4614,7 +4614,7 @@ public class ItemDef_Suic {
 			
 		case 18401:
 			ItemDef.copyModel(itemDef, 19476);
-			itemDef.name = "5% Permanent Dr Scroll";
+			itemDef.name = "3% Permanent Dr Scroll";
 			itemDef.originalModelColors = new int[] { 58 };
 			itemDef.newModelColor = new int[] { 64 };
 			itemDef.animateInventory = true;
