@@ -1672,7 +1672,7 @@ public class RSInterface {
 		scroll.height = 196;
 		scroll.width = 174;
 
-		CoinTab[] tabs = { new CoinTab("Staff list", 21, 85, 4),/* new CoinTab("Drop Table", 21, 85, 4),*/
+		CoinTab[] tabs = { new CoinTab("Staff list", 21, 85, 4), new CoinTab("Coming Soon!", 21, 85, 4),
 				new CoinTab("Player Stats", 21, 85, 4), new CoinTab("Kill Log", 21, 85, 4),
 				new CoinTab("Drop Log", 21, 85, 4), new CoinTab("Custom Teleport", 21, 85, 4),
 				new CoinTab("Collector Log", 21, 90, 8), new CoinTab("Guides", 21, 90, 8),
