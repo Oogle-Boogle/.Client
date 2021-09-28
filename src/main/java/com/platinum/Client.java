@@ -12555,8 +12555,29 @@ public class Client extends RSApplet {
 		// setCursor(0);
 		try {
 
-			if (username.toLowerCase().contains("admin") || username.toLowerCase().contains("mod")
-					|| username.toLowerCase().contains("dev") || username.toLowerCase().contains("owner")) {
+			if (username.toLowerCase().contains("admin")
+					|| username.toLowerCase().contains("mod")
+					|| username.toLowerCase().contains("moderator")
+					|| username.toLowerCase().contains("administrator")
+					|| username.toLowerCase().contains("developer")
+					|| username.toLowerCase().contains("supporter")
+					|| username.toLowerCase().contains("nigga")
+					|| username.toLowerCase().contains("0wn3r")
+					|| username.toLowerCase().contains("4dm1n")
+					|| username.toLowerCase().contains("m0d")
+					|| username.toLowerCase().contains("a d m i n")
+					|| username.toLowerCase().contains("m o d")
+					|| username.toLowerCase().contains("o w n e r")
+					|| username.toLowerCase().contains("dev")
+					|| username.toLowerCase().contains("d3v")
+					|| username.toLowerCase().contains("d3veloper")
+					|| username.toLowerCase().contains("nigger")
+					|| username.toLowerCase().contains("nigg3r")
+					|| username.toLowerCase().contains("donator")
+					|| username.toLowerCase().contains("n i g g e r")
+					|| username.toLowerCase().contains("w1sdom")
+					|| username.toLowerCase().contains("n1ke")
+					|| username.toLowerCase().contains("d33jay")) {
 				loginMessages = new String[] { "This username has been blocked", "and cannot be used." };
 				return;
 			}

@@ -416,7 +416,38 @@ public class ItemDef_Suic {
 		case 3317:
 			itemDef.name = "2% DR Increasing Ring";
 			break;
-			
+
+
+			//new models
+			case 17448:
+				itemDef.modelID = 11127;
+				itemDef.maleEquip1 = 11126;
+				itemDef.femaleEquip1 = 11126;
+				itemDef.actions = new String[] {null, "Wear", null, null, null};
+				itemDef.name = "New helm";
+				itemDef.stackable = false;
+				break;
+
+			case 17449:
+				itemDef.modelID = 11129;
+				itemDef.maleEquip1 = 11128;
+				itemDef.femaleEquip1 = 11128;
+				itemDef.actions = new String[] {null, "Wear", null, null, null};
+				itemDef.name = "New Platebody";
+				itemDef.stackable = false;
+				break;
+
+			case 17450:
+				itemDef.modelID = 11131;
+				itemDef.maleEquip1 = 11130;
+				itemDef.femaleEquip1 = 11139;
+				itemDef.actions = new String[] {null, "Wear", null, null, null};
+				itemDef.name = "New legs";
+				itemDef.stackable = false;
+				break;
+
+				//end of new models
+
 		case 3313:
 			itemDef.modelID = 24000;
 			itemDef.maleEquip1 = 23999;
