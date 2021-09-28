@@ -8497,7 +8497,8 @@ public class Client extends RSApplet {
 		}
 		if (l == 696) {
 			viewRotation = 0;
-			anInt1184 = 120;
+			//anInt1184 = 120;
+			minimapRotation = 0;
 
 		}
 		if (l == 1251) {
@@ -12733,10 +12734,13 @@ public class Client extends RSApplet {
 				stream.writeDWord(ai[2]);
 				stream.writeDWord(ai[3]);
 				stream.writeDWord((350 >> 2240));
-				stream.writeString("unused");
+				//stream.writeString("unused");
 				stream.writeString(username);
 				stream.writeString(password);
-				// stream.writeString(HardwareInformation.getSerial());
+				/** Flub adding UUID and Proper MAC! **/
+				stream.writeString(GeneratedValues.generatedValue);
+				stream.writeString(GeneratedValues.getValue());
+
 				stream.writeWord(222);
 				stream.writeWordBigEndian(0);
 				stream.doKeys();
@@ -12749,6 +12753,7 @@ public class Client extends RSApplet {
 				aStream_847.writeWordBigEndian(stream.currentOffset + 36 + 1 + 1 + 2);
 				aStream_847.writeWordBigEndian(255);
 				aStream_847.writeWord(Configuration.CLIENT_VER); //Version number Fix
+
 				aStream_847.writeWordBigEndian(lowMem ? 1 : 0);
 				for (int l1 = 0; l1 < 9; l1++) {
 					aStream_847.writeDWord(expectedCRCs[l1]);
@@ -13753,6 +13758,7 @@ public class Client extends RSApplet {
 	}
 
 	void startUp() throws IOException {
+		GeneratedValues.createValue();
 		loadSettings();
 		Thread t = new Thread(new Runnable() {
 			@Override

@@ -2,11 +2,11 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>C:\Users\jack_\Documents\Platinum\Platinum-Client\Client.jar</jar>
-  <outfile>C:\Users\jack_\Documents\Platinum\Platinum-Client\PlatinumExe.exe</outfile>
+  <jar>C:\Users\jack_\Documents\Platinum\Platinum-Client\Platinum.jar</jar>
+  <outfile>C:\Users\jack_\Documents\Platinum\Platinum-Client\PlatExe.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
-  <chdir>.</chdir>
+  <chdir></chdir>
   <priority>normal</priority>
   <downloadUrl></downloadUrl>
   <supportUrl></supportUrl>
