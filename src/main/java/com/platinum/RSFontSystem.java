@@ -692,9 +692,6 @@ public class RSFontSystem extends DrawingArea {
 		text = replace(text, "@cr1@", "<img=1>");
 		text = replace(text, "@cr2@", "<img=2>");
 		text = replace(text, "@cr3@", "<img=3>");
-		/*text = replace(text, "@scr1@", "<zmg=1>");
-		text = replace(text, "@scr2@", "<zmg=2>");
-		text = replace(text, "@scr3@", "<zmg=3>");*/
 		text = replace(text, "@dev@", "<img=3>");
 		text = replace(text, "@des@", "<img=4>");
 		text = replace(text, "@vet@", "<img=5>");

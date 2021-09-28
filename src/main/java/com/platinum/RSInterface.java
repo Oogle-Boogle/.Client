@@ -345,15 +345,15 @@ public class RSInterface {
 		RSInterface.addButton(STARTING_POINT+ 3, 1307, 1308, "Medium");
 		RSInterface.addButton(STARTING_POINT+ 4, 1307, 1308, "Hard");
 		RSInterface.addButton(STARTING_POINT+ 5, 1307, 1308, "Insane");
-		RSInterface.addButton(STARTING_POINT+ 6, 1307, 1308, "Elite");
+		RSInterface.addButton(STARTING_POINT+ 6, 1307, 1308, "Zezima");
 //End
 //Text
 		addText(STARTING_POINT+ 7, "Easy", 0xFFFFFF, true, true, 100, tda, 2);
 		addText(STARTING_POINT+ 8, "Medium", 0xFFFFFF, true, true, 100, tda, 2);
 		addText(STARTING_POINT+ 9, "Hard", 0xFFFFFF, true, true, 100, tda, 2);
 		addText(STARTING_POINT+ 10, "Insane", 0xFFFFFF, true, true, 100, tda, 2);
-		addText(STARTING_POINT+ 11, "Elite", 0xFFFFFF, true, true, 100, tda, 2);
-		addText(STARTING_POINT+ 12, "GameMode", 0xff9933, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 11, "Zezima", 0xFFFFFF, true, true, 100, tda, 2);
+		addText(STARTING_POINT+ 12, "Mode", 0xff9933, true, true, 100, tda, 2);
 
 //xp
 		addText(STARTING_POINT+ 13, "100", 0x8B0000, true, true, 100, tda, 2);
@@ -7668,15 +7668,19 @@ public class RSInterface {
 				s.contains("<img=8>") ||
 				s.contains("<img=9>")) {
 			s = s.substring(7);
-			//System.out.println("NAME if containing img < 10 CHANGE " + name);
+
 
 		}
+
 		if (s.contains("<img=10>") ||
 				s.contains("<img=11>") ||
 				s.contains("<img=12>") ||
 				s.contains("<img=13>") ||
 				s.contains("<img=14>") ||
-				s.contains("<img=15>")) {
+				s.contains("<img=15>") ||
+				s.contains("<img=35>") ||
+				s.contains("<img=62>") ||
+				s.contains("<img=63>")) {
 			s = s.substring(8);
 			//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -7695,24 +7699,7 @@ public class RSInterface {
 			s = s.substring(10);
 			//System.out.println("NAME if contains zmg CHANGE " + name);
 		}
-		/*if (s.contains("<zmg")) {
-			int prefix = s.indexOf("<zmg=");
-			int suffix = s.indexOf(">");
-			s = s.replaceAll(s.substring(prefix + 6, suffix), "");
-			s = s.replaceAll("<zmg=>", "");
-		}
-		if (s.contains("<irn")) {
-			int prefix = s.indexOf("<irn=");
-			int suffix = s.indexOf(">");
-			s = s.replaceAll(s.substring(prefix + 9, suffix), "");
-			s = s.replaceAll("<irn=>", "");
-		}*/
-		// Handles the right click menu on a player when viewing clan chat list
-		/*if (s.contains("<img=") || s.contains("<zmg=") || s.contains("<irn=") ) {
-			s = s.replaceAll("<img=\\d>", "");
-			s = s.replaceAll("<zmg=\\d>", "");
-			s = s.replaceFirst("<irn=\\d\\d\\d\\d>", "");
-		}*/
+
 		if (!s.equals(ignore)) {
 			if (owner) {
 				Tab.actions = new String[] { "Promote to Recruit @or1@" + s + "", "Promote to Corporal @or1@" + s + "",

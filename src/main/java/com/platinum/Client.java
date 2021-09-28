@@ -655,10 +655,12 @@ public class Client extends RSApplet {
 
 		//Checks the rank numbers if the rights are over 10
 
-		if (prefix.contains("<img=1>")) {
+		if (prefix.contains("<img=1>") ||
+		prefix.contains("<img=62>")) {
 			rights3 = 1;
 		}
-		if (prefix.contains("<img=2>")) {
+		if (prefix.contains("<img=2>") ||
+				prefix.contains("<img=63>")) {
 			rights3 = 2;
 		}
 		if (prefix.contains("<img=3>")) {
@@ -995,59 +997,11 @@ public class Client extends RSApplet {
 						//System.out.println("NAME IS "+name + " PREFIX NAME IS "+prefixName);
 						playerRights = getPrimaryRights(name);
 						//System.out.println("Player rights are "+playerRights);
-						secondaryPlayerRights = getSecondaryRights(name); //todo change to detect <img= code
+						secondaryPlayerRights = getSecondaryRights(name); //todo change to detect <zmg= code
 						//System.out.println("Secondary rights are "+secondaryPlayerRights);
 
 					}
-					// No need to remove the text from the name here, it'll break icons
 
-					/*if (name.contains("<img=0") ||
-							name.contains("<img=1") ||
-							name.contains("<img=2") ||
-							name.contains("<img=3") ||
-							name.contains("<img=4") ||
-							name.contains("<img=5") ||
-							name.contains("<img=6") ||
-							name.contains("<img=7") ||
-							name.contains("<img=8") ||
-							name.contains("<img=9")) {
-						name = name.substring(7);
-						//System.out.println("NAME if containing img < 10 CHANGE " + name);
-
-					}
-					if (name.contains("<img=10") ||
-							name.contains("<img=11") ||
-							name.contains("<img=12") ||
-							name.contains("<img=13") ||
-							name.contains("<img=14") ||
-							name.contains("<img=15")) {
-						name = name.substring(8);
-						//System.out.println("NAME if contains img > 10 CHANGE " + name);
-
-					}
-					if (name.contains("<zmg=0") ||
-							name.contains("<zmg=1") ||
-							name.contains("<zmg=2") ||
-							name.contains("<zmg=3") ||
-							name.contains("<zmg=4") ||
-							name.contains("<zmg=5") ||
-							name.contains("<zmg=6")) {
-						name = name.substring(7);
-						//System.out.println("NAME if contains zmg CHANGE " + name);
-					}
-					if (name.contains("<irn=")) { //All irons are 4 digit numbers so not needed like the others
-						name = name.substring(10);
-						//System.out.println("NAME if contains zmg CHANGE " + name);
-					}*/
-
-					/*if (name.contains("<img=") || name.contains("<zmg=") || name.contains("<irn=") ) {
-						name = name.replaceAll("<img=\\d> ", "");
-						name = name.replaceAll("<img=\\d\\d> ", "");
-						name = name.replaceAll("<zmg=\\d> ", "");
-						name = name.replaceAll("<zmg=\\d\\d> ", "");
-						name = name.replaceAll("<irn=\\d> ", "");
-						name = name.replaceAll("<irn=\\d\\d\\d\\d> ", "");
-					}*/
 
 					boolean glow = false;
 					int gloColor = 16722474;
@@ -1076,42 +1030,7 @@ public class Client extends RSApplet {
 							if (positionY > 0 && positionY < 210) {
 								int xPos = 11;
 
-								/*if (ironman2 > 0) {
 
-									if (ironman2 == 3) {
-										SpriteLoader.sprites[1036].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += 19;
-										if (secondaryPlayerRights > 0) {
-											SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
-													positionY - 11 + offsetY);
-											xPos += 19;
-										}
-									} else {
-										SpriteLoader.sprites[1191 + ironman2].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += 19;
-										if (secondaryPlayerRights > 0) {
-											SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
-													positionY - 11 + offsetY);
-											xPos += 19;
-										}
-									}
-								}*/
-
-
-								/*if (ironman2 == 0) {
-									if (playerRights > 0) {
-										SpriteLoader.sprites[1249 + playerRights].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += 19;
-									}
-									if (secondaryPlayerRights > 0) {
-										SpriteLoader.sprites[1253 + secondaryPlayerRights].drawSprite(xPos + 1 + offsetX,
-												positionY - 11 + offsetY);
-										xPos += 19;
-									}
-								}*/
 
 								if (title != null && title.length() > 0) {
 									newRegularFont.drawBasicString(title, xPos - 3, positionY + offsetY, 0, -1);
@@ -1311,18 +1230,6 @@ public class Client extends RSApplet {
 					}
 				}
 
-				/*if (secondaryRights > 0 && myRights == 0) {
-					//System.out.print("MY SECONDARY RIGHTS = " + secondaryRights);
-					SpriteLoader.sprites[1253+secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
-					offsetX += SpriteLoader.sprites[1253+secondaryRights].myWidth+4;
-				}
-
-				if (myRights > 0 && secondaryRights > 0) {
-					SpriteLoader.sprites[1249 + myRights].drawSprite(12 + offsetX, 122 + offsetY);
-					offsetX += SpriteLoader.sprites[1249 + myRights].myWidth;
-					SpriteLoader.sprites[1253+secondaryRights].drawSprite(12 + offsetX, 122 + offsetY);
-					offsetX += SpriteLoader.sprites[1253+secondaryRights].myWidth+4;
-				}*/
 			}
 
 			if (myPlayer.playerTitle != null && myPlayer.playerTitle.length() > 0) {
@@ -11310,7 +11217,9 @@ public class Client extends RSApplet {
 					name.contains("<img=12>") ||
 					name.contains("<img=13>") ||
 					name.contains("<img=14>") ||
-					name.contains("<img=15>")) {
+					name.contains("<img=15>") ||
+					name.contains("<img=62>") ||
+					name.contains("<img=63>")) {
 				name = name.substring(8);
 				//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -11391,7 +11300,9 @@ public class Client extends RSApplet {
 					name.contains("<img=12>") ||
 					name.contains("<img=13>") ||
 					name.contains("<img=14>") ||
-					name.contains("<img=15>")) {
+					name.contains("<img=15>") ||
+					name.contains("<img=62>") ||
+					name.contains("<img=63>")) {
 				name = name.substring(8);
 				//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -11475,7 +11386,9 @@ public class Client extends RSApplet {
 					name.contains("<img=12>") ||
 					name.contains("<img=13>") ||
 					name.contains("<img=14>") ||
-					name.contains("<img=15>")) {
+					name.contains("<img=15>") ||
+					name.contains("<img=62>") ||
+					name.contains("<img=63>")) {
 				name = name.substring(8);
 				//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -11598,7 +11511,9 @@ public class Client extends RSApplet {
 					name.contains("<img=12>") ||
 					name.contains("<img=13>") ||
 					name.contains("<img=14>") ||
-					name.contains("<img=15>")) {
+					name.contains("<img=15>") ||
+					name.contains("<img=62>") ||
+					name.contains("<img=63>")) {
 				name = name.substring(8);
 				//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -15405,7 +15320,9 @@ public class Client extends RSApplet {
 									s.contains("<img=13>") ||
 									s.contains("<img=14>") ||
 									s.contains("<img=15>") ||
-									s.contains("<img=35>")) {
+									s.contains("<img=35>") ||
+									s.contains("<img=62>") ||
+									s.contains("<img=63>")) {
 								s = s.substring(8);
 								//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
@@ -20205,9 +20122,6 @@ public class Client extends RSApplet {
 					friendsListAction = 4;
 					promptMessage = "Enter name of player to add to ignore list";
 				}
-				/*if (text.contains("<img=")){
-					text.replaceAll("")
-				}*/
 				updateStrings(text, frame);
 				sendFrame126(text, frame);
 				if (frame >= 18144 && frame <= 18244) {
@@ -22618,7 +22532,9 @@ public class Client extends RSApplet {
 						name.contains("<img=12>") ||
 						name.contains("<img=13>") ||
 						name.contains("<img=14>") ||
-						name.contains("<img=15>")) {
+						name.contains("<img=15>") ||
+						name.contains("<img=62>") ||
+						name.contains("<img=63>")) {
 					name = name.substring(8);
 					//System.out.println("NAME if contains img > 10 CHANGE " + name);
 
