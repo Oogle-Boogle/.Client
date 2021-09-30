@@ -20891,13 +20891,17 @@ public class Client extends RSApplet {
                         int value = itemDef.value;
                         int color = value < 10000 ? 0xffffff : (value < 300000 ? 0xff7f27 : 0xd63d33);
                         calcEntityScreenPos((x << 7) + 64, 64, (y << 7) + 64);
-                        newSmallFont.drawCenteredString((itemDef.groundName == null ? itemDef.name : itemDef.groundName) + (amount > 1 ? " (" + intToKOrMil(amount) + ")" : ""), spriteDrawX, spriteDrawY - offset, color, 1);
+						if (itemDef.groundName == null && itemDef.name.startsWith("@")) {
+							itemDef.groundName = itemDef.name.substring(5);
+						}
+							newSmallFont.drawCenteredString((itemDef.groundName == null ? itemDef.name : itemDef.groundName) + (amount > 1 ? " (" + intToKOrMil(amount) + ")" : ""), spriteDrawX, spriteDrawY - offset, color, 1);
+						}
                         offset += 12;
                     }
                 }
             }
         }
-    }
+
 
 	private Color colorLerp(Color a, Color b, float pos) {
 
@@ -23835,11 +23839,16 @@ public class Client extends RSApplet {
 			mouseY = Client.clientHeight - 330;
 		}
 
+		if (itemName.startsWith("@")) {
+			itemName = itemName.substring(5);
+		}
+
 		if (controlIsDown) {
 			drawStatMenu(itemName, itemId, color, mouseX, mouseY);
 		} else if (Configuration.ctrlHoverHint){
 			DrawingArea.drawBoxOutline(mouseX, mouseY + 5, 150, 36, 0x696969);
 			DrawingArea.drawTransparentBox(mouseX + 1, mouseY + 6, 150, 37, 0x000000, 90);
+
 
 			Client.instance.newSmallFont.drawCenteredString(itemName, mouseX + 150 / 2, mouseY + 17, color, 1);
 			Client.instance.newSmallFont.drawBasicString("Press CTRL to view stats", mouseX + 4, mouseY + 35, color, 1);
