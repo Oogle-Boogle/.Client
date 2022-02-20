@@ -183,8 +183,25 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Enter";
 		}
 
+		if (i == 22945) {
+			objectDef.name = "OS Battle Portal";
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "Enter";
+		}
+
+		if (i == 42611) {
+			objectDef.name = "KH Raids";
+			objectDef.actions = new String[5];
+			objectDef.actions[0] = "KH Raids (Easy)";
+			objectDef.actions[1] = "KH Raids (Hard)";
+		}
+
+		if (i == 4126) {
+			objectDef.name = "@gre@OS Battle Chest";
+		}
+
 		if (i == 375) {
-			objectDef.name = "@red@Platinum Chest @yel@(Easy)";
+			objectDef.name = "@red@Zamron Chest @yel@(Easy)";
 		}
 		
 		if (i == 10660) {
@@ -205,11 +222,11 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Recharge Special";
 		}
 		if (i == 376) {
-			objectDef.name = "@red@Platinum Chest @yel@(Medium)";
+			objectDef.name = "@red@Zamron Chest @yel@(Medium)";
 		}
 
 		if (i == 1994) {
-			objectDef.name = "@red@Platinum Chest @yel@(Hard)";
+			objectDef.name = "@red@Zamron Chest @yel@(Hard)";
 		}
 		
 		if (i == 5259) {
@@ -430,13 +447,14 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Activate";
 		}
 		if (i == 13493) {
-			objectDef.name = "Platinum Armour";
+			objectDef.name = "Zamron Armour";
 		}
 		if (i == 172) {
 			objectDef.name = "@blu@Tier 1-3 Chest";
 			objectDef.objectModelIDs = new int[] {19090};
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Open";
+			objectDef.actions[1] = "Peek Inside";
 		}
 		if (i == 19852) {
 			objectDef.name = "Instance";
@@ -480,6 +498,7 @@ public final class ObjectDef {
 			objectDef.objectModelIDs = new int[] { 40286};
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Open";
+			objectDef.actions[1] = "Peek Inside";
 		}
 		if (i == 2183) {
 			objectDef.name = "Treasure chest";
@@ -490,12 +509,14 @@ public final class ObjectDef {
 			objectDef.objectModelIDs = new int[] { 19091};
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Open";
+			objectDef.actions[1] = "Peek Inside";
 		}
 		if (i == 6421) {
 			objectDef.name = "@red@Tier 8-10 Chest";
 			objectDef.objectModelIDs = new int[] { 19092};
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "Open";
+			objectDef.actions[1] = "Peek Inside";
 		}
 		if (i == 6714) {
 			objectDef.hasActions = true;

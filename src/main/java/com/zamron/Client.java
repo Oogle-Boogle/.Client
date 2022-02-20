@@ -494,7 +494,7 @@ public class Client extends RSApplet {
 	            options.put("censor_active", false);
 	            options.put("fog_active", false);
 	            options.put("absorb_damage", true);
-	            options.put("anti_a", false);
+	            options.put("anti_a", true);
 	            options.put("HD_shade", true);
 	            options.put("mipm", false);
 	            options.put("save_input", true);
@@ -800,12 +800,12 @@ public class Client extends RSApplet {
 			size = 1;
 			width = resizableWidth;
 			height = resizableHeight;
-			clientZoom = 600;
+			clientZoom = 1200;
 		} else if (size == 2) {
 			size = 2;
 			width = resizableWidth;
 			height = resizableHeight;
-			clientZoom = 600;
+			clientZoom = 1200;
 		} else if (size == 3) {
 			clientSize = 0;
 			width = 775;
@@ -974,20 +974,20 @@ public class Client extends RSApplet {
 					String title = chatTitles[index];
 
 
-					final String time = "[" + "" + "]";
+					final String time = "[" + "" + "] ";
 					int playerRights = 0;
 					int secondaryPlayerRights = 0;
 					int ironman2 = 0;
 					boolean fixed = false;
 					boolean fixed2 = false;
-					if (name != null && name.contains("<irn=")) {
-						if (name.contains("<irn=1192>")) {
+					if (name != null && name.contains("<irn=" )) {
+						if (name.contains("<irn=1192> ")) {
 							ironman2 = 2;
 							fixed = true;
-						} else if (name.contains("<irn=1193>")) {
+						} else if (name.contains("<irn=1193> ")) {
 							ironman2 = 1;
 							fixed = true;
-						} else if (prefixName.contains("<irn=1036>")) {
+						} else if (prefixName.contains("<irn=1036> ")) {
 							ironman2 = 3;
 							fixed = true;
 						}
@@ -1702,8 +1702,8 @@ public class Client extends RSApplet {
 		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[3] + 28 + xPosOffset, "@cya@Private", 152 + yPosOffset,
 				true);
 		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[4] + 28 + xPosOffset, "@cya@Clan", 152 + yPosOffset, true);
-		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[5] + 28 + xPosOffset, "@cya@N/A", 156 + yPosOffset, true);
-		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[6] + 28 + xPosOffset, "@cya@N/A", 156 + yPosOffset, true);
+		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[5] + 28 + xPosOffset, "@cya@", 156 + yPosOffset, true);
+		smallText.drawCenteredText(0xffffff, CHANNELBUTTON_X[6] + 28 + xPosOffset, "@cya@", 156 + yPosOffset, true);
 		smallText.drawCenteredText(0xffffff, 459 + xPosOffset, "@gre@Website", 157 + yPosOffset, true);
 		smallText.drawCenteredText(textColor[gameChatMode], 62 + 28 + xPosOffset, "All", 163 + yPosOffset, true);
 		smallText.drawCenteredText(textColor[publicChatMode], CHANNELBUTTON_X[2] + 28 + xPosOffset,
@@ -1880,8 +1880,8 @@ public class Client extends RSApplet {
 				}
 			} else if (super.saveClickX >= 404 && super.saveClickX <= 515 && super.saveClickY >= clientHeight - 23
 					&& super.saveClickY <= clientHeight) {
-				launchURL("https://platinum-ps.net");
-				pushMessage("We've attempted to open platinum-ps.net for you.", 0, "");
+				launchURL("https://Zamron.net");
+				pushMessage("We've attempted to open Zamron.net for you.", 0, "");
 			}
 			if (!showChat) {
 				cButtonCPos = -1;
@@ -2407,12 +2407,12 @@ public class Client extends RSApplet {
 			menuActionRow++;
 		}
 
-		if (clientSize == 0 ? mouseX >= 562 && mouseX <= 586 && mouseY >= 143 && mouseY < 166
+		/**if (clientSize == 0 ? mouseX >= 562 && mouseX <= 586 && mouseY >= 143 && mouseY < 166
 				: mouseX >= clientWidth - 37 && mouseX <= clientWidth - 5 && mouseY >= 138 && mouseY <= 161) {
 			menuActionName[menuActionRow] = "@red@Home Map";
 			menuActionID[menuActionRow] = 10004;
 			menuActionRow++;
-		}
+		}**/
 		if (mouseInRegion(clientSize == 0 ? clientWidth - 58 : getOrbX(2), getOrbY(2),
 				(clientSize == 0 ? clientWidth - 58 : getOrbX(2)) + 57, getOrbY(2) + 34)) {
 			menuActionName[menuActionRow] = "Rest";
@@ -2615,7 +2615,7 @@ public class Client extends RSApplet {
 		drawSummoningOrb();
 		drawCoinOrb();
 		drawTeleportOrb();
-		drawTeleIcon();
+		//drawTeleIcon();
 
 		compass[0].rotate(33, viewRotation, anIntArray1057, 256, anIntArray968, 25, (clientSize == 0 ? 8 : 5),
 				(clientSize == 0 ? 8 + xPosOffset : clientWidth - 167), 33, 25);
@@ -4636,6 +4636,10 @@ public class Client extends RSApplet {
 			int childX = class9.childX[frameID] + interfaceX;
 			int childY = (class9.childY[frameID] + interfaceY) - scrollOffset;
 			RSInterface child = RSInterface.interfaceCache[class9.children[frameID]];
+			if (child == null) {
+				System.out.println("Child == null");
+				return;
+			}
 			childX += child.xOffset;
 			childY += child.yOffset;
 			// if(super.clickMode3 != 0) {
@@ -4816,18 +4820,20 @@ public class Client extends RSApplet {
 											menuActionRow++;
 										}
 									} else {
-										/*
-										 * int dropActionIndex = -1; for(int act = 0; act < itemDef.actions.length;
-										 * act++) { if(itemDef.actions != null && itemDef.actions[act] != null &&
-										 * itemDef.actions[act].equals("Drop")) { dropActionIndex = act; break; } }
-										 * 
-										 * boolean shiftDrop = RSApplet.shifting;
-										 * 
-										 * if(shiftDrop) { menuActionName[menuActionRow] = "Drop @lre@" + itemDef.name;
-										 * menuActionID[menuActionRow] = 847; menuActionCmd1[menuActionRow] =
-										 * itemDef.id; menuActionCmd2[menuActionRow] = ptr;
-										 * menuActionCmd3[menuActionRow] = child.id; menuActionRow++; return; }
-										 */
+										int dropActionIndex = 0;
+										boolean shiftDrop = RSApplet.shiftDown
+												&& dropActionIndex > 0;
+
+										if(shiftDrop || shiftDown) {
+											menuActionName[menuActionRow] = "Drop @lre@"
+													+ itemDef.name;
+											menuActionID[menuActionRow] = 847;
+											menuActionCmd1[menuActionRow] = itemDef.id;
+											menuActionCmd2[menuActionRow] = ptr;
+											menuActionCmd3[menuActionRow] = child.id;
+											menuActionRow++;
+											return;
+										}
 										if (child.isInventoryInterface) {
 											for (int l3 = 4; l3 >= 3; l3--) {
 												if (itemDef.actions != null && itemDef.actions[l3] != null) {
@@ -6893,6 +6899,10 @@ public class Client extends RSApplet {
 				break;
 			}
 			RSInterface child = RSInterface.interfaceCache[rsInterface.children[j]];
+			if (child.type == -1) {
+				System.out.println("-1 child type");
+				return;
+			}
 			if (child.type == 1) {
 				resetInterfaceAnimation(child.id);
 			}
@@ -9619,8 +9629,8 @@ public class Client extends RSApplet {
 			}
 		}
 		if (l == 606) {
-			launchURL("platinum-ps.net");
-			pushMessage("We've attempted to open platinum-ps.net for you.", 0, "");
+			launchURL("Zamron.net");
+			pushMessage("We've attempted to open Zamron-ps.net for you.", 0, "");
 		}
 		if (l == 491) {
 			Player class30_sub2_sub4_sub1_sub2_6 = playerArray[nodeId];
@@ -9770,7 +9780,7 @@ public class Client extends RSApplet {
 				handleActions(l2);
 				needDrawTabArea = true;
 			}
-			//System.out.println("if: " + interfaceId);
+			System.out.println("if: " + interfaceId);
 			switch (interfaceId) {
 
 			// case 35802://server sided
@@ -11014,6 +11024,8 @@ public class Client extends RSApplet {
 						//System.out.println("Changed npc display to: " + id);
 					}
 
+					if(inputString.startsWith("::modelsitem"))
+						pushMessage(ItemDef.itemModels(Integer.parseInt(inputString.substring(13))), 0, "");
 					if (inputString.startsWith("::") && !inputString.startsWith("::[")) {
 						stream.createFrame(103);
 						stream.writeWordBigEndian(inputString.length() - 1);
@@ -12866,16 +12878,16 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 6) {
-				loginMessages = new String[] { "Platinum is currently being updated.",
+				loginMessages = new String[] { "Zamron is currently being updated.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
 			if (loginCode == 7) {
-				loginMessages = new String[] { "Platinum RSPS is currently busy.", "Please try again." };
+				loginMessages = new String[] { "Zamron RSPS is currently busy.", "Please try again." };
 				return;
 			}
 			if (loginCode == 8) {
-				loginMessages = new String[] { "Platinum RSPS login server is down.",
+				loginMessages = new String[] { "Zamron RSPS login server is down.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
@@ -12900,17 +12912,17 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 14) {
-				loginMessages = new String[] { "Platinum is currently being updated.",
+				loginMessages = new String[] { "Zamron is currently being updated.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
 			if (loginCode == 23) {
-				loginMessages = new String[] { "Platinum is currently being launched.",
+				loginMessages = new String[] { "Zamron is currently being launched.",
 						"Please try again in 60 seconds.." };
 				return;
 			}
 			if (loginCode == 27) {
-				loginMessages = new String[] { "Your IP-Adress has been banned.", "Please appeal on the forums." };
+				loginMessages = new String[] { "Your IP-Adress has been banned.", "Please appeal on the Discord." };
 				return;
 			}
 			if (loginCode == 28) {
@@ -12927,13 +12939,13 @@ public class Client extends RSApplet {
 				return;
 			}
 			if (loginCode == 22) {
-				loginMessages = new String[] { "This computer has been banned.", "Appeal on the forum!" };
+				loginMessages = new String[] { "This computer has been banned.", "Appeal on the Discord!" };
 				return;
 			}
 			if (loginCode == 30) {
 				loginMessages = new String[] { "You need to make sure you use the latest client!!" };
 				try {
-					String URL = "https://pltnm.link/dl";
+					String URL = "https://www.zamron.net/";
 					if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE)) {
 						System.out.println("URL: " + URL);
 						Desktop.getDesktop().browse(new URI(URL));
@@ -13721,7 +13733,7 @@ public class Client extends RSApplet {
 		}, "Ondemand fetcher");
 		try {
 				if (!new File(signlink.findcachedir() + "data/Background.gif").exists()) {
-					String url = "https://platinum-ps.net/files/cache/loader.gif";
+					String url = "";
 					HttpDownloadUtility.downloadFile(url, signlink.findcachedir() + "data/");
 					}
 			super.graphics.drawImage(loadingSprites[0], 0, 0, null);
@@ -13770,7 +13782,7 @@ public class Client extends RSApplet {
 		// repackCacheIndex(6);
 		load();
 		// ModelUtil.dumpItemModelColors(true);
-		// refreshClientScreen();
+		 //refreshClientScreen();
 	}
 
 
@@ -14187,7 +14199,7 @@ public class Client extends RSApplet {
 			g.setFont(new Font("Helvetica", 1, 16));
 			g.setColor(Color.yellow);
 			int k = 35;
-			g.drawString("Sorry, an error has occured whilst loading Platinum", 30, k);
+			g.drawString("Sorry, an error has occured whilst loading Zamron", 30, k);
 			k += 50;
 			g.setColor(Color.white);
 			g.drawString("To fix this try the following (in order):", 30, k);
@@ -14208,8 +14220,8 @@ public class Client extends RSApplet {
 			g.setFont(new Font("Helvetica", 1, 20));
 			g.setColor(Color.white);
 			g.drawString("Error - unable to load game!", 50, 50);
-			g.drawString("To play Platinum make sure you play from", 50, 100);
-			g.drawString("platinum-ps.net", 50, 150);
+			g.drawString("To play Zamron make sure you play from", 50, 100);
+			g.drawString("Zamronnet", 50, 150);
 		}
 	}
 
@@ -17234,7 +17246,7 @@ public class Client extends RSApplet {
 		int k = 0;
 		while (expectedCRCs[8] == 0) {
 			String s = "Unknown problem";
-			setLoadingText(10, "Connecting to Platinum...");
+			setLoadingText(10, "Connecting to Zamron...");
 			try {
 				DataInputStream datainputstream = openJagGrabInputStream(
 						"crc" + (int) (Math.random() * 99999999D) + "-" + 317);
@@ -20865,19 +20877,19 @@ public class Client extends RSApplet {
 		}
 
 	}
-	
-	
+
     private void render_ground_item_names() {
         for (int x = 0; x < 104; x++) {
             for (int y = 0; y < 104; y++) {
                 Deque node = groundArray[plane][x][y];
                 if (node == null)
                     continue;
-                int offset = -13;
+                int offset = 12; // -13
                 Map<Integer, Integer> map = new HashMap<>();
                 for (Item item = (Item) node.getFront(); item != null; item = (Item) node.getNext()) {
                     if (map.containsKey(item.ID)) {
                         map.put(item.ID, map.get(item.ID) + item.amount);
+						offset += 12; //remove this and enable line below ?
                     } else {
                         map.put(item.ID, item.amount);
                     }
@@ -20891,9 +20903,9 @@ public class Client extends RSApplet {
                         int value = itemDef.value;
                         int color = value < 10000 ? 0xffffff : (value < 300000 ? 0xff7f27 : 0xd63d33);
                         calcEntityScreenPos((x << 7) + 64, 64, (y << 7) + 64);
-						if (itemDef.groundName == null && itemDef.name.startsWith("@")) {
-							itemDef.groundName = itemDef.name.substring(5);
-						}
+						//if (itemDef.groundName == null && itemDef.name.startsWith("@")) {
+							//itemDef.groundName = itemDef.name.substring(5);
+						//}
 							newSmallFont.drawCenteredString((itemDef.groundName == null ? itemDef.name : itemDef.groundName) + (amount > 1 ? " (" + intToKOrMil(amount) + ")" : ""), spriteDrawX, spriteDrawY - offset, color, 1);
 						}
                         offset += 12;
@@ -23106,6 +23118,10 @@ public class Client extends RSApplet {
 				// if(Client.my)
 			}
 			break;
+			case "shiftdrop":
+				shiftDrop = !shiftDrop;
+				shiftIsDown = !shiftIsDown;
+				break;
 		case "fps":
 			fpsOn = !fpsOn;
 			break;
@@ -23882,7 +23898,7 @@ public class Client extends RSApplet {
 					equipBonuses[id][j] = in.readInt();
 				}
 			}
-			//System.out.println("Took " + (System.currentTimeMillis() - start) + " to load ItemDefs " + total + " " + equipableTotal);
+			System.out.println("Took " + (System.currentTimeMillis() - start) + " to load ItemDefs " + total + " " + equipableTotal);
 		} catch(NoSuchFileException e) {
 			e.printStackTrace();
 		} catch(IOException e) {

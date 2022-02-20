@@ -38,6 +38,9 @@ public class ItemDef_Suic {
 	public static ItemDef newIDS(ItemDef itemDef, int id) {
 
 		switch (id) {
+			case 12852:
+				itemDef.name = "AFK Token";
+				break;
 		case 6950:
 			itemDef.name = "Raids Orb";
 			itemDef.actions = new String[] {"Check Invites", null, null, "Create Party", null};
@@ -67,8 +70,8 @@ public class ItemDef_Suic {
 			itemDef.stackable = true;
 			break;
 		case 12848:
-			itemDef.name = "DropRate Infusion Stone";
-			itemDef.actions = new String[] {"Crack", null, null, null, null};
+			itemDef.name = "3HR Double Drop Stone";
+			itemDef.actions = new String[] {"Smash", null, null, null, null};
 			break;
 			case 6639:
 				itemDef.name = "Summon Mini-Me";
@@ -80,7 +83,7 @@ public class ItemDef_Suic {
 			itemDef.name = "BFG Shots";
 			break;
 		case 3985:
-			itemDef.name = "Platinum Cape";
+			itemDef.name = "Zamron Cape";
 			break;
 		case 20700:
 			itemDef.name = "Pro Defender";
@@ -126,6 +129,10 @@ public class ItemDef_Suic {
 			ItemDef.copyModel(itemDef, 13262);
 			itemDef.name = "Tier 3 Defender";
 			break;
+
+			case 13591:
+				itemDef.name = "KH Raids Key";
+				break;
 			
 		case 20696:
 			ItemDef.copyModel(itemDef, 13262);
@@ -395,9 +402,7 @@ public class ItemDef_Suic {
             itemDef.actions[2] = "Claim";
 			itemDef.name = "Imbued Package";
 			break;
-			
-			
-			
+
 		case 3311:
 			itemDef.modelID = 23995;
 			itemDef.maleEquip1 = 23996;
@@ -516,6 +521,11 @@ public class ItemDef_Suic {
 		case 993:
 			itemDef.name = "Halloween Event Key(3)";
 			break;
+
+			case 9952:
+			itemDef.name = "Charming Imp";
+				itemDef.actions = new String[] { null, null, "Configure", null, "Drop" };
+				break;
 			
 		case 3640:
 			itemDef.name = "Supreme box pet";
@@ -631,6 +641,11 @@ public class ItemDef_Suic {
 			ItemDef.copyModel(itemDef, 3912);
 			changeTexture(id, 63, 55);
 			break;
+
+			case 9078:
+				itemDef.name = "Aggressive Book";
+				itemDef.actions = new String[] {null, null, null, null, null};
+				break;
 			
 			
 		case 3322:
@@ -678,7 +693,8 @@ public class ItemDef_Suic {
 			itemDef.modelID = 95112;
 			itemDef.maleEquip1 = 95111;
 			itemDef.femaleEquip1 = 95111;
-			
+			itemDef.name = "Gecko Platebody";
+			break;
 			
 		case 3301:
 			itemDef.modelZoom = 1416; // the zoom u chose in editor
@@ -687,6 +703,8 @@ public class ItemDef_Suic {
 			itemDef.modelID = 95113;
 			itemDef.maleEquip1 = 95114;
 			itemDef.femaleEquip1 = 95114;
+			itemDef.name = "Gecko Platelegs";
+			break;
 			
 		case 3302:
 			itemDef.modelZoom = 1416; // the zoom u chose in editor
@@ -695,6 +713,9 @@ public class ItemDef_Suic {
 			itemDef.modelID = 95116;
 			itemDef.maleEquip1 = 95115;
 			itemDef.femaleEquip1 = 95115;
+			itemDef.name = "Gecko Helm";
+			break;
+
 			
 		case 18933:
 			itemDef.modelZoom = 1416; // the zoom u chose in editor
@@ -707,18 +728,17 @@ public class ItemDef_Suic {
 			break;
 		
 		case 3077:
+			itemDef.name = "Dark Ranger's Bow";
 			itemDef.modelZoom = 1611; // the zoom u chose in editor
 			itemDef.rotationX = 549; // the rotation x u chose in editor
-			itemDef.rotationY = 780; 
-		
+			itemDef.rotationY = 780;
 			break;
 		
 		
 		case 19893:
 			itemDef.modelZoom = 1826; // the zoom u chose in editor
 			itemDef.rotationX = 1954; // the rotation x u chose in editor
-			itemDef.rotationY = 613; 
-		
+			itemDef.rotationY = 613;
 			break;
 		
 		
@@ -732,8 +752,7 @@ public class ItemDef_Suic {
 		case 18895:
 			itemDef.modelZoom = 700; // the zoom u chose in editor
 			itemDef.rotationX = 100; // the rotation x u chose in editor
-			itemDef.rotationY = 520; 
-		
+			itemDef.rotationY = 520;
 			break;
 		
 		case 18934:
@@ -906,17 +925,17 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 1034;
 			itemDef.rotationX = 1805;
 			itemDef.rotationY = 1603;
-			
 			break;
 		
 		case 4777:
 			itemDef.modelZoom = 2686; // the zoom u chose in editor
 			itemDef.rotationX = 1545; // the rotation x u chose in editor
-			itemDef.rotationY = 657; 
+			itemDef.rotationY = 657;
+			itemDef.modelOffsetY = 0;
+			itemDef.modelOffsetX = 0;
 			itemDef.modelID = 99267;
 			itemDef.maleEquip1 = 91274;
 			itemDef.femaleEquip1 = 91274;
-			
 			break;
 		
 		case 19055:
@@ -979,7 +998,6 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 4083;
 			itemDef.rotationX = 1442;
 			itemDef.rotationY = 423;
-			
 			break;
 		
 		
@@ -1087,7 +1105,7 @@ public class ItemDef_Suic {
 			itemDef.modelID = 99259;
 			itemDef.maleEquip1 = 95101;
 			itemDef.femaleEquip1 = 95101;
-			itemDef.name = "Dedi's Bow";
+			itemDef.name = "Purple knight's Minigun";
 			break;
 			
 		case 5081:
@@ -1126,7 +1144,7 @@ public class ItemDef_Suic {
 			break;
 		
 		case 5132:
-            itemDef.name = "Platinum Minigun)";
+            itemDef.name = "Zamron Minigun)";
 			itemDef.modelZoom = 2116; // the zoom u chose in editor
 			itemDef.rotationX = 1760; // the rotation x u chose in editor
 			itemDef.rotationY = 533; 
@@ -1547,16 +1565,7 @@ public class ItemDef_Suic {
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
 			break;
 
-		case 559:
-			//System.out.println("ITEM DEF MODEL ID: " + itemDef.modelID);
-			break;
-			
-			
-		case 3910:
-		case 3909:
-			break;
 		case 3960:
-			
 		case 3908:
 			itemDef.modelZoom = 877;
 			itemDef.rotationX = 100;
@@ -1859,7 +1868,7 @@ public class ItemDef_Suic {
 
 		case 5175:
 			ItemDef.copyModel(itemDef, 13902);
-			itemDef.name = "Platinum's Warhammer";
+			itemDef.name = "Zamron's Warhammer";
 			itemDef.animateInventory = true;
 			break;
 			
@@ -1977,7 +1986,7 @@ public class ItemDef_Suic {
 			break;
 
 		case 14019:
-			itemDef.name = "Platinums Max Cape";
+			itemDef.name = "Zamrons Max Cape";
 			itemDef.animateInventory = true;
 			break;
 
@@ -2136,7 +2145,7 @@ public class ItemDef_Suic {
 
 		case 5171:
 			ItemDef.copyModel(itemDef, 18971);
-			itemDef.name = "Onyx Supreme Bow";
+			itemDef.name = "Purple Supreme Bow";
 			itemDef.animateInventory = true;
 			break;
 			
@@ -2558,7 +2567,7 @@ public class ItemDef_Suic {
 			
   		case 5112:
 			itemDef.name = "Angelic Helmet";
-			itemDef.modelID = 40070;
+			itemDef.modelID = 40170;
 			itemDef.maleEquip1 = 40070;
 			itemDef.femaleEquip1 = 40070;
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
@@ -2679,8 +2688,8 @@ public class ItemDef_Suic {
 			
 		case 4062:
 			itemDef.modelID = 40119;
-			itemDef.maleEquip1 = 40119;
-			itemDef.femaleEquip1 = 40119;
+			itemDef.maleEquip1 = 40126;
+			itemDef.femaleEquip1 = 40126;
 			itemDef.actions = new String[] {null, "Wear", "Operate", null, null};
 			itemDef.name = "Imbued Boots(Melee)";
 			break;
@@ -2946,13 +2955,7 @@ public class ItemDef_Suic {
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			itemDef.stackable = false;
 			break;
-			
-			
-			
-			
-			
-			
-			
+
 		case 3915:
 			itemDef.name = "Demi Wizard Hat";
 			itemDef.modelID = 40046;
@@ -2964,9 +2967,9 @@ public class ItemDef_Suic {
 			
 		case 3916:
 			itemDef.name = "Demi Robetop";
-			itemDef.modelID = 40057;
-			itemDef.maleEquip1 = 40058;
-			itemDef.femaleEquip1 = 40058;
+			itemDef.modelID = 40048;
+			itemDef.maleEquip1 = 40049;
+			itemDef.femaleEquip1 = 40049;
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			itemDef.stackable = false;
 			break;
@@ -3024,8 +3027,8 @@ public class ItemDef_Suic {
 		case 6786:
 			itemDef.name = "Gluttony Boots";
 			itemDef.modelID = 40178;
-			itemDef.maleEquip1 = 40178;
-			itemDef.femaleEquip1 = 40178;
+			itemDef.maleEquip1 = 40179;
+			itemDef.femaleEquip1 = 40179;
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			itemDef.stackable = false;
 			break;
@@ -3353,7 +3356,7 @@ public class ItemDef_Suic {
             itemDef.name = "Saber";
             break;
             
-        case 10835:
+       /** case 10835:
         	itemDef.modelID = 28679;
             itemDef.actions = new String[5];
 			itemDef.actions = new String[] { "Add to Inv", null, "Add to pouch",null, null};
@@ -3361,7 +3364,13 @@ public class ItemDef_Suic {
 			itemDef.rotationX = 2; // the rotation x u chose in editor
 			itemDef.rotationY = 400;
 			itemDef.modelZoom = 1600;
-			break;
+			break;**/
+
+			case 10835:
+				itemDef.name = "1B Coins";
+				itemDef.actions = new String[5];
+				itemDef.actions = new String[] { "Add to Inv", null, "Add to pouch",null, null};
+				break;
             
 
             
@@ -3456,12 +3465,16 @@ public class ItemDef_Suic {
             break;
             
         case 6198:
-            itemDef.modelID = 23886;
-            itemDef.actions = new String[5];
+            itemDef.modelID = 23887;
+			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wield";
             itemDef.maleEquip1 = 23887;
             itemDef.femaleEquip1 = 23887;
             itemDef.name = "Zeus Shield";
+			itemDef.modelZoom = 2000;
+			itemDef.rotationX = 2;
+			itemDef.modelOffsetY = -6;
+			itemDef.modelOffsetX = 1;
             break;
             
             
@@ -3680,8 +3693,109 @@ public class ItemDef_Suic {
 			itemDef.modelOffsetX = 0;
 			itemDef.modelOffsetY = 0;
 			break;
-			
-            
+
+			case 6307:
+				itemDef.modelID = 90571;
+				itemDef.name = "Dark Ranger's body";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelZoom = 1828;
+				itemDef.rotationY = 539;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = 0;
+				itemDef.maleEquip1 = 90572;
+				itemDef.femaleEquip1 = 90572;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+			case 6308:
+				itemDef.modelID = 90573;
+				itemDef.name = "Dark Ranger's platelegs";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelZoom = 1828;
+				itemDef.rotationY = 539;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = 0;
+				itemDef.maleEquip1 = 90574;
+				itemDef.femaleEquip1 = 90574;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+			case 6309:
+				itemDef.modelID = 90575;
+				itemDef.name = "Dark Ranger's cloak";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelOffset1 = 0;
+				itemDef.modelOffsetY = 1;
+				itemDef.stackable = false;
+				itemDef.modelZoom = 2128;
+				itemDef.rotationY = 504;
+				itemDef.rotationX = 0;
+				itemDef.maleEquip1 = 90576;
+				itemDef.femaleEquip1 = 90576;
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				break;
+			case 6310:
+				itemDef.modelID = 90577;
+				itemDef.name = "Dark Ranger's boots";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelZoom = 676;
+				itemDef.rotationY = 63;
+				itemDef.rotationX = 106;
+				itemDef.modelOffset1 = 5;
+				itemDef.modelOffsetY = -1;
+				itemDef.maleEquip1 = 90578;
+				itemDef.femaleEquip1 = 90578;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
+			case 6311:
+				itemDef.modelID = 90579;
+				itemDef.name = "Dark Ranger's gloves";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelZoom = 648;
+				itemDef.rotationY = 618;
+				itemDef.rotationX = 1143;
+				itemDef.modelOffset1 = 0;
+				itemDef.modelOffsetY = -5;
+				itemDef.maleEquip1 = 90580;
+				itemDef.femaleEquip1 = 90580;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
+			case 6312:
+				itemDef.modelID = 90581;
+				itemDef.name = "Dark Ranger's helm";
+				itemDef.description = "Carved from the exo-skeleton of Jad itself";
+				itemDef.modelZoom = 672;
+				itemDef.rotationY = 85;
+				itemDef.rotationX = 1867;
+				itemDef.modelOffset1 = 0;
+				itemDef.modelOffsetY = -3;
+				itemDef.maleEquip1 = 90582;
+				itemDef.femaleEquip1 = 90582;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
             
 		case 17904:
 			itemDef.name = "Ragnorak helmet";
@@ -3690,7 +3804,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23459; //65343
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -3701,7 +3814,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23455;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;
 			
@@ -3718,12 +3830,11 @@ public class ItemDef_Suic {
 			
 		case 17919:
 			itemDef.name = "Ragnorak cape";
-			itemDef.modelID = 23461;
+			itemDef.modelID = 23460;
 			itemDef.femaleEquip1 = 23461;
 			itemDef.maleEquip1 = 23461;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;
 			
@@ -3769,7 +3880,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23439;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;
 			
@@ -5194,7 +5304,7 @@ public class ItemDef_Suic {
     			
     		case 15497:
     			itemDef.name = "Imbued Slayer Helmet";
-break;
+				break;
     			
     			
     			
@@ -5273,6 +5383,15 @@ break;
     			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
     			itemDef.stackable = false;
     			break;
+
+			case 5000:
+				itemDef.name = "Ice-Cold Bow";
+				itemDef.modelID = 43978;
+				itemDef.maleEquip1 = 43977;
+				itemDef.femaleEquip1 = 43977;
+				itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+				itemDef.stackable = false;
+				break;
     			
     		case 13201:
     			itemDef.name = "Supreme Herbal Bow";
@@ -7199,7 +7318,7 @@ break;
 				break;
             
         case 19121:
-            itemDef.name = "Platinum Starter Box";
+            itemDef.name = "Zamron Starter Box";
             break;
             
 
@@ -7265,15 +7384,14 @@ break;
         case 20427:
             itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
-            itemDef.modelID = 23173;
+            itemDef.modelID = 23174;
             itemDef.name = "BFG-900";
-            itemDef.modelZoom = 900;
+            itemDef.modelZoom = 1200;
             itemDef.rotationY = 165;
             itemDef.rotationX = 99;
-            itemDef.modelOffsetX = 0;
-            itemDef.modelOffsetY = 0;
+			itemDef.modelOffsetY = 30;
+			itemDef.modelOffsetX = 20;
             itemDef.maleEquip1 = 23173;
             itemDef.femaleEquip1 = 23173;
             itemDef.description = "A BFG-900.";
@@ -7285,11 +7403,11 @@ break;
             itemDef.actions[4] = "Drop";
             itemDef.modelID = 23174;
             itemDef.name = "Offhand BFG-900";
-            itemDef.modelZoom = 900;
+            itemDef.modelZoom = 1200;
             itemDef.rotationY = 165;
             itemDef.rotationX = 99;
-            itemDef.modelOffsetX = 0;
-            itemDef.modelOffsetY = 0;
+			itemDef.modelOffsetY = 30;
+			itemDef.modelOffsetX = 20;
             itemDef.maleEquip1 = 23175;
             itemDef.femaleEquip1 = 23175;
             itemDef.description = "A Offhand BFG-900.";
@@ -7298,7 +7416,7 @@ break;
         case 18325:
 			ItemDef.copyModel(itemDef, 3087);
             itemDef.actions[0] = "Equip";
-            itemDef.name = "Platinum Helmet";
+            itemDef.name = "Zamron Helmet";
 			itemDef.groundActions = new String[5];
 			itemDef.groundActions[2] = "Take";
 			itemDef.actions = new String[5];
@@ -8037,6 +8155,20 @@ break;
 			itemDef.actions = new String[] { null, null, "Summon", null, "Drop" };
 			break;
 
+			case 22185:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wield";
+				itemDef.modelID = 74510;
+				itemDef.modelZoom = 1500;
+				itemDef.rotationY = 500;
+				itemDef.rotationX = 0;
+				itemDef.modelOffsetY = -6;
+				itemDef.modelOffsetX = 1;
+				itemDef.maleEquip1 = 74511;
+				itemDef.femaleEquip1 = 74511;
+				itemDef.name = "Purple Knight Sword";
+				break;
+
 			case 22196:
 				itemDef.actions = new String[5];
 				itemDef.actions[1] = "Wield";
@@ -8134,8 +8266,8 @@ break;
 				itemDef.rotationX = 0;
 				itemDef.modelOffsetY = -6;
 				itemDef.modelOffsetX = 1;
-				itemDef.maleEquip1 = 7779;
-				itemDef.femaleEquip1 = 7779;
+				itemDef.maleEquip1 = 7780;
+				itemDef.femaleEquip1 = 7780;
 				itemDef.name = "@red@Assassin Gloves";
 				break;
 

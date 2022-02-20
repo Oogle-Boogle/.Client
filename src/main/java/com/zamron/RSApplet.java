@@ -575,7 +575,8 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 	void mouseWheelDragged(int param1, int param2) {
 
 	}
-	
+
+	public static boolean shiftIsDown = false;
 	public static boolean shiftDrop = false;
 
 	public final void mouseMoved(MouseEvent mouseevent) {
@@ -602,12 +603,12 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		if(i == KeyEvent.VK_CONTROL) {
 			controlling = true;
 		}
-		if(i == KeyEvent.VK_SHIFT) {
-			shiftDown = true;
-		}
 
 		if (keyevent.isControlDown()) {
 			Client.instance.controlIsDown = true;
+		}
+		if(i == KeyEvent.VK_SHIFT) {
+			Client.shiftDown = true;
 		}
 		if(keyevent.isControlDown()) {
 		Client.instance.listenToKeyAndSendToServer(keyevent); // fix
@@ -760,10 +761,6 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		if(i == KeyEvent.VK_CONTROL) {
 			controlling = false;
 		}
-		
-		if(i == KeyEvent.VK_SHIFT) {
-			shiftDown = false;
-		}
 		if (i == 17) {
 			resizing = false;
 		}
@@ -799,6 +796,9 @@ public class RSApplet extends Applet implements Runnable, MouseListener, MouseMo
 		}
 		if (i == KeyEvent.VK_CONTROL) {
 			Client.instance.controlIsDown = false;
+		}
+		if(i == KeyEvent.VK_SHIFT) {
+			Client.shiftDown = false;
 		}
 		if (c > 0 && c < '\200') {
 			keyArray[c] = 0;

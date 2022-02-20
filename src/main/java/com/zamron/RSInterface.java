@@ -7,88 +7,74 @@ import static com.zamron.RSInterface.addText;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-
-
-
-
-
-
-
-
-
-
-
-
 @SuppressWarnings("all")
 public class RSInterface {
 
-	/*
-	 * private static void BossEventInterfaceTracker(TextDrawingArea[] tda) {
-	 * //Can't go above 37493 RSInterface tab = RSInterface.addInterface(37400);
-	 * RSInterface.addSpriteLoader(37401, 1672); RSInterface.addText(37402,
-	 * "Daily Boss Event Task", tda, 2, Client.GOLD, false, true);
-	 * RSInterface.addText(37403, "Information", tda, 1, ClientConstants.GOLD,
-	 * false, true); RSInterface.addText(37404, "Cows kill-count: 4", tda, 0,
-	 * ClientConstants.ORANGE, false, true);
-	 * 
-	 * RSInterface.addText(37405, "Rewards", tda, 1, ClientConstants.GOLD, false,
-	 * true); RSInterface.addText(37406, "Rare Drop Scroll", tda, 0,
-	 * ClientConstants.ORANGE, false, true);
-	 * 
-	 * 
-	 * RSInterface.addText(37407, "Boss", tda, 1, ClientConstants.GOLD, false,
-	 * true); RSInterface.addText(37408, "NPC Information", tda, 1,
-	 * ClientConstants.GOLD, false, true);
-	 * 
-	 * RSInterface.addText(37409, "- Cows", tda, 0, ClientConstants.ORANGE, false,
-	 * true); RSInterface.addText(37410, "- Combat Lvl: 3", tda, 0,
-	 * ClientConstants.ORANGE, false, true); RSInterface.addText(37411,
-	 * "- Health: 10", tda, 0, ClientConstants.ORANGE, false, true);
-	 * RSInterface.addText(37412, "- Max Hit: 2", tda, 0, ClientConstants.ORANGE,
-	 * false, true); RSInterface.addText(37413, "- Weakness: Melee, Stab", tda, 0,
-	 * ClientConstants.ORANGE, false, true); //RSInterface.addText(37414,
-	 * "- Attack: 10", tda, 0, ClientConstants.ORANGE, false, true);
-	 * RSInterface.addText(37415, "- Task Amount: 10", tda, 0,
-	 * ClientConstants.ORANGE, false, true); RSInterface.modelViewer(37416, 1,
-	 * 23889, 1250); RSInterface.addText(37417, "- Time Left: 1 Hour 10 Seconds",
-	 * tda, 0, ClientConstants.ORANGE, false, true); RSInterface.itemGroup(37418, 1,
-	 * 1, 1, 1); RSInterface.addText(37420,
-	 * "- Note: These Tasks are\\nOnly Wilderness Based", tda, 0,
-	 * ClientConstants.RED, false, true); RSInterface.addHoverButton(37421, 1673,
-	 * 88, 36, "Teleport", -1, 37422, 1); RSInterface.addHoveredButton(37422, 1674,
-	 * 88, 36, 37423); RSInterface.addText(37424, "Teleport", tda, 2,
-	 * ClientConstants.GOLD, false, true);
-	 * 
-	 * 
-	 * RSInterface.setChildren(21, tab); tab.child(0, 37401, 68, 25); tab.child(1,
-	 * 37402, 178, 50 - 13); tab.child(2, 37403, 130, 230 - 13); tab.child(3, 37404,
-	 * 117, 244 - 13); tab.child(4, 37405, 337, 230 - 13); tab.child(5, 37406, 337 -
-	 * 13, 244 - 13);
-	 * 
-	 * tab.child(6, 37407, 103, 78 - 13); tab.child(7, 37408, 282, 78 - 13);
-	 * tab.child(8, 37416, 80, 95 - 13);
-	 * 
-	 * tab.child(9, 37409, 260, 100 - 13); tab.child(10, 37410, 260, 115 - 13);
-	 * tab.child(11, 37411, 260, 130 - 13); tab.child(12, 37412, 260, 145 - 13);
-	 * tab.child(13, 37413, 260, 160 - 13); tab.child(14, 37415, 260, 175 - 13);
-	 * tab.child(15, 37417, 260, 190 - 13); tab.child(16, 37418, 255, 230 - 13);
-	 * tab.child(17, 37420, 260, 200 - 13);
-	 * 
-	 * tab.child(18, 37421, 209, 269 - 13); tab.child(19, 37422, 209, 269 - 13);
-	 * tab.child(20, 37424, 227, 280 - 13);
-	 * 
-	 * 
-	 * }
-	 */
+//	/*
+//	 * private static void BossEventInterfaceTracker(TextDrawingArea[] tda) {
+//	 * //Can't go above 37493 RSInterface tab = RSInterface.addInterface(37400);
+//	 * RSInterface.addSpriteLoader(37401, 1672); RSInterface.addText(37402,
+//	 * "Daily Boss Event Task", tda, 2, Client.GOLD, false, true);
+//	 * RSInterface.addText(37403, "Information", tda, 1, ClientConstants.GOLD,
+//	 * false, true); RSInterface.addText(37404, "Cows kill-count: 4", tda, 0,
+//	 * ClientConstants.ORANGE, false, true);
+//	 *
+//	 * RSInterface.addText(37405, "Rewards", tda, 1, ClientConstants.GOLD, false,
+//	 * true); RSInterface.addText(37406, "Rare Drop Scroll", tda, 0,
+//	 * ClientConstants.ORANGE, false, true);
+//	 *
+//	 *
+//	 * RSInterface.addText(37407, "Boss", tda, 1, ClientConstants.GOLD, false,
+//	 * true); RSInterface.addText(37408, "NPC Information", tda, 1,
+//	 * ClientConstants.GOLD, false, true);
+//	 *
+//	 * RSInterface.addText(37409, "- Cows", tda, 0, ClientConstants.ORANGE, false,
+//	 * true); RSInterface.addText(37410, "- Combat Lvl: 3", tda, 0,
+//	 * ClientConstants.ORANGE, false, true); RSInterface.addText(37411,
+//	 * "- Health: 10", tda, 0, ClientConstants.ORANGE, false, true);
+//	 * RSInterface.addText(37412, "- Max Hit: 2", tda, 0, ClientConstants.ORANGE,
+//	 * false, true); RSInterface.addText(37413, "- Weakness: Melee, Stab", tda, 0,
+//	 * ClientConstants.ORANGE, false, true); //RSInterface.addText(37414,
+//	 * "- Attack: 10", tda, 0, ClientConstants.ORANGE, false, true);
+//	 * RSInterface.addText(37415, "- Task Amount: 10", tda, 0,
+//	 * ClientConstants.ORANGE, false, true); RSInterface.modelViewer(37416, 1,
+//	 * 23889, 1250); RSInterface.addText(37417, "- Time Left: 1 Hour 10 Seconds",
+//	 * tda, 0, ClientConstants.ORANGE, false, true); RSInterface.itemGroup(37418, 1,
+//	 * 1, 1, 1); RSInterface.addText(37420,
+//	 * "- Note: These Tasks are\\nOnly Wilderness Based", tda, 0,
+//	 * ClientConstants.RED, false, true); RSInterface.addHoverButton(37421, 1673,
+//	 * 88, 36, "Teleport", -1, 37422, 1); RSInterface.addHoveredButton(37422, 1674,
+//	 * 88, 36, 37423); RSInterface.addText(37424, "Teleport", tda, 2,
+//	 * ClientConstants.GOLD, false, true);
+//	 *
+//	 *
+//	 * RSInterface.setChildren(21, tab); tab.child(0, 37401, 68, 25); tab.child(1,
+//	 * 37402, 178, 50 - 13); tab.child(2, 37403, 130, 230 - 13); tab.child(3, 37404,
+//	 * 117, 244 - 13); tab.child(4, 37405, 337, 230 - 13); tab.child(5, 37406, 337 -
+//	 * 13, 244 - 13);
+//	 *
+//	 * tab.child(6, 37407, 103, 78 - 13); tab.child(7, 37408, 282, 78 - 13);
+//	 * tab.child(8, 37416, 80, 95 - 13);
+//	 *
+//	 * tab.child(9, 37409, 260, 100 - 13); tab.child(10, 37410, 260, 115 - 13);
+//	 * tab.child(11, 37411, 260, 130 - 13); tab.child(12, 37412, 260, 145 - 13);
+//	 * tab.child(13, 37413, 260, 160 - 13); tab.child(14, 37415, 260, 175 - 13);
+//	 * tab.child(15, 37417, 260, 190 - 13); tab.child(16, 37418, 255, 230 - 13);
+//	 * tab.child(17, 37420, 260, 200 - 13);
+//	 *
+//	 * tab.child(18, 37421, 209, 269 - 13); tab.child(19, 37422, 209, 269 - 13);
+//	 * tab.child(20, 37424, 227, 280 - 13);
+//	 *
+//	 *
+//	 * }
+//	 */
 	
 	
 	public static void drawDPSOverlay(TextDrawingArea[] tda) {
 		RSInterface main = addInterface(23998);
 		addText(23999, "", tda, 1, ColorConstants.SNOW_WHITE, false, true);
 		main.totalChildren(1);
-
-
-		main.child(0, 23999, 450, 3);
+		main.child(0, 23999, 15, 310);
 	}
 
 	public static void addConfigButtonWSpriteLoaderWithHover(final int ID, final int pID, final int bID, final int bID2, final int width, final int height, final String tT, final int configID, final int aT, final int configFrame, final int hoverId) {
@@ -397,11 +383,6 @@ public class RSInterface {
 
 	}
 
-
-
-
-
-
 	public static void mapteleport(TextDrawingArea[] tda) {
 		 final int STARTING_POINT = 23500;
 		 RSInterface main = addInterface(STARTING_POINT);
@@ -430,34 +411,31 @@ public class RSInterface {
 	        addHoverButtonWSpriteLoader(STARTING_POINT + 23, 1269, 15, 15, "AFK", -1, STARTING_POINT + 24, 1);
 	        addHoveredImageWSpriteLoader(STARTING_POINT + 24, 1278, 15, 15, STARTING_POINT + 25);
 	 
-	        addHoverButtonWSpriteLoader(STARTING_POINT + 26, 1267, 15, 15, "Instances", -1, STARTING_POINT + 27, 1);
-	        addHoveredImageWSpriteLoader(STARTING_POINT + 27, 1276, 15, 15, STARTING_POINT + 28);
+	       // addHoverButtonWSpriteLoader(STARTING_POINT + 26, 1267, 15, 15, "Instances", -1, STARTING_POINT + 27, 1);
+	        // addHoveredImageWSpriteLoader(STARTING_POINT + 27, 1276, 15, 15, STARTING_POINT + 28);
 	   
 		   
-	        main.totalChildren(19);
+	        main.totalChildren(17); //19
 	        
-	        main.child(0, STARTING_POINT + 1, 140, 50);
-	        main.child(1, STARTING_POINT + 2, 360, 150);
-	        main.child(2, STARTING_POINT + 3, 360, 150);
-	        main.child(3, STARTING_POINT + 5, 310, 145);
-	        main.child(4, STARTING_POINT + 6, 310, 145);
-	        main.child(5, STARTING_POINT + 8, 360, 80);
-	        main.child(6, STARTING_POINT + 9, 360, 80);
-	        main.child(7, STARTING_POINT + 11, 300, 270);
-	        main.child(8, STARTING_POINT + 12, 300, 270);
-	        main.child(9, STARTING_POINT + 14, 270, 150);
-	        main.child(10, STARTING_POINT + 15, 270, 150);
-	        main.child(11, STARTING_POINT + 17, 153, 63);
-	        main.child(12, STARTING_POINT + 18, 153, 63);
-	        main.child(13, STARTING_POINT + 20, 160, 150);
-	        main.child(14, STARTING_POINT + 21, 160, 150);
-	        main.child(15, STARTING_POINT + 23, 220, 160);
-	        main.child(16, STARTING_POINT + 24, 220, 160);
-	        main.child(17, STARTING_POINT + 26, 160, 220);
-	        main.child(18, STARTING_POINT + 27, 160, 220);
-	        
-	        
-		 
+	        main.child(0, STARTING_POINT + 1, 140, 50); //
+	        main.child(1, STARTING_POINT + 2, 260, 135); // Bank orignal
+	        main.child(2, STARTING_POINT + 3, 260, 135); // Bank hover
+	        main.child(3, STARTING_POINT + 5, 253, 264); //Prayer
+	        main.child(4, STARTING_POINT + 6, 253, 264); // Prayer hover
+	        main.child(5, STARTING_POINT + 8, 205, 212); //Slayer
+	        main.child(6, STARTING_POINT + 9, 205, 212); //Slayer hover
+	        main.child(7, STARTING_POINT + 11, 300, 270); //World boss
+	        main.child(8, STARTING_POINT + 12, 300, 270); //World boss hover
+	        main.child(9, STARTING_POINT + 14, 328, 183); //Store
+	        main.child(10, STARTING_POINT + 15, 328, 183); //Store hover
+	        main.child(11, STARTING_POINT + 17, 183, 183); //Dungeon
+	        main.child(12, STARTING_POINT + 18, 183, 183); //Dungeon hover
+	        main.child(13, STARTING_POINT + 20, 220, 74); //Skilling boss
+	        main.child(14, STARTING_POINT + 21, 220, 74); //Skilling boss hover
+	        main.child(15, STARTING_POINT + 23, 263, 55); //AFK
+	        main.child(16, STARTING_POINT + 24, 263, 55); //AFK Hover
+	      //  main.child(17, STARTING_POINT + 26, 160, 220); //Instances
+	        //main.child(18, STARTING_POINT + 27, 160, 220); //Instances hover
 	}
 	
 
@@ -617,7 +595,7 @@ public class RSInterface {
 
 	      addText(43534, "Item list", tda, 0, 16751360, true, true);
 	      addText(43535, "Required items", tda, 0, 16751360, true, true);
-	      addText(43536, "Platinum Item Fuser", tda, 0, 16751360, true, true);
+	      addText(43536, "Zamron Item Fuser", tda, 0, 16751360, true, true);
 	      addClickableText(51044, "Close Interface", "", tda, 0, 16777215, false, true, 110);
 	      addItemOnInterface(43537, 43500, new String[2]);
 	      addHoverButtonWSpriteLoader(52704, 1103, 120, 34, "Fuse", -1, 52705, 1);
@@ -847,7 +825,7 @@ public class RSInterface {
 		main.totalChildren(39);
 		main.child(0, STARTING_POINT + 1, 1, 28);
 
-		addTextComponent(STARTING_POINT + 2, "Platinum Raids", fonts, 2, ColorConstants.RS_ORANGE, false, true, 0, 0);
+		addTextComponent(STARTING_POINT + 2, "Zamron Raids", fonts, 2, ColorConstants.RS_ORANGE, false, true, 0, 0);
 		main.child(1, STARTING_POINT + 2, 214, 38);
 		addTextComponent(STARTING_POINT + 3, "Raid Difficulty", fonts, 2, ColorConstants.RS_ORANGE, false, true, 0, 0);
 		main.child(2, STARTING_POINT + 3, 380, 70);
@@ -937,7 +915,7 @@ public class RSInterface {
 		addToItemGroup(STARTING_POINT + 2, 1, 3, 0, 5, false, null);
 		Arrays.fill(RSInterface.interfaceCache[STARTING_POINT + 2].inv, 6200);
 		Arrays.fill(RSInterface.interfaceCache[STARTING_POINT + 2].invStackSizes, 1);
-		addTextComponent(STARTING_POINT + 3, "Platinum Raids", fonts, 2, ColorConstants.RS_ORANGE, false, true, 0, 0);
+		addTextComponent(STARTING_POINT + 3, "Zamron Raids", fonts, 2, ColorConstants.RS_ORANGE, false, true, 0, 0);
 		main.child(2, STARTING_POINT + 3, 242, 90);
 		addCloseButton(STARTING_POINT + 4);
 		main.child(3, STARTING_POINT + 4, 373, 90);
@@ -1166,7 +1144,7 @@ public class RSInterface {
 
 		addSprite(47113, SpriteLoader.sprites[1194]);
 
-		addText(47114, "Platinum Season Pass", tda, 2, 0xFF981F, true, true);
+		addText(47114, "Zamron Season Pass", tda, 2, 0xFF981F, true, true);
 
 		addHoverButtonWSpriteLoader(47115, 737, 16, 16, "Close", -1, 47116, 1);
 		addHoveredImageWSpriteLoader(47116, 738, 16, 16, 47117);
@@ -1963,13 +1941,13 @@ public class RSInterface {
 		setBounds(37601, 21, 10, 0, main_widget);
 
 		addText(37602, "NPC Drop Table Checker", 0xFF981F, true, true, -1, 2);
-		setBounds(37602, 270, 13, 1, main_widget);
+		setBounds(37602, 270, 20, 1, main_widget);
 
 		addHoverButtonWSpriteLoader(37603, 1018, 21, 21, "Close", -1, 37604, 3);
 		addHoveredImageWSpriteLoader(37604, 1019, 21, 21, 2);
 
-		setBounds(37603, 475, 14, 2, main_widget);
-		setBounds(37604, 475, 14, 3, main_widget);
+		setBounds(37603, 475, 20, 2, main_widget);
+		setBounds(37604, 475, 20, 3, main_widget);
 
 		// clickable text widget
 		setBounds(37650, 10, 45, 5, main_widget);
@@ -2773,7 +2751,7 @@ public class RSInterface {
 		addHoveredButton(3226, "data/Interfaces/Packages/Pack", 8, 101, 74, 20885);
 		addHoverButton(3235, "data/Interfaces/Packages/Pack", 9, 100, 74, "Value @or2@Legendary Package", -1, 3236, 1);
 		addHoveredButton(3236, "data/Interfaces/Packages/Pack", 10, 101, 74, 20886);
-		addText(3210, "Platinum Point Shop", atextdrawingarea, 3, 0xffcc33, false, true);
+		addText(3210, "Zamron Point Shop", atextdrawingarea, 3, 0xffcc33, false, true);
 		addText(3211, "RP:", atextdrawingarea, 3, 0xffcc33, false, true);
 		addHoverButton(3215, "data/Interfaces/Packages/Pack", 3, 100, 74, "Value @or2@Extreme Package", -1, 3216, 1);
 		addHoveredButton(3216, "data/Interfaces/Packages/Pack", 4, 101, 74, 3217);
@@ -2793,7 +2771,7 @@ public class RSInterface {
 		addText(3273, "Legendary Package", atextdrawingarea, 0, 0xffcc33, false, true);
 		addText(3274, "Uncommon Package", atextdrawingarea, 0, 0xffcc33, false, true);
 		addText(3275, "Learn More", atextdrawingarea, 0, 0x19f50e, false, true);
-		addText(3276, "Kill ::platinumwarriors To Obtain Platinum Points!", atextdrawingarea, 3, 0xffcc33, false, true);
+		addText(3276, "Kill ::warriors To Obtain Zamron Points!", atextdrawingarea, 3, 0xffcc33, false, true);
 		rsinterface.totalChildren(34);
 		rsinterface.child(0, 3201, 12, 46);
 		rsinterface.child(1, 3202, 475, 51);
@@ -2846,7 +2824,7 @@ public class RSInterface {
 		String dir = "data/Interfaces/ScratchCard/Button";
 		addSprite(39301, 0, dir);
 
-		RSInterface.addText(39302, "Platinum Golden Scratch Card", tda, 2, 0xFF9900, true, true); // 20014
+		RSInterface.addText(39302, "Zamron Golden Scratch Card", tda, 2, 0xFF9900, true, true); // 20014
 		RSInterface.addText(39303, "Match 3 to Win!", tda, 2, 0xFF9900, true, true); // 20014
 		RSInterface.addText(39304, "Win Amazing Prizes!", tda, 0, 0xFF9900, true, true); // 20014
 
@@ -3479,16 +3457,20 @@ public class RSInterface {
 		RSInterface tab2 = addInterface(33620);
 		String dir = "data/Interfaces/PlayerShops/ok";
 		addSprite(33601, 7, dir);
+		addHoverButtonWSpriteLoader(33630, 1172, 16, 18, "@red@Click Here To Go Back", -1, 33631, 1);
+		addHoveredImageWSpriteLoader(33631, 1173, 16, 18, 33632);
 		addHoverButton(33606, dir, 1, 16, 16, "Close Window", 250, 32607, 3);
 		addHoveredButton(33607, dir, 2, 16, 16, 32608);
 		addText(33610, "Your Player Owned Shop", tda, 2, 0xff7000, true, true);
 		int x = 10, y = 10;
-		tab.totalChildren(5);
+		tab.totalChildren(7);
 		tab.child(0, 33601, 0 + x, 0 + y);
 		tab.child(1, 33606, 463 + x, 4 + y);
 		tab.child(2, 33607, 463 + x, 4 + y);
 		tab.child(3, 33620, 9 + x, 22 + y);
 		tab.child(4, 33610, 242 + x, 5 + y);
+		tab.child(5, 33630, 20, 12);
+		tab.child(6, 33631, 20, 12);
 		tab2.width = 455;
 		tab2.height = 276;
 		tab2.scrollMax = 400;
@@ -3581,7 +3563,7 @@ public class RSInterface {
 		addText(51114, "Expert", 0xff9933, true, true, 100, tda, 2);
 		addText(51115, "Zones", 0xff9933, true, true, 100, tda, 2);
 		addText(51116, "Minigames", 0xff9933, true, true, 100, tda, 2);
-		addText(51117, "Platinum Teleport", 0x07f8f5, true, true, 100, tda, 2);
+		addText(51117, "Zamron Teleport", 0x07f8f5, true, true, 100, tda, 2);
 		addNpc(50514, 131);
 		RSInterface.addButton(50512, 1121, 1137, "Teleport");
 
@@ -4198,7 +4180,7 @@ public class RSInterface {
 	public static void newStarter(TextDrawingArea[] tda) {
 		RSInterface tab = addInterface(52750);
 		addSpriteLoader(52751, 1187);
-		addText(52752, "Platinum Account Setup", 0xff9933, true, true, 52, tda, 3);
+		addText(52752, "Zamron Account Setup", 0xff9933, true, true, 52, tda, 3);
 		addText(52753, "Starter Items:", 0xff9933, false, true, 52, tda, 1);
 		addText(52754, "Modes: ", 0xff9933, false, true, 52, tda, 1);
 		addText(52755, "Mode Description:", 0xff9933, true, true, 52, tda, 2);
@@ -4213,7 +4195,7 @@ public class RSInterface {
 		addText(52762, "  Ironman", 0xff9933, false, true, 52, tda, 0);
 		addText(52763, "  Ultimate Iron", 0xff9933, false, true, 52, tda, 0);
 		addText(52774, "  Group Iron", 0xff9933, false, true, 52, tda, 0);
-		addText(52764, "Play Platinum as an Iron man.", 0xff9933, true, true, 52, tda, 0);
+		addText(52764, "Play Zamron as an Iron man.", 0xff9933, true, true, 52, tda, 0);
 		addText(52765, "You will be restricted from trading, staking and looting items from killed players.", 0xff9933,
 				true, true, 52, tda, 0);
 		addText(52766, "You will not get a npc drop if another player has done more damage.", 0xff9933, true, true, 52,
@@ -4474,7 +4456,7 @@ public class RSInterface {
 
 		addHoveredButton(37437, "data/Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 37638);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true); // rename it whatever
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true); // rename it whatever
 
 		int last = 33;
 		RSinterface.children = new int[last];
@@ -4565,7 +4547,7 @@ public class RSInterface {
 		addHoveredButton(38431, "data/Interfaces/Tele/DBUTTONS/BH", 8, 81, 34, 38632);
 		addHoveredButton(38433, "data/Interfaces/Tele/DBUTTONS/BH", 9, 81, 34, 38634);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 29;
 		RSinterface.children = new int[last];
@@ -4660,7 +4642,7 @@ public class RSInterface {
 		// addHoverButton(41440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 41441,
 		// 1);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 34;
 		RSinterface.children = new int[last];
@@ -4756,7 +4738,7 @@ public class RSInterface {
 		addHoverButton(42438, "data/Interfaces/Tele/ARROW", 1, 29, 24, "Next", -1, 42439, 1);
 		addHoverButton(42440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 42441, 1);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 35;
 		RSinterface.children = new int[last];
@@ -4859,7 +4841,7 @@ public class RSInterface {
 		// 1);
 		addHoverButton(43440, "data/Interfaces/Tele/ARROW", 0, 29, 24, "Back", -1, 43441, 1);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 24;
 		RSinterface.children = new int[last];
@@ -4946,7 +4928,7 @@ public class RSInterface {
 		addHoveredButton(39427, "data/Interfaces/Tele/MBUTTONS/BH", 6, 81, 34, 39628);
 		addHoveredButton(39429, "data/Interfaces/Tele/MBUTTONS/BH", 7, 81, 34, 39630);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 25;
 		RSinterface.children = new int[last];
@@ -5042,7 +5024,7 @@ public class RSInterface {
 
 		// addHoveredButton(40439, "data/Interfaces/Tele/TBUTTONS/BH", 11, 81, 34, 39639);
 
-		addText(50430, "Platinum Teleports", fonts, 2, 0xff9040, true, true);
+		addText(50430, "Zamron Teleports", fonts, 2, 0xff9040, true, true);
 
 		int last = 25;
 		RSinterface.children = new int[last];
@@ -5240,7 +5222,7 @@ public class RSInterface {
 		addSpriteLoader(57001, 805);
 		addText(57002, "Players Online", 0xff9933, true, true, -1, tda, 2);
 		addText(57003, "", 0xff9933, true, true, -1, tda, 1);
-		addText(57007, "Platinum", 0xff9933, true, true, -1, tda, 0);
+		addText(57007, "Zamron", 0xff9933, true, true, -1, tda, 0);
 		addText(57008, "", 0xff9933, true, true, -1, tda, 3);
 		addText(57009, "", 0xff9933, false, true, -1, tda, 0);
 		addText(57010, "", 0xff9933, false, true, -1, tda, 0);
@@ -5383,10 +5365,10 @@ public class RSInterface {
 	}
 
 	public static void optionsInterface() {
-		String[] options = new String[] {"525 Frame", "Old Hits", "10x Hits", "Coming Soon"/*HD shading*/, "Ground Item"};
-		String[] options2 = new String[] {"Cursors", "Smilies", "Censor", "Coming Soon"/*Mipm*/, "Ctrl Hover"};
-		String[] options3 = new String[] {"Tooltips", "HD Textures", "FOG", "Coming Soon"/*Spec Button*/, "LClick Attack"};
-		String[] options4 = new String[] {"Absorption", "Save Input", "Anti Aliasing", "Roofs", "Snow"/*, "Coming Soon" Solid Chat*/};
+		String[] options = new String[] {"525 Frame", "Old Hits", "10x Hits", "*"/*HD shading*/, "Ground Item"};
+		String[] options2 = new String[] {"Cursors", "Smilies", "Censor", "*"/*Mipm*/, "Ctrl Hover"};
+		String[] options3 = new String[] {"Tooltips", "HD Textures", "FOG", "*"/*Spec Button*/, "LClick Attack"};
+		String[] options4 = new String[] {"Absorption", "Save Input", "Anti Aliasing", "Roofs", "*"/*, "Coming Soon" Solid Chat*/};
 
 
 		RSInterface rsi = addTabInterface(35560);
@@ -6270,9 +6252,9 @@ public class RSInterface {
 				rsInterface.shadowed = stream.readUnsignedByte() == 1;
 			}
 			if (rsInterface.type == 4) {
-				rsInterface.message = stream.readString().replaceAll("RuneScape", "Platinum");
-				if (rsInterface.message.toLowerCase().equals("the bank of Platinum")) {
-					rsInterface.message = "        The Bank of Platinum";
+				rsInterface.message = stream.readString().replaceAll("RuneScape", "Zamron");
+				if (rsInterface.message.toLowerCase().equals("the bank of Zamron")) {
+					rsInterface.message = "        The Bank of Zamron";
 				}
 				rsInterface.enabledMessage = stream.readString();
 			}
@@ -6447,7 +6429,7 @@ public class RSInterface {
 		killcountInterface(textDrawingAreas);
 		petInterface(textDrawingAreas);
 		forumsInterface(textDrawingAreas);
-		// donationDealsInterface(textDrawingAreas);
+		//donationDealsInterface(textDrawingAreas);
 		customTeleports(textDrawingAreas);
 		guessingGame(textDrawingAreas);
 		titleCustomizer(textDrawingAreas);
@@ -6824,7 +6806,7 @@ public class RSInterface {
 		tab.totalChildren(4);
 		tab.child(0, 52301, 10, 10);
 		tab.child(1, 52302, 20, 50);
-		tab.child(2, 52303, 478, 10);
+		tab.child(2, 52303, 465, 20);
 		tab.child(3, 52304, 251, 20);
 	}
 
@@ -6896,7 +6878,7 @@ public class RSInterface {
 		 * start of text
 		 * 
 		 */
-		scroll.addText(50300, "Platinum Rules", 0x09f3f7, true, true, 100, tda, 2);
+		scroll.addText(50300, "Zamron Rules", 0x09f3f7, true, true, 100, tda, 2);
 		scroll.addText(50301, "Starter Guide", 0x09f3f7, true, true, 100, tda, 2);
 		scroll.addText(50302, "Dr Items Guide", 0x09f3f7, true, true, 100, tda, 2);
 		scroll.addText(50303, "Donator Benefits", 0x09f3f7, true, true, 100, tda, 2);
@@ -6957,27 +6939,6 @@ public class RSInterface {
 			xPos += 155;
 		}
 	}
-
-	/*
-	 * public static void donationDealsInterface(TextDrawingArea[] tda) {
-	 * RSInterface tab = addInterface(45600); tab.totalChildren(4);
-	 * tab.addSpriteLoader(45601, 1013); tab.addToItemGroup(45602, 13, 10, 25, 4,
-	 * true, new String[] { "Check stats", null, null, null, null });
-	 * tab.addText(45603, "burger", 0xfffff, true, true, 100, tda, 2); tab.child(0,
-	 * 45601, 15, 15); tab.child(1, 45602, 25, 45); tab.child(2, 45603, 245, 17);
-	 * tab.child(3, 45605, 0, 0); RSInterface boxes = addTabInterface(45605);
-	 * boxes.addRectangle(45604, 175, 0x2727db, true, 40, 40);
-	 * boxes.addRectangle(45616, 175, 0x2727db, true, 40, 40); final int rows = 5,
-	 * colums = 5, boxSize = 25, spacing = 5; boxes.totalChildren(rows * colums);
-	 * int index = 0; for(int x = 0; x < rows; x++) { for(int y = 0; y < colums;
-	 * y++) { int xPos = (30 + boxSize + spacing) * x; int yPos = (37 + boxSize +
-	 * spacing) * y; int id = 45616 + index++;//something wrong with this id?its too
-	 * big it worked before but i guess just make it 44616 boxes.addRectangle(id,
-	 * 175, 0x2727db, true, boxSize, boxSize); setBounds(id, xPos, yPos, index,
-	 * boxes); } }
-	 * 
-	 * }
-	 */
 
 	public static void customTeleports(TextDrawingArea[] tda) {
 		RSInterface main = addInterface(64530);
@@ -7190,13 +7151,13 @@ public class RSInterface {
 		tab.child(6, 62208, 25, 107);
 		tab.child(7, 62210, 378, 126);
 		// tab.child(8, 62211, 213, 118);
-		tab.child(8, 62230, 492, 10);
+		tab.child(8, 62230, 484, 18);
 		tab.child(9, 62250, 325, 185);
 		RSInterface scrollInterface = addTabInterface(62208);
 		scrollInterface.parentID = 62200;
 		scrollInterface.width = 160;
 		scrollInterface.height = 172;
-		scrollInterface.scrollMax = 700;
+		scrollInterface.scrollMax = 1200;
 		scrollInterface.totalChildren(1);
 		scrollInterface.child(0, 62209, 25, 5);
 	}
@@ -7227,7 +7188,7 @@ public class RSInterface {
 		tab.child(6, 63208, 25, 107);
 		tab.child(7, 63210, 378, 126);
 		// tab.child(8, 62211, 213, 118);
-		tab.child(8, 63230, 492, 10);
+		tab.child(8, 63230, 484, 18);
 		tab.child(9, 63250, 325, 185);
 		RSInterface scrollInterface = addTabInterface(63208);
 		scrollInterface.parentID = 63200;
@@ -7238,38 +7199,6 @@ public class RSInterface {
 		scrollInterface.child(0, 63209, 25, 5);
 	}
 
-	/*
-	 * public static void randomtext(TextDrawingArea[] tda) { int textammount = 900;
-	 * 
-	 * RSInterface main = addTabInterface(48000);
-	 * 
-	 * RSInterface list = addInterface(48005);
-	 * 
-	 * list.width = 163; list.height = 175; list.scrollMax = 42 * textammount;
-	 * 
-	 * 
-	 * addSpriteLoader(22522, 1036); addText(48002, "Random Ass Interface", fonts,
-	 * 2, 0x7a2431, false, true);
-	 * 
-	 * 
-	 * 
-	 * for (int i = 0; i < textammount; i++) { addText(48105 + i, "Text: " + i,
-	 * fonts, 1, 0xFF8900, false, true); }
-	 * 
-	 * main.totalChildren(3);
-	 * 
-	 * main.child(0, 22522, 9, 35); main.child(1, 48002, 165, 47); main.child(2,
-	 * 48005, 15, 75);
-	 * 
-	 * list.totalChildren(textammount);
-	 * 
-	 * int y = 0; int childNum = 0; for (int i = 0; i < textammount; i++, y+=20) {
-	 * list.child(childNum++, 48105 + i, 7, y); //System.out.println(y); }
-	 * 
-	 * 
-	 * 
-	 * }
-	 */
 	public static void achievementsInterface(TextDrawingArea[] daniel) {
 		RSInterface tab = addTabInterface(45000);
 		RSInterface scroll = addTabInterface(45999);
@@ -7834,7 +7763,8 @@ public class RSInterface {
 		RSInterface tab = addTabInterface(40030);
 		int i = 0;
 		byte byte0 = 2;
-		addHDSprite(40042, 375, 375);
+		//addHDSprite(40042, 375, 375); //375
+		addSpriteLoader(40042, 1313);
 		addHoverButton(40039, CLOSE_BUTTON, CLOSE_BUTTON, 16, 16, "Close Window", 0, 40040, 1);
 		addHoveredButton(40040, CLOSE_BUTTON_HOVER, CLOSE_BUTTON_HOVER, 16, 16, 40027);
 		addText(40041, "Game Settings", tda, 2, 0xff9b00, true, true);
@@ -8258,7 +8188,7 @@ public class RSInterface {
 		addScroll(id + 160, 190, 100, 200, 10);
 		addSprite(id + 2, 0, directory);
 
-		addText(id + 3, "Platinum", 0xAF6A1B, false, true, 0, tda, 2);
+		addText(id + 3, "Zamron", 0xAF6A1B, false, true, 0, tda, 2);
 		addText(id + 4, "100% Drops", 0xAF6A1B, false, true, 0, tda, 2);
 		addText(id + 5, "Regular Drops: 20", 0xAF6A1B, true, true, 0, tda, 2);
 		addText(id + 6, "Rare Drops: 10", 0xAF6A1B, true, true, 0, tda, 2);
@@ -8473,7 +8403,7 @@ public class RSInterface {
 	/*
 	 * private static void questTabInterface() { RSInterface tab =
 	 * addTabInterface(639); RSInterface scroll = addTabInterface(15016);
-	 * addText(39155, "Platinum-rsps.com", fonts, 2, 16750623, false, true);
+	 * addText(39155, "Zamron-rsps.com", fonts, 2, 16750623, false, true);
 	 * addSpriteLoader(39156, 722); addSpriteLoader(39157, 723);
 	 * addSpriteLoader(39158, 722); // addButtonWSpriteLoader(39150, 229,
 	 * "Staff Tab");
@@ -8493,7 +8423,7 @@ public class RSInterface {
 	private static void newTabInterface() {
 		RSInterface tab = addTabInterface(58700);
 		RSInterface scroll = addTabInterface(58701);
-		addText(58702, "Platinum-ps.net", fonts, 2, 16750623, false, true);
+		addText(58702, "Zamron-ps.net", fonts, 2, 16750623, false, true);
 		addSpriteLoader(58703, 722);
 		addSpriteLoader(58704, 723);
 		addSpriteLoader(58705, 722);
@@ -11379,10 +11309,121 @@ public class RSInterface {
 
 	public static void Sidebar0(TextDrawingArea[] tda) {
 		/*
-		 * Sidebar0a(id, id2, id3, "text1", "text2", "text3", "text4", str1x, str1y,
-		 * str2x, str2y, str3x, str3y, str4x, str4y, img1x, img1y, img2x, img2y, img3x,
-		 * img3y, img4x, img4y, tda);
+		 * Sidebar0a(id, id2, id3, "text1", "text2", "text3", "text4", str1x,
+		 * str1y, str2x, str2y, str3x, str3y, str4x, str4y, img1x, img1y, img2x,
+		 * img2y, img3x, img3y, img4x, img4y, tda);
 		 */
+		Sidebar0a(1698, 1701, 7499, "Chop", "Hack", "Smash", "Block", 42, 75,
+				127, 75, 39, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		Sidebar0a(2276, 2279, 7574, "Stab", "Lunge", "Slash", "Block", 43, 75,
+				124, 75, 41, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		Sidebar0a(2423, 2426, 7599, "Chop", "Slash", "Lunge", "Block", 42, 75,
+				125, 75, 40, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		Sidebar0a(3796, 3799, 7624, "Pound", "Pummel", "Spike", "Block", 39,
+				75, 121, 75, 41, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40,
+				103, tda);
+		Sidebar0a(4679, 4682, 7674, "Lunge", "Swipe", "Pound", "Block", 40, 75,
+				124, 75, 39, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		Sidebar0a(4705, 4708, 7699, "Chop", "Slash", "Smash", "Block", 42, 75,
+				125, 75, 39, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		Sidebar0a(5570, 5573, 7724, "Spike", "Impale", "Smash", "Block", 41,
+				75, 123, 75, 39, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40,
+				103, tda);
+		Sidebar0a(7762, 7765, 7800, "Chop", "Slash", "Lunge", "Block", 42, 75,
+				125, 75, 40, 128, 125, 128, 122, 103, 40, 50, 122, 50, 40, 103,
+				tda);
+		/*
+		 * Sidebar0b(id, id2, "text1", "text2", "text3", "text4", str1x, str1y,
+		 * str2x, str2y, str3x, str3y, str4x, str4y, img1x, img1y, img2x, img2y,
+		 * img3x, img3y, img4x, img4y, tda);
+		 */
+		Sidebar0b(776, 779, "Reap", "Chop", "Jab", "Block", 42, 75, 126, 75,
+				46, 128, 125, 128, 122, 103, 122, 50, 40, 103, 40, 50, tda);
+		/*
+		 * Sidebar0c(id, id2, id3, "text1", "text2", "text3", str1x, str1y,
+		 * str2x, str2y, str3x, str3y, img1x, img1y, img2x, img2y, img3x, img3y,
+		 * tda);
+		 */
+		Sidebar0c(425, 428, 7474, "Pound", "Pummel", "Block", 39, 75, 121, 75,
+				42, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(1749, 1752, 7524, "Accurate", "Rapid", "Longrange", 33, 75,
+				125, 75, 29, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(1764, 1767, 7549, "Accurate", "Rapid", "Longrange", 33, 75,
+				125, 75, 29, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(4446, 4449, 7649, "Accurate", "Rapid", "Longrange", 33, 75,
+				125, 75, 29, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(5855, 5857, 7749, "Punch", "Kick", "Block", 40, 75, 129, 75,
+				42, 128, 40, 50, 122, 50, 40, 103, tda);
+		Sidebar0c(6103, 6132, 6117, "Bash", "Pound", "Block", 43, 75, 124, 75,
+				42, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(8460, 8463, 8493, "Jab", "Swipe", "Fend", 46, 75, 124, 75,
+				43, 128, 40, 103, 40, 50, 122, 50, tda);
+		Sidebar0c(12290, 12293, 12323, "Flick", "Lash", "Deflect", 44, 75, 127,
+				75, 36, 128, 40, 50, 40, 103, 122, 50, tda);
+		/*
+		 * Sidebar0d(id, id2, "text1", "text2", "text3", str1x, str1y, str2x,
+		 * str2y, str3x, str3y, img1x, img1y, img2x, img2y, img3x, img3y, tda);
+		 */
+		Sidebar0d(328, 331, "Bash", "Pound", "Focus", 42, 66, 39, 101, 41, 136,
+				40, 120, 40, 50, 40, 85, tda);
+
+		RSInterface rsi = addInterface(19300);
+		addToggleButton(150, 312, 172, 150, 44, "Auto Retaliate");
+		rsi.totalChildren(22, 22, 22);
+		rsi.child(0, 19000, 92, 26); // Combat level
+		rsi.child(2, 19001, 500, 500); // Constitution updating
+		rsi.child(1, 150, 21, 153); // auto retaliate
+		rsi.child(3, 34555, 500, 500);
+		rsi.child(4, 34556, 500, 500);
+		rsi.child(4, 19001, 500, 500);
+		rsi.child(5, 32002, 500, 500);
+		rsi.child(6, 32003, 500, 500);
+		rsi.child(7, 32004, 500, 500);
+		rsi.child(8, 32005, 500, 500);
+		rsi.child(9, 32006, 500, 500);
+		rsi.child(10, 33001, 500, 500);
+		rsi.child(11, 33002, 500, 500);
+		rsi.child(12, 33003, 500, 500);
+		rsi.child(13, 33004, 500, 500);
+		rsi.child(14, 33005, 500, 500);
+		rsi.child(15, 33006, 500, 500);
+		rsi.child(16, 33101, 500, 500);
+		rsi.child(17, 33102, 500, 500);
+		rsi.child(18, 33103, 500, 500);
+		rsi.child(19, 33104, 500, 500);
+		rsi.child(20, 33105, 500, 500);
+		rsi.child(21, 33106, 500, 500);
+
+		addText(34555, "", tda, 0, 0xffffff, true, false);
+		addText(34556, "", tda, 0, 0xffffff, true, false);
+		addText(19000, "Combat level:", tda, 0, 0xff981f, true, false);
+		addText(19001, "lolquoi", tda, 0, 0xff981f, true, false);
+		addText(32001, "", tda, 0, 0xff981f, true, false);
+		addText(32002, "", tda, 0, 0xff981f, true, false);
+		addText(32003, "", tda, 0, 0xff981f, true, false);
+		addText(32004, "", tda, 0, 0xff981f, true, false);
+		addText(32005, "", tda, 0, 0xff981f, true, false);
+		addText(32006, "", tda, 0, 0xff981f, true, false);
+		addText(33001, "", tda, 0, 0xff981f, true, false);
+		addText(33002, "", tda, 0, 0xff981f, true, false);
+		addText(33003, "", tda, 0, 0xff981f, true, false);
+		addText(33004, "", tda, 0, 0xff981f, true, false);
+		addText(33005, "", tda, 0, 0xff981f, true, false);
+		addText(33006, "", tda, 0, 0xff981f, true, false);
+		addText(33101, "", tda, 0, 0xff981f, true, false);
+		addText(33102, "", tda, 0, 0xff981f, true, false);
+		addText(33103, "", tda, 0, 0xff981f, true, false);
+		addText(33104, "", tda, 0, 0xff981f, true, false);
+		addText(33105, "", tda, 0, 0xff981f, true, false);
+		addText(33106, "", tda, 0, 0xff981f, true, false);
+	}
+
+	/**public static void Sidebar0(TextDrawingArea[] tda) {
 		Sidebar0a(1698, 1701, 7499, "Chop", "Hack", "Smash", "Block", 42, 75, 127, 75, 39, 128, 125, 128, 122, 103, 40,
 				50, 122, 50, 40, 103, tda);
 		Sidebar0a(2276, 2279, 7574, "Stab", "Lunge", "Slash", "Block", 43, 75, 124, 75, 41, 128, 125, 128, 122, 103, 40,
@@ -11399,17 +11440,8 @@ public class RSInterface {
 				40, 50, 122, 50, 40, 103, tda);
 		Sidebar0a(7762, 7765, 7800, "Chop", "Slash", "Lunge", "Block", 42, 75, 125, 75, 40, 128, 125, 128, 122, 103, 40,
 				50, 122, 50, 40, 103, tda);
-		/*
-		 * Sidebar0b(id, id2, "text1", "text2", "text3", "text4", str1x, str1y, str2x,
-		 * str2y, str3x, str3y, str4x, str4y, img1x, img1y, img2x, img2y, img3x, img3y,
-		 * img4x, img4y, tda);
-		 */
 		Sidebar0b(776, 779, "Reap", "Chop", "Jab", "Block", 42, 75, 126, 75, 46, 128, 125, 128, 122, 103, 122, 50, 40,
 				103, 40, 50, tda);
-		/*
-		 * Sidebar0c(id, id2, id3, "text1", "text2", "text3", str1x, str1y, str2x,
-		 * str2y, str3x, str3y, img1x, img1y, img2x, img2y, img3x, img3y, tda);
-		 */
 		Sidebar0c(425, 428, 7474, "Pound", "Pummel", "Block", 39, 75, 121, 75, 42, 128, 40, 103, 40, 50, 122, 50, tda);
 		Sidebar0c(1749, 1752, 7524, "Accurate", "Rapid", "Longrange", 33, 75, 125, 75, 29, 128, 40, 103, 40, 50, 122,
 				50, tda);
@@ -11422,10 +11454,6 @@ public class RSInterface {
 		Sidebar0c(8460, 8463, 8493, "Jab", "Swipe", "Fend", 46, 75, 124, 75, 43, 128, 40, 103, 40, 50, 122, 50, tda);
 		Sidebar0c(12290, 12293, 12323, "Flick", "Lash", "Deflect", 44, 75, 127, 75, 36, 128, 40, 50, 40, 103, 122, 50,
 				tda);
-		/*
-		 * Sidebar0d(id, id2, "text1", "text2", "text3", str1x, str1y, str2x, str2y,
-		 * str3x, str3y, img1x, img1y, img2x, img2y, img3x, img3y, tda);
-		 */
 		Sidebar0d(328, 331, "Bash", "Pound", "Focus", 42, 66, 39, 101, 41, 136, 40, 120, 40, 50, 40, 85, tda);
 
 		RSInterface rsi = addInterface(19300);
@@ -11479,7 +11507,7 @@ public class RSInterface {
 		addText(33104, "", tda, 0, 0xff981f, true, false);
 		addText(33105, "", tda, 0, 0xff981f, true, false);
 		addText(33106, "", tda, 0, 0xff981f, true, false);
-	}
+	}**/
 
 	public static void Sidebar0a(int id, int id2, int id3, String text1, String text2, String text3, String text4,
 			int str1x, int str1y, int str2x, int str2y, int str3x, int str3y, int str4x, int str4y, int img1x,

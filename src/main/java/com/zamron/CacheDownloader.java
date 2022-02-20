@@ -10,9 +10,9 @@ import java.util.zip.ZipInputStream;
 
 public class CacheDownloader implements Runnable {
 
-	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + ".Zamron317" + File.separator;
-	private static final String ZIP_URL = "https://www.platinum-ps.net/files/cache/plat.zip";
-	private static final String VERSION_FILE = CACHE_PATH + "/data/cacheVersion.dat";
+	private static final String CACHE_PATH = System.getProperty("user.home") + File.separator + "/.Zamron317" + File.separator;
+	private static final String ZIP_URL = "https://www.zamron.net/zamroncache.zip";
+	private static final String VERSION_FILE = CACHE_PATH + "/cacheVersion.dat";
 
 	private CacheDownloader.GUI g;
 
@@ -108,7 +108,6 @@ public class CacheDownloader implements Runnable {
 		while ((e = zin.getNextEntry()) != null) {
 			max += e.getSize();
 		}
-
 		zin.close();
 
 		ZipInputStream in = new ZipInputStream(new BufferedInputStream(new FileInputStream(zipFile)));
@@ -140,7 +139,7 @@ public class CacheDownloader implements Runnable {
 	private File downloadCache() {
 		g.setStatus("Downloading Cache... Hold Tight...");
 
-		File ret = new File(CACHE_PATH + "plat.zip");
+		File ret = new File(CACHE_PATH + ".Zamron317.zip");
 
 		try (OutputStream out = new FileOutputStream(ret)) {
 			URLConnection conn = new URL(ZIP_URL).openConnection();
@@ -156,7 +155,7 @@ public class CacheDownloader implements Runnable {
 			while ((len = in.read(b, 0, b.length)) > -1) {
 				out.write(b, 0, len);
 				curr += len;
-				g.setPercent((int) ((curr * 100) / max));
+				g.setPercent(   (int) ((curr * 100) / max));
 			}
 
 			out.flush();
@@ -197,7 +196,7 @@ public class CacheDownloader implements Runnable {
 			jLabel3 = new JLabel();
 
 			setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-			setTitle("Platinum Cache Update");
+			setTitle("Zamron Cache Update");
 
 			addWindowListener(new java.awt.event.WindowAdapter() {
 				public void windowClosing(java.awt.event.WindowEvent evt) {

@@ -113,10 +113,10 @@ public class Jframe extends Client implements ActionListener {
 				@Override
 				public void windowClosing(WindowEvent we) {
 					String options[] = { "Quit", "Go AFK!" };
-					int userPrompt = JOptionPane.showOptionDialog(null, "If you use ::afk you can still progress! Still Quit?", "Platinum",
+					int userPrompt = JOptionPane.showOptionDialog(null, "If you use ::afk you can still progress! Still Quit?", "Zamron",
 							JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[1]);
 					if (userPrompt == JOptionPane.YES_OPTION) {
-						// openURL("http://Platinum-RSPS.net/forum");
+						// openURL("http://Zamron-RSPS.net/forum");
 						// System.exit(-1);
 						System.exit(0);
 					} else {
@@ -252,22 +252,22 @@ public class Jframe extends Client implements ActionListener {
 		 * Create our buttons
 		 */
 		
-		JButton homeButton = createButton("Home", "House_icon.png", "Open the official Platinumum homepage.");
-		//JButton forumsButton = createButton("Forum", "forums.png", "Open the official Platinum forums.");
+		JButton homeButton = createButton("Home", "House_icon.png", "Open the official Zamronum homepage.");
+		JButton forumsButton = createButton("Forum", "forums.png", "Open the official Zamron forums.");
 
-		JButton knowledgeBaseButton = createButton("Platinum Guides", "3366503.gif",
-				"Open the Platinum Guides Section on the forums.");
-		JButton storeButton = createButton("Store", "cart_icon.gif", "Open the official Platinum store.");
-		JButton voteButton = createButton("Vote", "Small-checkmark.png", "Open the official Platinum voting page.");
-		JButton scoresButton = createButton("HiScores", "hiscores.png", "Open the official Platinum Hiscores");
+		JButton knowledgeBaseButton = createButton("Zamron Guides", "3366503.gif",
+				"Open the Zamron Guides Section on the forums.");
+		JButton storeButton = createButton("Store", "cart_icon.gif", "Open the official Zamron store.");
+		JButton voteButton = createButton("Vote", "Small-checkmark.png", "Open the official Zamron voting page.");
+		JButton scoresButton = createButton("HiScores", "hiscores.png", "Open the official Zamron Hiscores");
 
-		JButton tsButton = createButton("Join Discord", "discord.png", "Join the Platinum discord.");
+		JButton tsButton = createButton("Join Discord", "discord.png", "Join the Zamron discord.");
 
 		/*
 		 * Add our buttons to the menu panel
 		 */
 		menuPanel.add(homeButton);
-		//menuPanel.add(forumsButton);
+		menuPanel.add(forumsButton);
 		menuPanel.add(knowledgeBaseButton);
 		menuPanel.add(storeButton);
 		menuPanel.add(voteButton);
@@ -339,29 +339,29 @@ public class Jframe extends Client implements ActionListener {
 			if (cmd != null) {
 				switch (cmd) {
 				case "Home":
-					openURL("http://Platinum-ps.net");
+					openURL("http://zamron.net");
 					break;
-				/*case "Forum":
-					openURL("http://Platinum-ps.net");
-					break;*/
-				case "Platinum Guides":
-					openURL("https://platinum.fandom.com/wiki/Platinum_Wiki");
+				case "Forum":
+					openURL("http://Zamron.net/forums/");
+					break;
+				case "Guides":
+					openURL("https://zamron.net/gearguide.html");
 					break;
 				case "Store":
-					openURL("https://platinum.everythingrs.com/services/store");
+					openURL("https://zamron.net/store/");
 					break;
 				case "Vote":
-					openURL("https://platinum.everythingrs.com/services/vote");
+					openURL("https://zamron.net/vote");
 					break;
 				case "HiScores":
-					openURL("https://platinum.everythingrs.com/services/hiscores");
+					openURL("https://Zamron.net");
 					break;
 				case "Join Discord":
 					// String nickname = (Client.instance.getMyUsername() != null && Client.loggedIn
 					// && Client.instance.getMyUsername().length() > 2) ?
 					// TextClass.fixName(Client.instance.getMyUsername().replaceAll(" ", "%20")) :
 					// "ForumGuest";
-					openURL("https://discord.gg/HdK3cj9gpM");
+					openURL("https://discord.gg/CHTjMe3p59");
 					break;
 				}
 

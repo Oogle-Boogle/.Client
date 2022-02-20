@@ -16,6 +16,8 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.annotations.Expose;
 import com.google.gson.reflect.TypeToken;
 
+import static com.zamron.ModelUtil.itemDef;
+
 public final class ItemDef {
 	
 	 public String groundName;
@@ -704,6 +706,14 @@ public final class ItemDef {
 
 	}
 
+	public static String itemModels(int itemID) {
+		int inv = forID(itemID).modelID;
+		int male = forID(itemID).maleEquip1;
+		int female = forID(itemID).femaleEquip1;
+		String name = forID(itemID).name;
+		return "<col=225>"+name+"</col> (<col=800000000>"+itemID+"</col>) - [inv: <col=800000000>"+inv+"</col>] - [male: <col=800000000>"+male+"</col>] - [female: <col=800000000>"+female+"</col>]";
+	}
+
 	public enum CustomItems {
 		RED_WINGS(19709, 48334, 48334, 48334, false), // 18888 cape, shield
 		ELITE_CROSSBOW(9185, 48353, 48354, 48354, true), // 18889
@@ -745,7 +755,7 @@ public final class ItemDef {
 		GHOSTLY_SWORDS(18351, 75058, 75059, true), // 18925
 		PINK_WINGS(19709, 75860, 75859, false), // 18926
 		DARK_RED_WINGS(19709, 75861, 75862, false), // 18927
-		STARTER_Platinum_WINGS(19709, 75863, 75864, false), // 18928
+		STARTER_Zamron_WINGS(19709, 75863, 75864, false), // 18928
 		FIERY_WINGS(19709, 75865, 75866, false), // 18929
 		RAINBOW_WHIP(18351, 78101, true), // 18930
 		ICY_CROSSBOW(9185, 79411, true), // 18931
@@ -849,7 +859,7 @@ public final class ItemDef {
 		GRIM_PLATEBODY(18944, 62832, 62832, 62831, false), // 19029
 		GRIM_PLATELEGS(18943, 62833, 62833, 62930, false), // 19030
 		GRIM_HELM(18945, 62835, 62835, 62834, false), // 19031
-		STARTER_Platinum_BOOTS(11732, 62837, 62837, 62836, false), // 19032
+		STARTER_Zamron_BOOTS(11732, 62837, 62837, 62836, false), // 19032
 		GRIM_GLOVES(1059, 62839, 62839, 62838, false), // 19033
 		METALIC_PLATEBODY(18944, 62847, 62847, 62846, false), // 19034
 		METALIC_PLATELEGS(18943, 62841, 62841, 62840, false), // 19035
@@ -923,7 +933,7 @@ public final class ItemDef {
 		RAINBOW_SLED(4084, 94564, 94564, 94564, true), // 19103
 		LMS_KEY(989, 91454, 91454, 91454, false), // 19104
 		RAINBOW_TEXTURIZED_PARTYHAT(1040, 96041, 96042, 96042, false), // 19105
-		PLATINUM_HELMET(3087, 96041, 96042, 96042, false), // 19091
+		Zamron_HELMET(3087, 96041, 96042, 96042, false), // 19091
 		;
 
 		private int copy;

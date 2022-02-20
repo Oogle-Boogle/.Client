@@ -933,6 +933,7 @@ public final class NPCDef {
 			break;
 			
 		case 12239:
+		case 12240:
 			npc.actions = new String[5];
 			npc.actions[1] = "Attack";
 			npc.name = "@bla@Exoden";
@@ -964,6 +965,27 @@ public final class NPCDef {
 			npc.standAnim = 808;
 			npc.walkAnim = 819;
 			break;
+
+			case 299:
+				npc.name = "@bla@Dark Ranger";
+				npc.walkAnim = 819;
+				npc.standAnim = 808;
+				npc.models = new int[]{90576,90582,90572,90574,95015, 90578, 90580};
+				npc.combatLevel = 666;
+				npc.turn180AnimIndex = -1;
+				npc.turn90CCWAnimIndex = -1;
+				npc.turn90CWAnimIndex = -1;
+				npc.degreesToTurn = 32;
+				npc.actions = new String[5];
+				npc.actions[1] = "Attack";
+				npc.sizeY = 130;
+				npc.sizeXZ = 130;
+				npc.squaresNeeded = 1;
+				npc.drawMinimapDot = true;
+				npc.combatLevel = 624;
+				npc.standAnim = 808;
+				npc.walkAnim = 819;
+				break;
 			
 		case 1982:
 			npc.name = "Charizard";
@@ -1696,8 +1718,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1711,8 +1731,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			copyModel(npc, 5540);
@@ -1804,7 +1822,25 @@ public final class NPCDef {
 			npc.squaresNeeded = 4;
 			npc.drawMinimapDot = true;
 			break;
+			case 115:
+				npc.name = "Some blue guy";
+				npc.walkAnim = 1660;
+				npc.standAnim = 11973;
+				npc.models = new int[]{75105};
+				npc.combatLevel = 1337;
+				npc.turn180AnimIndex = -1;
+				npc.turn90CCWAnimIndex = -1;
+				npc.turn90CWAnimIndex = -1;
+				npc.degreesToTurn = 32;
+				npc.actions = new String[5];
+				npc.actions[1] = "Attack";
+				npc.sizeY = 100;
+				npc.sizeXZ = 100;
+				npc.squaresNeeded = 2;
+				npc.drawMinimapDot = true;
+				break;
 		case 9903:
+			case 111:
 			npc.name = "@bla@King Kong";
 			npc.walkAnim = 1660;
 			npc.standAnim = 11973;
@@ -1992,8 +2028,8 @@ public final class NPCDef {
 			npc.name = "Dildo monkey";
 			npc.description = "Deziqn likes sucky sucky, sucky likes suki diki";
 			npc.combatLevel = 1337;
-			npc.sizeXZ = 555;
-			npc.sizeY = 555;
+			npc.sizeXZ = 200;
+			npc.sizeY = 200;
 			npc.models = new int[] { 31560 };
 			npc.actions = new String[5];
 			npc.actions = new String[] { null, "Attack", null, null, null };
@@ -2548,6 +2584,7 @@ public final class NPCDef {
 			break;
 			
 		case 1684:
+			case 1685:
             npc.name = "Apollo Ranger";
             npc.models = new int[]{40269, 40271, 40273, 40275, 40276,23832,23439};
             npc.walkAnim = 819;
@@ -2790,14 +2827,13 @@ public final class NPCDef {
 			npc.description = "Its a Tangleroot.";
 			npc.squaresNeeded = 1;
 			break;
-		case 6728:
+
+			case 6728:
 			npc.name = "Rocky";
 			npc.combatLevel = 0;
 			npc.models = new int[1];
 			npc.models[0] = 32203;
 			npc.actions = new String[5];
-
-
 			npc.walkAnim = 7316;
 			npc.standAnim = 7315;
 			npc.description = "Its a Rocky.";
@@ -2817,7 +2853,7 @@ public final class NPCDef {
 			npc.squaresNeeded = 1;
 			break;
 		case 7788:
-			npc.name = "Platinum's Quest NPC";
+			npc.name = "Zamron's Quest NPC";
 			npc.combatLevel = 1337;
 			npc.walkAnim = 1660;
 			npc.standAnim = 11973;
@@ -2968,6 +3004,7 @@ public final class NPCDef {
 			break;
 			
 		case 9935:
+			case 110:
 			npc.originalColours = new int[2];
 			npc.destColours = new int[2];
 			npc.originalColours[0] = 59;
@@ -3051,12 +3088,12 @@ public final class NPCDef {
 			npc.squaresNeeded = 3;
 			break;
 		case 3192:
-			npc.name = "Platinum Shop";
+			npc.name = "Zamron Shop";
 			npc.combatLevel = 999;
 			npc.actions = new String[] { "Trade", null, null, null, null };
 			break;
 		case 2436:
-			npc.name = "Platinum Warriors";
+			npc.name = "Zamron Warriors";
 			npc.walkAnim = 1660;
 			npc.standAnim = 11973;
 			npc.models = new int[9];
@@ -3097,7 +3134,7 @@ public final class NPCDef {
 			break;
 			case 9945:
 				npc.name = "Pet Assassin";
-				npc.actions = new String[] {null, null, null, "Pick Up", null};
+				npc.actions = new String[] {null, null, null, null, null};
 				npc.combatLevel = 0;
 				npc.originalColours= new int[1];
 				npc.destColours = new int[1];
@@ -3367,7 +3404,8 @@ public final class NPCDef {
 			npc.drawMinimapDot = true;
 			break;
 			
-		case 169:
+			case 169:
+			case 171:
 			npc.walkAnim = 1660;
 			npc.standAnim = 11973;
 			npc.originalColours= new int[1];
@@ -3387,8 +3425,8 @@ public final class NPCDef {
 			npc.actions[1] = "Attack";
 			npc.drawMinimapDot = true;
 			break;
-			
-		case 168:
+
+			case 168:
 			npc.walkAnim = 1660;
 			npc.standAnim = 11973;
 			npc.originalColours= new int[1];
@@ -3669,7 +3707,7 @@ public final class NPCDef {
 			npc.name = "Decanter";
 			break;
 		case 4902:
-			npc.name = "@whi@Afk Miner";
+			npc.name = "@whi@Afk Store";
 			npc.actions = new String[] { "Talk-To", null, "Trade", null, null };
 			break;
 		case 4475:
@@ -3698,10 +3736,6 @@ public final class NPCDef {
 			npc.squaresNeeded = 2;
 			npc.combatLevel = 301;
 
-		case 659:
-			npc.name = "@cya@Donator Shop 1/2";
-			npc.actions = new String[] { "View Shop 1", null, "View Shop 2", null, null };
-			break;
 		case 388:
 			npc.name = "@cya@Donator Shop 3";
 			npc.actions = new String[] { "View Shop 3", null, null, null, null };
@@ -3863,8 +3897,8 @@ public final class NPCDef {
 			npc.actions[0] = "Trade";
 			break;
 		case 2579:
-			npc.name = "Platinum's Veteran";
-			npc.description = "One of Platinum's veterans.";
+			npc.name = "Zamron's Veteran";
+			npc.description = "One of Zamron's veterans.";
 			npc.combatLevel = 200;
 			npc.actions = new String[5];
 			npc.actions[0] = "Talk-to";
@@ -4005,6 +4039,7 @@ public final class NPCDef {
 			break;
 			
 		case 5958:
+			case 109:
 			npc.models = new int[2];
 			npc.models[0] = 44263; //HEAD
 			npc.name = "Azazel Beast";
@@ -4095,10 +4130,6 @@ public final class NPCDef {
 		case 1360:
 			npc.actions = new String[] { "Talk-to", null, null, null, null };
 			break;
-		case 1685:
-			npc.name = "Pure";
-			npc.actions = new String[] { "Trade", null, null, null, null };
-			break;
 			
 		case 422:
 			npc.name = "Onslaught";
@@ -4163,7 +4194,7 @@ public final class NPCDef {
 	            npc.standAnim = 808;
 	            npc.squaresNeeded = 1;
 				npc.combatLevel =155;
-				npc.description = "He interrupts you while praying to Platinum";
+				npc.description = "He interrupts you while praying to Zamron";
 				npc.actions = new String[5];
 				npc.sizeY = 240;
 				npc.sizeXZ = 240;
@@ -4261,7 +4292,7 @@ public final class NPCDef {
             npc.walkAnim = 819;
             npc.standAnim = 808;
             npc.squaresNeeded = 1;
-			npc.combatLevel =75;
+			npc.combatLevel = 75;
 			npc.description = "He looks like hes from the 80s";
 			npc.actions = new String[5];
 			npc.sizeY = 350;
@@ -4370,7 +4401,7 @@ public final class NPCDef {
 			npc.squaresNeeded = 3;
 			break;
 		case 3078:
-			npc.name = "Pet Platinums Dragon";
+			npc.name = "Pet Zamrons Dragon";
 			npc.actions = new String[5];
 
 
@@ -4577,7 +4608,7 @@ public final class NPCDef {
 			npc.models = new int[2];
 			npc.sizeXZ = 35;
 			npc.sizeY = 35;
-			npc.name = "@red@Platinums cutey";
+			npc.name = "@red@Zamrons cutey";
 			npc.models[1] = 29270;
 			npc.actions = new String[5];
 
@@ -4938,7 +4969,8 @@ public final class NPCDef {
 		case 4569:
 			npc.models = new int[] { 23804 };
 			npc.name = "@bla@DBZ Zone";
-            npc.actions = new String[] {null, "@whi@Visit", null, null, null};
+            npc.actions = new String[5];
+			npc.actions[0] = "@whi@Visit";
 			npc.combatLevel = 295;
 			npc.sizeY = 100;
 			npc.sizeXZ = 100;
@@ -5204,16 +5236,16 @@ public final class NPCDef {
 		
 		if (npc.actions != null) {
 			for (int x = 0; x < npc.actions.length; x++) {
-				if(npc.actions[x] != null && pets[x].contains(npc.actions[x])) {
-				npc.actions[0] = "Talk To the pet";
-				npc.actions[3] = "Pick the pet up!";
-				}
+				//if(npc.actions[x] != null && pets[x].contains(npc.actions[x])) {
+				//npc.actions[0] = "Talk To the pet";
+				//npc.actions[3] = "Pick the pet up!";
+				//}
 		}
 		}
 		return npc;
 	}
 	
-	static String[] pets = new String[] {"Pick Up", "pick up", "Pick up", "Pick-Up", "pick-up", "Pick-up"};
+	//static String[] pets = new String[] {"Pick Up", "pick up", "Pick up", "Pick-Up", "pick-up", "Pick-up"};
 
 	public Model getHeadModel() {
 		if (childrenIDs != null) {

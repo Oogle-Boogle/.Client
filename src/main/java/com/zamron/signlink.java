@@ -56,7 +56,7 @@ public final class signlink implements Runnable {
 		LEFT, RIGHT, NORMAL
 	};
 
-	private final int EXTERNAL_BUFFER_SIZE = 524288; // 128Kb
+	private final int EXTERNAL_BUFFER_SIZE = 524288; // 128Kb    524288
 	private Position curPosition;
 
 	public void run() {

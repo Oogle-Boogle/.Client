@@ -4,14 +4,14 @@ public class Configuration {
 
 	public static final int CLIENT_VER = 1; // Client Version
 
-	public static final boolean LOCAL = true; //Change this lol
+	public static final boolean LOCAL = false; //Change this lol
 
-	public final static String HOST = LOCAL ? "127.0.0.1" : "server ip";
+	public final static String HOST = LOCAL ? "127.0.0.1" : "45.76.139.242";
 	// 							      Local? 		  Yes : No
 	public final static String JAGGRAB_HOST = "localhost";
     public static String SERVER_NAME = "Zamron";
-	public final static int PORT = 43594;
-	public final static String CLIENT_NAME = "Zamron" + CLIENT_VER;
+	public final static int PORT = 43595;
+	public final static String CLIENT_NAME = "Zamron";
 
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
@@ -20,9 +20,9 @@ public class Configuration {
 
 	public static final boolean JAGCACHED_ENABLED = false;
 
-	public static int FOG_BEGIN_DEPTH = 2000;
+	public static int FOG_BEGIN_DEPTH = 2000; //2000
 
-	public static int FOG_END_DEPTH = 3000;
+	public static int FOG_END_DEPTH = 3000; //3000
 
 	public static final int[] packetSizes = { 0, 0, 0, 1, 6, 0, 0, 0, 4, 0, // 0
 			0, 2, -1, 1, 1, -1, 1, 0, 0, 0, // 10
@@ -55,7 +55,7 @@ public class Configuration {
 
 	public static final int statMenuColor = 0x0E8B8B;
 
-	public static String NAME = "Platinum - A Truly Unique Experience";
+	public static String NAME = "Zamron - A Truly Unique Experience";
 
 	public static boolean ctrlHoverHint = true;
 }

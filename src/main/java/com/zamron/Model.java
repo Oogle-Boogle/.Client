@@ -3059,7 +3059,7 @@ public class Model extends Animable {
 		int k2 = k1 * j + j2 * k >> 16;
 		int l2 = anInt1650 * k >> 16;
 		int i3 = k2 + l2;
-		if (i3 <= 50 || k2 >= 3500)
+		if (i3 <= 50 || k2 >= 9500) //3500
 			return;
 		int j3 = l1 * l + j1 * i1 >> 16;
 		int k3 = (j3 - anInt1650) * WorldController.focalLength;

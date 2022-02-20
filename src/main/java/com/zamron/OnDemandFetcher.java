@@ -859,7 +859,7 @@ implements Runnable
 		running = true;
 		waiting = false;
 		zippedNodes = new Deque();
-		gzipInputBuffer = new byte[1000000];
+		gzipInputBuffer = new byte[3000000];
 		queue = new Queue();
 		versions = new int[7][];
 		receivedFilesList = new Deque();
