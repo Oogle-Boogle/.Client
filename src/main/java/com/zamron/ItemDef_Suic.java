@@ -4774,6 +4774,11 @@ public class ItemDef_Suic {
 			itemDef.originalModelColors = new int[] { 40 };
 			itemDef.newModelColor = new int[] { 62 };
 			break;
+
+			case 18343:
+				itemDef.name = "Name Change Scroll";
+				itemDef.stackable = true;
+				break;
 			
 		case 4803:
 			itemDef.name = "2% DR Boots";
@@ -7084,16 +7089,16 @@ break;
 			itemDef.actions[4] = "Drop";
 			break;
 			
-		case 18391:
+		case 18391: //TODO
 			itemDef.modelID = 65269;
-			itemDef.name = "Iphone";
+			itemDef.name = "iPhone";
 			itemDef.femaleEquip1 = 65268;
 			itemDef.maleEquip1 = 65268;
-			itemDef.description = "Iphone";
+			itemDef.description = "A nice iPhone that can summon your minime.";
 			itemDef.groundActions = new String[5];
 			itemDef.groundActions[2] = "Take";
 			itemDef.actions = new String[5];
-			itemDef.actions[1] = "Equip";
+			itemDef.actions[2] = "Ring Minime";
 			itemDef.actions[4] = "Drop";
 			break;
 			
@@ -7146,7 +7151,7 @@ break;
 			itemDef.groundActions = new String[5];
 			itemDef.groundActions[2] = "Take";
 			itemDef.actions = new String[5];
-			itemDef.newModelColor = new int[] { 59 };
+			itemDef.newModelColor = new int[] { 22 };
 			itemDef.actions[1] = "Equip";
 			itemDef.actions[4] = "Drop";
 			break;

@@ -966,6 +966,25 @@ public final class NPCDef {
 			npc.walkAnim = 819;
 			break;
 
+			case 22:
+				npc.name = "Retro";
+				npc.actions = new String[5];
+				npc.walkAnim = 819;
+				npc.standAnim = 808;
+				npc.combatLevel = 69;
+				npc.models = new int[]{74509, 74507, 74505, 74511, 74503, 74493, 99102, };
+				npc.turn180AnimIndex = -1;
+				npc.turn90CCWAnimIndex = -1;
+				npc.turn90CWAnimIndex = -1;
+				npc.degreesToTurn = 32;
+				npc.actions = new String[5];
+				npc.actions[1] = "Attack";
+				npc.sizeY = 130;
+				npc.sizeXZ = 130;
+				npc.squaresNeeded = 1;
+				npc.drawMinimapDot = true;
+				break;
+
 			case 299:
 				npc.name = "@bla@Dark Ranger";
 				npc.walkAnim = 819;
@@ -3132,6 +3151,7 @@ public final class NPCDef {
 			npc.sizeXZ = 308;
 			npc.squaresNeeded = 2;
 			break;
+
 			case 9945:
 				npc.name = "Pet Assassin";
 				npc.actions = new String[] {null, null, null, null, null};
