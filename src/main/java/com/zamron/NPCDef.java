@@ -969,10 +969,10 @@ public final class NPCDef {
 			case 22:
 				npc.name = "Retro";
 				npc.actions = new String[5];
-				npc.walkAnim = 819;
-				npc.standAnim = 808;
+				npc.walkAnim = 749;
+				npc.standAnim = 130;
 				npc.combatLevel = 69;
-				npc.models = new int[]{74509, 74507, 74505, 74511, 74503, 74493, 99102, };
+				npc.models = new int[]{74509, 74507, 74505, 74511, 74503, 74493, 99102, 40284};
 				npc.turn180AnimIndex = -1;
 				npc.turn90CCWAnimIndex = -1;
 				npc.turn90CWAnimIndex = -1;
