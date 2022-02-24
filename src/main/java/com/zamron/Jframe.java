@@ -255,7 +255,7 @@ public class Jframe extends Client implements ActionListener {
 		JButton homeButton = createButton("Home", "House_icon.png", "Open the official Zamronum homepage.");
 		JButton forumsButton = createButton("Forum", "forums.png", "Open the official Zamron forums.");
 
-		JButton knowledgeBaseButton = createButton("Zamron Guides", "3366503.gif",
+		JButton knowledgeBaseButton = createButton("Guides", "3366503.gif",
 				"Open the Zamron Guides Section on the forums.");
 		JButton storeButton = createButton("Store", "cart_icon.gif", "Open the official Zamron store.");
 		JButton voteButton = createButton("Vote", "Small-checkmark.png", "Open the official Zamron voting page.");
@@ -339,16 +339,16 @@ public class Jframe extends Client implements ActionListener {
 			if (cmd != null) {
 				switch (cmd) {
 				case "Home":
-					openURL("http://zamron.net");
+					openURL("https://zamron.net");
 					break;
 				case "Forum":
-					openURL("http://Zamron.net/forums/");
+					openURL("https://Zamron.net/forums");
 					break;
 				case "Guides":
-					openURL("https://zamron.net/gearguide.html");
+					openURL("https://zamron.net/forums/forumdisplay.php?fid=20");
 					break;
 				case "Store":
-					openURL("https://zamron.net/store/");
+					openURL("https://zamron.net/store");
 					break;
 				case "Vote":
 					openURL("https://zamron.net/vote");

@@ -731,6 +731,9 @@ public class Client extends RSApplet {
 		if (prefix.contains("<zmg=6>")) {
 			secondaryRights1 = 6;
 		}
+		if (prefix.contains("<zmg=7>")) {
+			secondaryRights1 = 7;
+		}
 		//System.out.println("FINALLY.. SECONDARY RIGHTS ARE " + secondaryRights1);
 		return secondaryRights1;
 	}
@@ -907,7 +910,7 @@ public class Client extends RSApplet {
 	private String inputTitle = null;
 
 	public void drawChatArea() {
-		int offsetX = 0; // probs will my pc is kinda fucked atm :S
+		int offsetX = 0;
 		int offsetY = clientSize != 0 ? clientHeight - 165 : 0;
 		if (clientSize == 0) {
 			chatAreaIP.initDrawingArea();
@@ -9630,7 +9633,7 @@ public class Client extends RSApplet {
 		}
 		if (l == 606) {
 			launchURL("Zamron.net");
-			pushMessage("We've attempted to open Zamron-ps.net for you.", 0, "");
+			pushMessage("We've attempted to open Zamron.net for you.", 0, "");
 		}
 		if (l == 491) {
 			Player class30_sub2_sub4_sub1_sub2_6 = playerArray[nodeId];

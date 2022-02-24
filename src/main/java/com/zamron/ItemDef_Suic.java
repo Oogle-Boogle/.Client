@@ -806,6 +806,12 @@ public class ItemDef_Suic {
 		case 19106:
 			itemDef.modelZoom = 886;
 			break;
+
+			case 10600:
+				itemDef.name = "Scratch Card";
+				itemDef.actions = new String[5];
+				itemDef.actions[0] = "Scratch";
+				break;
 		
 		
 		case 3820:
@@ -2444,8 +2450,9 @@ public class ItemDef_Suic {
              itemDef.actions[1] = "Wear";
  			
              itemDef.actions[4] = "Drop";
-             itemDef.modelID = 23338;
-             itemDef.modelZoom = 1350;
+			 itemDef.copyModel(itemDef, 3974);
+             //itemDef.modelID = 23338;
+             itemDef.modelZoom = 1000;
              itemDef.rotationY = 265;
              itemDef.rotationX = 99;
              itemDef.modelOffsetX = 0;
@@ -2454,10 +2461,9 @@ public class ItemDef_Suic {
              itemDef.maleEquip1 = 23338;
              itemDef.femaleEquip1 = 23338;
              itemDef.description = "Crystal Wings";
+			itemDef.originalModelColors = new int[] { 59 };
+			itemDef.newModelColor = new int[] { 53};
              break;
-        	
-        	
-			
 			
 		case 19131:
 			itemDef.name = "Frost Demon helmet";
@@ -3027,8 +3033,8 @@ public class ItemDef_Suic {
 		case 6786:
 			itemDef.name = "Gluttony Boots";
 			itemDef.modelID = 40178;
-			itemDef.maleEquip1 = 40179;
-			itemDef.femaleEquip1 = 40179;
+			itemDef.maleEquip1 = 40178;
+			itemDef.femaleEquip1 = 40178;
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			itemDef.stackable = false;
 			break;
@@ -4488,20 +4494,6 @@ public class ItemDef_Suic {
             itemDef.actions[4] = "Drop";
             break;
             
-        case 2549:
-            itemDef.modelID = 23502;
-            itemDef.stackable = false;
-            itemDef.name = "Tainted Boots";
-            itemDef.description = "Gives you that extra bit of luck!";
-            itemDef.maleEquip1 = 23502;
-            itemDef.femaleEquip1 = 23502;
-            itemDef.actions = new String[5];
-            itemDef.modelZoom = 800;
-            itemDef.actions[1] = "Wear";
-			
-            itemDef.actions[4] = "Drop";
-            break;
-            
         case 3075:
             itemDef.modelID = 23515;
             itemDef.stackable = false;
@@ -5455,10 +5447,7 @@ public class ItemDef_Suic {
     			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
     			itemDef.stackable = false;
     			break;
-    			
-    			
-    			
-    			
+
     		case 11143:
     			itemDef.name = "Apollo Helmet";
     			itemDef.modelID = 40268;
@@ -5941,13 +5930,6 @@ public class ItemDef_Suic {
     			itemDef.newModelColor = new int[] { 62 };
                 itemDef.name = "Exotic Platebody";
                 break;
-                
-                
-                
-                
-                
-                
-                
                 
                 
             case 19727:
@@ -6790,6 +6772,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
 			
 		case 7758:
@@ -6820,6 +6803,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
  			
 		case 7760:
@@ -6835,6 +6819,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			 itemDef.stackable = false;
  			break;
  			
 		case 7761:
@@ -6865,6 +6850,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
  			
  			
@@ -6881,6 +6867,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
  			
  			
@@ -6897,6 +6884,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
  			
 		case 7765:
@@ -6912,6 +6900,7 @@ break;
  			itemDef.actions = new String[5];
  			itemDef.actions[1] = "Wear";
  			itemDef.actions[4] = "Drop";
+			itemDef.stackable = false;
  			break;
 			
 			
@@ -7194,13 +7183,49 @@ break;
 			break;
 			
 			
-        case 19864:
-			ItemDef.copyModel(itemDef, 15245);
-            itemDef.actions[0] = "Read";
-            itemDef.name = "Starter Ticket";
+        case 15357:
+			//ItemDef.copyModel(itemDef, 15245);
+            itemDef.name = "Jad WorldBoss";
             itemDef.stackable = true;
             break;
-            
+
+			case 15358:
+				ItemDef.copyModel(itemDef, 15357);
+				itemDef.name = "Assassin";
+				itemDef.stackable = true;
+				break;
+
+			case 15359:
+				ItemDef.copyModel(itemDef, 15357);
+				itemDef.name = "Dark Ranger";
+				itemDef.stackable = true;
+				break;
+
+			case 15363:
+				ItemDef.copyModel(itemDef, 15357);
+				itemDef.name = "Sephiroth";
+				itemDef.stackable = true;
+				break;
+
+			case 15361:
+				ItemDef.copyModel(itemDef, 15357);
+				itemDef.name = "Rick";
+				itemDef.stackable = true;
+				break;
+
+			case 15362:
+				ItemDef.copyModel(itemDef, 15357);
+				itemDef.name = "May";
+				itemDef.stackable = true;
+				break;
+
+			case 19864:
+				ItemDef.copyModel(itemDef, 15245);
+				itemDef.actions[0] = "Read";
+				itemDef.name = "Starter Ticket";
+				itemDef.stackable = true;
+				break;
+
         case 4789:
 			itemDef.modelID = 44215;
 			itemDef.modelZoom = 2000;
