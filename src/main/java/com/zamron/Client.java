@@ -144,7 +144,7 @@ public class Client extends RSApplet {
 		//System.out.println("Wrote: " + npcId + " to server");
 	}
 
-	private static final AnimatedSprite VIP_ICON = new AnimatedSprite(signlink.findcachedir() + "viprank.gif");
+	//private static final AnimatedSprite VIP_ICON = new AnimatedSprite(signlink.findcachedir() + "viprank.gif");
 
 	public int time = 30;
 
@@ -655,62 +655,59 @@ public class Client extends RSApplet {
 
 		//Checks the rank numbers if the rights are over 10
 
-		if (prefix.contains("<img=1>") ||
+		if (prefix.contains("<img=1>") || //Moderator
 		prefix.contains("<img=62>")) {
 			rights3 = 1;
 		}
-		if (prefix.contains("<img=2>") ||
+		if (prefix.contains("<img=2>") || //Admin
 				prefix.contains("<img=63>")) {
 			rights3 = 2;
 		}
-		if (prefix.contains("<img=3>")) {
+		if (prefix.contains("<img=3>")) { //Owner
 			rights3 = 3;
 		}
-		if (prefix.contains("<img=4>")) {
+		if (prefix.contains("<img=4>")) { //Developer
 			rights3 = 4;
 		}
-		if (prefix.contains("<img=5>")) {
+		if (prefix.contains("<img=5>")) { //Donator
 			rights3 = 5;
 		}
-		if (prefix.contains("<img=6>")) {
+		if (prefix.contains("<img=6>")) { //Super donator
 			rights3 = 6;
 		}
-		if (prefix.contains("<img=7>")) {
+		if (prefix.contains("<img=7>")) { //Extreme donator
 			rights3 = 7;
 		}
-		if (prefix.contains("<img=8>")) {
+		if (prefix.contains("<img=8>")) { //Legen
 			rights3 = 8;
 		}
-		if (prefix.contains("<img=9>")) {
+		if (prefix.contains("<img=9>")) { //Uber donator
 			rights3 = 9;
 		}
-		if (prefix.contains("<img=10>")) {
+		if (prefix.contains("<img=10>")) { //Deluxe
 			rights3 = 10;
 		}
-		if (prefix.contains("<img=11>")) {
+		if (prefix.contains("<img=11>")) { //VIP Donator
 			rights3 = 11;
 		}
-		if (prefix.contains("<img=12>")) {
+		if (prefix.contains("<img=12>")) { //Support
 			rights3 = 12;
 		}
-		if (prefix.contains("<img=13>")) {
+		if (prefix.contains("<img=13>")) { //Youtube
 			rights3 = 13;
 		}
-		if (prefix.contains("<img=14>")) {
+		if (prefix.contains("<img=14>")) { //CManager
 			rights3 = 14;
 		}
-		if (prefix.contains("<img=15>")) {
+		if (prefix.contains("<img=15>")) { //Head Admin
 			rights3 = 15;
-		}
-		if (prefix.contains("<img=35>")) {
-			rights3 = 35;
 		}
 		//System.out.println("FINAL primary rights 3322 were " + rights3);
 		return rights3;
 	}
 
 	public int getSecondaryRights(String prefix) {
-		//System.out.println("Prefix was: "+prefix);
+		System.out.println("Prefix was: "+prefix);
 		int secondaryRights1 = -1;
 
 		if (prefix.contains("<zmg=1>")) {
@@ -11245,7 +11242,8 @@ public class Client extends RSApplet {
 					name.contains("<zmg=3>") ||
 					name.contains("<zmg=4>") ||
 					name.contains("<zmg=5>") ||
-					name.contains("<zmg=6>")) {
+					name.contains("<zmg=6>") ||
+					name.contains("<zmg=7")) {
 				name = name.substring(7);
 				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
@@ -11328,8 +11326,9 @@ public class Client extends RSApplet {
 					name.contains("<zmg=3>") ||
 					name.contains("<zmg=4>") ||
 					name.contains("<zmg=5>") ||
-					name.contains("<zmg=6>")) {
-				name = name.substring(7);
+					name.contains("<zmg=6>") ||
+					name.contains("<zmg=7>")) {
+				name = name.substring(8);
 				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
 
@@ -11414,7 +11413,8 @@ public class Client extends RSApplet {
 					name.contains("<zmg=3>") ||
 					name.contains("<zmg=4>") ||
 					name.contains("<zmg=5>") ||
-					name.contains("<zmg=6>")) {
+					name.contains("<zmg=6>") ||
+					name.contains("<zmg=7>")) {
 				name = name.substring(7);
 				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
@@ -11539,7 +11539,8 @@ public class Client extends RSApplet {
 					name.contains("<zmg=3>") ||
 					name.contains("<zmg=4>") ||
 					name.contains("<zmg=5>") ||
-					name.contains("<zmg=6>")) {
+					name.contains("<zmg=6>") ||
+					name.contains("<zmg=7")) {
 				name = name.substring(7);
 				//System.out.println("NAME if contains zmg CHANGE " + name);
 			}
@@ -15369,7 +15370,8 @@ public class Client extends RSApplet {
 									s.contains("<zmg=3>") ||
 									s.contains("<zmg=4>") ||
 									s.contains("<zmg=5>") ||
-									s.contains("<zmg=6>")) {
+									s.contains("<zmg=6>") ||
+									s.contains("<zmg=7>")) {
 								s = s.substring(7);
 								//System.out.println("NAME if contains zmg CHANGE " + name);
 							}
@@ -22585,7 +22587,8 @@ public class Client extends RSApplet {
 						name.contains("<zmg=3>") ||
 						name.contains("<zmg=4>") ||
 						name.contains("<zmg=5>") ||
-						name.contains("<zmg=6>")) {
+						name.contains("<zmg=6>") ||
+						name.contains("<zmg=7")) {
 					name = name.substring(7);
 					//System.out.println("NAME if contains zmg CHANGE " + name);
 				}

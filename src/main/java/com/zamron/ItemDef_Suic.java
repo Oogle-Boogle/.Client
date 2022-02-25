@@ -819,7 +819,6 @@ public class ItemDef_Suic {
 			itemDef.modelZoom = 948;
 			itemDef.rotationX = 145;
 			itemDef.rotationY = 100;
-			
 			break;
 		
 		case 19027:
