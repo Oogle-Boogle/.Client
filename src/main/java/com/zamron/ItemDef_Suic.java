@@ -1727,11 +1727,8 @@ public class ItemDef_Suic {
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
 	         itemDef.actions[1] = "Wear";
-			 
 	         itemDef.actions[4] = "Drop";
-	         
 	         break;
-	         
         case 919:
 	         itemDef.modelID = 23362;
 	         itemDef.name = "Virtual Gloves";
@@ -1745,9 +1742,8 @@ public class ItemDef_Suic {
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
 	         itemDef.actions[1] = "Wear";
-			 
 	         itemDef.actions[4] = "Drop";
-	         
+	         break;
         case 910:
 	         itemDef.modelID = 23360;
 	         itemDef.name = "Virtual Gloves";
@@ -1779,9 +1775,7 @@ public class ItemDef_Suic {
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
 	         itemDef.actions[1] = "Wear";
-			 
 	         itemDef.actions[4] = "Drop";
-	         
 	         break;
 	         
         case 904:
@@ -1797,9 +1791,7 @@ public class ItemDef_Suic {
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
 	         itemDef.actions[1] = "Wear";
-			 
 	         itemDef.actions[4] = "Drop";
-	         
 	         break;
 	         
 	       case 900:
@@ -1815,9 +1807,7 @@ public class ItemDef_Suic {
 		         itemDef.modelOffsetX = 0;
 		         itemDef.modelOffsetY = 5;
 		         itemDef.actions[1] = "Wear";
-				 
 		         itemDef.actions[4] = "Drop";
-		         
 		         break;
 		         
 		         
@@ -1834,9 +1824,7 @@ public class ItemDef_Suic {
 			         itemDef.modelOffsetX = 0;
 			         itemDef.modelOffsetY = 5;
 			         itemDef.actions[1] = "Wear";
-					 
 			         itemDef.actions[4] = "Drop";
-			         
 			         break;
 	         
 		case 18390:
@@ -4460,7 +4448,6 @@ public class ItemDef_Suic {
             itemDef.actions = new String[5];
             itemDef.modelZoom = 800;
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
             break;
             

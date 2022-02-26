@@ -11706,8 +11706,11 @@ public class Client extends RSApplet {
 				if (name.contains("<img=")) {
 					name = name.replaceAll(" <img=\\d>", "");
 					name = name.replaceAll(" <img=\\d\\d>", "");
-
 			}
+				if (name.contains("<zmg=")) {
+					name = name.replaceAll(" <zmg=\\d>", "");
+					name = name.replaceAll(" <zmg=\\d\\d>", "");
+				}
 			int textY = (21 + y * 14) - itemResultScrollPos;
 			if (mouseY > textY - 14 && mouseY <= textY && super.mouseX > 74 && super.mouseX < 495) {
 				menuActionName[menuActionRow] = "" + name;
@@ -15323,8 +15326,8 @@ public class Client extends RSApplet {
 						if (s.contains("<zmg=")) {
 							secondRights = getSecondaryRights(s);
 						}
-						if (s.contains("<irn=1035")) { //All irons are 4 digit numbers so not needed like the others
-							ironRank = 1035;
+						if (s.contains("<irn=1036")) { //All irons are 4 digit numbers so not needed like the others
+							ironRank = 1036;
 						}
 						if (s.contains("<irn=1193")) { //All irons are 4 digit numbers so not needed like the others
 							ironRank = 1193;
@@ -15338,8 +15341,8 @@ public class Client extends RSApplet {
 							}
 
 							if (s.contains("<img=0") ||
-									s.contains("<img=1>>") ||
-									s.contains("<img=2>>") ||
+									s.contains("<img=1>") ||
+									s.contains("<img=2>") ||
 									s.contains("<img=3>") ||
 									s.contains("<img=4>") ||
 									s.contains("<img=5>") ||
