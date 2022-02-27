@@ -91,7 +91,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 98651;
 			itemDef.femaleEquip1 = 98651;
 			itemDef.actions = new String[] {null, "Equip", "Upgrade", null, null};
-			
 			break;
 			
 		case 5206:
@@ -285,7 +284,6 @@ public class ItemDef_Suic {
 			itemDef.modelID = 99277;
 			itemDef.maleEquip1 = 19993;
 			itemDef.femaleEquip1 = 19993;
-		
 			break;
 			
 		case 18981:
@@ -1149,7 +1147,7 @@ public class ItemDef_Suic {
 			break;
 		
 		case 5132:
-            itemDef.name = "Zamron Minigun)";
+            itemDef.name = "Zamron Minigun";
 			itemDef.modelZoom = 2116; // the zoom u chose in editor
 			itemDef.rotationX = 1760; // the rotation x u chose in editor
 			itemDef.rotationY = 533; 
@@ -1452,12 +1450,7 @@ public class ItemDef_Suic {
  			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
  			itemDef.stackable = false;
  			break;
-             
 
- 			
- 			
- 			
- 			
  		case 19741:
 			itemDef.name = " Luminita Cape";
 			itemDef.modelID = 44302;
@@ -1507,7 +1500,7 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 13995:
-			itemDef.name = "Azazels Scythe";
+			itemDef.name = "Azazels Staff";
 			itemDef.modelID = 44279;
 			itemDef.maleEquip1 = 44280;
 			itemDef.femaleEquip1 = 44280;
@@ -1564,7 +1557,10 @@ public class ItemDef_Suic {
          
 		case 6320:
 			itemDef.name = "Blade of Mercy";
-			itemDef.modelID = 24021;
+			itemDef.modelZoom = 2116; // the zoom u chose in editor
+			itemDef.rotationX = 1760; // the rotation x u chose in editor
+			itemDef.rotationY = 533;
+			itemDef.modelID = 24022;
 			itemDef.maleEquip1 = 24022;
 			itemDef.femaleEquip1 = 24022;
 			itemDef.actions = new String[] {null, "Wear", null, null, null};
@@ -1634,7 +1630,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23480;
 			itemDef.femaleEquip1 = 23480;
             itemDef.actions[1] = "Wield";
-			itemDef.name = "Deziqn's Tri-blade";
+			itemDef.name = "Tri-blade";
 			itemDef.rotationY = 200;
 	         itemDef.modelOffsetX = 0;
 	         itemDef.modelOffsetY = 5;
@@ -1645,7 +1641,7 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23482;
 			itemDef.femaleEquip1 = 23482;
             itemDef.actions[1] = "Wield";
-			itemDef.name = "green new blade";
+			itemDef.name = "Emerald Blade";
 			break;
 			
 		case 1666:
@@ -2142,9 +2138,6 @@ public class ItemDef_Suic {
 			itemDef.animateInventory = true;
 			break;
 			
-			
-
-			
 		case 9505:
 			itemDef.name = "Emperor Helm";
 			itemDef.modelID = 23862;
@@ -2624,9 +2617,6 @@ public class ItemDef_Suic {
 			itemDef.stackable = false;
 			break;
 			
-			
-
-			
 		case 4056:
 			itemDef.modelID = 40107;
 			itemDef.maleEquip1 = 40108;
@@ -3105,10 +3095,7 @@ public class ItemDef_Suic {
 			itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
 			itemDef.stackable = false;
 			break;
-			
-			
-			
-			
+
 		case 19135:
 			itemDef.name = "Royal Reaper's  boots";
 			itemDef.modelID = 23144;
@@ -3181,7 +3168,6 @@ public class ItemDef_Suic {
 			itemDef.rotationY = Reaper.rotationY;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			itemDef.editedModelColor = new int[] { 70 };//old
 			itemDef.newModelColor = new int[] {62 };//new
@@ -3687,6 +3673,60 @@ public class ItemDef_Suic {
 			itemDef.modelOffsetY = 0;
 			break;
 
+			case 11526:
+				itemDef.modelID = 95079;
+				itemDef.name = "Oogle's body";
+				itemDef.description = "Must be a powerful platebody for it to be oogles?";
+				itemDef.modelZoom = 1828;
+				itemDef.rotationY = 539;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = 0;
+				itemDef.maleEquip1 = 95076;
+				itemDef.femaleEquip1 = 95076;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
+			case 11527:
+				itemDef.modelID = 95078;
+				itemDef.name = "Oogle's legs";
+				itemDef.description = "Must be a powerful legs for it to be oogles?";
+				itemDef.modelZoom = 1828;
+				itemDef.rotationY = 539;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = 0;
+				itemDef.maleEquip1 = 95075;
+				itemDef.femaleEquip1 = 95075;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
+			case 11528:
+				itemDef.modelID = 95077;
+				itemDef.name = "Oogle's helm";
+				itemDef.description = "Must be a powerful helm for it to be oogles?";
+				itemDef.modelZoom = 1828;
+				itemDef.rotationY = 539;
+				itemDef.rotationX = 0;
+				itemDef.modelOffset1 = -1;
+				itemDef.modelOffsetY = 0;
+				itemDef.maleEquip1 = 95074;
+				itemDef.femaleEquip1 = 95074;
+				itemDef.groundActions = new String[5];
+				itemDef.groundActions[2] = "Take";
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Wear";
+				itemDef.actions[4] = "Drop";
+				break;
+
 			case 6307:
 				itemDef.modelID = 90571;
 				itemDef.name = "Dark Ranger's body";
@@ -3849,7 +3889,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23436;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;
 			
@@ -3862,7 +3901,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23438;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;
 			
@@ -3884,7 +3922,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 72);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 		case 19125:
@@ -3895,7 +3932,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 72);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 		case 19126:
@@ -3906,7 +3942,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 72);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 		case 19127:
@@ -3917,7 +3952,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 71);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 		case 19128:
@@ -3928,7 +3962,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 71);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 		case 19129:
@@ -3939,7 +3972,6 @@ public class ItemDef_Suic {
 			changeTexture(id, 70, 71);
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -3950,7 +3982,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23439;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 
@@ -3961,7 +3992,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23424;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -3973,7 +4003,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23532;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -4554,14 +4583,13 @@ public class ItemDef_Suic {
         case 3250:
             itemDef.modelID = 23525;
             itemDef.stackable = false;
-            itemDef.name = "Sulphur Staff";
+            itemDef.name = "Sires Staff";
             itemDef.description = "Gives you that extra bit of luck!";
             itemDef.maleEquip1 = 23524;
             itemDef.femaleEquip1 = 23524;
             itemDef.actions = new String[5];
             itemDef.modelZoom = 800;
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
             break;
             
@@ -6290,6 +6318,7 @@ public class ItemDef_Suic {
                     itemDef.femaleEquip1 = 91085;
                     itemDef.name = "Book of Secrets";
                     break;
+
         case 19159:
             itemDef.modelID =28355;
             itemDef.actions = new String[5];

@@ -2465,20 +2465,18 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
             break;
 			
 		case 4541:
 			npc.combatLevel = 1000;
-			npc.models = new int[] { 95059, 95055, 95053, 95051, 95047, 95045, 94073 };
-			npc.sizeXZ = 300;
-			npc.sizeY = 300;
-			npc.name = "@yel@Deziqn";
-			npc.standAnim = -1;
-			npc.walkAnim = -1;
+			npc.models = new int[] { 23909, 23910, 95076, 95075, 95074 ,94073, 95059 };
+			npc.sizeXZ = 150;
+			npc.sizeY = 150;
+			npc.name = "@red@Oogle";
+			npc.walkAnim = 819;
+			npc.standAnim = 808;
 			npc.actions = new String[5];
 			npc.actions[1] = "Attack";
 			break;
@@ -2492,8 +2490,6 @@ public final class NPCDef {
 			npc.sizeY = 70;
 			npc.models = new int[] { 17375, 17391, 17384, 17399 };
 			npc.actions = new String[5];
-
-
 			npc.originalColours = new int[9];
 			npc.originalColours[0] = 5219; // teeth
 			npc.originalColours[1] = 910; // inside of mouth. Ankles. End of tail

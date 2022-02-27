@@ -6793,7 +6793,7 @@ public class RSInterface {
 		tab.child(0, 65001, 10, 10);
 		tab.child(1, 65002, 20, 50);
 		tab.child(2, 65003, 251, 20);
-		tab.child(3, 65004, 478, 10);
+		tab.child(3, 65004, 472, 20);
 		addText(65003, "Reward List", 0xffffffff, true, true, 100, tda, 2);
 	}
 
