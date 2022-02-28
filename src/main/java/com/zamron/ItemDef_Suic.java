@@ -3247,7 +3247,7 @@ public class ItemDef_Suic {
 			break;
 			
 		case 8001:
-			itemDef.name = "Corgi Crossbow";
+			itemDef.name = "Apollo Crossbow";
 			itemDef.modelID = 64495;
 			itemDef.maleEquip1 = 64496;
 			itemDef.femaleEquip1 = 64496;
@@ -4596,14 +4596,16 @@ public class ItemDef_Suic {
             
         case 3254:
             itemDef.modelID = 23526;
-            itemDef.stackable = false;
+			itemDef.modelZoom = 3000; // the zoom u chose in editor
+			itemDef.rotationX = 1760; // the rotation x u chose in editor
+			itemDef.rotationY = 533;
+			itemDef.stackable = false;
             itemDef.name = "Elemental Off-hand";
             itemDef.description = "what a masterpiece";
             itemDef.maleEquip1 = 23527;
             itemDef.femaleEquip1 = 23527;
             itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
             break;
             
