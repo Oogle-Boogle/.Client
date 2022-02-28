@@ -3878,7 +3878,6 @@ public class ItemDef_Suic {
 			itemDef.maleEquip1 = 23434; //65343
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -4007,13 +4006,12 @@ public class ItemDef_Suic {
 			break;	
 			
 		case 3279:
-			itemDef.name = "Rag Scythe";
+			itemDef.name = "Zamrorak Blade";
 			itemDef.modelID = 23533;
 			itemDef.femaleEquip1 = 23534;
 			itemDef.maleEquip1 = 23534;
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			

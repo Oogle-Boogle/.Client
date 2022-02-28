@@ -3073,20 +3073,6 @@ public final class NPCDef {
 		 * null, null, null}; npc.sizeXZ = 125; npc.sizeY = 100; //npc.sizeXZ = 35;
 		 * //npc.sizeY = 75; break;
 		 */
-		case 1:
-			npc.name = "Poison";
-			npc.actions = new String[] { null, null, null, null, null };
-			npc.sizeXZ = 1;
-			npc.sizeY = 1;
-			npc.drawMinimapDot = false;
-			break;
-		case 0:
-			npc.name = " ";
-			npc.actions = new String[] { null, null, null, null, null };
-			npc.sizeXZ = 1;
-			npc.sizeY = 1;
-			npc.drawMinimapDot = false;
-			break;
 
 		case 2000:
 			npc.models = new int[2];
@@ -3336,9 +3322,12 @@ public final class NPCDef {
 			npc.standAnim = 11973;
 			npc.models = new int[9];
 			npc.models[0] = 94425; // HEAD
+			npc.models[1] = 23527; //offhand
 			npc.models[2] = 94427; // CHEST
 			npc.models[3] = 9638; // CAPE
-			//npc.models[6] = 94629; // WEP
+			npc.models[4] = 15030; // boots
+			npc.models[5] = 15032; //gloves
+			npc.models[6] = 94629; // WEP
 			npc.models[7] = 94429; // LEG
 			npc.actions = new String[5];
 			npc.actions[0] = "Examine";

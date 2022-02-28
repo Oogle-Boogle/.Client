@@ -146,8 +146,6 @@ public class CustomObjects {
 			/*** new home ***/
 			{-1, 2897, 4067, 0, 2}, //Starter key chest
 			{-1, 2899, 4067, 0, 2}, //Starter key chest
-			{172, 2897, 4067, 0, 0}, //Starter key chest
-			{6420, 2899, 4067, 0, 0},
 			{3479, 3038, 2844, 0, 2},//Starter key chest
 			{3479, 3038, 2840, 0, 0},//Start
 			{-1, 3188, 3211, 0, 2}, //delete
