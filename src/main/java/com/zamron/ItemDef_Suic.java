@@ -638,6 +638,9 @@ public class ItemDef_Suic {
 			itemDef.name = "Chance Box";
 			ItemDef.copyModel(itemDef, 3912);
 			changeTexture(id, 63, 55);
+			itemDef.actions = new String[5];
+			itemDef.actions[1] = "Open";
+			itemDef.actions[2] = "Open all";
 			break;
 
 			case 9078:
@@ -1983,6 +1986,9 @@ public class ItemDef_Suic {
 		case 15373:
 			ItemDef.copyModel(itemDef, 3912);
 			itemDef.name = "Starter Box";
+			itemDef.actions = new String[5];
+			itemDef.actions[1] = "Open";
+			itemDef.actions[2] = "Open all";
 			changeTexture(id, 63, 58);
 			itemDef.animateInventory = true;
 			break;
@@ -1990,6 +1996,9 @@ public class ItemDef_Suic {
 		case 13997:
 			ItemDef.copyModel(itemDef, 3912);
 			itemDef.name = "Ovulant Box";
+			itemDef.actions = new String[5];
+			itemDef.actions[1] = "Open";
+			itemDef.actions[2] = "Open all";
 			changeTexture(id, 63, 68);
 			itemDef.animateInventory = true;
 			itemDef.stackable = true;
@@ -2055,6 +2064,9 @@ public class ItemDef_Suic {
 			itemDef.name = "Advanced Box";
 			changeTexture(id, 63, 66);
 			itemDef.animateInventory = true;
+			itemDef.actions = new String[5];
+			itemDef.actions[1] = "Open";
+			itemDef.actions[2] = "Open all";
 			break;
 			
 		case 15501:
@@ -5604,6 +5616,13 @@ public class ItemDef_Suic {
                 itemDef.femaleEquip1 = 23177;
                 itemDef.name = "Mystery Cape";
                 break;
+
+			case 4635:
+				case 3824:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Open";
+				itemDef.actions[2] = "Open all";
+				break;
                 
             case 80:
                 itemDef.actions = new String[5];
