@@ -3527,7 +3527,7 @@ public class RSInterface {
 		main.child(5, 50506, 337, 305);
 		main.child(6, 50507, 418, 305);
 		main.child(7, 50600, 13, 67);
-		main.child(8, 50508, 50, 50);
+		main.child(8, 50508, 35, 46);
 		main.child(9, 50509, 250, 50);
 
 		main.child(10, 50510, 415, 182);
@@ -3553,26 +3553,26 @@ public class RSInterface {
 		main.child(34, 51116, 458, 307);
 		main.child(35, 51117, 248, 20);
 
-		addText(50508, "x names", 0xffffff, false, true, 52, tda, 3);
-		addText(50509, "Preview", 0xf80f07, true, true, 100, tda, 2);
-		addText(50510, "Description", 0xf80f07, true, true, 100, tda, 2);
-		addText(50511, "Drops", 0xf80f07, true, true, 100, tda, 2);
-		addText(51111, "Starter", 0xff9933, true, true, 100, tda, 2);
-		addText(51112, "Monster", 0xff9933, true, true, 100, tda, 2);
-		addText(51113, "Hardened", 0xff9933, true, true, 100, tda, 2);
-		addText(51114, "Expert", 0xff9933, true, true, 100, tda, 2);
+		addText(50508, "x names", 0xff9933, false, true, 52, tda, 3);
+		addText(50509, "Preview", 0xff9933, true, true, 100, tda, 2);
+		addText(50510, "Description", 0xff9933, true, true, 100, tda, 2);
+		addText(50511, "Drops", 0xff9933, true, true, 100, tda, 2);
+		addText(51111, "Slayer", 0xff9933, true, true, 100, tda, 2);
+		addText(51112, "Beginner", 0xff9933, true, true, 100, tda, 2);
+		addText(51113, "Medium", 0xff9933, true, true, 100, tda, 2);
+		addText(51114, "Hard", 0xff9933, true, true, 100, tda, 2);
 		addText(51115, "Zones", 0xff9933, true, true, 100, tda, 2);
 		addText(51116, "Minigames", 0xff9933, true, true, 100, tda, 2);
-		addText(51117, "Zamron Teleport", 0x07f8f5, true, true, 100, tda, 2);
+		addText(51117, "Zamron Teleport", 0xff9933, true, true, 100, tda, 2);
 		addNpc(50514, 131);
 		RSInterface.addButton(50512, 1121, 1137, "Teleport");
 
-		addText(50513, "Teleport", 0xf80f07, true, true, 100, tda, 2);
+		addText(50513, "Teleport", 0xff9933, true, true, 100, tda, 2);
 		int descriptionChild = 13;
 		int descriptionX = 334;
 		int descriptionY = 200;
 		for (int descriptionText = 51200; descriptionText < 51205; descriptionText++) {
-			addText(descriptionText, "Description here", 0x07f8d5, false, true, 100, tda, 1);
+			addText(descriptionText, "Description here", 0xff9933, false, true, 100, tda, 1);
 			main.child(descriptionChild, descriptionText, descriptionX, descriptionY);
 			descriptionChild++;
 			descriptionY += 20;
@@ -3596,7 +3596,7 @@ public class RSInterface {
 		nameScroll.totalChildren(99);
 		for (int bossText = 50601; bossText < 50700; bossText++) {
 			// addHoverText(bossText, "", "Npc's", fonts, 1, 0xffffff, 130, 13);
-			addHoverText(bossText, "", "Npc's", fonts, 1, 0x07f8f5, true, true, 130, 13);
+			addHoverText(bossText, "", "Npc's", fonts, 1, 0xff9933, true, true, 130, 13);
 
 			nameScroll.child(bossChild, bossText, overAllX, bossY);
 			bossChild++;

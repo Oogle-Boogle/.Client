@@ -140,6 +140,10 @@ public final class ItemDef {
 		case 3260:
 			model.setTexture(51);
 			break;
+
+			case 18834:
+				model.setTexture(67);
+				break;
 			
 		case 20694:
 		case 14019:

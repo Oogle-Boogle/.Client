@@ -3870,6 +3870,12 @@ public class ItemDef_Suic {
             itemDef.actions[1] = "Wear";
             itemDef.actions[4] = "Drop";
 			break;
+
+			case 18834:
+				ItemDef.copyModel(itemDef, 526);
+				itemDef.name = "Pumkin bone";
+				itemDef.description = "Since when did pumpkins have bones?";
+				break;
 			
 		case 936:
 			itemDef.name = "Dragonslayer helmet";

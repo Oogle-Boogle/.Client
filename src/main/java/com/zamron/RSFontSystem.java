@@ -56,7 +56,7 @@ public class RSFontSystem extends DrawingArea {
 	public static int transparency;
 	public static int textColor;
 
-	public static boolean SMILIES_TOGGLED = false;
+	public static boolean SMILIES_TOGGLED = true;
 
 	public RSFontSystem(boolean TypeFont, String s, CacheArchive archive) {
 		try {

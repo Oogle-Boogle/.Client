@@ -273,7 +273,7 @@ public final class ObjectDef {
 			objectDef.actions[0] = "Use";
 		}
 		if(i == 2469) {
-			objectDef.name = "@red@Custom Minigame Teleport";
+			objectDef.name = "@red@Death Zone";
 			objectDef.actions = new String[5];
 			objectDef.actions[0] = "@yel@Teleport";
 		}

@@ -187,8 +187,9 @@ public final class NPCDef {
 			npc.standAnim = 13696;
 			break;
 		case 9855:
-			npc.standAnim = 13467;
+			npc.standAnim = 13465;
 			npc.walkAnim = 13467;
+			npc.name = "Lexicus";
 			break;
 			
 		case 1394:
@@ -440,8 +441,8 @@ public final class NPCDef {
 	                 npc.combatLevel = 777;
 	                 npc.walkAnim = 819;
 	                 npc.standAnim = 808;
-	                 npc.sizeXZ = 280;
-	                 npc.sizeY = 280;
+	                 npc.sizeXZ = 100;
+	                 npc.sizeY = 100;
 					npc.originalColours = new int[]{40};
 					npc.destColours = new int[]  {56};
 	                 break;  
@@ -585,8 +586,8 @@ public final class NPCDef {
 			npc.name = "Stoned toad";
 			npc.models = new int[] {23969};
 			npc.combatLevel = 699;
-			npc.standAnim = 808;
-			npc.walkAnim = 819;
+			npc.standAnim = 884; //881 is also cool :P
+			npc.walkAnim = 820;
 			npc.sizeXZ = npc.sizeXZ * 2;
 			npc.sizeY = npc.sizeY * 2;
 			npc.actions = new String[] {null, "Attack", null, null, null};
@@ -595,14 +596,12 @@ public final class NPCDef {
 		case 816:
 			npc.name = "Stoned Toad Jr";
 			npc.models = new int[]{23969};
-			npc.walkAnim = 819;
-			npc.standAnim = 808;
+			npc.standAnim = 818; //884 is also cool :P
+			npc.walkAnim = 820;
 			npc.combatLevel = 699;
 			npc.sizeY = 90;
 			npc.sizeXZ = 90;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -616,8 +615,6 @@ public final class NPCDef {
 			npc.sizeY = 30;
 			npc.sizeXZ = 30;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -906,9 +903,9 @@ public final class NPCDef {
 			npc.standAnim = 808;
 			npc.walkAnim = 819;
 			break;
-			
-			
-		/*case 601:
+
+
+		case 601:
 			npc.actions = new String[5];
 			npc.actions[1] = "Attack";
 			npc.name = "@whi@Luke Skywalker";
@@ -918,7 +915,7 @@ public final class NPCDef {
 			npc.walkAnim = 819;
         	npc.sizeY = 100;
 			npc.sizeXZ = 100;
-			break;*/
+			break;
 			
 		case 1069:
 			npc.actions = new String[5];
@@ -1010,7 +1007,7 @@ public final class NPCDef {
 			npc.name = "Charizard";
 			npc.models = new int[]{28405};
 			npc.walkAnim = 819;
-			npc.standAnim = 808;
+			npc.standAnim = 8835;
 			npc.squaresNeeded = 1;
 			npc.sizeXZ = 150;
 			npc.sizeY = 150;
@@ -1163,10 +1160,9 @@ public final class NPCDef {
 			npc.destColours[5] = 22425; // spiders joints (cant really notice)
 			break;
 		case 6309:
-			npc.name = "@or2@Deziqn nr1";
-			npc.description = "Deziqn's brethren!";
-			npc.sizeXZ = 150;
-			npc.sizeY = 150;
+			npc.name = "@or2@Magic Spider";
+			npc.sizeXZ = 300;
+			npc.sizeY = 300;
 			npc.walkAnim = 5325;
 			npc.standAnim = 5326;
 			npc.combatLevel = 164;
@@ -1317,8 +1313,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
             break;
@@ -1480,8 +1474,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1499,8 +1491,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1517,8 +1507,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1535,8 +1523,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1553,8 +1539,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1573,8 +1557,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1656,11 +1638,26 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
+
+			case 1059:
+				npc.name = "@or2@Broly";
+				npc.models = new int[]{27631};
+				npc.sizeY = 360;
+				npc.sizeXZ = 360;
+				//npc.degreesToTurn = 32;
+				npc.turn180AnimIndex = 1;
+				npc.turn90CCWAnimIndex = 1;
+				npc.turn90CWAnimIndex = 1;
+				npc.actions = new String[5];
+				npc.actions[1] = "Attack";
+				npc.standAnim = 1129;
+				npc.squaresNeeded = 2;
+				npc.drawMinimapDot = true;
+				npc.combatLevel = 700;
+				break;
 			
 		case 1060:
 			npc.name = "@or2@Broly Pet";
@@ -1672,8 +1669,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1720,8 +1715,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.squaresNeeded = 1;
 			npc.drawMinimapDot = true;
 			break;
@@ -1817,8 +1810,6 @@ public final class NPCDef {
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
 			npc.actions = new String[5];
-
-
 			npc.sizeY = 50;
 			npc.sizeXZ = 50;
 			npc.squaresNeeded = 2;
@@ -1847,9 +1838,6 @@ public final class NPCDef {
 				npc.standAnim = 11973;
 				npc.models = new int[]{75105};
 				npc.combatLevel = 1337;
-				npc.turn180AnimIndex = -1;
-				npc.turn90CCWAnimIndex = -1;
-				npc.turn90CWAnimIndex = -1;
 				npc.degreesToTurn = 32;
 				npc.actions = new String[5];
 				npc.actions[1] = "Attack";
@@ -2116,7 +2104,6 @@ public final class NPCDef {
 			break;
 		case 6322:
 			npc.name = "Pet Custom hound";
-			npc.description = "hehe Deziqn";
 			npc.sizeXZ = 70;
 			npc.sizeY = 70;
 			npc.combatLevel = 173;
@@ -2124,8 +2111,6 @@ public final class NPCDef {
 			npc.standAnim = 1198;
 			npc.models = new int[] { 3879 };
 			npc.actions = new String[5];
-
-
 			npc.originalColours = new int[8];
 			npc.originalColours[0] = 9129; // body
 			npc.originalColours[1] = 10155; // hair
@@ -2280,8 +2265,6 @@ public final class NPCDef {
 			npc.sizeY = 30;
 			npc.models = new int[] { 17375, 17391, 17384, 17399 };
 			npc.actions = new String[5];
-
-
 			npc.originalColours = new int[9];
 			npc.originalColours[0] = 5219; // teeth
 			npc.originalColours[1] = 910; // inside of mouth. Ankles. End of tail
@@ -2337,18 +2320,6 @@ public final class NPCDef {
 			npc.destColours[6] = 49863;
 			npc.destColours[7] = 49863;
 			npc.destColours[8] = 49863;
-			break;
-			
-		case 9864:
-			npc.combatLevel = 1;
-			npc.models = new int[] { 95059, 95055, 95053, 95051, 95047, 95045, 94073 };
-			npc.sizeXZ = 150;
-			npc.sizeY = 150;
-			npc.name = "@whi@Deziqn";
-			npc.standAnim = -1;
-			npc.walkAnim = -1;
-			npc.actions = new String[5];
-			npc.actions[1] = "Attack";
 			break;
 			
 		case 229:
@@ -2523,8 +2494,6 @@ public final class NPCDef {
 			npc.sizeY = 70;
 			npc.models = new int[] { 17375, 17391, 17384, 17399 };
 			npc.actions = new String[5];
-
-
 			npc.originalColours = new int[9];
 			npc.originalColours[0] = 5219; // teeth
 			npc.originalColours[1] = 910; // inside of mouth. Ankles. End of tail
@@ -2860,8 +2829,6 @@ public final class NPCDef {
 			npc.models = new int[1];
 			npc.models[0] = 32206;
 			npc.actions = new String[5];
-
-
 			npc.walkAnim = 7310;
 			npc.standAnim = 7309;
 			npc.description = "Its a Giant squirrel.";
@@ -2884,10 +2851,6 @@ public final class NPCDef {
 			npc.models[8] = 74501; // BOOT
 			npc.actions = new String[5];
 			npc.actions[0] = "Talk To";
-			npc.actions[1] = null;
-			npc.actions[2] = null;
-			npc.actions[3] = null;
-			npc.actions[4] = null;
 			break;
 		case 6730:
 			npc.name = "Rift guardian";
@@ -2895,8 +2858,6 @@ public final class NPCDef {
 			npc.models = new int[1];
 			npc.models[0] = 32204;
 			npc.actions = new String[5];
-
-
 			npc.walkAnim = 7306;
 			npc.standAnim = 7307;
 			npc.description = "Its a Rift guardian.";
@@ -2936,8 +2897,6 @@ public final class NPCDef {
 			npc.models = new int[1];
 			npc.models[0] = 29754;
 			npc.actions = new String[5];
-
-
 			npc.walkAnim = 7178;
 			npc.standAnim = 7177;
 			npc.description = "Its a Beaver.";
@@ -2972,6 +2931,7 @@ public final class NPCDef {
 			npc.turn90CCWAnimIndex = -1;
 			npc.turn90CWAnimIndex = -1;
 			npc.degreesToTurn = 32;
+			npc.standAnim = 8835;
 			npc.actions = new String[5];
 			npc.actions[1] = "Attack";
 			npc.sizeY = 100;
@@ -4408,8 +4368,6 @@ public final class NPCDef {
 		case 3078:
 			npc.name = "Pet Zamrons Dragon";
 			npc.actions = new String[5];
-
-
 			npc.models = new int[] { 95136, 95137, 95138, 95139 };
 			npc.combatLevel = 276;
 			npc.standAnim = 90;

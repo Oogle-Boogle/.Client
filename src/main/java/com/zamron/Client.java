@@ -9876,7 +9876,6 @@ public class Client extends RSApplet {
 				setCursor(getOption("cursors") ? 0 : -1);
 				saveSettings();
 				return;
-				
 			case 35587:
 				options.put("smilies", !getOption("smilies"));
 				RSFontSystem.SMILIES_TOGGLED = getOption("smilies");
