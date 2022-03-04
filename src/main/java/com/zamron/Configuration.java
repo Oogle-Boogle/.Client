@@ -4,7 +4,7 @@ public class Configuration {
 
 	public static final int CLIENT_VER = 1; // Client Version
 
-	public static final boolean LOCAL = false; //Change this lol
+	public static final boolean LOCAL = true; //Change this lol
 
 	public final static String HOST = LOCAL ? "127.0.0.1" : "45.76.139.242";
 	// 							      Local? 		  Yes : No
@@ -16,7 +16,7 @@ public class Configuration {
 	/**
 	 * The NPC bits. 12 = 317/377 14 = 474+ 16 = 600+
 	 */
-	public final static int NPC_BITS = 18;
+	public final static int NPC_BITS = 18; //Don't change from 18
 
 	public static final boolean JAGCACHED_ENABLED = false;
 
@@ -53,7 +53,7 @@ public class Configuration {
 			-1, 0, 0, -1, 6, 0, 0// 250
 	};
 
-	public static final int statMenuColor = 0x0E8B8B;
+	public static final int statMenuColor = 0xFF6600; //0x0E8B8B
 
 	public static String NAME = "Zamron - A Truly Unique Experience";
 

@@ -2428,7 +2428,6 @@ public class ItemDef_Suic {
         case 16428:
         	 itemDef.actions = new String[5];
              itemDef.actions[1] = "Wear";
- 			
              itemDef.actions[4] = "Drop";
 			 itemDef.copyModel(itemDef, 3974);
              //itemDef.modelID = 23338;
@@ -2454,7 +2453,6 @@ public class ItemDef_Suic {
 			itemDef.newModelColor = new int[] {63 };//new
 			itemDef.actions = new String[5];
             itemDef.actions[1] = "Wear";
-			
             itemDef.actions[4] = "Drop";
 			break;	
 			
@@ -3351,8 +3349,6 @@ public class ItemDef_Suic {
 				itemDef.actions = new String[] { "Add to Inv", null, "Add to pouch",null, null};
 				break;
             
-
-            
         case 3274:
             itemDef.modelID = 23896;
             itemDef.actions = new String[5];
@@ -3361,9 +3357,6 @@ public class ItemDef_Suic {
             itemDef.femaleEquip1 = 23897;
             itemDef.name = "dual-sided Saber";
             break;
-			
-			
-			
 			
 		case 17903:
 			itemDef.modelID = 23453;
@@ -3375,7 +3368,6 @@ public class ItemDef_Suic {
 			itemDef.groundActions[2] = "Take";
 			itemDef.actions = new String[5];
 			itemDef.actions[1] = "Equip";
-			
 			itemDef.actions[4] = "Drop";
 			break;
 			
@@ -5322,9 +5314,7 @@ public class ItemDef_Suic {
     		case 15497:
     			itemDef.name = "Imbued Slayer Helmet";
 				break;
-    			
-    			
-    			
+
     		case 6484:
     			itemDef.name = "Pet Scrooge Mcduck";
                 itemDef.modelID = 40025;
@@ -5648,7 +5638,10 @@ public class ItemDef_Suic {
                 itemDef.femaleEquip1 = 23179;
                 itemDef.description = "CUSTOM BFG-900 OH.";
                 break;
-                
+
+			case 11617:
+				itemDef.name = "Demonic cape";
+                break;
                 
             case 19469:
                 itemDef.modelID = 99892;
