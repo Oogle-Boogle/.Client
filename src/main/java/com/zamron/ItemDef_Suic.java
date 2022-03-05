@@ -5608,6 +5608,17 @@ public class ItemDef_Suic {
                 itemDef.femaleEquip1 = 23177;
                 itemDef.name = "Mystery Cape";
                 break;
+
+			case 6199:
+			case 15373:
+			case 15375:
+			case 13997:
+			case 4635:
+				case 3824:
+				itemDef.actions = new String[5];
+				itemDef.actions[1] = "Open";
+				itemDef.actions[2] = "Open all";
+				break;
                 
             case 80:
                 itemDef.actions = new String[5];
