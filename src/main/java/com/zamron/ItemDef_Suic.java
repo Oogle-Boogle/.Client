@@ -48,6 +48,11 @@ public class ItemDef_Suic {
 		case 14559:
 			itemDef.name = "Rex Whip";
 			break;
+
+//			case 19785:
+//				ItemDef.copyModel(itemDef, 8839);
+//				itemDef.name = "Elite void top";
+//				break;
 		
 		case 22194:
 			ItemDef.copyModel(itemDef, 19152);
@@ -634,13 +639,14 @@ public class ItemDef_Suic {
             itemDef.name = "Omega Wings";
             break;
 			
-		case 15375:
+			case 15375:
 			itemDef.name = "Chance Box";
 			ItemDef.copyModel(itemDef, 3912);
 			changeTexture(id, 63, 55);
 			itemDef.actions = new String[5];
-			itemDef.actions[1] = "Open";
-			itemDef.actions[2] = "Open all";
+				itemDef.actions[0] = "Open";
+				itemDef.actions[1] = null;
+				itemDef.actions[2] = "Open all";
 			break;
 
 			case 9078:
@@ -1987,7 +1993,8 @@ public class ItemDef_Suic {
 			ItemDef.copyModel(itemDef, 3912);
 			itemDef.name = "Starter Box";
 			itemDef.actions = new String[5];
-			itemDef.actions[1] = "Open";
+			itemDef.actions[0] = "Open";
+			itemDef.actions[1] = null;
 			itemDef.actions[2] = "Open all";
 			changeTexture(id, 63, 58);
 			itemDef.animateInventory = true;
@@ -1997,7 +2004,8 @@ public class ItemDef_Suic {
 			ItemDef.copyModel(itemDef, 3912);
 			itemDef.name = "Ovulant Box";
 			itemDef.actions = new String[5];
-			itemDef.actions[1] = "Open";
+			itemDef.actions[0] = "Open";
+			itemDef.actions[1] = null;
 			itemDef.actions[2] = "Open all";
 			changeTexture(id, 63, 68);
 			itemDef.animateInventory = true;
@@ -2065,7 +2073,8 @@ public class ItemDef_Suic {
 			changeTexture(id, 63, 66);
 			itemDef.animateInventory = true;
 			itemDef.actions = new String[5];
-			itemDef.actions[1] = "Open";
+			itemDef.actions[0] = "Open";
+			itemDef.actions[1] = null;
 			itemDef.actions[2] = "Open all";
 			break;
 			
@@ -5617,11 +5626,13 @@ public class ItemDef_Suic {
                 itemDef.name = "Mystery Cape";
                 break;
 
-			case 4635:
+				case 4635:
 				case 3824:
-				itemDef.actions = new String[5];
-				itemDef.actions[1] = "Open";
-				itemDef.actions[2] = "Open all";
+				case 15374:
+					itemDef.actions = new String[5];
+					itemDef.actions[0] = "Open";
+					itemDef.actions[1] = null;
+					itemDef.actions[2] = "Open all";
 				break;
                 
             case 80:
@@ -5661,7 +5672,7 @@ public class ItemDef_Suic {
 			case 11617:
 				itemDef.name = "Demonic cape";
                 break;
-                
+
             case 19469:
                 itemDef.modelID = 99892;
                 itemDef.actions = new String[5];

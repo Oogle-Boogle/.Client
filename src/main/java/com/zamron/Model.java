@@ -5,15 +5,15 @@ import java.awt.Color;
 @SuppressWarnings("all")
 public class Model extends Animable {
 
-	public static int MAX_POLYGON = 19500;
+	public static int MAX_POLYGON = 25000;//19500
 	private static int[] OFFSETS_512_334 = null;
 	private static int[] OFFSETS_765_503 = null;
 	public static int anInt1620;
 	public static Model entityModelDesc = new Model(true);
-	protected static int anIntArray1622[] = new int[3000];
-	protected static int anIntArray1623[] = new int[3000];
-	protected static int anIntArray1624[] = new int[3000];
-	protected static int anIntArray1625[] = new int[3000];
+	protected static int anIntArray1622[] = new int[8000]; //3000
+	protected static int anIntArray1623[] = new int[8000]; //3000
+	protected static int anIntArray1624[] = new int[8000]; //3000
+	protected static int anIntArray1625[] = new int[8000]; //3000
 	static ModelHeader modelHeader[];
 	static OnDemandFetcherParent resourceManager;
 	static boolean hasAnEdgeToRestrict[] = new boolean[MAX_POLYGON];
@@ -25,12 +25,12 @@ public class Model extends Animable {
 	static int anIntArray1669[] = new int[MAX_POLYGON];
 	static int vertexPerspectiveDepth[] = new int[MAX_POLYGON];
 	static int anIntArray1670[] = new int[MAX_POLYGON];
-	static int depthListIndices[] = new int[10050];
-	static int faceLists[][] = new int[10050][512];
+	static int depthListIndices[] = new int[19500]; //10050
+	static int faceLists[][] = new int[19500][512]; //10050
 	static int anIntArray1673[] = new int[12];
-	static int anIntArrayArray1674[][] = new int[12][6000];
-	static int anIntArray1675[] = new int[6000];
-	static int anIntArray1676[] = new int[6000];
+	static int anIntArrayArray1674[][] = new int[12][10050]; //6000
+	static int anIntArray1675[] = new int[10050]; //6000
+	static int anIntArray1676[] = new int[10050]; //6000
 	static int anIntArray1677[] = new int[12];
 	static int anIntArray1678[] = new int[10];
 	static int anIntArray1679[] = new int[10];
@@ -2465,7 +2465,7 @@ public class Model extends Animable {
 			if (l1 == 1) {
 				anIntArray1637[i12] = nc2.readSignedByte();
 				if (anIntArray1637[i12] == 2)
-					triangleColours2[i12] = 65535;
+					triangleColours2[i12] = 4096; //65535
 				anIntArray1637[i12] = 0;
 			}
 			if (i2 == 255) {
