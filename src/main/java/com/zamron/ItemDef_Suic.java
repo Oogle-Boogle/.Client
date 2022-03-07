@@ -48,11 +48,6 @@ public class ItemDef_Suic {
 		case 14559:
 			itemDef.name = "Rex Whip";
 			break;
-
-//			case 19785:
-//				ItemDef.copyModel(itemDef, 8839);
-//				itemDef.name = "Elite void top";
-//				break;
 		
 		case 22194:
 			ItemDef.copyModel(itemDef, 19152);
@@ -2269,6 +2264,29 @@ public class ItemDef_Suic {
 		case 3316:
 			itemDef.name = "Rex Spirit Shield";
 			break;
+
+			case 19785:
+				itemDef.name = "Elite void top";
+				itemDef.modelZoom = 1221;
+				itemDef.rotationY = 459;
+				itemDef.modelOffsetY = 3;
+				itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+				itemDef.modelID = 29170;
+				itemDef.maleEquip1 = 29166;
+				itemDef.maleEquip2 = 29165;
+				itemDef.femaleEquip1 = 29169;
+				itemDef.femaleEquip2 = 29168;
+				break;
+
+			case 19786:
+				itemDef.name = "Elite void robe";
+				itemDef.modelZoom = 2105;
+				itemDef.rotationY = 525;
+				itemDef.actions = new String[] { null, "Wear", null, null, "Drop" };
+				itemDef.modelID = 29171;
+				itemDef.maleEquip1 = 29164;
+				itemDef.femaleEquip1 = 29167;
+				break;
 			
 		case 15657:
 			itemDef.modelID = 23316;

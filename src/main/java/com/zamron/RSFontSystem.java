@@ -697,7 +697,8 @@ public class RSFontSystem extends DrawingArea {
 		text = replace(text, "@vet@", "<img=5>");
 		text = replace(text, "@don@", "<img=6>");
 		text = replace(text, "@or2@", "<col=ff7000>");
-		text = replace(text, "@purp@", "<col=93009C>");
+		text = replace(text, "@pur@", "<col=93009C>");
+		text = replace(text, "@pup@", "<col=CE0CED>");
 
 		if (text != null) {
 			Pattern pattern = Pattern.compile("@[0-9a-fA-F]{6}@");

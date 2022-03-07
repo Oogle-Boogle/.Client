@@ -16294,7 +16294,7 @@ public class Client extends RSApplet {
 		}
 		if (crossType == 2) {
 			crosses[4 + crossIndex / 100].drawSprite(crossX - 8 - 4, crossY - 8 - 4);
-		}
+		}											//21119
 		if (clientSize != 0 && (walkableInterfaceId == 21119 || walkableInterfaceId == 21100)) {
 			processInterfaceAnimation(cycleTimer, walkableInterfaceId);
 			drawInterface(0, 0, RSInterface.interfaceCache[walkableInterfaceId], 0);
