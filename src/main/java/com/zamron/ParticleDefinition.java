@@ -233,6 +233,22 @@ public class ParticleDefinition {
 				setColors(new int[] {0xf71d04, 0xed230b, 0xb59b98});
 			}
 	},
+
+			new ParticleDefinition() { {
+				// Scythe
+				setStartVelocity(new ParticleVector(0, -1, 0));
+				setEndVelocity(new ParticleVector(0, -1, 0));
+				setGravity(new ParticleVector(0, 2 / 4, 0));
+				setLifeSpan(141);
+				setStartColor(0xf21515);
+				setEndColor(0x000000);
+				setSpawnRate(1);
+				setStartSize(2.8f);
+				setEndSize(0);
+				setStartAlpha(0.1f);
+				initializeSteps();
+				setColorStep(0x000000); }
+			},
 			
 			new ParticleDefinition() { {
 				//Primordials

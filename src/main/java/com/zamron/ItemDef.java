@@ -1133,7 +1133,6 @@ public final class ItemDef {
 				itemDef.actions[1] = custom.isWeapon() ? "Wield" : "Wear";
 			}
 			switch(itemDef.id) {
-
 				/** Donor Chest Keys **/
 				case 3459: // T1-3
 					itemDef.name = "T1-3 Chest Key";
@@ -1189,6 +1188,7 @@ public final class ItemDef {
 				// itemDef.modelOffset2);
 			}
 		}
+		itemDef_Retro.newIDS(itemDef, i);
 		return ItemDef_Suic.newIDS(itemDef, i);
 	}
 
@@ -1493,8 +1493,6 @@ public final class ItemDef {
 			sprite.maxWidth = l5;
 			sprite.maxHeight = j6;
 		}
-		
-		
 		if (k == 0 && !itemDef.animateInventory) {
 			//System.out.println("DIDNT CACHE: " + itemDef.id);
 			spriteCache.put(sprite2, i);

@@ -11,6 +11,9 @@ public class ParticleAttachment {
     }
 
 	static {
+		//Scythe
+		attachments.put(42502, new int[][] { { 20, 16 }, { 66, 16 }, { 35, 16 }, { 72, 16 } , { 79, 16 } , { 40, 16 } });
+
 		//Completionist cape
 		attachments.put(65297, new int[][] { { 494, 0 }, { 488, 0 }, { 485, 0 }, { 476, 0 }, { 482, 0 }, { 479, 0 }, { 491, 0 } });
 		attachments.put(65316, new int[][] { { 494, 0 }, { 488, 0 }, { 485, 0 }, { 476, 0 }, { 482, 0 }, { 479, 0 }, { 491, 0 } });

@@ -5,15 +5,15 @@ import java.awt.Color;
 @SuppressWarnings("all")
 public class Model extends Animable {
 
-	public static int MAX_POLYGON = 25000;//19500
+	public static int MAX_POLYGON = 33000;//19500
 	private static int[] OFFSETS_512_334 = null;
 	private static int[] OFFSETS_765_503 = null;
 	public static int anInt1620;
 	public static Model entityModelDesc = new Model(true);
-	protected static int anIntArray1622[] = new int[8000]; //3000
-	protected static int anIntArray1623[] = new int[8000]; //3000
-	protected static int anIntArray1624[] = new int[8000]; //3000
-	protected static int anIntArray1625[] = new int[8000]; //3000
+	protected static int anIntArray1622[] = new int[3000]; //3000
+	protected static int anIntArray1623[] = new int[3000]; //3000
+	protected static int anIntArray1624[] = new int[3000]; //3000
+	protected static int anIntArray1625[] = new int[3000]; //3000
 	static ModelHeader modelHeader[];
 	static OnDemandFetcherParent resourceManager;
 	static boolean hasAnEdgeToRestrict[] = new boolean[MAX_POLYGON];
@@ -25,12 +25,12 @@ public class Model extends Animable {
 	static int anIntArray1669[] = new int[MAX_POLYGON];
 	static int vertexPerspectiveDepth[] = new int[MAX_POLYGON];
 	static int anIntArray1670[] = new int[MAX_POLYGON];
-	static int depthListIndices[] = new int[19500]; //10050
-	static int faceLists[][] = new int[19500][512]; //10050
+	static int depthListIndices[] = new int[10050]; //10050
+	static int faceLists[][] = new int[10050][512]; //10050
 	static int anIntArray1673[] = new int[12];
-	static int anIntArrayArray1674[][] = new int[12][10050]; //6000
-	static int anIntArray1675[] = new int[10050]; //6000
-	static int anIntArray1676[] = new int[10050]; //6000
+	static int anIntArrayArray1674[][] = new int[12][6000]; //6000
+	static int anIntArray1675[] = new int[6000]; //6000
+	static int anIntArray1676[] = new int[6000]; //6000
 	static int anIntArray1677[] = new int[12];
 	static int anIntArray1678[] = new int[10];
 	static int anIntArray1679[] = new int[10];
@@ -1236,9 +1236,9 @@ public class Model extends Animable {
 		anInt1630 = model.anInt1630;
 		anInt1642 = model.anInt1642;
 		if (anIntArray1622.length < anInt1626) {
-			anIntArray1622 = new int[anInt1626 + 10000];
-			anIntArray1623 = new int[anInt1626 + 10000];
-			anIntArray1624 = new int[anInt1626 + 10000];
+			anIntArray1622 = new int[anInt1626 + 10000]; //10000
+			anIntArray1623 = new int[anInt1626 + 10000]; //10000
+			anIntArray1624 = new int[anInt1626 + 10000]; //10000
 		}
 		verticesParticle = new int[anInt1626];
 		anIntArray1627 = anIntArray1622;
