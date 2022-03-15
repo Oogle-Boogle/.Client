@@ -70,14 +70,32 @@ public class itemDef_Retro {
                 //itemDef.modelZoom = 1000; //Model zoom for inventory
                 break;
 
-            /**case 22208:
+            case 22208:
                 itemDef.modelID = 22209;
                 itemDef.maleEquip1 = 22208;
                 itemDef.femaleEquip1 = 22208;
-                itemDef.name = "";
+                itemDef.name = "Dual Ebony blades";
                 itemDef.actions = new String[] {null, "Wear", null, null, null};
                 //itemDef.modelZoom = 1000; //Model zoom for inventory
-                break;**/
+                break;
+
+            case 22210:
+                itemDef.modelID = 22211;
+                itemDef.maleEquip1 = 22210;
+                itemDef.femaleEquip1 = 22210;
+                itemDef.name = "Amulet of death";
+                itemDef.actions = new String[] {null, "Wear", null, null, null};
+                //itemDef.modelZoom = 1000; //Model zoom for inventory
+                break;
+
+            case 22215:
+                itemDef.modelID = 22215;
+                itemDef.maleEquip1 = 22215;
+                itemDef.femaleEquip1 = 22215;
+                itemDef.name = "Weed cape mk2";
+                itemDef.actions = new String[] {null, "Wear", null, null, null};
+                //itemDef.modelZoom = 1000; //Model zoom for inventory
+                break;
 
 
         }
