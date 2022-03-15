@@ -70,6 +70,15 @@ public class itemDef_Retro {
                 //itemDef.modelZoom = 1000; //Model zoom for inventory
                 break;
 
+            /**case 22208:
+                itemDef.modelID = 22209;
+                itemDef.maleEquip1 = 22208;
+                itemDef.femaleEquip1 = 22208;
+                itemDef.name = "";
+                itemDef.actions = new String[] {null, "Wear", null, null, null};
+                //itemDef.modelZoom = 1000; //Model zoom for inventory
+                break;**/
+
 
         }
     }
